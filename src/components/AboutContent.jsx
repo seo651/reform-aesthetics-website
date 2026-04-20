@@ -20,24 +20,24 @@ const features = [
 
 export default function AboutContent() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+    <section className="py-16 sm:py-20 bg-white">
+      <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left - Text */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 rounded-full border border-brown/40 flex items-center justify-center">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-5 h-5 rounded-full border border-brown/40 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 bg-brown rounded-full" />
               </div>
-              <span className="text-brown text-sm tracking-wider uppercase font-medium">About Us</span>
+              <span className="text-brown text-[12px] tracking-wider uppercase font-medium">About Us</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] text-dark leading-tight mb-6">
+            <h2 className="font-serif text-[26px] sm:text-[32px] lg:text-[38px] text-dark leading-[1.2] mb-4">
               Looking for trusted skincare professionals in Leicester?
             </h2>
-            <p className="text-gray-text text-base leading-relaxed mb-5">
+            <p className="text-gray-text text-[14px] leading-[1.7] mb-4">
               We offer personalised, clinically proven skincare solutions.
             </p>
-            <p className="text-gray-text text-base leading-relaxed">
+            <p className="text-gray-text text-[14px] leading-[1.7]">
               At Reform Skincare, we take a results-driven approach to skin care. That's why we take time
               to understand your concerns and goals, creating treatment plans and techniques tailored to
               you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
@@ -47,18 +47,18 @@ export default function AboutContent() {
           </div>
 
           {/* Right - Feature Cards stacked */}
-          <div className="space-y-5">
+          <div className="space-y-4">
             {features.map((feature, idx) => (
               <div
                 key={idx}
-                className="bg-light-bg rounded-2xl p-6 flex gap-5 hover:shadow-md transition-shadow"
+                className="bg-light-bg rounded-xl p-5 flex gap-4 hover:shadow-md transition-shadow"
               >
-                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 border border-gray-100">
-                  <feature.icon size={22} className="text-brown" />
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shrink-0 border border-gray-100">
+                  <feature.icon size={18} className="text-brown" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark text-[15px] mb-2">{feature.title}</h3>
-                  <p className="text-gray-text text-sm leading-relaxed">{feature.description}</p>
+                  <h3 className="font-semibold text-dark text-[14px] mb-1.5">{feature.title}</h3>
+                  <p className="text-gray-text text-[13px] leading-[1.65]">{feature.description}</p>
                 </div>
               </div>
             ))}

@@ -29,7 +29,7 @@ function AnimatedNumber({ target, suffix, inView }) {
   }, [inView, target])
 
   return (
-    <span className="font-serif text-4xl sm:text-5xl text-dark">
+    <span className="font-serif text-[36px] sm:text-[42px] text-dark">
       {count}{suffix}
     </span>
   )
@@ -49,15 +49,15 @@ export default function Statistics() {
   }, [])
 
   return (
-    <section ref={ref} className="py-14 bg-beige border-t border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+    <section ref={ref} className="py-10 sm:py-12 bg-beige">
+      <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
+        <div className="flex flex-wrap justify-center lg:justify-between gap-y-8 gap-x-4 text-center">
           {stats.map((stat, idx) => (
-            <div key={idx} className="relative">
+            <div key={idx} className="relative px-2 sm:px-4 min-w-[120px]">
               <AnimatedNumber target={stat.number} suffix={stat.suffix} inView={inView} />
-              <div className="mt-2 text-gray-text text-xs sm:text-sm leading-snug">{stat.label}</div>
+              <div className="mt-1 text-gray-text text-[11px] sm:text-[12px] leading-snug max-w-[130px] mx-auto">{stat.label}</div>
               {idx < stats.length - 1 && (
-                <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gray-300" />
+                <div className="hidden lg:block absolute right-[-2px] top-1/2 -translate-y-1/2 w-px h-10 bg-brown/20" />
               )}
             </div>
           ))}

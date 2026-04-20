@@ -7,37 +7,36 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-dark text-white">
-      {/* Reach Out Section */}
+      {/* Main Footer */}
       <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-12 sm:py-14">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            {/* Left */}
             <div>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-6">
+              <h2 className="font-serif text-[28px] sm:text-[34px] lg:text-[40px] text-white leading-[1.2] mb-6">
                 Reach out to a member of our team
               </h2>
 
-              {/* Secure Email Signup */}
-              <div className="mb-8">
-                <p className="text-gray-400 text-xs uppercase tracking-wider mb-3">Secure Your Email</p>
-                <div className="flex gap-3">
+              <div className="mb-6">
+                <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-2.5">Secure Your Email</p>
+                <div className="flex gap-2.5 max-w-sm">
                   <input
                     type="email"
                     placeholder="Email address"
-                    className="flex-1 bg-white/10 border border-white/20 rounded-full px-5 py-2.5 text-sm text-white placeholder:text-gray-500 outline-none focus:border-brown"
+                    className="flex-1 bg-white/10 border border-white/15 rounded-full px-4 py-2 text-[13px] text-white placeholder:text-gray-500 outline-none focus:border-brown"
                   />
-                  <button className="bg-white text-dark px-6 py-2.5 rounded-full text-sm font-medium hover:bg-beige transition-colors">
+                  <button className="bg-white text-dark px-5 py-2 rounded-full text-[12px] font-medium hover:bg-beige transition-colors">
                     SUBMIT
                   </button>
                 </div>
               </div>
 
-              {/* Social */}
               <div>
-                <p className="text-gray-400 text-xs uppercase tracking-wider mb-3">Social Media</p>
+                <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-2.5">Social Media</p>
                 <div className="flex gap-4">
                   {['Linkedin', 'Instagram', 'Twitter'].map((label) => (
-                    <a key={label} href="#" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">
-                      <Globe size={16} />
+                    <a key={label} href="#" className="flex items-center gap-1.5 text-gray-400 hover:text-white transition-colors text-[13px]">
+                      <Globe size={14} />
                       {label}
                     </a>
                   ))}
@@ -45,32 +44,31 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Right side - Logo + Links */}
-            <div className="grid sm:grid-cols-3 gap-8">
+            {/* Right - Links grid */}
+            <div className="grid grid-cols-3 gap-6">
               {/* Brand */}
               <div>
-                <div className="mb-5">
-                  <div className="tracking-[0.3em] text-base font-light">R E F O R M</div>
-                  <div className="text-[9px] tracking-[0.15em] text-gray-500 mt-0.5">AESTHETICS | DENTAL</div>
-                  <div className="tracking-[0.25em] text-xs font-light mt-0.5">C L I N I C</div>
+                <div className="mb-4">
+                  <div className="tracking-[0.25em] text-[13px] font-light">R E F O R M</div>
+                  <div className="text-[8px] tracking-[0.12em] text-gray-500 mt-px">AESTHETICS | DENTAL</div>
+                  <div className="tracking-[0.2em] text-[11px] font-light mt-px">C L I N I C</div>
                 </div>
-                {/* CQC Badge */}
-                <div className="bg-white/10 rounded-lg p-3 inline-block mb-4">
-                  <div className="text-[10px] font-bold tracking-wide text-white">CQC</div>
-                  <div className="text-[8px] text-gray-400">Quality Commission</div>
+                <div className="bg-white/10 rounded-md px-2.5 py-1.5 inline-block mb-3">
+                  <div className="text-[9px] font-bold tracking-wide">CQC</div>
+                  <div className="text-[7px] text-gray-400">Quality Commission</div>
                 </div>
-                <p className="text-gray-500 text-xs leading-relaxed">
-                  We are a high quality medical aesthetics clinic offering advanced and rejuvenating treatments delivered by experienced clinicians.
+                <p className="text-gray-500 text-[11px] leading-[1.5]">
+                  High quality medical aesthetics clinic offering advanced treatments delivered by experienced clinicians.
                 </p>
               </div>
 
               {/* Quick Links */}
               <div>
-                <h4 className="font-semibold text-sm mb-5">Quick Links</h4>
-                <ul className="space-y-2.5">
+                <h4 className="font-semibold text-[13px] mb-4">Quick Links</h4>
+                <ul className="space-y-2">
                   {quickLinks.map((link) => (
                     <li key={link}>
-                      <a href="#" className="text-gray-400 text-sm hover:text-white transition-colors">{link}</a>
+                      <a href="#" className="text-gray-400 text-[13px] hover:text-white transition-colors">{link}</a>
                     </li>
                   ))}
                 </ul>
@@ -78,21 +76,20 @@ export default function Footer() {
 
               {/* Location + Contact */}
               <div>
-                <h4 className="font-semibold text-sm mb-5">Location</h4>
-                <div className="flex items-start gap-2 mb-6">
-                  <MapPin size={14} className="text-brown mt-0.5 shrink-0" />
-                  <span className="text-gray-400 text-sm">18 De Montfort St, Leicester LE1 7GL</span>
+                <h4 className="font-semibold text-[13px] mb-4">Location</h4>
+                <div className="flex items-start gap-2 mb-5">
+                  <MapPin size={13} className="text-brown mt-0.5 shrink-0" />
+                  <span className="text-gray-400 text-[12px]">18 De Montfort St, Leicester LE1 7GL</span>
                 </div>
-
-                <h4 className="font-semibold text-sm mb-4">Contact Us</h4>
-                <ul className="space-y-2.5">
+                <h4 className="font-semibold text-[13px] mb-3">Contact Us</h4>
+                <ul className="space-y-2">
                   <li className="flex items-center gap-2">
-                    <Phone size={13} className="text-brown shrink-0" />
-                    <a href="tel:01163800318" className="text-gray-400 text-sm hover:text-white transition-colors">0116 3800318</a>
+                    <Phone size={12} className="text-brown shrink-0" />
+                    <a href="tel:01163800318" className="text-gray-400 text-[12px] hover:text-white transition-colors">0116 3800318</a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Mail size={13} className="text-brown shrink-0" />
-                    <a href="mailto:info@reformmedical.co.uk" className="text-gray-400 text-sm hover:text-white transition-colors">info@reformmedical.co.uk</a>
+                    <Mail size={12} className="text-brown shrink-0" />
+                    <a href="mailto:info@reformmedical.co.uk" className="text-gray-400 text-[12px] hover:text-white transition-colors">info@reformmedical.co.uk</a>
                   </li>
                 </ul>
               </div>
@@ -102,12 +99,12 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span className="text-gray-600 text-xs">
+      <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span className="text-gray-600 text-[11px]">
             COPYRIGHT &copy; {new Date().getFullYear()} REFORM SKINCARE IS DESIGNED BY GET FOUND
           </span>
-          <div className="flex gap-4 text-xs">
+          <div className="flex gap-4 text-[11px]">
             <a href="#" className="text-gray-600 hover:text-gray-400 transition-colors">CANCELLATION POLICY</a>
             <a href="#" className="text-gray-600 hover:text-gray-400 transition-colors">COMPLAINTS POLICY</a>
           </div>

@@ -13,8 +13,7 @@ const hours = [
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
-    firstName: '', lastName: '', dFirstName: '', dLastName: '',
-    email: '', phone: '', treatment: '', message: ''
+    firstName: '', lastName: '', email: '', phone: '', treatment: '', message: ''
   })
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -24,29 +23,25 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="booking" className="py-20 bg-beige">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Intro text */}
-        <div className="text-center mb-10">
-          <p className="text-gray-text text-sm max-w-xl mx-auto">
-            Fill out the form below, and we'll get back to you as soon as possible.
-          </p>
-        </div>
+    <section id="booking" className="py-14 sm:py-18 bg-beige">
+      <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
+        <p className="text-center text-gray-text text-[13px] mb-8 max-w-md mx-auto">
+          Fill out the form below, and we'll get back to you as soon as possible.
+        </p>
 
-        <div className="grid lg:grid-cols-2 gap-10">
-          {/* Left - Opening Hours + Contact Info */}
-          <div className="space-y-8">
-            {/* Opening Hours Card */}
-            <div className="bg-white rounded-2xl p-7">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 bg-beige rounded-xl flex items-center justify-center">
-                  <Clock size={18} className="text-brown" />
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* Left - Hours + Contact */}
+          <div className="space-y-5">
+            <div className="bg-white rounded-xl p-5 sm:p-6">
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="w-8 h-8 bg-beige rounded-lg flex items-center justify-center">
+                  <Clock size={15} className="text-brown" />
                 </div>
-                <h3 className="font-semibold text-dark text-lg">Opening Hours</h3>
+                <h3 className="font-semibold text-dark text-[15px]">Opening Hours</h3>
               </div>
-              <ul className="space-y-2.5">
+              <ul className="space-y-2">
                 {hours.map((h) => (
-                  <li key={h.day} className="flex justify-between text-sm">
+                  <li key={h.day} className="flex justify-between text-[13px]">
                     <span className="text-gray-text">{h.day}</span>
                     <span className={h.time === 'Closed' ? 'text-red-500 font-medium' : 'text-dark font-medium'}>
                       {h.time}
@@ -56,70 +51,69 @@ export default function ContactSection() {
               </ul>
             </div>
 
-            {/* Contact Info Card */}
-            <div className="bg-white rounded-2xl p-7">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 bg-beige rounded-xl flex items-center justify-center">
-                  <Phone size={18} className="text-brown" />
+            <div className="bg-white rounded-xl p-5 sm:p-6">
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="w-8 h-8 bg-beige rounded-lg flex items-center justify-center">
+                  <Phone size={15} className="text-brown" />
                 </div>
-                <h3 className="font-semibold text-dark text-lg">Contact Information</h3>
+                <h3 className="font-semibold text-dark text-[15px]">Contact Information</h3>
               </div>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <MapPin size={16} className="text-brown mt-0.5 shrink-0" />
-                  <span className="text-gray-text text-sm">18 De Montfort St, Leicester LE1 7GL, UK</span>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2.5">
+                  <MapPin size={14} className="text-brown mt-0.5 shrink-0" />
+                  <span className="text-gray-text text-[13px]">18 De Montfort St, Leicester LE1 7GL, UK</span>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Phone size={16} className="text-brown shrink-0" />
-                  <a href="tel:01163800318" className="text-gray-text text-sm hover:text-dark transition-colors">0116 3800318</a>
+                <li className="flex items-center gap-2.5">
+                  <Phone size={14} className="text-brown shrink-0" />
+                  <a href="tel:01163800318" className="text-gray-text text-[13px] hover:text-dark transition-colors">0116 3800318</a>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Mail size={16} className="text-brown shrink-0" />
-                  <a href="mailto:info@reformmedical.co.uk" className="text-gray-text text-sm hover:text-dark transition-colors">info@reformmedical.co.uk</a>
+                <li className="flex items-center gap-2.5">
+                  <Mail size={14} className="text-brown shrink-0" />
+                  <a href="mailto:info@reformmedical.co.uk" className="text-gray-text text-[13px] hover:text-dark transition-colors">info@reformmedical.co.uk</a>
                 </li>
               </ul>
             </div>
           </div>
 
-          {/* Right - Contact Form */}
-          <div className="bg-white rounded-2xl p-7 md:p-10">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <div className="w-6 h-6 rounded-full border border-brown/40 flex items-center justify-center">
+          {/* Right - Form */}
+          <div className="bg-white rounded-xl p-5 sm:p-7">
+            <div className="flex items-center justify-center gap-2 mb-1.5">
+              <div className="w-5 h-5 rounded-full border border-brown/40 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 bg-brown rounded-full" />
               </div>
-              <span className="text-brown text-xs tracking-wider uppercase font-medium">Contact Us</span>
+              <span className="text-brown text-[11px] tracking-wider uppercase font-medium">Contact Us</span>
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-dark text-center mb-8">Get in touch with us</h3>
+            <h3 className="font-serif text-[22px] sm:text-[26px] text-dark text-center mb-6">Get in touch with us</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-medium text-gray-text mb-1.5">First Name</label>
+                  <label className="block text-[11px] font-medium text-gray-text mb-1">First Name</label>
                   <input type="text" name="firstName" value={formData.firstName} onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg" />
+                    className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg" />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-gray-text mb-1.5">Last Name</label>
+                  <label className="block text-[11px] font-medium text-gray-text mb-1">Last Name</label>
                   <input type="text" name="lastName" value={formData.lastName} onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg" />
+                    className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-medium text-gray-text mb-1.5">Email</label>
+                  <label className="block text-[11px] font-medium text-gray-text mb-1">Email</label>
                   <input type="email" name="email" value={formData.email} onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg" />
+                    className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg" />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium text-gray-text mb-1.5">Phone Number</label>
+                  <label className="block text-[11px] font-medium text-gray-text mb-1">Phone Number</label>
                   <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg" />
+                    className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg" />
                 </div>
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-text mb-1.5">I am interested in</label>
+                <label className="block text-[11px] font-medium text-gray-text mb-1">I am interested in</label>
                 <select name="treatment" value={formData.treatment} onChange={handleChange}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg appearance-none">
+                  className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg appearance-none">
                   <option value="">Select a treatment</option>
                   <option>Anti-Wrinkle Injections</option>
                   <option>Dermal Fillers</option>
@@ -133,14 +127,14 @@ export default function ContactSection() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-text mb-1.5">Any problems you are having and how we can help</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} rows={4}
-                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none transition-colors text-sm bg-light-bg resize-none" />
+                <label className="block text-[11px] font-medium text-gray-text mb-1">Any problems you are having and how we can help</label>
+                <textarea name="message" value={formData.message} onChange={handleChange} rows={3}
+                  className="w-full px-3 py-2 rounded-lg border border-gray-200 focus:border-brown focus:ring-1 focus:ring-brown outline-none text-[13px] bg-light-bg resize-none" />
               </div>
               <button type="submit"
-                className="w-full bg-black text-white py-3.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                className="w-full bg-black text-white py-2.5 rounded-full text-[12px] font-medium tracking-wider hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
                 SUBMIT DETAILS
-                <Send size={14} />
+                <Send size={12} />
               </button>
             </form>
           </div>
