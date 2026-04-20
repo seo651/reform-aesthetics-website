@@ -3,97 +3,76 @@ import { useState } from 'react'
 
 const testimonials = [
   {
-    name: 'Sarah M.',
+    name: 'Krish Y',
     rating: 5,
-    text: 'Dr Priya was amazing from start to finish. She made me feel so comfortable and the results were incredible. Would most definitely recommend her to all!'
+    text: 'I\'ve been visiting Reform Aesthetics for several treatments and have been consistently impressed with the quality of care. The clinic is beautifully maintained, and the staff are friendly and welcoming. I always feel comfortable and well looked after. Thank you for helping me feel confident in my own skin!'
   },
   {
-    name: 'Jessica L.',
+    name: 'Hind Bashir',
     rating: 5,
-    text: 'My skin is already glowing — my acne scars are visibly fading too! The team really knows what they\'re doing and I felt completely at ease throughout.'
+    text: 'I went to Reform Aesthetics and Dental for skin treatments and the experience was wonderful. The team were super lovely and made me feel really comfortable. Professional, reliable, and truly trustworthy. I can\'t recommend them highly enough — top class service from start to finish.'
   },
   {
-    name: 'Emma T.',
+    name: 'Preet Kaur',
     rating: 5,
-    text: 'The team is courteous, professional, and genuinely cares about their patients. I\'ve never felt more confident in my skin. Highly recommend!'
-  },
-  {
-    name: 'Rachel K.',
-    rating: 5,
-    text: 'Absolutely brilliant experience. The clinic is beautiful, the staff are lovely, and my results exceeded expectations. I won\'t go anywhere else now.'
-  },
-  {
-    name: 'Amy W.',
-    rating: 5,
-    text: 'Such a calming environment and truly expert care. Dr Priya took the time to explain everything thoroughly. The results speak for themselves.'
-  },
-  {
-    name: 'Charlotte D.',
-    rating: 5,
-    text: 'I was nervous about my first treatment but the team put me at ease straight away. Natural-looking results that have boosted my confidence enormously.'
+    text: 'Wanted to share my review for the team at Reform Dental Clinic. Had a really positive visit with the team. Such a lovely, friendly and knowledgeable group of people. Everything was explained clearly before treatment. Would highly recommend to anyone looking for quality dental care in Leicester.'
   }
 ]
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0)
-  const visibleCount = typeof window !== 'undefined' && window.innerWidth >= 1024 ? 3 : 1
-
-  const next = () => setCurrent((prev) => (prev + 1) % testimonials.length)
-  const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-
-  const getVisible = () => {
-    const items = []
-    for (let i = 0; i < 3; i++) {
-      items.push(testimonials[(current + i) % testimonials.length])
-    }
-    return items
-  }
 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between mb-14">
-          <div>
+        {/* Header */}
+        <div className="text-center mb-14">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="w-6 h-6 rounded-full border border-brown/40 flex items-center justify-center">
+              <div className="w-1.5 h-1.5 bg-brown rounded-full" />
+            </div>
             <span className="text-brown text-sm tracking-wider uppercase font-medium">Testimonials</span>
-            <h2 className="font-serif text-4xl sm:text-5xl text-dark mt-4">
-              What Our Happy Patients<br className="hidden sm:block" /> Are Saying
-            </h2>
           </div>
-          <div className="flex gap-2">
-            <button
-              onClick={prev}
-              className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-beige transition-colors"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              onClick={next}
-              className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
-            >
-              <ChevronRight size={20} />
-            </button>
-          </div>
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] text-dark leading-tight mb-4">
+            What Our Happy Patients Are Saying
+          </h2>
+          <p className="text-gray-text text-base max-w-2xl mx-auto">
+            We are committed to providing the highest quality patient care, and are extremely fortunate to have a team
+            of dedicated professionals.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {getVisible().map((testimonial, idx) => (
+        {/* Testimonial Cards */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="bg-light-bg rounded-2xl p-8 hover:shadow-lg transition-shadow"
+              className="bg-light-bg rounded-2xl p-7 flex flex-col"
             >
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
-                ))}
+              {/* Avatar + Name */}
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-11 h-11 rounded-full bg-brown/15 flex items-center justify-center">
+                  <span className="text-brown font-semibold text-sm">{testimonial.name[0]}</span>
+                </div>
+                <div>
+                  <p className="font-semibold text-dark text-sm">{testimonial.name}</p>
+                  <p className="text-gray-text text-xs">Google</p>
+                </div>
               </div>
-              <p className="text-dark leading-relaxed mb-6 text-[15px]">
+
+              {/* Review text */}
+              <p className="text-gray-text text-sm leading-relaxed flex-1 mb-5">
                 "{testimonial.text}"
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-brown/20 flex items-center justify-center">
-                  <span className="text-brown font-medium text-sm">{testimonial.name[0]}</span>
+
+              {/* Rating */}
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: testimonial.rating }).map((_, i) => (
+                    <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
-                <span className="font-medium text-dark text-sm">{testimonial.name}</span>
+                <span className="text-dark text-sm font-semibold">5.0 RATING</span>
               </div>
             </div>
           ))}
