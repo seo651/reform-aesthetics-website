@@ -622,7 +622,7 @@ export default function Treatments() {
                 Renew your look, refresh your confidence.
               </h2>
 
-              <p className="text-gray-500 text-sm leading-relaxed mb-8 border-b border-gray-100 pb-8 font-sans">
+              <p className="text-gray-500 text-sm leading-relaxed mb-8 font-sans">
                 "Welcome to Reform Aesthetics and Dental. I am Dr Priya Sonia Patel the founder of
                 Reform Aesthetics and Dental. I have been working as a Dental Surgeon since 2007 and
                 developed a specialist interest in aesthetic medicine."
@@ -658,7 +658,7 @@ export default function Treatments() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * idx }}
-                    className={idx < 2 ? 'pb-8 border-b border-gray-100' : ''}
+                    className=""
                   >
                     <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center mb-4 text-gray-600">
                       <Icon />
