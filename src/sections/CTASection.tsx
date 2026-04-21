@@ -24,7 +24,7 @@ export function CTASection() {
             </div>
 
             {/* Text content — pb makes visual room before form overlaps */}
-            <div className="relative z-10 px-6 sm:px-12 pt-14 pb-24 text-center">
+            <div className="relative z-10 px-6 sm:px-12 pt-20 pb-36 text-center">
               <SectionBadge text="Book A Visit" variant="dark" />
               <h2
                 className="text-3xl sm:text-4xl lg:text-[46px] text-white mt-5 mb-5 leading-tight"
@@ -70,7 +70,7 @@ export function CTASection() {
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#1a1f2e] text-white text-[11px] font-semibold tracking-[0.14em] uppercase hover:bg-black transition-colors whitespace-nowrap font-sans flex-shrink-0"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#363636] text-white text-[11px] font-semibold tracking-[0.14em] uppercase hover:bg-black transition-colors whitespace-nowrap font-sans flex-shrink-0"
                 >
                   LETS TALK
                   <ArrowUpRight className="w-3.5 h-3.5" />
