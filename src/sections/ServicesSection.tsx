@@ -8,7 +8,7 @@ const services = [
   {
     id: 1,
     title: 'Anti-Wrinkle Injections in Leicester',
-    description: 'Our anti-wrinkle treatments offer a safe, non-surgical solution to reduce forehead lines, crow\'s feet, and frown lines. By gently relaxing targeted muscles, we soften expression lines while maintaining natural facial movement.',
+    description: "Our anti-wrinkle treatments offer a safe, non-surgical solution to reduce forehead lines, crow's feet, and frown lines. By gently relaxing targeted muscles, we soften expression lines while maintaining natural facial movement.",
     details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results — never frozen or overdone — with minimal downtime.',
     image: '/images/service-anti-wrinkle.jpg',
   },
@@ -35,7 +35,10 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
           <SectionBadge text="Services" />
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl mt-6 mb-12 max-w-lg">
+          <h2
+            className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-gray-900"
+            style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+          >
             Explore Our Services for Lasting Skin Health!
           </h2>
         </AnimatedSection>
@@ -54,7 +57,7 @@ export function ServicesSection() {
                       transition={{ duration: 0.3 }}
                       className="py-6"
                     >
-                      <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                      <div className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
                         <div className="flex flex-col sm:flex-row">
                           <div className="sm:w-2/5">
                             <img
@@ -65,7 +68,12 @@ export function ServicesSection() {
                           </div>
                           <div className="sm:w-3/5 p-6">
                             <div className="flex items-start justify-between mb-4">
-                              <h3 className="font-serif text-xl">{service.title}</h3>
+                              <h3
+                                className="text-lg leading-snug text-gray-900 pr-3"
+                                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                              >
+                                {service.title}
+                              </h3>
                               <button
                                 onClick={() => toggleExpand(service.id)}
                                 className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 hover:bg-gray-800 transition-colors"
@@ -73,15 +81,15 @@ export function ServicesSection() {
                                 <Minus className="w-4 h-4 text-white" />
                               </button>
                             </div>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                            <p className="text-gray-500 text-sm leading-relaxed mb-3 font-sans">
                               {service.description}
                             </p>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                            <p className="text-gray-500 text-sm leading-relaxed mb-5 font-sans">
                               {service.details}
                             </p>
                             <a
-                              href="#contact"
-                              className="inline-flex items-center gap-2 text-sm font-medium hover:underline"
+                              href="/treatments"
+                              className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide uppercase hover:underline font-sans"
                             >
                               READ MORE
                               <ArrowUpRight className="w-4 h-4" />
@@ -96,7 +104,10 @@ export function ServicesSection() {
                     onClick={() => toggleExpand(service.id)}
                     className="w-full flex items-center justify-between py-5 text-left group"
                   >
-                    <h3 className="font-serif text-xl group-hover:text-gray-600 transition-colors">
+                    <h3
+                      className="text-lg sm:text-xl group-hover:text-gray-600 transition-colors text-gray-900"
+                      style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                    >
                       {service.title}
                     </h3>
                     <span className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 group-hover:bg-gray-800 transition-colors">
@@ -116,11 +127,11 @@ export function ServicesSection() {
         {/* See More Button */}
         <AnimatedSection className="text-center mt-10">
           <a
-            href="#services"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100 text-black text-sm font-medium hover:bg-gray-200 transition-all hover:scale-[1.02]"
+            href="/treatments"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-gray-300 text-black text-xs font-semibold tracking-[0.1em] uppercase hover:bg-gray-50 transition-colors font-sans"
           >
             SEE MORE TREATMENTS
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
         </AnimatedSection>
       </div>

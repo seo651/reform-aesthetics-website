@@ -45,18 +45,18 @@ export function TeamSection() {
   return (
     <section id="team" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-[280px_1fr] gap-12">
+        <div className="grid lg:grid-cols-[200px_1fr] gap-10">
           {/* Sidebar Tabs */}
           <AnimatedSection>
-            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0">
+            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
               {teamMembers.map((member) => (
                 <button
                   key={member.id}
                   onClick={() => setActiveId(member.id)}
-                  className={`px-5 py-3 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
+                  className={`px-4 py-2.5 rounded-full text-sm font-sans whitespace-nowrap transition-all text-left ${
                     activeId === member.id
-                      ? 'bg-gray-200 text-black'
-                      : 'bg-transparent text-gray-600 hover:bg-gray-100 border border-gray-200'
+                      ? 'bg-[#EDE8E2] text-gray-900 font-medium'
+                      : 'bg-transparent text-gray-500 hover:bg-gray-50 border border-gray-200'
                   }`}
                 >
                   {member.name}
@@ -73,13 +73,20 @@ export function TeamSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid md:grid-cols-[1fr_300px] gap-8 items-start"
+              className="grid md:grid-cols-[1fr_280px] gap-8 items-start"
             >
               <div>
                 <SectionBadge text="Team Member" />
-                <h2 className="font-serif text-3xl sm:text-4xl mt-4 mb-3">{activeMember.name}</h2>
-                <p className="text-lg font-medium mb-6">{activeMember.title}</p>
-                <div className="text-gray-600 leading-relaxed whitespace-pre-line">
+                <h2
+                  className="text-3xl sm:text-4xl mt-4 mb-2 text-gray-900"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                >
+                  {activeMember.name}
+                </h2>
+                <p className="text-sm font-semibold font-sans text-gray-700 mb-5">
+                  {activeMember.title}
+                </p>
+                <div className="text-gray-500 text-sm leading-relaxed whitespace-pre-line font-sans">
                   {activeMember.bio}
                 </div>
               </div>

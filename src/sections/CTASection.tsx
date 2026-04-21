@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
@@ -16,70 +15,67 @@ export function CTASection() {
     <section className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
-          <div
-            className="relative rounded-[2rem] overflow-hidden"
-            style={{
-              backgroundImage: 'url(/images/cta-bg.jpg)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          >
-            <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 px-6 sm:px-12 py-16 sm:py-20">
-              <div className="text-center max-w-3xl mx-auto mb-10">
-                <SectionBadge text="Book A Visit" variant="dark" />
-                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white mt-6 mb-4">
-                  Discover Our Skin Booster Treatments for Lasting Hydration & Radiance
-                </h2>
-                <p className="text-white/80 leading-relaxed">
-                  Our experienced clinicians provide expertly delivered skin booster treatments
-                  designed to deeply hydrate, improve elasticity and restore luminous, healthy-looking
-                  skin — all tailored specifically to you.
-                </p>
-              </div>
+          <div className="relative rounded-[1.5rem] overflow-hidden">
+            {/* Background */}
+            <div className="absolute inset-0">
+              <img src="/images/cta-bg.jpg" alt="" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/65" />
+            </div>
 
-              {/* Form */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto"
+            {/* Text content */}
+            <div className="relative z-10 px-6 sm:px-12 pt-14 pb-0 text-center">
+              <SectionBadge text="Book A Visit" variant="dark" />
+              <h2
+                className="text-3xl sm:text-4xl lg:text-[44px] text-white mt-5 mb-4 leading-tight"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
-                <p className="text-gray-600 mb-6">
+                Discover Our Skin Booster Treatments<br />
+                for Lasting Hydration & Radiance
+              </h2>
+              <p className="text-white/75 text-sm leading-relaxed max-w-2xl mx-auto mb-8 font-sans">
+                Our experienced clinicians provide expertly delivered skin booster treatments designed
+                to deeply hydrate, improve elasticity and restore luminous, healthy-looking skin — all
+                tailored specifically to you.
+              </p>
+            </div>
+
+            {/* White inline form bar — attached to bottom of dark section */}
+            <div className="relative z-10 px-6 sm:px-12 pb-0">
+              <div className="bg-white rounded-t-2xl px-6 sm:px-8 py-6">
+                <p className="text-gray-600 text-sm mb-4 font-sans">
                   Fill out the form below, and we'll get back to you as soon as possible.
                 </p>
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
                   <input
                     type="text"
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-black/10"
+                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans"
                   />
                   <input
                     type="email"
                     placeholder="Email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-black/10"
+                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans"
                   />
                   <input
                     type="tel"
                     placeholder="Phone"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-black/10"
+                    className="flex-1 px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans"
                   />
                   <button
                     type="submit"
-                    className="px-6 py-3 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-800 transition-colors whitespace-nowrap font-sans"
                   >
                     LETS TALK
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
                 </form>
-              </motion.div>
+              </div>
             </div>
           </div>
         </AnimatedSection>

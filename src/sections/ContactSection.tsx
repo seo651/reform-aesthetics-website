@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { ArrowUpRight, MapPin, Phone, Globe } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
+// Full opening hours as shown in the PDF
 const openingHours = [
   { day: 'Monday', hours: '9:00 am – 6:00 pm' },
   { day: 'Tuesday', hours: '9:00 am – 7:00 pm' },
@@ -43,12 +44,11 @@ export function ContactSection() {
     <section id="contact" className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
-          <div className="bg-cream rounded-[2.5rem] overflow-hidden">
+          <div className="bg-[#EDE8E2] rounded-[2.5rem] overflow-hidden">
             <div className="grid lg:grid-cols-2">
-              {/* Left: Map + Info */}
-              <div className="relative min-h-[500px]">
-                {/* Map Placeholder */}
-                <div className="absolute inset-0 bg-gray-300">
+              {/* Left: Map + Info overlaid */}
+              <div className="relative min-h-[520px]">
+                <div className="absolute inset-0">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.6!2d-1.1305!3d52.6293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e1e1e1e1e1e1%3A0x0!2zNTLCsDM3JzQ1LjUiTiAxwrAwNyc1MC4wIlc!5e0!3m2!1sen!2suk!4v1"
                     width="100%"
@@ -62,18 +62,21 @@ export function ContactSection() {
                 </div>
 
                 {/* Overlay Cards */}
-                <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row gap-4">
+                <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row gap-3">
                   {/* Opening Hours */}
-                  <div className="bg-black/80 backdrop-blur-sm text-white rounded-xl p-4 flex-1">
+                  <div className="bg-black/85 backdrop-blur-sm text-white rounded-xl p-4 flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                        <MapPin className="w-4 h-4" />
+                      <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center">
+                        <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5">
+                          <circle cx="10" cy="10" r="8" />
+                          <path d="M10 6v5l3 2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </div>
-                      <span className="font-medium text-sm">Opening Hours</span>
+                      <span className="font-sans font-medium text-sm">Opening Hours</span>
                     </div>
-                    <div className="space-y-1 text-xs text-white/80">
+                    <div className="space-y-0.5">
                       {openingHours.map((item) => (
-                        <div key={item.day} className="flex justify-between">
+                        <div key={item.day} className="flex justify-between text-white/75 text-[11px] font-sans">
                           <span>{item.day}</span>
                           <span>{item.hours}</span>
                         </div>
@@ -82,23 +85,25 @@ export function ContactSection() {
                   </div>
 
                   {/* Contact Info */}
-                  <div className="bg-black/80 backdrop-blur-sm text-white rounded-xl p-4 flex-1">
+                  <div className="bg-black/85 backdrop-blur-sm text-white rounded-xl p-4 flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                        <Phone className="w-4 h-4" />
+                      <div className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center">
+                        <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5">
+                          <path d="M4 4h3l1.5 3.5-2 1.2a11 11 0 0 0 4.8 4.8l1.2-2L16 13v3a1 1 0 0 1-1 1C7.16 17 3 12.84 3 5a1 1 0 0 1 1-1z" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </div>
-                      <span className="font-medium text-sm">Contact Information</span>
+                      <span className="font-sans font-medium text-sm">Contact Information</span>
                     </div>
-                    <div className="space-y-2 text-xs">
+                    <div className="space-y-2.5 text-[11px] font-sans">
                       <div>
-                        <span className="text-blue-400 uppercase tracking-wider">Phone</span>
-                        <p className="text-white/90 mt-0.5">
+                        <span className="text-[#c4a882] uppercase tracking-wider font-semibold">PHONE:</span>
+                        <p className="text-white/80 mt-0.5">
                           <a href="tel:01163800318" className="hover:underline">0116 3800318</a>
                         </p>
                       </div>
                       <div>
-                        <span className="text-blue-400 uppercase tracking-wider">Email Address</span>
-                        <p className="text-white/90 mt-0.5">
+                        <span className="text-[#c4a882] uppercase tracking-wider font-semibold">EMAIL ADDRESS:</span>
+                        <p className="text-white/80 mt-0.5">
                           <a href="mailto:info@reformmedical.co.uk" className="hover:underline">info@reformmedical.co.uk</a>
                         </p>
                       </div>
@@ -110,74 +115,81 @@ export function ContactSection() {
               {/* Right: Form */}
               <div className="p-8 sm:p-12">
                 <SectionBadge text="Contact Us" />
-                <h2 className="font-serif text-3xl sm:text-4xl mt-4 mb-8">
+                <h2
+                  className="text-3xl sm:text-4xl mt-4 mb-8 text-gray-900"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                >
                   Get in touch with us
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm mb-2">
-                        First Name <span className="text-red-500">*</span>
+                      <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                        First Name <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="text"
                         placeholder="Enter First Name"
                         value={formData.firstName}
                         onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors"
+                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-sm mb-2">Last Name</label>
+                      <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                        Last Name
+                      </label>
                       <input
                         type="text"
                         placeholder="Enter Last Name"
                         value={formData.lastName}
                         onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors"
+                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans"
                       />
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm mb-2">
-                        Email <span className="text-red-500">*</span>
+                      <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                        Email <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="email"
                         placeholder="Enter Email"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors"
+                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-sm mb-2">
-                        Phone Number <span className="text-red-500">*</span>
+                      <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                        Phone Number <span className="text-red-400">*</span>
                       </label>
                       <input
                         type="tel"
                         placeholder="Enter Phone Number"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors"
+                        className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans"
                         required
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm mb-2">I am interested in...</label>
+                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                      I am interested in...
+                    </label>
                     <select
                       value={formData.interest}
                       onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                      className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors"
+                      className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans text-gray-500"
                     >
-                      <option value="">Select a treatment</option>
+                      <option value="">I am interested in...</option>
                       {treatmentOptions.map((option) => (
                         <option key={option} value={option}>{option}</option>
                       ))}
@@ -185,70 +197,27 @@ export function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-sm mb-2">
-                      Message <span className="text-red-500">*</span>
+                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                      Message <span className="text-red-400">*</span>
                     </label>
                     <textarea
                       placeholder="Describe your problems and how we can help you..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={4}
-                      className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-black transition-colors resize-none"
+                      className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors resize-none font-sans"
                       required
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
+                    className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-800 transition-colors font-sans"
                   >
                     SUBMIT MESSAGE
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
                 </form>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        {/* Bottom Bar */}
-        <AnimatedSection delay={0.2}>
-          <div className="mt-8 bg-cream rounded-[2rem] px-8 py-8">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-              <div>
-                <h3 className="font-serif text-2xl sm:text-3xl">
-                  Reach out to a<br />member of our team
-                </h3>
-              </div>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 text-sm font-medium hover:underline"
-              >
-                SECURE YOUR SMILE SLOT
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
-              <div>
-                <span className="text-xs uppercase tracking-wider text-gray-500 mb-3 block">
-                  Social Media
-                </span>
-                <div className="flex items-center gap-4">
-                  {[
-                    { label: 'Linkedin', href: 'https://sg.linkedin.com/in/dr-priya-sonia-patel-a7078b31' },
-                    { label: 'Instagram', href: 'https://www.instagram.com/reform_medical/' },
-                    { label: 'Twitter', href: 'https://x.com/Reformedical' },
-                  ].map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm hover:text-gray-600 transition-colors"
-                    >
-                      <Globe className="w-4 h-4" />
-                      {social.label}
-                    </a>
-                  ))}
-                </div>
               </div>
             </div>
           </div>

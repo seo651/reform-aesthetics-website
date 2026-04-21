@@ -1,17 +1,72 @@
 import { motion } from 'framer-motion';
 import { SectionBadge } from '@/components/SectionBadge';
 
+// Brands exactly as shown in the PDF homepage
 const brands = [
-  { name: 'BOCOUTURE', style: 'text-[#0056A4] font-bold tracking-wider text-sm' },
-  { name: 'MAILI', style: 'text-gray-800 font-light tracking-[0.3em] text-lg' },
-  { name: 'ENERPEEL', style: 'text-[#00A0B0] font-bold tracking-wider text-sm' },
-  { name: 'Juvederm', style: 'text-[#E87722] font-medium italic text-lg' },
-  { name: 'Dermapen', style: 'text-[#0056A4] font-bold tracking-wider text-sm' },
+  {
+    name: 'SkinMed',
+    render: () => (
+      <span className="font-sans font-semibold tracking-wider text-gray-700 text-base italic">
+        SkinMed
+      </span>
+    ),
+  },
+  {
+    name: 'BELOTERO',
+    render: () => (
+      <span className="font-sans font-bold tracking-wider text-[#E87722] text-base uppercase">
+        BELOTERO
+      </span>
+    ),
+  },
+  {
+    name: 'DermaFocus',
+    render: () => (
+      <div className="flex items-center gap-1.5">
+        <svg viewBox="0 0 20 20" className="w-5 h-5 text-[#0056A4]" fill="currentColor">
+          <circle cx="10" cy="10" r="8" opacity="0.2" />
+          <circle cx="10" cy="10" r="5" opacity="0.5" />
+          <circle cx="10" cy="10" r="2" />
+        </svg>
+        <span className="font-sans font-semibold tracking-wide text-gray-700 text-sm">
+          DermaFocus
+        </span>
+        <span className="text-[9px] text-gray-400 font-sans block leading-none mt-1">
+          SKINCARE SOLUTIONS
+        </span>
+      </div>
+    ),
+  },
+  {
+    name: 'Cellenis PRP',
+    render: () => (
+      <div className="flex items-center gap-1.5">
+        <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#5c2d91]" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" />
+        </svg>
+        <div>
+          <span className="font-sans font-semibold tracking-wide text-gray-700 text-sm">
+            Cellenis
+          </span>
+          <sup className="text-[9px] text-gray-400 font-sans">®</sup>
+          <span className="font-sans font-bold text-gray-700 text-sm ml-1">PRP</span>
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: 'PROFHILO',
+    render: () => (
+      <span className="font-sans font-bold tracking-[0.25em] text-gray-800 text-base uppercase">
+        PROFHILO
+      </span>
+    ),
+  },
 ];
 
 export function BrandsSection() {
   return (
-    <section className="relative bg-cream rounded-t-[3rem] -mt-8 pt-16 pb-20 px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-[#EDE8E2] rounded-t-[3rem] -mt-8 pt-16 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +82,8 @@ export function BrandsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-serif text-3xl sm:text-4xl lg:text-5xl mt-6 mb-12"
+          className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-12 text-gray-900"
+          style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
         >
           Trusted Brands We<br />Partner With...
         </motion.h2>
@@ -37,7 +93,7 @@ export function BrandsSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-4 sm:gap-0"
+          className="flex flex-wrap items-center justify-center"
         >
           {brands.map((brand, index) => (
             <motion.div
@@ -48,9 +104,11 @@ export function BrandsSection() {
               transition={{ duration: 0.4, delay: 0.1 * index }}
               className="flex items-center"
             >
-              <span className={`px-6 py-3 ${brand.style}`}>{brand.name}</span>
+              <div className="px-6 sm:px-8 py-3 flex items-center justify-center min-w-[100px]">
+                {brand.render()}
+              </div>
               {index < brands.length - 1 && (
-                <div className="hidden sm:block w-px h-8 bg-gray-400 mx-2" />
+                <div className="hidden sm:block w-px h-7 bg-gray-400/60" />
               )}
             </motion.div>
           ))}
