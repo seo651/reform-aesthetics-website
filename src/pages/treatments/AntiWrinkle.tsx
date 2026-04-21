@@ -21,7 +21,7 @@ export default function AntiWrinkle() {
       circularImageAlt="Anti-wrinkle treatment result"
       benefitsHeading="Refresh Your Appearance with Anti-Wrinkle Treatments"
       benefitsBody="Our experienced medical injectors personalise every treatment to ensure balanced, natural results. The goal is always refinement, never frozen or overdone."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
+      benefitsImage="/images/anti-wrinkle-benefits.jpg"
       benefitsImageAlt="Anti-wrinkle treatment"
       benefits={[
         {
