@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
+import { CTASection } from '@/sections/CTASection';
 
 /* ─────────────────────────────── FAQ ─────────────────────────────── */
 const faqs = [
@@ -570,74 +571,8 @@ export default function Treatments() {
         </div>
       </section>
 
-      {/* ── Book a Visit CTA Banner ── */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative rounded-[1.5rem] overflow-hidden">
-            {/* Dark BG */}
-            <div className="absolute inset-0">
-              <img src="/images/cta-bg.jpg" alt="" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-black/65" />
-            </div>
-
-            <div className="relative z-10 px-6 sm:px-10 pt-10 pb-0 text-center">
-              <SectionBadge text="BOOK A VISIT" />
-              <h2
-                className="italic text-3xl sm:text-4xl lg:text-[44px] text-white leading-tight mt-5 mb-3"
-                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-              >
-                Explore Our Services for
-                <br />
-                Lasting Skin Health!
-              </h2>
-              <p className="text-white/70 text-sm sm:text-[15px] leading-relaxed max-w-2xl mx-auto mb-8 font-sans">
-                Our experienced clinicians provide expertly delivered skin booster treatments designed
-                to deeply hydrate, improve elasticity and restore luminous, healthy-looking skin — all
-                tailored specifically to you.
-              </p>
-            </div>
-
-            {/* White form bar */}
-            <div className="relative z-10 px-6 sm:px-10 pb-0">
-              <div className="bg-white rounded-t-2xl px-6 sm:px-8 py-6 shadow-lg">
-                <p className="text-gray-700 text-sm font-medium mb-4 font-sans">
-                  Fill out the form below, and we'll get back to you as soon as possible.
-                </p>
-                <form
-                  className="flex flex-col sm:flex-row gap-3"
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    alert("Thank you! We'll be in touch.");
-                  }}
-                >
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="flex-1 px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors bg-white font-sans"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="flex-1 px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors bg-white font-sans"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="flex-1 px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors bg-white font-sans"
-                  />
-                  <button
-                    type="submit"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gray-900 text-white text-sm font-semibold tracking-wider uppercase hover:bg-black transition-colors whitespace-nowrap font-sans"
-                  >
-                    LETS TALK
-                    <ArrowUpRight className="w-4 h-4" />
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── Book a Visit CTA ── */}
+      <CTASection />
 
       {/* ── Benefits Section ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
