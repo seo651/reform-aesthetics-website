@@ -8,78 +8,83 @@ const treatmentCategories = [
   {
     label: 'Skin',
     items: [
-      '3D Skin Analysis',
-      'Signature Pregnancy Glow Facial',
-      'Esse Live Probiotic Facials',
-      'Medical-Grade Skincare',
-      'Carboxytherapy',
-      'Heliocare',
+      { label: '3D Skin Analysis', href: '/treatments/3d-skin-analysis' },
+      { label: 'Signature Pregnancy Glow Facial', href: '/treatments/signature-pregnancy-glow-facial' },
+      { label: 'Esse Live Probiotic Facials', href: '/treatments/signature-facials' },
+      { label: 'Skin Peels', href: '/treatments/skin-peels' },
+      { label: 'Medical-Grade Skincare', href: '/treatments/medical-grade-skincare' },
+      { label: 'Medical Microneedling', href: '/treatments/medical-microneedling' },
+      { label: 'Carboxytherapy', href: '/treatments/carboxytherapy' },
     ],
   },
   {
     label: 'Face & Neck Rejuvenation',
     items: [
-      'Chemical Skin Peels',
-      'Skin Boosters (NCTF & Profhilo)',
-      'Medical Microneedling',
-      'Exosomes (Stem Cells) Treatment',
-      'Polynucleotides',
-      'PRP (Platelet-Rich Plasma)',
+      { label: 'Anti-Wrinkle Injections', href: '/treatments/anti-wrinkle' },
+      { label: 'Dermal Fillers', href: '/treatments/dermal-fillers' },
+      { label: 'Skin Boosters', href: '/treatments/skin-boosters' },
+      { label: 'Polynucleotides', href: '/treatments/polynucleotides' },
+      { label: 'Thread Lifts', href: '/treatments/thread-lifts' },
+      { label: 'Collagen-Stimulating Injections', href: '/treatments/collagen-stimulating' },
+      { label: 'Neck Rejuvenation', href: '/treatments/neck-rejuvenation' },
     ],
   },
   {
     label: 'Injectables',
     items: [
-      'Anti-Wrinkle Treatments',
-      'Hyperhidrosis Treatment',
-      'Jaw Reduction (Bruxism) Treatment',
-      'Migraine Treatment',
-      'Gummy Smile Treatment',
+      { label: 'Lip Fillers', href: '/treatments/lip-fillers' },
+      { label: 'Nose Filler (Non-Surgical Rhinoplasty)', href: '/treatments/nose-filler' },
+      { label: 'Chin & Face Filler', href: '/treatments/chin-face-filler' },
+      { label: 'Jawline Contouring', href: '/treatments/jawline-contouring' },
+      { label: 'Under-Eye Filler', href: '/treatments/under-eye-filler' },
+      { label: 'Profhilo', href: '/treatments/profhilo' },
+      { label: 'Fat-Dissolving Injections', href: '/treatments/fat-dissolving' },
     ],
   },
   {
     label: 'Fillers',
     items: [
-      'Lip Fillers',
-      'Cheek Fillers',
-      'Dermal Fillers',
-      'Tear Trough Filler',
-      'Non-Surgical Rhinoplasty',
-      'Ellansé Collagen-Stimulating Filler',
-      'Filler Dissolving',
+      { label: 'Dermal Fillers', href: '/treatments/dermal-fillers' },
+      { label: 'Lip Fillers', href: '/treatments/lip-fillers' },
+      { label: 'Tear Trough Filler', href: '/treatments/under-eye-filler' },
+      { label: 'Chin & Face Filler', href: '/treatments/chin-face-filler' },
+      { label: 'Non-Surgical Rhinoplasty', href: '/treatments/nose-filler' },
+      { label: 'Collagen-Stimulating Filler (Ellansé)', href: '/treatments/collagen-stimulating' },
+      { label: 'Jawline Contouring', href: '/treatments/jawline-contouring' },
     ],
   },
   {
     label: 'Advanced Aesthetic Treatments',
     items: [
-      'PDO Thread Lift',
-      'Liquid Face Lift',
-      'PRP (Vampire Facial)',
-      'Hand Rejuvenation',
+      { label: 'PDO Thread Lift', href: '/treatments/thread-lifts' },
+      { label: 'Gummy Smile Correction', href: '/treatments/gummy-smile' },
+      { label: 'Hyperhidrosis Treatment', href: '/treatments/hyperhidrosis' },
+      { label: 'Bruxism & TMJ Treatment', href: '/treatments/bruxism-tmj' },
+      { label: 'Vein Removal', href: '/treatments/vein-removal' },
     ],
   },
   {
     label: 'Hair Loss Treatments',
     items: [
-      'PRP Hair Rejuvenation',
-      'PRF Hair Rejuvenation',
+      { label: 'Hair Loss Overview', href: '/treatments/hair-loss' },
+      { label: 'PRP Hair & Skin', href: '/treatments/prp' },
+      { label: 'Exosome Therapy', href: '/treatments/exosomes' },
+      { label: 'Vitamin Injections (Biotin & B12)', href: '/treatments/vitamin-injections' },
     ],
   },
   {
     label: 'Wellness',
     items: [
-      'B12 & Biotin Injections',
-      'Steroid Joint Injections',
-      'Weight Loss Injections',
-      'Nutrition Services',
-      'Lymphatic Drainage Massage',
-      'Mesoestetic',
+      { label: 'Weight Loss Injections', href: '/treatments/weight-loss' },
+      { label: 'Lymphatic Drainage Massage', href: '/treatments/lymphatic-drainage' },
+      { label: 'Vitamin Injections', href: '/treatments/vitamin-injections' },
     ],
   },
   {
     label: 'Specialist Treatments',
     items: [
-      'Deep Vein Removal',
+      { label: 'Deep Vein Removal', href: '/treatments/vein-removal' },
+      { label: 'Carboxytherapy', href: '/treatments/carboxytherapy' },
     ],
   },
 ];
@@ -308,12 +313,12 @@ export function TopHeader() {
               <div className="columns-2 gap-x-10">
                 {treatmentCategories[activeCategory].items.map((item) => (
                   <Link
-                    key={item}
-                    to="/treatments"
+                    key={item.href}
+                    to={item.href}
                     onClick={() => setDropdownOpen(false)}
                     className="block text-white/80 text-[12px] font-sans tracking-[0.15em] uppercase py-4 border-b border-white/10 hover:text-white transition-colors"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 ))}
               </div>
