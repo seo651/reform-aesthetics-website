@@ -5,11 +5,11 @@ import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
 const galleryImages = [
-  { id: 1, src: '/images/gallery-4.jpg', alt: 'Treatment room' },
-  { id: 2, src: '/images/gallery-1.jpg', alt: 'Clinic waiting area' },
-  { id: 3, src: '/images/gallery-3.jpg', alt: 'Reform clinic signage' },
-  { id: 4, src: '/images/gallery-skin-scanner.jpg', alt: '3D skin scanner' },
-  { id: 5, src: '/images/gallery-2.jpg', alt: 'Clinic waiting area' },
+  { id: 1, src: '/images/clinic-treatment-room.jpg', alt: 'Treatment room' },
+  { id: 2, src: '/images/clinic-waiting-1.jpg', alt: 'Clinic waiting area' },
+  { id: 3, src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics | Dental Clinic' },
+  { id: 4, src: '/images/clinic-skin-scanner.jpg', alt: '3D skin scanner consultation' },
+  { id: 5, src: '/images/clinic-waiting-2.jpg', alt: 'Clinic lounge area' },
 ];
 
 export function GallerySection() {
