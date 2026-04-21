@@ -8,7 +8,7 @@ export function SectionBadge({ text, variant = 'light' }: SectionBadgeProps) {
   const variantClasses =
     variant === 'dark'
       ? 'bg-black/30 text-white border-white/20'
-      : 'bg-transparent text-gray-700 border-gray-300';
+      : 'bg-white text-gray-800 border-gray-800';
 
   return (
     <span className={`${baseClasses} ${variantClasses}`}>

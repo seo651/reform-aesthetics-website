@@ -15,6 +15,7 @@ import {
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { CTASection } from '@/sections/CTASection';
+import { GallerySection } from '@/sections/GallerySection';
 
 /* ─────────────────────────────── FAQ ─────────────────────────────── */
 const faqs = [
@@ -678,11 +679,8 @@ export default function Treatments() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
-      <FAQSection />
-
       {/* ── Gallery ── */}
-      <TreatmentGallery />
+      <GallerySection />
 
       {/* ── Contact ── */}
       <TreatmentContact />

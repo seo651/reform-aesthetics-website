@@ -33,7 +33,7 @@ export function GallerySection() {
                 Take a Look<br />Inside Our Clinic
               </h2>
             </div>
-            <div className="flex items-start gap-6 lg:max-w-md lg:pt-6">
+            <div className="flex items-start gap-6 lg:max-w-lg lg:pt-6">
               <p className="text-gray-500 text-sm leading-relaxed font-sans flex-1">
                 Every face tells a story. Explore real treatment outcomes achieved at Reform
                 Aesthetics and Dental. If you're considering dermal fillers and would like to
