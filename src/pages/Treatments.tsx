@@ -520,86 +520,65 @@ export default function Treatments() {
               </div>
             </AnimatedSection>
 
-            {/* Right — circular image + brand logo cards */}
+            {/* Right — circular before/after + brand logo cards */}
             <AnimatedSection delay={0.2}>
               <div className="flex flex-col items-center">
-                {/* Concentric ring + image */}
-                <div className="relative w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] lg:w-[400px] lg:h-[400px] mb-10">
-                  {/* Outer thin ring */}
-                  <div className="absolute inset-0 rounded-full border border-[#c4a882]/30" />
-                  {/* Mid ring */}
-                  <div className="absolute inset-4 rounded-full border-[8px] border-[#c4a882]/20" />
-                  {/* Inner image */}
-                  <div className="absolute inset-10 rounded-full overflow-hidden bg-gray-200">
+
+                {/* Circular frame with thick tan ring */}
+                <div className="relative w-[380px] h-[380px] sm:w-[440px] sm:h-[440px] mb-8">
+                  {/* Thick tan/gold ring */}
+                  <div className="absolute inset-0 rounded-full border-[18px] border-[#c4a882]/35" />
+                  {/* Image fills inside the ring */}
+                  <div className="absolute inset-[18px] rounded-full overflow-hidden bg-gray-200">
                     <img
-                      src="/images/team-priya.jpg"
-                      alt="Before and after treatment"
-                      className="w-full h-full object-cover"
+                      src="/images/treatments-beforeafter.jpg"
+                      alt="Before and after anti-wrinkle treatment"
+                      className="w-full h-full object-cover object-center"
                     />
-                    {/* Centre divider */}
+                    {/* White vertical centre divider */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-px h-full bg-white/80" />
+                      <div className="w-[1.5px] h-full bg-white/85" />
                     </div>
-                    {/* Slider handle */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white shadow-lg flex items-center justify-center z-10">
-                      <div className="flex items-center gap-0.5">
-                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none">
-                          <path d="M4 1L1 4.5L4 8" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    {/* Slider handle — centred */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center z-10">
+                      <div className="flex items-center gap-[2px]">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
+                          <path d="M5 1L1 5L5 9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none">
-                          <path d="M1 1L4 4.5L1 8" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
+                          <path d="M1 1L5 5L1 9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Brand logo cards — matching PDF: SkinMad OBAGI + OBAGI plentyyage */}
-                <div className="grid grid-cols-2 gap-4 w-full max-w-[400px]">
-                  <motion.div
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.3 }}
-                    className="bg-white rounded-xl border border-gray-100 px-5 py-5 flex flex-col items-start justify-center gap-1 shadow-sm"
-                  >
-                    <span className="text-[11px] font-semibold tracking-wider text-gray-400 uppercase font-sans">
-                      SkinMad
-                    </span>
-                    <span
-                      className="text-lg tracking-[0.12em] text-gray-800"
-                      style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                {/* Horizontal divider */}
+                <div className="w-full max-w-[440px] h-px bg-gray-300 mb-6" />
+
+                {/* Brand logo cards — real brand PNGs from home page */}
+                <div className="grid grid-cols-2 gap-4 w-full max-w-[440px]">
+                  {[
+                    { src: '/images/brand-bocouture.png', alt: 'Bocouture', h: 44 },
+                    { src: '/images/brand-profhilo.png', alt: 'Profhilo', h: 36 },
+                  ].map((brand, idx) => (
+                    <motion.div
+                      key={brand.alt}
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: 0.3 + idx * 0.1 }}
+                      className="bg-white rounded-xl border border-gray-100 px-6 py-6 flex items-center justify-center shadow-sm min-h-[90px]"
                     >
-                      OBAGI
-                    </span>
-                    <span className="text-[9px] tracking-widest text-gray-400 uppercase font-sans">
-                      MEDICAL
-                    </span>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.4 }}
-                    className="bg-white rounded-xl border border-gray-100 px-5 py-5 flex flex-col items-start justify-center gap-1 shadow-sm"
-                  >
-                    <span
-                      className="text-lg tracking-[0.12em] text-gray-800"
-                      style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                    >
-                      OBAGI
-                    </span>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-[#c4a882]">✦</span>
-                      <span className="text-[11px] text-gray-400 font-sans tracking-wider">
-                        plentyage
-                      </span>
-                    </div>
-                    <span className="text-[9px] tracking-widest text-gray-400 uppercase font-sans">
-                      Institute
-                    </span>
-                  </motion.div>
+                      <img
+                        src={brand.src}
+                        alt={brand.alt}
+                        style={{ height: brand.h, width: 'auto', objectFit: 'contain' }}
+                      />
+                    </motion.div>
+                  ))}
                 </div>
+
               </div>
             </AnimatedSection>
           </div>
