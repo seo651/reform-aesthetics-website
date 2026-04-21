@@ -535,21 +535,6 @@ export default function Treatments() {
                       alt="Before and after anti-wrinkle treatment"
                       className="w-full h-full object-cover object-center"
                     />
-                    {/* White vertical centre divider */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-[1.5px] h-full bg-white/85" />
-                    </div>
-                    {/* Slider handle — centred */}
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center z-10">
-                      <div className="flex items-center gap-[2px]">
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
-                          <path d="M5 1L1 5L5 9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none">
-                          <path d="M1 1L5 5L1 9" stroke="#555" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
