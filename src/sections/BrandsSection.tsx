@@ -9,11 +9,13 @@ const brands = [
   { name: 'Profhilo',     src: '/images/brand-profhilo.png',   h: 40 },
 ];
 
+// Duplicate for seamless infinite loop
+const track = [...brands, ...brands];
+
 export function BrandsSection() {
   return (
-    <section className="relative bg-[#EDE8E2] rounded-t-[3rem] -mt-8 pt-16 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto text-center">
-
+    <section className="relative bg-[#EDE8E2] rounded-t-[3rem] -mt-8 pt-16 pb-20">
+      <div className="max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,36 +35,46 @@ export function BrandsSection() {
         >
           Trusted Brands We<br />Partner With...
         </motion.h2>
+      </div>
 
-        {/* Logo row */}
-        <div className="flex flex-wrap items-center justify-center">
-          {brands.map((brand, index) => (
-            <motion.div
-              key={brand.name}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 0.08 * index }}
-              className="flex items-center"
-            >
-              <div className="px-8 sm:px-10 py-4 flex items-center justify-center">
+      {/* Infinite scroll marquee — full width, no horizontal padding */}
+      <div className="relative overflow-hidden">
+        {/* Left fade */}
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 z-10 bg-gradient-to-r from-[#EDE8E2] to-transparent" />
+        {/* Right fade */}
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 z-10 bg-gradient-to-l from-[#EDE8E2] to-transparent" />
+
+        <div
+          className="flex items-center gap-0 w-max"
+          style={{
+            animation: 'marquee 28s linear infinite',
+          }}
+        >
+          {track.map((brand, index) => (
+            <div key={index} className="flex items-center flex-shrink-0">
+              <div className="px-10 py-2 flex items-center justify-center">
                 <img
                   src={brand.src}
                   alt={brand.name}
                   style={{ height: brand.h, width: 'auto' }}
-                  className="object-contain opacity-90 hover:opacity-100 transition-opacity"
+                  className="object-contain opacity-80 hover:opacity-100 transition-opacity"
                   draggable={false}
                 />
               </div>
-              {/* Vertical divider between logos */}
-              {index < brands.length - 1 && (
-                <div className="hidden sm:block w-px h-8 bg-gray-400/50 flex-shrink-0" />
-              )}
-            </motion.div>
+              {/* Divider */}
+              <div className="w-px h-8 bg-gray-400/40 flex-shrink-0" />
+            </div>
           ))}
         </div>
-
       </div>
+
+      {/* Keyframe for marquee */}
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
     </section>
   );
 }
