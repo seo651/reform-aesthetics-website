@@ -16,7 +16,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 sm:py-44 lg:py-52">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-sm sm:text-base text-white/80 leading-relaxed mb-8 max-w-xl font-sans"
+            className="text-sm sm:text-base text-white/80 leading-relaxed mb-8 max-w-2xl font-sans"
           >
             We believe healthy skin builds confidence. From advanced facials to medical-grade
             aesthetic treatments, our experienced team delivers personalised care in a calm,
