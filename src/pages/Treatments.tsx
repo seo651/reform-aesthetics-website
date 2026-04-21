@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, CheckCircle2, Plus, Minus, Sparkles, Shield, Clock, Heart } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Plus, Minus, Sparkles, Shield, Clock, Heart, ChevronLeft, ChevronRight, MapPin, Phone, Mail } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { ServicesSection } from '@/sections/ServicesSection';
@@ -81,6 +81,208 @@ function FAQSection() {
               )}
             </motion.div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const galleryImages = [
+  '/images/gallery-1.jpg',
+  '/images/gallery-2.jpg',
+  '/images/gallery-3.jpg',
+  '/images/cta-bg.jpg',
+  '/images/hero-bg.jpg',
+  '/images/service-anti-wrinkle.jpg',
+];
+
+function TreatmentGallery() {
+  const [startIdx, setStartIdx] = useState(0);
+  const visible = galleryImages.slice(startIdx, startIdx + 3);
+
+  const next = () => setStartIdx((prev) => (prev + 3 >= galleryImages.length ? 0 : prev + 3));
+  const prev = () => setStartIdx((prev) => (prev - 3 < 0 ? Math.max(galleryImages.length - 3, 0) : prev - 3));
+
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header row */}
+        <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-10">
+          <div className="lg:max-w-xs">
+            <SectionBadge text="Gallery" />
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] leading-[1.15] mt-5">
+              Take a Look Inside Our Clinic
+            </h2>
+          </div>
+          <div className="flex items-start gap-6 lg:max-w-md lg:pt-4">
+            <p className="text-gray-500 text-sm leading-relaxed">
+              Every face tells a story. Explore real treatment outcomes achieved at Reform Aesthetics and Dental. If
+              you're considering dermal fillers and would like to discuss your goals, book a personalised consultation with
+              our team.
+            </p>
+            <a
+              href="/gallery"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-900 text-xs font-semibold tracking-wider uppercase whitespace-nowrap hover:bg-gray-900 hover:text-white transition-colors flex-shrink-0"
+            >
+              SEE GALLERY
+              <ArrowUpRight className="w-3 h-3" />
+            </a>
+          </div>
+        </div>
+
+        {/* Gallery images */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          {visible.map((src, idx) => (
+            <motion.div
+              key={startIdx + idx}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 * idx }}
+              className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100"
+            >
+              <img src={src} alt={`Clinic gallery ${startIdx + idx + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Navigation arrows */}
+        <div className="flex items-center justify-center gap-3">
+          <button
+            onClick={prev}
+            className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+          >
+            <ChevronLeft className="w-4 h-4 text-gray-600" />
+          </button>
+          <button
+            onClick={next}
+            className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
+          >
+            <ChevronRight className="w-4 h-4 text-gray-600" />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const contactHours = [
+  'Tuesday: 09:00 AM – 05:30 PM',
+  'Friday: 09:00 AM – 01:30 PM',
+  'Saturday: 10:00 AM – 02:00 PM',
+];
+
+function TreatmentContact() {
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-cream">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* Left - Map */}
+          <AnimatedSection>
+            <div className="relative rounded-2xl overflow-hidden h-full min-h-[450px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.4!2d-1.1305!3d52.6293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e1e1e1e1e1e1%3A0x0!2z18+De+Montfort+St!5e0!3m2!1sen!2suk!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Reform Clinic Location"
+                className="absolute inset-0"
+              />
+
+              {/* Overlay cards at bottom */}
+              <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row gap-3">
+                {/* Opening Hours */}
+                <div className="bg-black/85 backdrop-blur-sm text-white rounded-xl px-5 py-4 flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Clock className="w-4 h-4 text-[#c4a882]" />
+                    <span className="font-serif text-sm font-medium italic">Opening Hours</span>
+                  </div>
+                  <div className="space-y-1">
+                    {contactHours.map((h, i) => (
+                      <p key={i} className="text-white/70 text-xs">{h}</p>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="bg-black/85 backdrop-blur-sm text-white rounded-xl px-5 py-4 flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Phone className="w-4 h-4 text-[#c4a882]" />
+                    <span className="font-serif text-sm font-medium italic">Contact Information</span>
+                  </div>
+                  <div className="space-y-2">
+                    <a href="tel:01163800318" className="flex items-center gap-2 text-white/70 text-xs hover:text-white transition-colors">
+                      <Phone className="w-3 h-3" /> 0116 3800318
+                    </a>
+                    <a href="mailto:info@reformmedical.co.uk" className="flex items-center gap-2 text-white/70 text-xs hover:text-white transition-colors">
+                      <Mail className="w-3 h-3" /> info@reformmedical.co.uk
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Right - Contact Form */}
+          <AnimatedSection delay={0.2}>
+            <div className="bg-white rounded-2xl p-6 sm:p-8 lg:p-10">
+              <div className="mb-6">
+                <SectionBadge text="Contact Us" />
+                <h2 className="font-serif text-2xl sm:text-3xl lg:text-[36px] leading-tight mt-4">
+                  Get in touch with us
+                </h2>
+              </div>
+
+              <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); alert('Thank you! We\'ll be in touch.'); }}>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1.5">First Name</label>
+                    <input type="text" placeholder="Enter First Name" className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1.5">Last Name</label>
+                    <input type="text" placeholder="Enter Last Name" className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1.5">Email</label>
+                    <input type="email" placeholder="Email" className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors" />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-gray-700 mb-1.5">Phone Number</label>
+                    <input type="tel" placeholder="Enter Phone Number" className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 mb-1.5">I am interested in...</label>
+                  <select className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors text-gray-500 appearance-none bg-white">
+                    <option value="">I am interested in...</option>
+                    <option>Anti-Wrinkle Injections</option>
+                    <option>Dermal Fillers</option>
+                    <option>Skin Peels</option>
+                    <option>Skin Boosters</option>
+                    <option>Polynucleotides</option>
+                    <option>Signature Facials</option>
+                    <option>General Consultation</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-gray-700 mb-1.5">Message</label>
+                  <textarea rows={4} placeholder="Describe your problems and how we can help you..." className="w-full px-4 py-3 rounded-lg border border-gray-200 text-sm outline-none focus:border-gray-400 transition-colors resize-none" />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-black text-white text-sm font-semibold tracking-wider uppercase hover:bg-gray-800 transition-colors"
+                >
+                  SUBMIT MESSAGE
+                  <ArrowUpRight className="w-4 h-4" />
+                </button>
+              </form>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
@@ -396,6 +598,12 @@ export default function Treatments() {
 
       {/* FAQ Section */}
       <FAQSection />
+
+      {/* Gallery Section */}
+      <TreatmentGallery />
+
+      {/* Contact Section */}
+      <TreatmentContact />
 
       <ServicesSection />
       <CTASection />
