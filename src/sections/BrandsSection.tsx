@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { SectionBadge } from '@/components/SectionBadge';
 
 const brands = [
-  { name: 'Bocouture',    src: '/images/brand-bocouture.png',  h: 28 },
-  { name: 'Cellenis PRP', src: '/images/brand-cellenis.png',   h: 32 },
-  { name: 'Enerpeel',     src: '/images/brand-enerpeel.png',   h: 36 },
-  { name: 'DermaFocus',   src: '/images/brand-derma.png',      h: 30 },
-  { name: 'Profhilo',     src: '/images/brand-profhilo.png',   h: 24 },
+  { name: 'Bocouture',    src: '/images/brand-bocouture.png',  h: 48 },
+  { name: 'Cellenis PRP', src: '/images/brand-cellenis.png',   h: 52 },
+  { name: 'Enerpeel',     src: '/images/brand-enerpeel.png',   h: 56 },
+  { name: 'DermaFocus',   src: '/images/brand-derma.png',      h: 50 },
+  { name: 'Profhilo',     src: '/images/brand-profhilo.png',   h: 40 },
 ];
 
 export function BrandsSection() {
