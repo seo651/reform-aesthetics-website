@@ -190,9 +190,13 @@ function TreatmentGallery() {
 
 /* ─────────────────────────────── Contact ─────────────────────────────── */
 const contactHours = [
-  'Tuesday: 09:00 AM – 05:30 PM',
-  'Friday: 09:00 AM – 01:30 PM',
-  'Saturday: 10:00 AM – 02:00 PM',
+  'Monday: Closed',
+  'Tuesday: 8:30 am – 5:30 pm',
+  'Wednesday: Closed',
+  'Thursday: Closed',
+  'Friday: 8:30 am – 5:30 pm',
+  'Saturday: 10:00 am – 3:00 pm',
+  'Sunday: 10:00 am – 3:00 pm',
 ];
 
 function TreatmentContact() {

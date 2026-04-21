@@ -3,15 +3,15 @@ import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
-// Full opening hours as shown in the PDF
+// Correct opening hours — standardised across all pages
 const openingHours = [
-  { day: 'Monday', hours: '9:00 am – 6:00 pm' },
-  { day: 'Tuesday', hours: '9:00 am – 7:00 pm' },
-  { day: 'Wednesday', hours: '9:00 am – 6:00 pm' },
-  { day: 'Thursday', hours: '9:00 am – 7:00 pm' },
-  { day: 'Friday', hours: '9:00 am – 5:00 pm' },
-  { day: 'Saturday', hours: '10:00 am – 4:00 pm' },
-  { day: 'Sunday', hours: 'Closed' },
+  { day: 'Monday',    hours: 'Closed' },
+  { day: 'Tuesday',   hours: '8:30 am – 5:30 pm' },
+  { day: 'Wednesday', hours: 'Closed' },
+  { day: 'Thursday',  hours: 'Closed' },
+  { day: 'Friday',    hours: '8:30 am – 5:30 pm' },
+  { day: 'Saturday',  hours: '10:00 am – 3:00 pm' },
+  { day: 'Sunday',    hours: '10:00 am – 3:00 pm' },
 ];
 
 const treatmentOptions = [
