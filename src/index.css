@@ -88,3 +88,14 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
 }
+
+/* Remove default browser margin on body / html */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure sticky header sits above everything */
+.sticky {
+  position: sticky;
+}

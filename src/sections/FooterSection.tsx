@@ -1,6 +1,15 @@
 import { Link } from 'react-router';
-import { MapPin, Phone, Mail } from 'lucide-react';
-import { ArrowUpRight } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+
+function ReformLogoMark({ size = 18, color = 'currentColor' }: { size?: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill={color} xmlns="http://www.w3.org/2000/svg" style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+      <path d="M12 2 C12 2 8 6 8 10 C8 14 12 16 12 16 C12 16 16 14 16 10 C16 6 12 2 12 2Z" opacity="0.9" />
+      <path d="M12 8 C12 8 6 10 4 14 C6 16 10 16 12 16 C14 16 18 16 20 14 C18 10 12 8 12 8Z" opacity="0.7" />
+      <circle cx="12" cy="12" r="2.5" />
+    </svg>
+  );
+}
 
 const quickLinks = [
   { label: 'About Us', href: '/about' },
@@ -113,19 +122,30 @@ export function FooterSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: Logo + CQC + Description */}
           <div>
-            {/* Logo — matches PDF: R E F ✦ R M spaced serif */}
+            {/* Logo — matches header: R E F [ornament] R M */}
             <div className="mb-5">
-              <div
-                className="text-[18px] tracking-[0.22em] text-gray-900 leading-tight"
-                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-              >
-                R E F<span className="mx-1 text-[#c4a882]">✦</span>R M
+              <div className="flex items-center gap-0 mb-0.5">
+                <span
+                  className="text-gray-900 leading-none tracking-[0.2em] text-[16px]"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                >
+                  R E F
+                </span>
+                <span className="mx-1">
+                  <ReformLogoMark size={16} color="#111" />
+                </span>
+                <span
+                  className="text-gray-900 leading-none tracking-[0.2em] text-[16px]"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                >
+                  R M
+                </span>
               </div>
-              <p className="text-[9px] tracking-[0.22em] text-gray-500 mt-0.5 font-sans uppercase">
+              <p className="text-[9px] tracking-[0.22em] text-gray-500 font-sans uppercase">
                 AESTHETICS | DENTAL
               </p>
               <p
-                className="text-[13px] tracking-[0.3em] text-gray-900 mt-0.5"
+                className="text-[11px] tracking-[0.3em] text-gray-900 mt-0.5"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 CLINIC

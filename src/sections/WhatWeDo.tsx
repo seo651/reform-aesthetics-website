@@ -3,51 +3,72 @@ import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
-// Line-art SVG icons matching the PDF illustrated style
-function IconPatient() {
+/* ── Filled grey circle icons — matching the screenshot exactly ── */
+function IconPatientCare() {
   return (
-    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
-      <circle cx="20" cy="14" r="6" />
-      <path d="M8 36c0-6.627 5.373-12 12-12s12 5.373 12 12" strokeLinecap="round" />
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
+      {/* Person head */}
+      <circle cx="24" cy="16" r="7" fill="white" />
+      {/* Body arc */}
+      <path d="M10 40c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+      {/* Refresh arrows around head */}
+      <path d="M8 16C8 10 13 6 19 6" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      <path d="M40 16C40 10 35 6 29 6" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      <path d="M8 16l-2-3.5M8 16l3-1" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M40 16l2-3.5M40 16l-3-1" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
     </svg>
   );
 }
-function IconClinic() {
+
+function IconClinicRoof() {
   return (
-    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
-      <rect x="8" y="16" width="24" height="18" rx="2" />
-      <path d="M16 34V24h8v10" />
-      <path d="M8 16l12-10 12 10" />
-      <path d="M18 20h4M20 18v4" strokeLinecap="round" />
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
+      {/* Tooth shape */}
+      <path
+        d="M13 12c-3.5 0-6 2.5-6 6 0 2 1 4.2 1.8 6.5L11.5 35c.4 1.8 1.3 3.5 3 3.5s2.5-1.8 3-3.5l1.5-6c.4-1.5.9-2.5 2-2.5s1.6.9 2 2.5l1.5 6c.5 1.8 1.3 3.5 3 3.5s2.6-1.8 3-3.5l2.7-10.5c.8-2.3 1.8-4.5 1.8-6.5 0-3.5-2.5-6-6-6-2 0-3.8.9-5 2.2C23.8 12.9 22 12 20 12c-1.2 0-2.4.3-4 1z"
+        fill="white"
+      />
+      {/* Plus symbol bottom right */}
+      <circle cx="38" cy="38" r="6" stroke="white" strokeWidth="1.5" />
+      <path d="M38 35v6M35 38h6" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
     </svg>
   );
 }
-function IconExpert() {
+
+function IconExpertTeam() {
   return (
-    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
-      <circle cx="20" cy="14" r="5" />
-      <path d="M9 34c0-5 4.5-9 11-9s11 4 11 9" strokeLinecap="round" />
-      <circle cx="32" cy="28" r="5" />
-      <path d="M30 28l1.5 1.5L34 26" strokeLinecap="round" strokeLinejoin="round" />
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
+      {/* Centre person */}
+      <circle cx="24" cy="15" r="6" fill="white" />
+      <path d="M14 38c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+      {/* Left person */}
+      <circle cx="10" cy="19" r="4.5" fill="white" opacity="0.75" />
+      <path d="M4 38c0-4 2.7-7 6-8" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
+      {/* Right person */}
+      <circle cx="38" cy="19" r="4.5" fill="white" opacity="0.75" />
+      <path d="M44 38c0-4-2.7-7-6-8" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.75" />
     </svg>
   );
 }
 
 const features = [
   {
-    Icon: IconPatient,
+    Icon: IconPatientCare,
     title: 'Patient-Centered Care',
-    description: 'We listen first. Every treatment is personalised to your skin goals for natural, lasting results.',
+    description:
+      'We listen first. Every treatment is personalised to your skin goals for natural, lasting results.',
   },
   {
-    Icon: IconClinic,
+    Icon: IconClinicRoof,
     title: 'All-In-One Care Under One Roof',
-    description: 'From Anti-Ageing to advanced skin rejuvenation, all treatments are carried out in one trusted clinic.',
+    description:
+      'From Anti-Ageing to advanced skin rejuvenation, all treatments are carried out in one trusted clinic.',
   },
   {
-    Icon: IconExpert,
+    Icon: IconExpertTeam,
     title: 'Expert Team You Can Trust',
-    description: 'Our specialists combine medical expertise with the latest technology to deliver safe, effective care.',
+    description:
+      'Our specialists combine medical expertise with the latest technology to deliver safe, effective care.',
   },
 ];
 
@@ -55,27 +76,31 @@ export function WhatWeDo() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Top Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+
+        {/* ── Top row: H2 left | description + CTA right ── */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-14">
+
+          {/* Left */}
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-3xl sm:text-4xl lg:text-[48px] mt-6 leading-tight text-gray-900"
+              className="text-[36px] sm:text-[44px] lg:text-[52px] mt-6 leading-[1.1] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
-              An Independent Skin & Aesthetics Clinic Focused on Results
+              An Independent Skin &amp; Aesthetics Clinic Focused on Results
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.2} className="lg:pt-14">
-            <p className="text-gray-600 leading-relaxed mb-6 font-sans text-sm">
+          {/* Right */}
+          <AnimatedSection delay={0.15} className="lg:pt-16">
+            <p className="text-gray-500 text-[15px] leading-relaxed font-sans mb-8">
               We provide specialist skin and anti-ageing treatments designed to enhance your natural
               features — not change them. Our philosophy is simple: subtle, refined improvements
               using premium products and evidence-based techniques.
             </p>
             <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gray-100 text-black text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-200 transition-colors font-sans"
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-gray-300 text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-50 transition-colors"
             >
               START YOUR SKIN TRANSFORMATION
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -83,35 +108,41 @@ export function WhatWeDo() {
           </AnimatedSection>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-200 mb-12" />
+        {/* ── Full-width divider ── */}
+        <div className="border-t border-gray-200 mb-14" />
 
-        {/* Feature cards — text description above, icon circle, title, description below */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* ── 3-column features with pipe dividers ── */}
+        <div className="grid md:grid-cols-3 gap-10 md:gap-0">
           {features.map(({ Icon, title, description }, index) => (
             <motion.div
               key={title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 * index }}
+              transition={{ duration: 0.5, delay: 0.12 * index }}
+              className={`flex flex-col gap-5 ${
+                index > 0 ? 'md:border-l md:border-gray-200 md:pl-12' : 'md:pr-12'
+              } ${index === 1 ? 'md:px-12' : ''}`}
             >
-              {/* Description text at top (from the 3-column layout in PDF) */}
-              <p className="text-gray-500 text-sm leading-relaxed font-sans mb-6">{description}</p>
-
-              {/* Divider */}
-              <div className="w-px h-8 bg-gray-300 mx-0 mb-5 hidden md:block" />
-
-              {/* Icon circle */}
-              <div className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center mb-4 text-gray-600">
+              {/* Filled medium-grey circle with white icon */}
+              <div className="w-[64px] h-[64px] rounded-full bg-[#808080] flex items-center justify-center flex-shrink-0">
                 <Icon />
               </div>
 
-              {/* Title */}
-              <h3 className="font-sans font-medium text-sm text-gray-900">{title}</h3>
+              <h3
+                className="text-[19px] sm:text-[21px] text-gray-900 leading-snug"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+              >
+                {title}
+              </h3>
+
+              <p className="text-gray-500 text-sm leading-relaxed font-sans">
+                {description}
+              </p>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
