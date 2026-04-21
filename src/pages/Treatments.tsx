@@ -542,27 +542,49 @@ export default function Treatments() {
                 {/* Horizontal divider */}
                 <div className="w-full max-w-[440px] h-px bg-gray-300 mb-6" />
 
-                {/* Brand logo cards — real brand PNGs from home page */}
-                <div className="grid grid-cols-2 gap-4 w-full max-w-[440px]">
-                  {[
-                    { src: '/images/brand-bocouture.png', alt: 'Bocouture', h: 44 },
-                    { src: '/images/brand-profhilo.png', alt: 'Profhilo', h: 36 },
-                  ].map((brand, idx) => (
-                    <motion.div
-                      key={brand.alt}
-                      initial={{ opacity: 0, y: 15 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.4, delay: 0.3 + idx * 0.1 }}
-                      className="bg-white rounded-xl border border-gray-100 px-6 py-6 flex items-center justify-center shadow-sm min-h-[90px]"
-                    >
-                      <img
-                        src={brand.src}
-                        alt={brand.alt}
-                        style={{ height: brand.h, width: 'auto', objectFit: 'contain' }}
-                      />
-                    </motion.div>
-                  ))}
+                {/* Brand logo marquee — all 5 home page logos */}
+                <div className="w-full max-w-[440px] relative overflow-hidden">
+                  {/* Left fade */}
+                  <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10 bg-gradient-to-r from-[#EDE8E2] to-transparent" />
+                  {/* Right fade */}
+                  <div className="pointer-events-none absolute right-0 top-0 h-full w-10 z-10 bg-gradient-to-l from-[#EDE8E2] to-transparent" />
+
+                  <div
+                    className="flex items-center gap-0 w-max"
+                    style={{ animation: 'marquee-treatment 20s linear infinite' }}
+                  >
+                    {[
+                      { src: '/images/brand-bocouture.png', alt: 'Bocouture',    h: 36 },
+                      { src: '/images/brand-cellenis.png',  alt: 'Cellenis PRP', h: 38 },
+                      { src: '/images/brand-enerpeel.png',  alt: 'Enerpeel',     h: 42 },
+                      { src: '/images/brand-derma.png',     alt: 'DermaFocus',   h: 38 },
+                      { src: '/images/brand-profhilo.png',  alt: 'Profhilo',     h: 30 },
+                      { src: '/images/brand-bocouture.png', alt: 'Bocouture2',   h: 36 },
+                      { src: '/images/brand-cellenis.png',  alt: 'Cellenis2',    h: 38 },
+                      { src: '/images/brand-enerpeel.png',  alt: 'Enerpeel2',    h: 42 },
+                      { src: '/images/brand-derma.png',     alt: 'DermaFocus2',  h: 38 },
+                      { src: '/images/brand-profhilo.png',  alt: 'Profhilo2',    h: 30 },
+                    ].map((brand, idx) => (
+                      <div key={idx} className="flex items-center flex-shrink-0">
+                        <div className="px-6 py-3 flex items-center justify-center">
+                          <img
+                            src={brand.src}
+                            alt={brand.alt}
+                            style={{ height: brand.h, width: 'auto' }}
+                            className="object-contain opacity-80"
+                            draggable={false}
+                          />
+                        </div>
+                        <div className="w-px h-6 bg-gray-300 flex-shrink-0" />
+                      </div>
+                    ))}
+                  </div>
+                  <style>{`
+                    @keyframes marquee-treatment {
+                      0%   { transform: translateX(0); }
+                      100% { transform: translateX(-50%); }
+                    }
+                  `}</style>
                 </div>
 
               </div>
