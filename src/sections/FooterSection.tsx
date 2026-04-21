@@ -47,7 +47,10 @@ export function FooterSection() {
         <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-8">
           {/* Heading */}
           <div className="lg:max-w-sm">
-            <h2 className="font-serif italic text-3xl sm:text-4xl lg:text-[44px] leading-[1.2] text-gray-900">
+            <h2
+              className="italic text-3xl sm:text-4xl lg:text-[44px] leading-[1.2] text-gray-900"
+              style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+            >
               Reach out to a<br />member of our team
             </h2>
           </div>
@@ -110,26 +113,38 @@ export function FooterSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1: Logo + CQC + Description */}
           <div>
-            {/* Logo */}
+            {/* Logo — matches PDF: R E F ✦ R M spaced serif */}
             <div className="mb-5">
-              <div className="font-serif text-xl tracking-[0.2em] text-gray-900">R E F <span className="inline-block w-3 h-3 rounded-full bg-gray-900 mx-0.5 align-middle" /> R M</div>
-              <p className="text-[9px] tracking-[0.25em] text-gray-500 mt-0.5 uppercase">Aesthetics | Dental</p>
-              <p className="font-serif text-sm tracking-[0.2em] text-gray-900">CLINIC</p>
+              <div
+                className="text-[18px] tracking-[0.22em] text-gray-900 leading-tight"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+              >
+                R E F<span className="mx-1 text-[#c4a882]">✦</span>R M
+              </div>
+              <p className="text-[9px] tracking-[0.22em] text-gray-500 mt-0.5 font-sans uppercase">
+                AESTHETICS | DENTAL
+              </p>
+              <p
+                className="text-[13px] tracking-[0.3em] text-gray-900 mt-0.5"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+              >
+                CLINIC
+              </p>
             </div>
 
             {/* CQC Badge */}
-            <div className="w-28 h-20 bg-purple-900 rounded-lg flex items-center justify-center mb-5">
+            <div className="w-[110px] h-[76px] bg-[#5c2d91] rounded-lg flex items-center justify-center mb-5">
               <div className="text-center text-white px-2">
-                <div className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center mx-auto mb-1">
-                  <span className="text-xs font-bold">Q</span>
+                <div className="w-9 h-9 rounded-full border-2 border-white flex items-center justify-center mx-auto mb-1">
+                  <span className="text-sm font-bold">Q</span>
                 </div>
-                <div className="text-[8px] leading-tight font-medium">
+                <div className="text-[7.5px] leading-tight font-medium font-sans">
                   CareQuality<br />Commission
                 </div>
               </div>
             </div>
 
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-500 text-sm leading-relaxed font-sans">
               We are a high-quality medical aesthetics clinic offering advanced anti-ageing
               treatments tailored to your individual goals. Serving clients across Leicester, we
               combine clinical expertise with a personalised approach to deliver safe, natural-looking
@@ -139,14 +154,14 @@ export function FooterSection() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="font-medium text-sm tracking-wide mb-3">Quick Links</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Quick Links</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     to={link.href}
-                    className="text-gray-500 text-sm hover:text-black transition-colors"
+                    className="text-gray-500 text-sm font-sans hover:text-black transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -157,7 +172,7 @@ export function FooterSection() {
 
           {/* Column 3: Location */}
           <div>
-            <h4 className="font-medium text-sm tracking-wide mb-3">Location</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Location</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <div className="rounded-xl overflow-hidden h-36 bg-gray-200">
               <iframe
@@ -175,7 +190,7 @@ export function FooterSection() {
 
           {/* Column 4: Contact Us */}
           <div>
-            <h4 className="font-medium text-sm tracking-wide mb-3">Contact Us</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Contact Us</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

@@ -82,3 +82,9 @@
     text-wrap: balance;
   }
 }
+
+/* Brand typography: H1 = Times New Roman 400, body = Inter 400 */
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}

@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         serif: ['Playfair Display', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        times: ['"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
         cream: '#EDE8E2',
