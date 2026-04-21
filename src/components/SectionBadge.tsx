@@ -12,10 +12,9 @@ export function SectionBadge({ text, variant = 'light' }: SectionBadgeProps) {
 
   return (
     <span className={`${baseClasses} ${variantClasses}`}>
-      {/* Gold dot per brand — #c4a882 */}
       <span
         className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-        style={{ backgroundColor: variant === 'dark' ? '#c4a882' : '#c4a882' }}
+        style={{ backgroundColor: '#c5b1a1' }}
       />
       {text}
     </span>

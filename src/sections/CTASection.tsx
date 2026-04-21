@@ -27,7 +27,7 @@ export function CTASection() {
             <div className="relative z-10 px-6 sm:px-12 pt-14 pb-24 text-center">
               <SectionBadge text="Book A Visit" variant="dark" />
               <h2
-                className="italic text-3xl sm:text-4xl lg:text-[46px] text-white mt-5 mb-5 leading-tight"
+                className="text-3xl sm:text-4xl lg:text-[46px] text-white mt-5 mb-5 leading-tight"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Explore Our Services for<br />Lasting Skin Health!
