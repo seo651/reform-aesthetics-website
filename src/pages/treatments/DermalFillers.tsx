@@ -6,7 +6,7 @@ export default function DermalFillers() {
       breadcrumb="DERMAL FILLERS"
       heroTitle="Dermal Fillers"
       heroSubtext="A refined injectable treatment designed to restore lost volume, soften lines, and enhance facial definition, helping you achieve a smoother, fresher appearance with natural-looking results."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/dermal-fillers-syringes.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Facial Enhancement for Natural Volume"
       aboutBody="Restoring youthful contours requires precision and an artistic approach. Our dermal filler treatments are carefully administered to replenish volume, refine facial structure, and soften the visible signs of ageing. Using premium-quality fillers, we treat areas such as the lips, cheeks, jawline, and under-eye area to create balanced, subtle enhancement tailored to your features."
@@ -17,12 +17,12 @@ export default function DermalFillers() {
         'Improves facial symmetry and contour',
         'Delivers natural-looking, immediate results',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
+      circularImage="/images/dermal-fillers-face.jpg"
       circularImageAlt="Dermal filler treatment result"
       benefitsHeading="Enhance Your Features with Dermal Fillers in Leicester"
       benefitsBody="At Reform Aesthetics and Dental Clinic, we focus on achieving elegant, natural results. Our dermal filler treatments are tailored to your facial structure, ensuring subtle enhancement that complements your unique features."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="Dermal filler treatment"
+      benefitsImage="/images/dermal-fillers-product.jpg"
+      benefitsImageAlt="MAILI dermal filler product"
       benefits={[
         {
           title: 'Restore Lost Volume',
