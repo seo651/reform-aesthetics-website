@@ -48,7 +48,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-sm sm:text-base text-white/80 leading-relaxed mb-8 max-w-2xl font-sans"
+            className="text-sm sm:text-base text-white/80 leading-relaxed mb-8 max-w-3xl font-sans"
           >
             We believe healthy skin builds confidence. From advanced facials to medical-grade
             aesthetic treatments, our experienced team delivers personalised care in a calm,
