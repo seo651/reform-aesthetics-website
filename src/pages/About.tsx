@@ -1,134 +1,243 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Heart, Users, Stethoscope, Shield, Award, Sparkles } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { TeamSection } from '@/sections/TeamSection';
+import { CTASection } from '@/sections/CTASection';
 import { TestimonialsSection } from '@/sections/TestimonialsSection';
 import { ContactSection } from '@/sections/ContactSection';
 
-const values = [
+/* ── Line-art SVG icons matching PDF illustrated style ── */
+function IconTailored() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-5 h-5">
+      <circle cx="16" cy="16" r="12" />
+      <path d="M10 16h12M16 10v12" strokeLinecap="round" />
+    </svg>
+  );
+}
+function IconSpa() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-5 h-5">
+      <path d="M16 6c-4 4-6 8-6 11a6 6 0 0 0 12 0c0-3-2-7-6-11z" />
+      <path d="M16 17v5" strokeLinecap="round" />
+    </svg>
+  );
+}
+function IconMedical() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-5 h-5">
+      <path d="M8 12h4V8h8v4h4v8h-4v4h-8v-4H8z" />
+    </svg>
+  );
+}
+
+/* Right-column feature rows with gold circle icon */
+const features = [
   {
-    icon: Shield,
-    title: 'Comfort-First Philosophy',
-    description: 'Your comfort is our priority. From the moment you arrive, we create a calm, welcoming space so you feel relaxed and confident.',
-    image: '/images/gallery-1.jpg',
+    Icon: IconTailored,
+    title: 'Tailored, Full-Spectrum Skincare Solutions',
+    desc: 'From acne and pigmentation to fine lines and anti-ageing treatments, we provide a complete range of skin solutions under one roof — designed for every age and skin type.',
   },
   {
-    icon: Users,
-    title: 'Transparent Communication',
-    description: 'We explain every step clearly, answer all your questions, and create personalised plans so you always know what to expect.',
-    image: '/images/gallery-2.jpg',
+    Icon: IconSpa,
+    title: 'Relaxed, Spa-Inspired Environment',
+    desc: 'Our clinic is designed with your comfort in mind, combining advanced technology with a calming, spa-like atmosphere to make every visit stress-free.',
   },
   {
-    icon: Award,
-    title: 'Expert-Led Treatments',
-    description: 'Our qualified professionals use advanced techniques and trusted products, ensuring you receive the highest standard of care.',
-    image: '/images/gallery-3.jpg',
-  },
-  {
-    icon: Sparkles,
-    title: 'Patient-Centered Care',
-    description: 'Every treatment plan is individually crafted around your unique needs, goals, and lifestyle for results that truly work for you.',
-    image: '/images/cta-bg.jpg',
+    Icon: IconMedical,
+    title: 'Medical-Grade Products & Advanced Techniques',
+    desc: 'We use clinically tested products and cutting-edge techniques to deliver safe, effective treatments that help you achieve long-lasting results.',
   },
 ];
 
+/* Stats */
 const stats = [
-  { number: '80+', label: 'Years of Combined Experience' },
-  { number: '60+', label: 'Successful Transformations' },
-  { number: '10+', label: 'Ongoing Patient Relationships' },
-  { number: '220+', label: 'Ongoing Patient Memberships' },
-  { number: '5+', label: 'Advanced Procedures Offered' },
+  { number: '17+', label: 'Years of Combined Experience' },
+  { number: '15+', label: 'Successful Smile Transformations' },
+  { number: '2+',  label: 'Ongoing Patient Relationships' },
+  { number: '46+', label: 'Ongoing Patient Relationships' },
+  { number: '1+',  label: 'Advanced Procedures Offered' },
+];
+
+/* Philosophy 2×2 grid icons */
+function IconComfort() {
+  return (
+    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
+      <path d="M20 8c-5 5-9 10-9 14a9 9 0 0 0 18 0c0-4-4-9-9-14z" />
+      <path d="M20 20v6" strokeLinecap="round" />
+    </svg>
+  );
+}
+function IconTransparent() {
+  return (
+    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
+      <rect x="8" y="10" width="24" height="18" rx="3" />
+      <path d="M8 16h24M14 10v4M20 10v4M26 10v4" strokeLinecap="round" />
+    </svg>
+  );
+}
+function IconExpertLed() {
+  return (
+    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
+      <circle cx="20" cy="14" r="6" />
+      <path d="M10 34c0-5.523 4.477-10 10-10s10 4.477 10 10" strokeLinecap="round" />
+      <path d="M17 28l2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+function IconPatientCentered() {
+  return (
+    <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.4" className="w-6 h-6">
+      <path d="M20 30s-11-7-11-15a7 7 0 0 1 11-5.74A7 7 0 0 1 31 15c0 8-11 15-11 15z" />
+    </svg>
+  );
+}
+
+const philosophy = [
+  {
+    Icon: IconComfort,
+    title: 'Comfort-First Philosophy',
+    desc: 'Your comfort is our priority. From the moment you arrive, we create a calm, welcoming space so you feel relaxed and confident in your skincare journey.',
+  },
+  {
+    Icon: IconTransparent,
+    title: 'Transparent Communication',
+    desc: 'We take the time to listen to your concerns, explain every option clearly, and design treatment plans around your individual needs. No jargon, no confusion — just honest guidance.',
+  },
+  {
+    Icon: IconExpertLed,
+    title: 'Expert-Led Treatments',
+    desc: 'Our treatments are delivered by qualified professionals using advanced techniques and medical-grade products, ensuring your skin receives the highest standard of care.',
+  },
+  {
+    Icon: IconPatientCentered,
+    title: 'Patient-Centered Care',
+    desc: 'Every skin journey is unique. That\'s why we personalise every treatment plan, focusing on your goals to deliver results that look natural and feel authentic to you.',
+  },
 ];
 
 export default function About() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+      {/* ── 1. HERO ── */}
+      <section className="relative min-h-[55vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero-bg.jpg" alt="Reform Clinic" className="w-full h-full object-cover" />
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Reform Clinic interior"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-black/60" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center">
+
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center">
+          {/* Breadcrumb pill — gold dots + gradient lines */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex items-center justify-center gap-4 mb-8"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-xs font-medium tracking-wider text-white/90 uppercase mb-6">
-              <span>HOME</span>
-              <span className="text-white/40">&gt;</span>
-              <span>ABOUT US</span>
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 text-[11px] font-sans font-medium tracking-[0.12em] uppercase shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
+              <span className="text-gray-500">HOME</span>
+              <span className="text-gray-300">/</span>
+              <span className="text-gray-900 font-semibold">ABOUT US</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
             </span>
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c4a882]" />
           </motion.div>
+
+          {/* H1 — Times New Roman 400 */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-4"
+            className="text-4xl sm:text-5xl lg:text-[56px] text-white leading-[1.15] mb-5"
+            style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Compassionate Skincare That Puts You First
           </motion.h1>
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-8"
+            className="text-white/75 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-sans leading-relaxed"
           >
-            Discover a calm, caring approach to skin health. We provide advanced treatments in a soothing
-            environment to restore your glow, boost your confidence, and enhance your natural beauty.
+            Discover a calm, caring approach to skin health. At Reform Skincare, we provide advanced
+            treatments in a soothing environment to restore your glow, renew your confidence, and
+            enhance your natural beauty.
           </motion.p>
+
+          {/* CTA — cream pill */}
           <motion.a
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-gray-100 transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
-            <ArrowUpRight className="w-4 h-4" />
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </motion.a>
         </div>
       </section>
 
-      {/* About Content */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* ── 2. ABOUT CONTENT — cream overlap rounded-top ── */}
+      <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+            {/* Left column */}
             <AnimatedSection>
               <SectionBadge text="About Us" />
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl mt-6 leading-tight mb-6">
+              <h2
+                className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-gray-900"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+              >
                 Looking for trusted skincare professionals in Leicester?
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-gray-500 text-sm leading-relaxed mb-4 font-sans">
                 We offer personalised, clinically proven skincare solutions.
               </p>
-              <p className="text-gray-600 leading-relaxed">
-                At Reform Skincare, we take a results-driven approach to skin care. That's why we take time
-                to understand your concerns and goals, creating treatment plans and techniques tailored to
+              <p className="text-gray-500 text-sm leading-relaxed font-sans">
+                At Reform Skincare, we know every skin journey is unique. That's why we take time
+                to understand your concerns and goals, creating treatment plans tailored just for
                 you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
-                to maintain a healthy, radiant complexion — our experienced team combines clinical
+                to maintain a healthy, radiant complexion — our experienced team combines
                 science and care to bring out the best in your skin.
               </p>
             </AnimatedSection>
 
+            {/* Right column — feature rows with gold checkbox circles */}
             <AnimatedSection delay={0.2}>
-              <div className="space-y-4">
-                {[
-                  { icon: Stethoscope, title: 'Tailored Full-Spectrum Skincare Solutions', desc: 'From acne and pigmentation to fine lines, we provide a complete range of skin solutions under one roof.' },
-                  { icon: Heart, title: 'Relaxed Spa-Inspired Environment', desc: 'Our clinic combines clinical excellence with a soothing, spa-like atmosphere so you feel comfortable.' },
-                  { icon: Award, title: 'Medical-Grade Products & Advanced Techniques', desc: 'We use clinically tested products with cutting-edge techniques to deliver safe, effective results.' },
-                ].map((feature, i) => (
-                  <div key={i} className="bg-gray-50 rounded-2xl p-5 flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center flex-shrink-0">
-                      <feature.icon className="w-5 h-5 text-white" />
+              <div className="space-y-0">
+                {features.map(({ Icon, title, desc }, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 0.1 * i }}
+                    className="flex items-start gap-4 py-6 border-b border-gray-300/60 last:border-b-0"
+                  >
+                    {/* Gold circle with line-art icon */}
+                    <div className="w-9 h-9 rounded-full border-2 border-[#c4a882] flex items-center justify-center flex-shrink-0 text-[#c4a882] mt-0.5">
+                      <Icon />
                     </div>
                     <div>
-                      <h3 className="font-medium text-sm mb-1">{feature.title}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
+                      <h3
+                        className="text-base text-gray-900 mb-1.5"
+                        style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                      >
+                        {title}
+                      </h3>
+                      <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </AnimatedSection>
@@ -136,23 +245,32 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-cream">
+      {/* ── 3. STATS BAR ── */}
+      <section className="py-14 px-4 sm:px-6 lg:px-8 bg-[#EDE8E2]">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center lg:justify-between gap-8 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-4">
             {stats.map((stat, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 * idx }}
-                className="relative px-4"
+                transition={{ duration: 0.4, delay: 0.08 * idx }}
+                className="relative text-center lg:text-left"
               >
-                <span className="font-serif text-4xl sm:text-5xl">{stat.number}</span>
-                <div className="mt-2 text-gray-600 text-xs sm:text-sm max-w-[140px] mx-auto">{stat.label}</div>
+                {/* Stat number — large Times New Roman */}
+                <div
+                  className="text-4xl sm:text-5xl text-gray-900 leading-none mb-2"
+                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                >
+                  {stat.number}
+                </div>
+                <p className="text-gray-500 text-xs font-sans leading-snug max-w-[130px] mx-auto lg:mx-0">
+                  {stat.label}
+                </p>
+                {/* Vertical divider between stats */}
                 {idx < stats.length - 1 && (
-                  <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-gray-300" />
+                  <div className="hidden lg:block absolute right-0 top-2 h-10 w-px bg-gray-400/40" />
                 )}
               </motion.div>
             ))}
@@ -160,77 +278,70 @@ export default function About() {
         </div>
       </section>
 
-      {/* What We Do */}
+      {/* ── 4. WHAT WE DO — centered text ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection>
             <SectionBadge text="What We Do" />
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl mt-6 mb-6 leading-tight">
-              Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester city centre.
+            <h2
+              className="text-3xl sm:text-4xl lg:text-[46px] mt-6 mb-6 leading-tight text-gray-900"
+              style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+            >
+              Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester
+              city centre.
             </h2>
-            <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-              We specialise in advanced medical skin treatments designed to restore youth, rejuvenate and refresh your natural beauty in a safe
-              and supportive environment.
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-3xl mx-auto">
+              We specialise in advanced medical skin treatments designed to Restore youth,
+              Rejuvenate and Refresh your natural beauty in a safe and supportive environment.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Values / Philosophy Cards */}
+      {/* ── 5. PHILOSOPHY — 2×2 grid with icon + title + description ── */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, idx) => (
+          <div className="grid sm:grid-cols-2 gap-0 border border-gray-200 rounded-2xl overflow-hidden">
+            {philosophy.map(({ Icon, title, desc }, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * idx }}
-                className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all"
+                transition={{ duration: 0.45, delay: 0.1 * idx }}
+                className={`p-8 flex flex-col gap-4 ${
+                  idx % 2 === 0 ? 'border-r border-gray-200' : ''
+                } ${idx < 2 ? 'border-b border-gray-200' : ''}`}
               >
-                <div className="h-44 overflow-hidden">
-                  <img src={value.image} alt={value.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                {/* Icon + title row */}
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0 text-gray-600">
+                    <Icon />
+                  </div>
+                  <h3
+                    className="text-base text-gray-900"
+                    style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                  >
+                    {title}
+                  </h3>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-medium text-base mb-2">{value.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
-                </div>
+                <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* ── 6. TEAM SECTION ── */}
       <TeamSection />
 
-      {/* CTA Banner */}
-      <section className="py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative rounded-[2rem] overflow-hidden" style={{ backgroundImage: 'url(/images/cta-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 px-6 sm:px-12 py-16 sm:py-20 text-center max-w-3xl mx-auto">
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white mb-4 italic">
-                Explore Our Services for Lasting Skin Health!
-              </h2>
-              <p className="text-white/80 leading-relaxed mb-8">
-                Our experienced clinicians provide expertly delivered treatments designed to deeply hydrate,
-                improve elasticity and restore luminous, healthy-looking skin.
-              </p>
-              <a href="/treatments" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-gray-100 transition-all">
-                VIEW TREATMENTS
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── 7. CTA BANNER — dark bg, italic heading, inline form ── */}
+      <CTASection />
 
-      {/* Testimonials */}
+      {/* ── 8. TESTIMONIALS ── */}
       <TestimonialsSection />
 
-      {/* Contact */}
+      {/* ── 9. CONTACT ── */}
       <ContactSection />
     </>
   );
