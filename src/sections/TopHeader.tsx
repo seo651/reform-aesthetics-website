@@ -20,7 +20,6 @@ const treatmentCategories = [
   {
     label: 'Face & Neck Rejuvenation',
     items: [
-      { label: 'Anti-Wrinkle Injections', href: '/treatments/anti-wrinkle' },
       { label: 'Dermal Fillers', href: '/treatments/dermal-fillers' },
       { label: 'Skin Boosters', href: '/treatments/skin-boosters' },
       { label: 'Polynucleotides', href: '/treatments/polynucleotides' },
@@ -32,6 +31,7 @@ const treatmentCategories = [
   {
     label: 'Injectables',
     items: [
+      { label: 'Anti-Wrinkle Injections', href: '/treatments/anti-wrinkle' },
       { label: 'Lip Fillers', href: '/treatments/lip-fillers' },
       { label: 'Nose Filler (Non-Surgical Rhinoplasty)', href: '/treatments/nose-filler' },
       { label: 'Chin & Face Filler', href: '/treatments/chin-face-filler' },
