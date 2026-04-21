@@ -48,7 +48,7 @@ export function FooterSection() {
 
           {/* Left: Heading */}
           <h2
-            className="italic text-4xl sm:text-5xl lg:text-[52px] leading-[1.15] text-gray-900 lg:max-w-md"
+            className="text-4xl sm:text-5xl lg:text-[52px] leading-[1.15] text-gray-900 lg:max-w-md"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Reach out to a<br />member of our team

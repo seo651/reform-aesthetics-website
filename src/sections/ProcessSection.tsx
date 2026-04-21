@@ -81,14 +81,14 @@ export function ProcessSection() {
               </div>
 
               {/* ── Right: Steps with vertical timeline ── */}
-              <div className="relative pl-0">
-                {/* Vertical line — centered on the 48px number circles (left offset = 23px) */}
+              <div className="relative">
+                {/* Vertical line — centered on 56px number circles: left = 27px */}
                 <div
-                  className="absolute w-px bg-gray-300"
-                  style={{ left: 23, top: 24, bottom: 24 }}
+                  className="absolute w-px bg-gray-400"
+                  style={{ left: 27, top: 28, bottom: 28 }}
                 />
 
-                <div className="space-y-12">
+                <div className="space-y-16">
                   {steps.map((step, index) => (
                     <motion.div
                       key={step.number}
@@ -96,26 +96,26 @@ export function ProcessSection() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.15 * index }}
-                      className="flex gap-6 items-start"
+                      className="flex gap-10 items-start"
                     >
-                      {/* Number circle — sits ON the vertical line */}
-                      <div className="w-12 h-12 rounded-full border border-gray-400 bg-[#EDE8E2] flex items-center justify-center flex-shrink-0 z-10 relative">
-                        <span className="text-[13px] font-sans text-gray-700 tracking-wide">{step.number}</span>
+                      {/* Number circle — sits ON the vertical line, 56px */}
+                      <div className="w-14 h-14 rounded-full border border-gray-400 bg-[#EDE8E2] flex items-center justify-center flex-shrink-0 z-10 relative">
+                        <span className="text-[13px] font-sans text-gray-600 tracking-wider">{step.number}</span>
                       </div>
 
-                      {/* Content block: icon on top, title + desc below */}
-                      <div className="pt-0 flex-1">
-                        {/* Filled dark grey icon circle */}
-                        <div className="w-12 h-12 rounded-full bg-[#555] flex items-center justify-center mb-4 flex-shrink-0">
+                      {/* Content: icon circle, then title + desc below */}
+                      <div className="flex-1">
+                        {/* Filled dark grey icon circle — 60px */}
+                        <div className="w-[60px] h-[60px] rounded-full bg-[#636363] flex items-center justify-center mb-5">
                           <step.Icon />
                         </div>
                         <h3
-                          className="text-[22px] mb-2 text-gray-900 leading-snug"
+                          className="text-[26px] mb-3 text-gray-900 leading-snug"
                           style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                         >
                           {step.title}
                         </h3>
-                        <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-xs">
+                        <p className="text-gray-500 text-sm leading-relaxed font-sans">
                           {step.description}
                         </p>
                       </div>
