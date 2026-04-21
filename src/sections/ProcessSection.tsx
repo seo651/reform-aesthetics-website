@@ -51,10 +51,10 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-8">
+      <div className="w-full">
         <AnimatedSection>
-          <div className="bg-[#EDE8E2] rounded-[2.5rem] px-6 sm:px-12 lg:px-16 py-16 sm:py-20">
+          <div className="bg-[#EDE8E2] rounded-[2.5rem] mx-4 sm:mx-6 lg:mx-8 px-6 sm:px-12 lg:px-20 py-16 sm:py-20">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
               {/* ── Left ── */}

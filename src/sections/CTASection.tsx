@@ -12,8 +12,8 @@ export function CTASection() {
   };
 
   return (
-    <section className="py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-8">
+      <div className="mx-4 sm:mx-6 lg:mx-8">
         <AnimatedSection>
           {/* Outer wrapper — positions dark card + overlapping white form */}
           <div className="relative pb-10">
@@ -45,7 +45,7 @@ export function CTASection() {
             </div>
 
             {/* ── White form card — overlaps bottom of dark card ── */}
-            <div className="absolute bottom-0 left-4 right-4 sm:left-10 sm:right-10 lg:left-16 lg:right-16 z-20">
+            <div className="absolute bottom-0 left-6 right-6 sm:left-10 sm:right-10 z-20">
               <div className="bg-white rounded-3xl shadow-lg px-8 sm:px-10 py-8">
                 <p className="text-gray-600 text-sm mb-5 font-sans">
                   Fill out the form below, and we'll get back to you as soon as possible.
