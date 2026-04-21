@@ -79,12 +79,11 @@ const aestheticsCases = [
 
 /* ── Clinic gallery images ── */
 const clinicImages = [
+  { src: '/images/gallery-4.jpg', alt: 'Treatment room' },
   { src: '/images/gallery-1.jpg', alt: 'Clinic waiting area' },
-  { src: '/images/gallery-2.jpg', alt: 'Reform clinic signage' },
-  { src: '/images/gallery-3.jpg', alt: 'Treatment room' },
-  { src: '/images/cta-bg.jpg', alt: 'Clinic interior' },
-  { src: '/images/hero-bg.jpg', alt: 'Reform exterior' },
-  { src: '/images/service-anti-wrinkle.jpg', alt: 'Treatment in progress' },
+  { src: '/images/gallery-3.jpg', alt: 'Reform Aesthetics | Dental Clinic signage' },
+  { src: '/images/gallery-skin-scanner.jpg', alt: '3D skin scanner consultation' },
+  { src: '/images/gallery-2.jpg', alt: 'Clinic waiting area' },
 ];
 
 /* ── Gallery icon SVG ── */
