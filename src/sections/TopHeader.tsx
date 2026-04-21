@@ -13,22 +13,27 @@ const navLinks = [
   { label: 'CONTACT US', href: '/contact' },
 ];
 
-/* Reform logo mark SVG — matches the decorative lotus/diamond in the O */
-function ReformLogoMark({ size = 20, color = 'currentColor' }: { size?: number; color?: string }) {
+/* White logo — used on dark (black) backgrounds */
+function LogoWhite({ height = 52 }: { height?: number }) {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill={color}
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ display: 'inline-block', verticalAlign: 'middle' }}
-    >
-      {/* Lotus / diamond ornament matching brand mark */}
-      <path d="M12 2 C12 2 8 6 8 10 C8 14 12 16 12 16 C12 16 16 14 16 10 C16 6 12 2 12 2Z" opacity="0.9" />
-      <path d="M12 8 C12 8 6 10 4 14 C6 16 10 16 12 16 C14 16 18 16 20 14 C18 10 12 8 12 8Z" opacity="0.7" />
-      <circle cx="12" cy="12" r="2.5" />
-    </svg>
+    <img
+      src="/images/logo-white.png"
+      alt="Reform Aesthetics | Dental Clinic"
+      style={{ height, width: 'auto', display: 'block' }}
+      draggable={false}
+    />
+  );
+}
+
+/* Dark logo — invert the white PNG so it appears black on light backgrounds */
+function LogoDark({ height = 44 }: { height?: number }) {
+  return (
+    <img
+      src="/images/logo-white.png"
+      alt="Reform Aesthetics | Dental Clinic"
+      style={{ height, width: 'auto', display: 'block', filter: 'invert(1)' }}
+      draggable={false}
+    />
   );
 }
 
@@ -55,9 +60,8 @@ export function TopHeader() {
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[300px] bg-white p-0">
                   <div className="flex flex-col h-full">
-                    <div className="p-6 border-b flex items-center gap-2">
-                      <ReformLogoMark size={18} color="#111" />
-                      <span className="font-sans font-bold text-sm tracking-[0.2em]">REFORM</span>
+                    <div className="p-6 border-b">
+                      <LogoDark height={40} />
                     </div>
                     <nav className="flex-1 p-6">
                       <ul className="space-y-5">
@@ -98,38 +102,12 @@ export function TopHeader() {
               </a>
             </div>
 
-            {/* Centre: Logo — absolutely centred */}
+            {/* Centre: Logo image — absolutely centred */}
             <Link
               to="/"
-              className="absolute left-1/2 -translate-x-1/2 text-center flex flex-col items-center select-none"
+              className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center select-none"
             >
-              {/* R E F ◆ R M with ornament in place of the O */}
-              <div className="flex items-center gap-0">
-                <span
-                  className="text-white leading-none tracking-[0.22em] text-[22px] sm:text-[26px]"
-                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                >
-                  R E F
-                </span>
-                <span className="mx-1.5">
-                  <ReformLogoMark size={22} color="white" />
-                </span>
-                <span
-                  className="text-white leading-none tracking-[0.22em] text-[22px] sm:text-[26px]"
-                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                >
-                  R M
-                </span>
-              </div>
-              <span className="text-white/70 text-[8px] tracking-[0.28em] font-sans mt-0.5 uppercase">
-                Aesthetics | Dental
-              </span>
-              <span
-                className="text-white tracking-[0.35em] text-[11px] mt-0.5"
-                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-              >
-                CLINIC
-              </span>
+              <LogoWhite height={54} />
             </Link>
 
             {/* Right: VIEW DENTAL CLINIC + phone */}
