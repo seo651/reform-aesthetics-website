@@ -229,7 +229,7 @@ export function TopHeader() {
       </header>
 
       {/* ── White nav bar ── */}
-      <nav className="w-full bg-white border-b border-gray-100 hidden lg:block shadow-sm">
+      <nav className="w-full bg-white border-b border-gray-200 hidden lg:block shadow-sm">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
           <ul className="flex items-center justify-center gap-10 h-[46px]">
             {navLinks.map((link) => {
@@ -238,7 +238,7 @@ export function TopHeader() {
                 return (
                   <li
                     key={link.label}
-                    className="relative group"
+                    className="relative h-full flex items-center"
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                   >
@@ -256,6 +256,50 @@ export function TopHeader() {
                         isActive ? 'w-full' : 'w-0 group-hover:w-full'
                       }`}
                     />
+
+                    {/* ── Compact Dropdown — positioned under TREATMENTS li ── */}
+                    {dropdownOpen && (
+                      <div
+                        className="absolute top-full left-0 z-50 flex shadow-xl border border-gray-200 rounded-b-xl overflow-hidden"
+                        style={{ minWidth: 660 }}
+                        onMouseEnter={openDropdown}
+                        onMouseLeave={closeDropdown}
+                      >
+                        {/* Left: Categories — cream bg */}
+                        <div className="bg-[#F5F2EE] w-[260px] flex-shrink-0 border-r border-gray-200 py-2">
+                          {treatmentCategories.map((cat, idx) => (
+                            <div
+                              key={cat.label}
+                              onMouseEnter={() => setActiveCategory(idx)}
+                              className={`flex items-center justify-between px-5 py-3.5 cursor-pointer transition-colors ${
+                                activeCategory === idx
+                                  ? 'bg-white text-gray-900'
+                                  : 'text-gray-600 hover:bg-white/60 hover:text-gray-900'
+                              }`}
+                            >
+                              <span className="text-[11px] font-sans font-semibold tracking-[0.14em] uppercase">
+                                {cat.label}
+                              </span>
+                              <ChevronRight className="w-3.5 h-3.5 opacity-50 flex-shrink-0" />
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Right: Subcategory items — white bg */}
+                        <div className="bg-white flex-1 py-3 px-2">
+                          {treatmentCategories[activeCategory].items.map((item) => (
+                            <Link
+                              key={item.href + item.label}
+                              to={item.href}
+                              onClick={() => setDropdownOpen(false)}
+                              className="block px-4 py-3 text-[11px] font-sans font-medium tracking-[0.12em] uppercase text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-50 last:border-b-0"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </li>
                 );
               }
@@ -280,53 +324,6 @@ export function TopHeader() {
           </ul>
         </div>
       </nav>
-
-      {/* ── Treatments Mega Dropdown ── */}
-      {dropdownOpen && (
-        <div
-          className="absolute top-full left-0 w-full bg-black z-40 shadow-2xl"
-          onMouseEnter={openDropdown}
-          onMouseLeave={closeDropdown}
-        >
-          <div className="max-w-[1400px] mx-auto flex">
-
-            {/* Left: Categories */}
-            <div className="w-[480px] flex-shrink-0 border-r border-white/10">
-              {treatmentCategories.map((cat, idx) => (
-                <div
-                  key={cat.label}
-                  onMouseEnter={() => setActiveCategory(idx)}
-                  className={`flex items-center justify-between px-10 py-5 cursor-pointer transition-colors ${
-                    activeCategory === idx ? 'bg-white/10' : 'hover:bg-white/5'
-                  }`}
-                >
-                  <span className="text-white text-[12px] font-sans font-semibold tracking-[0.18em] uppercase">
-                    {cat.label}
-                  </span>
-                  <ChevronRight className="w-4 h-4 text-white/50" />
-                </div>
-              ))}
-            </div>
-
-            {/* Right: Subcategory items */}
-            <div className="flex-1 px-12 py-6">
-              <div className="columns-2 gap-x-10">
-                {treatmentCategories[activeCategory].items.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    onClick={() => setDropdownOpen(false)}
-                    className="block text-white/80 text-[12px] font-sans tracking-[0.15em] uppercase py-4 border-b border-white/10 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      )}
     </div>
   );
 }
