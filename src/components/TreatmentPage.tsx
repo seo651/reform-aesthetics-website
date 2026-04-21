@@ -275,7 +275,7 @@ export function TreatmentPage({
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left image */}
             <AnimatedSection>
-              <div className="rounded-2xl overflow-hidden aspect-[3/4]">
+              <div className="rounded-2xl overflow-hidden aspect-[4/5] max-h-[480px]">
                 <img
                   src={benefitsImage}
                   alt={benefitsImageAlt}
