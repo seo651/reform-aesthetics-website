@@ -129,6 +129,21 @@ export function TopHeader() {
 
   return (
     <div className="sticky top-0 z-50 w-full">
+
+      {/* ── Mobile-only dental banner ── */}
+      <a
+        href="https://reformdental.get-found.co.uk/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#c5b1a1] text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase py-2.5 px-4 hover:bg-[#d4c4b6] active:bg-[#b8a494] transition-colors"
+      >
+        <svg viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 opacity-70 flex-shrink-0">
+          <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l.524-.13A1.5 1.5 0 005.5 19h9a1.5 1.5 0 001.701-1.168l.524.13a1 1 0 001.17-1.409l-7-14z"/>
+        </svg>
+        Visit Our Dental Site
+        <ArrowUpRight className="w-3 h-3 opacity-70 flex-shrink-0" />
+      </a>
+
       {/* ── Black top bar ── */}
       <header className="w-full bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
