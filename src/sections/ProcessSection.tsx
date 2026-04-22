@@ -50,54 +50,48 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="w-full bg-[#EDE8E2] py-20 sm:py-24 px-4 sm:px-8 lg:px-16 xl:px-24">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <section className="py-8 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#EDE8E2] rounded-[2.5rem] px-6 sm:px-12 lg:px-20 py-16 sm:py-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
-          {/* ── Left ── */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
-          >
-            <div className="flex justify-center lg:justify-start">
-              <SectionBadge text="PROCESS" />
-            </div>
-            <h2
-              className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-5 leading-[1.15] text-gray-900"
-              style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+            {/* ── Left ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center lg:text-left"
             >
-              Glow Up Your Skin in 3<br />Easy Steps
-            </h2>
-            <p className="text-gray-500 text-sm leading-relaxed mb-10 font-sans max-w-sm mx-auto lg:mx-0">
-              Our Glow Up Process makes achieving radiant, healthy skin simple and stress-free.
-              Whether you're looking to combat ageing, clear blemishes, or restore your natural
-              glow, our team guides you every step of the way.
-            </p>
-            <div className="flex justify-center lg:justify-start">
-              <a
-                href="https://pearlportal.net/Portal/rad/OnlineBooking"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text="PROCESS" />
+              </div>
+              <h2
+                className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-5 leading-[1.15] text-gray-900"
+                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
-                ARRANGE YOUR CONSULTATION
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
-            </div>
-          </motion.div>
+                Glow Up Your Skin in 3<br />Easy Steps
+              </h2>
+              <p className="text-gray-500 text-sm leading-relaxed mb-10 font-sans max-w-sm mx-auto lg:mx-0">
+                Our Glow Up Process makes achieving radiant, healthy skin simple and stress-free.
+                Whether you're looking to combat ageing, clear blemishes, or restore your natural
+                glow, our team guides you every step of the way.
+              </p>
+              <div className="flex justify-center lg:justify-start">
+                <a
+                  href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+                >
+                  ARRANGE YOUR CONSULTATION
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </motion.div>
 
-          {/* ── Right: Timeline steps ── */}
-          <div className="relative">
-            {/* Vertical connecting line — centred on the 56px number circles */}
-            <div
-              className="absolute bg-gray-400"
-              style={{ width: 1, left: 27, top: 28, bottom: 28 }}
-            />
-
-            <div className="space-y-14">
+            {/* ── Right: Steps with gapped timeline ── */}
+            <div>
               {steps.map((step, index) => (
                 <motion.div
                   key={step.number}
@@ -105,33 +99,47 @@ export function ProcessSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.15 * index }}
-                  className="flex gap-8 items-start"
                 >
-                  {/* Number circle — sits on the vertical line */}
-                  <div className="w-14 h-14 rounded-full border border-gray-400 bg-[#EDE8E2] flex items-center justify-center flex-shrink-0 z-10 relative">
-                    <span className="text-[13px] font-sans text-gray-600 tracking-wider">{step.number}</span>
-                  </div>
+                  {/* Row: left column (circle + connector) + right content */}
+                  <div className="flex gap-8 items-start">
+                    {/* Left: circle stacked above connector line */}
+                    <div className="flex flex-col items-center flex-shrink-0">
+                      {/* Number circle */}
+                      <div className="w-14 h-14 rounded-full border-2 border-[#b8b0a8] bg-[#EDE8E2] flex items-center justify-center z-10">
+                        <span className="text-[13px] font-sans text-gray-500 tracking-wider">{step.number}</span>
+                      </div>
 
-                  {/* Content: icon + title + desc */}
-                  <div className="flex-1 pt-1">
-                    <div className="w-[56px] h-[56px] rounded-full bg-[#636363] flex items-center justify-center mb-4">
-                      <step.Icon />
+                      {/* Connector line — only between circles, not touching them */}
+                      {index < steps.length - 1 && (
+                        <div
+                          className="w-[2px] rounded-full bg-[#c5bdb6] my-3 flex-1"
+                          style={{ minHeight: '80px' }}
+                        />
+                      )}
                     </div>
-                    <h3
-                      className="text-[24px] sm:text-[26px] mb-3 text-gray-900 leading-snug"
-                      style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                    >
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-500 text-sm leading-relaxed font-sans">
-                      {step.description}
-                    </p>
+
+                    {/* Right content */}
+                    <div className={index < steps.length - 1 ? 'pb-2' : ''}>
+                      {/* Icon circle */}
+                      <div className="w-[56px] h-[56px] rounded-full bg-[#7a7370] flex items-center justify-center mb-4 mt-1">
+                        <step.Icon />
+                      </div>
+                      <h3
+                        className="text-[22px] sm:text-[25px] mb-2.5 text-gray-900 leading-snug"
+                        style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                      >
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-500 text-sm leading-relaxed font-sans pb-6">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </motion.div>
               ))}
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>
