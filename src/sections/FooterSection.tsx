@@ -112,7 +112,7 @@ export function FooterSection() {
       <div className="px-6 sm:px-10 lg:px-16 py-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
 
-          {/* Column 1: Logo + CQC + Description */}
+          {/* Column 1: Logo + Description + CQC */}
           <div>
             <div className="mb-5">
               <img
@@ -123,21 +123,25 @@ export function FooterSection() {
               />
             </div>
 
-            {/* CQC Badge */}
-            <div className="mb-5">
-              <img
-                src="/images/cqc-logo.png"
-                alt="Care Quality Commission"
-                className="w-36 h-36 object-cover rounded-2xl"
-              />
-            </div>
-
-            <p className="text-gray-500 text-sm leading-relaxed font-sans">
+            <p className="text-gray-500 text-sm leading-relaxed font-sans mb-5">
               We are a high-quality medical aesthetics clinic offering advanced anti-ageing
               treatments tailored to your individual goals. Serving clients across Leicester, we
               combine clinical expertise with a personalised approach to deliver safe, natural-looking
               results.
             </p>
+
+            {/* CQC Badge */}
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/cqc-logo.png"
+                alt="Care Quality Commission"
+                className="h-16 w-auto object-contain"
+              />
+              <div>
+                <p className="text-[11px] font-semibold text-gray-700 font-sans uppercase tracking-wide leading-tight">CQC Registered</p>
+                <p className="text-[11px] text-gray-500 font-sans leading-tight">Care Quality Commission</p>
+              </div>
+            </div>
           </div>
 
           {/* Column 2: Quick Links */}
