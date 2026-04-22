@@ -182,9 +182,9 @@ export function TopHeader() {
                         href="https://reformdental.get-found.co.uk/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-[#c5b1a1] text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#d4c4b6] transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#363636] transition-colors"
                       >
-                        VISIT DENTAL CLINIC
+                        VIEW DENTAL CLINIC
                         <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
                       </a>
                       <a href="tel:01163800318" className="flex items-center gap-2 text-sm font-sans text-[#363636] px-1">
@@ -230,9 +230,9 @@ export function TopHeader() {
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#c5b1a1] text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#d4c4b6] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-black text-white text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#363636] transition-colors whitespace-nowrap"
               >
-                DENTAL CLINIC
+                VIEW DENTAL CLINIC
                 <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
               </a>
               <a

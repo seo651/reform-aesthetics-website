@@ -53,8 +53,8 @@ const GAP = 22; // gap between number col and icon/content col
 
 export function ProcessSection() {
   return (
-    <section className="py-5 px-3 sm:px-4">
-      <div className="bg-[#efeae7] rounded-[2rem] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
+    <section className="py-0">
+      <div className="bg-[#efeae7] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[44%_56%] gap-10 lg:gap-16 items-start">
 
@@ -137,19 +137,17 @@ export function ProcessSection() {
                       </div>
                     </div>
 
-                    {/* Row 2 Col 1 — Fading line (only on non-last steps) */}
+                    {/* Row 2 Col 1 — Fading line (all steps, including last) */}
                     <div className="flex justify-center">
-                      {!isLast && (
-                        <div
-                          style={{
-                            width: 1.5,
-                            height: '100%',
-                            minHeight: 110,
-                            background: 'linear-gradient(to bottom, #a8a29e 0%, transparent 100%)',
-                            marginTop: 4,
-                          }}
-                        />
-                      )}
+                      <div
+                        style={{
+                          width: 1.5,
+                          height: '100%',
+                          minHeight: isLast ? 80 : 110,
+                          background: 'linear-gradient(to bottom, #a8a29e 0%, transparent 100%)',
+                          marginTop: 4,
+                        }}
+                      />
                     </div>
 
                     {/* Row 2 Col 2 — empty spacer */}
