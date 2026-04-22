@@ -196,8 +196,8 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start pb-16 sm:pb-20">
 
-              {/* Left column */}
-              <AnimatedSection className="text-center lg:text-left">
+              {/* Left column — sticky so it stays in view while right scrolls */}
+              <AnimatedSection className="text-center lg:text-left lg:sticky lg:top-28">
                 <div className="flex justify-center lg:justify-start">
                   <SectionBadge text="About Us" />
                 </div>
