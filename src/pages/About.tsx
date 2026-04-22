@@ -124,7 +124,7 @@ export default function About() {
       <section className="relative min-h-[55vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-bg.jpg"
+            src="/images/hero-about.jpg"
             alt="Reform Clinic interior"
             className="w-full h-full object-cover"
           />

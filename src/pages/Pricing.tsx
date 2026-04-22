@@ -175,7 +175,7 @@ export default function Pricing() {
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-bg.jpg"
+            src="/images/hero-pricing.jpg"
             alt="Pricing"
             className="w-full h-full object-cover"
           />
