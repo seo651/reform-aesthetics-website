@@ -6,7 +6,8 @@ export default function LipFillers() {
       breadcrumb="LIP FILLERS"
       heroTitle="Enhance Your Lips with Precision Lip Fillers"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our expert injectors deliver subtle, beautifully shaped lip enhancements tailored to your facial anatomy, for natural-looking results you'll love."
-      heroImage="/images/lip-fillers-result.jpg"
+      heroImage="/images/lip-fillers-new-hero.png"
+      heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Natural Lip Enhancement"
       aboutBody="Lip filler treatments at Reform Aesthetics and Dental Clinic are designed to enhance shape, restore lost volume and define lip borders with the utmost precision. Using premium hyaluronic acid fillers, our clinicians work in harmony with your natural features to create balanced, proportionate results. Whether you desire subtle hydration, improved definition or a fuller appearance, each treatment is tailored exclusively to you."
@@ -17,11 +18,11 @@ export default function LipFillers() {
         'Hydrates and plumps the lips',
         'Natural-looking, immediate results',
       ]}
-      circularImage="/images/lip-fillers-natural.jpg"
+      circularImage="/images/lip-fillers-new-circular.png"
       circularImageAlt="Natural lip filler result"
       benefitsHeading="Beautiful, Balanced Lip Enhancement"
       benefitsBody="Our approach prioritises natural harmony, ensuring your lips look enhanced but never overdone."
-      benefitsImage="/images/lip-fillers-after.jpg"
+      benefitsImage="/images/lip-fillers-new-benefits.png"
       benefitsImageAlt="Full lip filler after result"
       benefits={[
         {
