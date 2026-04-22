@@ -17,11 +17,11 @@ export default function SignatureFacials() {
         'Brightens dull, tired complexions',
         'Minimal downtime treatment',
       ]}
-      circularImage="/images/signature-facials.jpg"
+      circularImage="/images/medical-skincare-products.jpg"
       circularImageAlt="Signature facial result"
       benefitsHeading="Restore Balance & Reveal Healthy, Radiant Skin"
       benefitsBody="Each facial is carefully customised to address concerns such as dehydration, sensitivity and uneven tone, delivering visible improvement with a relaxing, restorative experience."
-      benefitsImage="/images/medical-skincare-hero.jpg"
+      benefitsImage="/images/heliocare-result.jpg"
       benefitsImageAlt="Signature facial treatment"
       benefits={[
         {

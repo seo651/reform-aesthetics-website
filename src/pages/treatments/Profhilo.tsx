@@ -21,7 +21,7 @@ export default function Profhilo() {
       circularImageAlt="Profhilo treatment result"
       benefitsHeading="Natural Rejuvenation with Profhilo Bio-Remodelling"
       benefitsBody="Profhilo is ideal for patients looking to improve skin tone and firmness without the added volume of traditional fillers."
-      benefitsImage="/images/skin-boosters.jpg"
+      benefitsImage="/images/aesthetics-skin-boosters.webp"
       benefitsImageAlt="Profhilo treatment"
       benefits={[
         {

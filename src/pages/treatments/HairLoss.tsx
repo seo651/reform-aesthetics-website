@@ -17,7 +17,7 @@ export default function HairLoss() {
         'Personalised treatment plans',
         'Evidence-based, medically supervised',
       ]}
-      circularImage="/images/polynucleotide.jpg"
+      circularImage="/images/aesthetics-prp-2.jpg"
       circularImageAlt="Hair loss treatment result"
       benefitsHeading="Evidence-Based Solutions for Hair Restoration"
       benefitsBody="Our multi-modality approach combines proven therapies to deliver the best possible outcomes for hair health and regrowth."

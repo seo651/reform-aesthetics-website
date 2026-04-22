@@ -6,7 +6,7 @@ export default function FatDissolving() {
       breadcrumb="FAT-DISSOLVING INJECTIONS"
       heroTitle="Contour & Refine with Fat-Dissolving Injections"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, we use Aqualyx fat-dissolving injections to permanently eliminate stubborn localised fat pockets, helping you achieve a smoother, more contoured appearance."
-      heroImage="/images/dermal-fillers.jpg"
+      heroImage="/images/filler-dissolving-vial.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Aqualyx – Targeted Fat Reduction"
       aboutBody="Aqualyx is a clinically proven injectable treatment designed to break down and dissolve stubborn pockets of localised fat. The solution works by disrupting and liquefying fat cells, which are then naturally eliminated by the body over the following weeks. Common treatment areas include the chin (double chin), jowls, bra fat, flanks, abdomen, inner and outer thighs and knees. Results are permanent once fat cells are eliminated, as long as a healthy lifestyle is maintained."
@@ -17,11 +17,11 @@ export default function FatDissolving() {
         'Improves thighs and knee area',
         'Natural elimination through the body',
       ]}
-      circularImage="/images/dermal-fillers-face.jpg"
+      circularImage="/images/filler-dissolving-injection.jpg"
       circularImageAlt="Fat-dissolving injection result"
       benefitsHeading="Permanent Fat Reduction in Stubborn Areas"
       benefitsBody="Aqualyx injections are a safe, effective alternative to surgical fat removal, offering precise contouring with minimal downtime."
-      benefitsImage="/images/dermal-fillers-product.jpg"
+      benefitsImage="/images/dermal-fillers-face.jpg"
       benefitsImageAlt="Fat-dissolving injections treatment"
       benefits={[
         {

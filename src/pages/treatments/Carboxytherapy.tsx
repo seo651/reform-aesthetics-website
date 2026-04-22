@@ -17,11 +17,11 @@ export default function Carboxytherapy() {
         'Targets stubborn underchin fat',
         'Safe, minimally invasive procedure',
       ]}
-      circularImage="/images/carboxytherapy.jpg"
+      circularImage="/images/skin-peels.jpg"
       circularImageAlt="Carboxytherapy treatment result"
       benefitsHeading="Restore Firmer, Smoother-Looking Skin"
       benefitsBody="Carboxytherapy works by naturally stimulating the body's repair processes, making it an excellent option for patients seeking gradual, noticeable improvement."
-      benefitsImage="/images/carboxytherapy.jpg"
+      benefitsImage="/images/aesthetics-prp-2.jpg"
       benefitsImageAlt="Carboxytherapy treatment"
       benefits={[
         {

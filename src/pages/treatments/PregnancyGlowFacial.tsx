@@ -17,11 +17,11 @@ export default function PregnancyGlowFacial() {
         'Deeply hydrates dry, dull skin',
         'Enhances elasticity and natural glow',
       ]}
-      circularImage="/images/signature-facials.jpg"
+      circularImage="/images/medical-skincare-obagi.jpg"
       circularImageAlt="Pregnancy glow facial result"
       benefitsHeading="Restore Comfort & Radiance During Pregnancy"
       benefitsBody="Each facial is tailored to support your skin through hormonal changes, delivering soothing care and healthy luminosity in a safe, relaxing environment."
-      benefitsImage="/images/medical-skincare-hero.jpg"
+      benefitsImage="/images/heliocare-hero.jpg"
       benefitsImageAlt="Pregnancy glow facial treatment"
       benefits={[
         {

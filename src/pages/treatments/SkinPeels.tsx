@@ -17,11 +17,11 @@ export default function SkinPeels() {
         'Brightens dull, tired complexions',
         'Minimal downtime treatment',
       ]}
-      circularImage="/images/skin-peels.jpg"
+      circularImage="/images/skin-analysis-treatment.jpg"
       circularImageAlt="Skin peel treatment result"
       benefitsHeading="Reveal a Brighter, Healthier-Looking Complexion"
       benefitsBody="Our tailored peel treatments are designed to resurface and refine your skin safely, delivering progressive improvement with each session."
-      benefitsImage="/images/skin-peels.jpg"
+      benefitsImage="/images/medical-skincare-hero.jpg"
       benefitsImageAlt="Skin peel treatment"
       benefits={[
         {
