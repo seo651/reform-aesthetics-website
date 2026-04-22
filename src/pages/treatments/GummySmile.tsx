@@ -18,7 +18,7 @@ export default function GummySmile() {
         'Natural-looking, subtle improvement',
         'No surgery or anaesthetic required',
       ]}
-      circularImage="/images/gummy-smile-treatment-2.jpg"
+      circularImage="/images/gummy-smile-circular-2.png"
       circularImageAlt="Gummy smile treatment procedure"
       benefitsHeading="Smile with Confidence"
       benefitsBody="A small adjustment to the upper lip muscles can create a significant and confidence-boosting improvement to the overall appearance of your smile."
