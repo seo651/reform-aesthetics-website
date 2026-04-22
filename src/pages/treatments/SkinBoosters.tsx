@@ -18,11 +18,11 @@ export default function SkinBoosters() {
         'Brightens dull, tired complexions',
         'Minimal downtime treatment',
       ]}
-      circularImage="/images/skin-booster-2.png"
+      circularImage="/images/skin-booster-circular-2.png"
       circularImageAlt="Skin booster treatment result"
       benefitsHeading="Restore Radiance with Advanced Skin Boosters"
       benefitsBody="Our experienced clinicians personalise each treatment to address fine lines, dullness and uneven texture, delivering subtle, natural-looking rejuvenation."
-      benefitsImage="/images/skin-booster-3.png"
+      benefitsImage="/images/skin-booster-benefits-2.png"
       benefitsImageAlt="Skin booster treatment"
       benefits={[
         {
