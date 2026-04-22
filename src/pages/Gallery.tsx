@@ -18,15 +18,45 @@ const clinicImages = [
 const aestheticsCases = [
   {
     id: 1,
-    service: 'Anti-Wrinkle Injections',
+    service: 'Anti-Wrinkle Treatments',
     description: 'Smooth, natural-looking results achieved with anti-wrinkle injections. Treatment targeting forehead lines and crow\'s feet for a refreshed, youthful appearance.',
-    image: '/images/service-anti-wrinkle.jpg',
+    image: '/images/aesthetics-anti-wrinkle.jpg',
   },
   {
     id: 2,
-    service: 'Skin Peels',
-    description: 'A course of skin peels has transformed this patient\'s skin, reducing hyperpigmentation and improving skin texture and radiance.',
-    image: '/images/gallery-1.jpg',
+    service: 'Lymphatic Drainage Massage',
+    description: 'Gentle lymphatic drainage massage supporting detoxification, reducing fluid retention and promoting a sculpted, revitalised appearance.',
+    image: '/images/aesthetics-lymphatic-1.jpg',
+  },
+  {
+    id: 3,
+    service: 'Lymphatic Drainage Massage',
+    description: 'Our therapeutic lymphatic massage treatments help reduce puffiness, improve circulation and restore a healthy, radiant glow.',
+    image: '/images/aesthetics-lymphatic-2.jpg',
+  },
+  {
+    id: 4,
+    service: 'Lymphatic Drainage Massage',
+    description: 'Professional lymphatic drainage massage delivering visible improvements in skin tone, contouring and overall wellness.',
+    image: '/images/aesthetics-lymphatic-3.jpg',
+  },
+  {
+    id: 5,
+    service: 'PRP Treatment',
+    description: 'Platelet-Rich Plasma therapy harnessing your body\'s own regenerative power to stimulate collagen, improve skin texture and restore a youthful glow.',
+    image: '/images/aesthetics-prp-1.jpg',
+  },
+  {
+    id: 6,
+    service: 'PRP Treatment',
+    description: 'PRP rejuvenation delivering natural, gradual improvements in skin quality, tone and radiance with minimal downtime.',
+    image: '/images/aesthetics-prp-2.jpg',
+  },
+  {
+    id: 7,
+    service: 'Skin Boosters',
+    description: 'Before and after skin booster treatment — deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
+    image: '/images/aesthetics-skin-boosters.webp',
   },
 ];
 
@@ -117,13 +147,13 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto">
 
           {/* ── Tab switcher card ── */}
-          <div className="border border-gray-200 rounded-2xl overflow-hidden grid grid-cols-2 mb-10 shadow-sm">
+          <div className="border border-[#c4a882] rounded-2xl overflow-hidden grid grid-cols-2 mb-10 shadow-sm">
             <button
               onClick={() => setActiveTab('aesthetics')}
               className={`flex flex-col items-center justify-center gap-2 py-6 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase transition-colors ${
                 activeTab === 'aesthetics'
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-white text-gray-500 hover:bg-gray-50'
+                  ? 'bg-[#1a1a1a] text-white'
+                  : 'bg-white text-gray-500 hover:bg-[#EDE8E2]'
               }`}
             >
               <GalleryIcon />
@@ -133,8 +163,8 @@ export default function GalleryPage() {
               onClick={() => setActiveTab('clinic')}
               className={`flex flex-col items-center justify-center gap-2 py-6 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase transition-colors ${
                 activeTab === 'clinic'
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-white text-gray-500 hover:bg-gray-50'
+                  ? 'bg-[#1a1a1a] text-white'
+                  : 'bg-white text-gray-500 hover:bg-[#EDE8E2]'
               }`}
             >
               <GalleryIcon />
