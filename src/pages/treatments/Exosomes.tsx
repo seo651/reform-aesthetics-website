@@ -6,7 +6,7 @@ export default function Exosomes() {
       breadcrumb="EXOSOME THERAPY"
       heroTitle="Next-Generation Skin & Hair Regeneration with Exosome Therapy"
       heroSubtext="At Reform Aesthetics and Dental Clinic, we offer cutting-edge exosome treatments that harness the power of cellular communication to regenerate skin and hair at a biological level, for natural, transformative results."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/exosomes-cells.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Advanced Regenerative Medicine"
       aboutBody="Exosomes are nano-sized extracellular vesicles that carry growth factors, proteins and genetic information between cells. In aesthetic medicine, exosome therapy has emerged as one of the most exciting regenerative treatments available — promoting cellular repair, stimulating collagen and supporting hair follicle health. At Reform Aesthetics and Dental Clinic, we use clinically validated exosome preparations to target visible signs of ageing, hair thinning and compromised skin quality."
@@ -17,12 +17,12 @@ export default function Exosomes() {
         'Reduces signs of ageing',
         'Safe, biologically compatible treatment',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
-      circularImageAlt="Exosome therapy treatment result"
+      circularImage="/images/exosomes-microneedling.jpg"
+      circularImageAlt="Exosome therapy microneedling treatment"
       benefitsHeading="Transform Skin & Hair at a Cellular Level"
       benefitsBody="Exosome therapy represents the future of regenerative aesthetics, delivering profound improvements by working directly with the body's own repair systems."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="Exosome therapy treatment"
+      benefitsImage="/images/exosomes-microneedling.jpg"
+      benefitsImageAlt="Exosome therapy microneedling procedure"
       benefits={[
         {
           title: 'Deep Cellular Regeneration',

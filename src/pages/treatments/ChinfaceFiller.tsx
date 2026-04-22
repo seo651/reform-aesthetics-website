@@ -17,8 +17,8 @@ export default function ChinfaceFiller() {
         'Refines the jawline',
         'Natural-looking immediate results',
       ]}
-      circularImage="/images/cheek-fillers-skin.jpg"
-      circularImageAlt="Cheek and facial filler skin result"
+      circularImage="/images/cheek-fillers-jaw.jpg"
+      circularImageAlt="Cheek and jaw filler result"
       benefitsHeading="Achieve Facial Harmony with Expert Filler"
       benefitsBody="Strategic placement of filler restores balance and structure, complementing your natural features for a rejuvenated appearance."
       benefitsImage="/images/cheek-fillers-profile.jpg"

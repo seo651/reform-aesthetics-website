@@ -6,7 +6,7 @@ export default function DermalFillers() {
       breadcrumb="DERMAL FILLERS"
       heroTitle="Dermal Fillers"
       heroSubtext="A refined injectable treatment designed to restore lost volume, soften lines, and enhance facial definition, helping you achieve a smoother, fresher appearance with natural-looking results."
-      heroImage="/images/dermal-fillers-syringes.jpg"
+      heroImage="/images/lip-filler-dissolving.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Facial Enhancement for Natural Volume"
       aboutBody="Restoring youthful contours requires precision and an artistic approach. Our dermal filler treatments are carefully administered to replenish volume, refine facial structure, and soften the visible signs of ageing. Using premium-quality fillers, we treat areas such as the lips, cheeks, jawline, and under-eye area to create balanced, subtle enhancement tailored to your features."

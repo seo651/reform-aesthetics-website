@@ -6,7 +6,7 @@ export default function Hyperhidrosis() {
       breadcrumb="HYPERHIDROSIS"
       heroTitle="Effective Treatment for Excessive Sweating"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our hyperhidrosis treatment uses targeted anti-wrinkle injections to safely and effectively reduce excessive sweating, helping you feel comfortable and confident every day."
-      heroImage="/images/hyperhidrosis-hero.jpg"
+      heroImage="/images/hyperhidrosis-result.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Relief from Hyperhidrosis"
       aboutBody="Hyperhidrosis is a condition characterised by excessive sweating that goes beyond normal temperature regulation. It most commonly affects the underarms, hands, feet and face. At Reform Aesthetics and Dental Clinic, we use anti-wrinkle injections to block the nerve signals responsible for activating sweat glands. The procedure is quick and effective, typically reducing sweating by 80–90% for a period of 4–12 months."
@@ -17,12 +17,12 @@ export default function Hyperhidrosis() {
         'Results last 4–12 months',
         'Quick treatment with minimal discomfort',
       ]}
-      circularImage="/images/hyperhidrosis-injection.jpg"
-      circularImageAlt="Hyperhidrosis injection treatment"
+      circularImage="/images/hyperhidrosis-hero.jpg"
+      circularImageAlt="Hyperhidrosis excessive sweating condition"
       benefitsHeading="Regain Comfort & Confidence"
       benefitsBody="Hyperhidrosis can significantly affect daily life and confidence. Our treatment provides reliable, long-lasting relief."
       benefitsImage="/images/hyperhidrosis-injection.jpg"
-      benefitsImageAlt="Hyperhidrosis injection underarm treatment"
+      benefitsImageAlt="Hyperhidrosis underarm injection treatment"
       benefits={[
         {
           title: 'Significantly Reduce Sweating',
