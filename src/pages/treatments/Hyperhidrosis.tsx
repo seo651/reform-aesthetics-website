@@ -17,8 +17,8 @@ export default function Hyperhidrosis() {
         'Results last 4–12 months',
         'Quick treatment with minimal discomfort',
       ]}
-      circularImage="/images/hyperhidrosis-hero.jpg"
-      circularImageAlt="Hyperhidrosis excessive sweating condition"
+      circularImage="/images/hyperhidrosis-treatment.jpg"
+      circularImageAlt="Hyperhidrosis treatment procedure"
       benefitsHeading="Regain Comfort & Confidence"
       benefitsBody="Hyperhidrosis can significantly affect daily life and confidence. Our treatment provides reliable, long-lasting relief."
       benefitsImage="/images/hyperhidrosis-injection.jpg"

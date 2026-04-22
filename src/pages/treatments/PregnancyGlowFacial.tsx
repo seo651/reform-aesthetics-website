@@ -6,7 +6,7 @@ export default function PregnancyGlowFacial() {
       breadcrumb="SIGNATURE PREGNANCY GLOW FACIAL"
       heroTitle="Safe, Nourishing Care for Your Pregnancy Glow"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our pregnancy-safe facial is designed to gently hydrate, calm and restore radiance while prioritising both mother and baby's wellbeing. Relax and rejuvenate with complete peace of mind."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/signature-facials.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Gentle Care for Glowing Skin"
       aboutBody="Our Signature Pregnancy Facial uses carefully selected, pregnancy-safe products and techniques to enhance your natural glow without compromising on safety or comfort. Designed to soothe hormonal skin changes, deeply hydrate and restore balance, this treatment delivers visible radiance while remaining non-invasive and completely baby-safe. Suitable for all trimesters."
@@ -17,11 +17,11 @@ export default function PregnancyGlowFacial() {
         'Deeply hydrates dry, dull skin',
         'Enhances elasticity and natural glow',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
+      circularImage="/images/signature-facials.jpg"
       circularImageAlt="Pregnancy glow facial result"
       benefitsHeading="Restore Comfort & Radiance During Pregnancy"
       benefitsBody="Each facial is tailored to support your skin through hormonal changes, delivering soothing care and healthy luminosity in a safe, relaxing environment."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
+      benefitsImage="/images/medical-skincare-hero.jpg"
       benefitsImageAlt="Pregnancy glow facial treatment"
       benefits={[
         {

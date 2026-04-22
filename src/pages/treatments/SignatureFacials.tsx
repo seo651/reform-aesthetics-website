@@ -6,7 +6,7 @@ export default function SignatureFacials() {
       breadcrumb="SIGNATURE FACIALS"
       heroTitle="Rebalance & Revitalise with Signature Probiotic Facials"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our Signature Facials are designed to restore harmony to your skin. Using Esse Organic probiotic skincare, we nourish the microbiome and enhance natural radiance for a healthier-looking complexion."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/signature-facials.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Esse Live Probiotic Facial"
       aboutBody="Our Signature Facial uses Esse Organic probiotic skincare to deeply nourish and rebalance the skin microbiome. This advanced approach supports healthy bacteria for stronger, resilient skin while delivering deep hydration and protection of the skin barrier. Suitable for all skin types, including sensitive and reactive skin."
@@ -17,11 +17,11 @@ export default function SignatureFacials() {
         'Brightens dull, tired complexions',
         'Minimal downtime treatment',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
+      circularImage="/images/signature-facials.jpg"
       circularImageAlt="Signature facial result"
       benefitsHeading="Restore Balance & Reveal Healthy, Radiant Skin"
       benefitsBody="Each facial is carefully customised to address concerns such as dehydration, sensitivity and uneven tone, delivering visible improvement with a relaxing, restorative experience."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
+      benefitsImage="/images/medical-skincare-hero.jpg"
       benefitsImageAlt="Signature facial treatment"
       benefits={[
         {

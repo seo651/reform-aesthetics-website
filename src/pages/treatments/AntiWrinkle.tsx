@@ -6,7 +6,7 @@ export default function AntiWrinkle() {
       breadcrumb="ANTI-WRINKLE"
       heroTitle="Anti-Wrinkle Injections"
       heroSubtext="At Reform Aesthetics and Dental Clinic, we combine medical expertise with aesthetic precision to deliver subtle, natural-looking results. Every treatment is tailored to soften lines while preserving your natural expressions."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/anti-wrinkle.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Anti-Wrinkle Injections"
       aboutBody="Anti-wrinkle injections offer a safe, effective, and non-surgical solution for reducing fine lines and dynamic wrinkles. Common treatment areas include the forehead, frown lines, and crow's feet. By gently relaxing targeted muscles, skin appears smoother, fresher, and more youthful, all with minimal downtime."
@@ -17,7 +17,7 @@ export default function AntiWrinkle() {
         'Quick treatment with minimal downtime',
         'Natural-looking, refreshed results',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
+      circularImage="/images/aesthetics-anti-wrinkle.jpg"
       circularImageAlt="Anti-wrinkle treatment result"
       benefitsHeading="Refresh Your Appearance with Anti-Wrinkle Treatments"
       benefitsBody="Our experienced medical injectors personalise every treatment to ensure balanced, natural results. The goal is always refinement, never frozen or overdone."
