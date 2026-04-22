@@ -189,8 +189,8 @@ export default function About() {
       </section>
 
       {/* ── 2 + 3. ABOUT + STATS — single fully-rounded card ── */}
-      <section className="relative z-20 -mt-8 px-4 sm:px-6 lg:px-8 pb-10">
-        <div className="bg-[#EDE8E2] rounded-[2.5rem] sm:rounded-[3rem] pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative z-20 -mt-8 pb-10">
+        <div className="bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] pt-16 sm:pt-20 overflow-hidden">
 
           {/* About content */}
           <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
