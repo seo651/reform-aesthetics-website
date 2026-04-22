@@ -21,8 +21,8 @@ export default function Hyperhidrosis() {
       circularImageAlt="Hyperhidrosis treatment procedure"
       benefitsHeading="Regain Comfort & Confidence"
       benefitsBody="Hyperhidrosis can significantly affect daily life and confidence. Our treatment provides reliable, long-lasting relief."
-      benefitsImage="/images/hyperhidrosis-injection.jpg"
-      benefitsImageAlt="Hyperhidrosis underarm injection treatment"
+      benefitsImage="/images/hyperhidrosis-benefits.jpg"
+      benefitsImageAlt="Hyperhidrosis treatment result"
       benefits={[
         {
           title: 'Significantly Reduce Sweating',
