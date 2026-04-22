@@ -84,6 +84,8 @@ const clinicImages = [
   { src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics | Dental Clinic' },
   { src: '/images/clinic-skin-scanner.jpg', alt: '3D skin scanner consultation' },
   { src: '/images/clinic-waiting-2.jpg', alt: 'Clinic lounge area' },
+  { src: '/images/gallery-5.jpg', alt: 'Reform Aesthetics clinic' },
+  { src: '/images/gallery-6.jpg', alt: 'Reform Aesthetics clinic interior' },
 ];
 
 /* ── Gallery icon SVG ── */
