@@ -238,7 +238,7 @@ export default function GalleryPage() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.08 * idx }}
-                      className="rounded-2xl overflow-hidden group bg-gray-100"
+                      className="rounded-2xl overflow-hidden group bg-[#EDE8E2]"
                     >
                       <div className="aspect-square overflow-hidden">
                         <img
@@ -247,7 +247,7 @@ export default function GalleryPage() {
                           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
-                      <div className="p-5 bg-white">
+                      <div className="p-5 bg-[#EDE8E2]">
                         <p className="text-gray-900 text-sm font-sans font-semibold mb-1">{c.service}</p>
                         <p className="text-gray-500 text-xs font-sans leading-relaxed">{c.description}</p>
                       </div>
