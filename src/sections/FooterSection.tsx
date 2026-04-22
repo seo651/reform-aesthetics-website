@@ -124,14 +124,12 @@ export function FooterSection() {
             </div>
 
             {/* CQC Badge */}
-            <div className="w-[160px] bg-[#5c2d91] rounded-xl flex items-center gap-3 px-4 py-3 mb-5">
-              <div className="w-11 h-11 rounded-full border-2 border-white flex items-center justify-center flex-shrink-0">
-                <span className="text-white text-base font-bold font-sans">Q</span>
-              </div>
-              <div className="text-white leading-tight font-sans">
-                <div className="text-[10px] font-semibold tracking-wide">CareQuality</div>
-                <div className="text-[10px] font-semibold tracking-wide">Commission</div>
-              </div>
+            <div className="mb-5">
+              <img
+                src="/images/cqc-logo.png"
+                alt="Care Quality Commission"
+                className="h-14 w-auto object-contain"
+              />
             </div>
 
             <p className="text-gray-500 text-sm leading-relaxed font-sans">
