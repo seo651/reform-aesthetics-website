@@ -119,8 +119,10 @@ export function ContactSection() {
             </div>
 
             {/* ── Right: Form ── */}
-            <div className="p-8 sm:p-12">
-              <SectionBadge text="Contact Us" />
+            <div className="p-8 sm:p-12 text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text="Contact Us" />
+              </div>
               <h2
                 className="text-4xl sm:text-5xl mt-5 mb-10 text-gray-900 leading-tight"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}

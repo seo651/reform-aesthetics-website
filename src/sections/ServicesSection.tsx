@@ -101,10 +101,12 @@ export function ServicesSection() {
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <AnimatedSection>
-          <SectionBadge text="Services" />
+        <AnimatedSection className="text-center lg:text-left">
+          <div className="flex justify-center lg:justify-start">
+            <SectionBadge text="Services" />
+          </div>
           <h2
-            className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-gray-900"
+            className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-gray-900 mx-auto lg:mx-0"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Explore Our Services for Lasting Skin Health!

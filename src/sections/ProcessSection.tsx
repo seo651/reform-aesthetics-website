@@ -58,28 +58,32 @@ export function ProcessSection() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
               {/* ── Left ── */}
-              <div>
-                <SectionBadge text="Process" />
+              <div className="text-center lg:text-left">
+                <div className="flex justify-center lg:justify-start">
+                  <SectionBadge text="Process" />
+                </div>
                 <h2
                   className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-5 leading-[1.15] text-gray-900"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Glow Up Your Skin in 3<br />Easy Steps
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed mb-8 font-sans max-w-sm">
+                <p className="text-gray-500 text-sm leading-relaxed mb-8 font-sans max-w-sm mx-auto lg:mx-0">
                   Our Glow Up Process makes achieving radiant, healthy skin simple and stress-free.
                   Whether you're looking to combat ageing, clear blemishes, or restore your natural
                   glow, our team guides you every step of the way.
                 </p>
-                <a
-                  href="https://pearlportal.net/Portal/rad/OnlineBooking"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
-                >
-                  ARRANGE YOUR CONSULTATION
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
+                <div className="flex justify-center lg:justify-start">
+                  <a
+                    href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+                  >
+                    ARRANGE YOUR CONSULTATION
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
               </div>
 
               {/* ── Right: Steps with vertical timeline ── */}

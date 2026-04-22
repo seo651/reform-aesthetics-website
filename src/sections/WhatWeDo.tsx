@@ -81,8 +81,10 @@ export function WhatWeDo() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-14">
 
           {/* Left */}
-          <AnimatedSection>
-            <SectionBadge text="What We Do" />
+          <AnimatedSection className="text-center lg:text-left">
+            <div className="flex justify-center lg:justify-start">
+              <SectionBadge text="What We Do" />
+            </div>
             <h2
               className="text-[36px] sm:text-[44px] lg:text-[52px] mt-6 leading-[1.1] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
@@ -92,21 +94,23 @@ export function WhatWeDo() {
           </AnimatedSection>
 
           {/* Right */}
-          <AnimatedSection delay={0.15} className="lg:pt-16">
+          <AnimatedSection delay={0.15} className="lg:pt-16 text-center lg:text-left">
             <p className="text-gray-500 text-[15px] leading-relaxed font-sans mb-8">
               We provide specialist skin and anti-ageing treatments designed to enhance your natural
               features — not change them. Our philosophy is simple: subtle, refined improvements
               using premium products and evidence-based techniques.
             </p>
-            <a
-              href="https://pearlportal.net/Portal/rad/OnlineBooking"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-gray-300 text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-50 transition-colors"
-            >
-              START YOUR SKIN TRANSFORMATION
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a
+                href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-gray-300 text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-50 transition-colors"
+              >
+                START YOUR SKIN TRANSFORMATION
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
           </AnimatedSection>
         </div>
 
@@ -122,7 +126,7 @@ export function WhatWeDo() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.12 * index }}
-              className={`flex flex-col gap-5 ${
+              className={`flex flex-col gap-5 items-center text-center md:items-start md:text-left ${
                 index > 0 ? 'md:border-l md:border-gray-200 md:pl-12' : 'md:pr-12'
               } ${index === 1 ? 'md:px-12' : ''}`}
             >

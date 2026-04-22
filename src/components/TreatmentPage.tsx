@@ -165,8 +165,10 @@ export function TreatmentPage({
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             {/* Left — text content */}
-            <AnimatedSection>
-              <SectionBadge text={aboutBadge} />
+            <AnimatedSection className="text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text={aboutBadge} />
+              </div>
 
               <h2
                 className="text-3xl sm:text-4xl lg:text-[44px] leading-[1.15] mt-6 mb-6 text-gray-900"
@@ -187,7 +189,7 @@ export function TreatmentPage({
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * idx }}
-                    className="flex items-center gap-4 py-5 border-b border-gray-300/60 last:border-b-0"
+                    className="flex items-center justify-center lg:justify-start gap-4 py-5 border-b border-gray-300/60 last:border-b-0"
                   >
                     <CheckCircle2 className="w-5 h-5 text-[#9D8A7B] flex-shrink-0" />
                     <span className="text-gray-800 font-sans text-[15px]">{item}</span>
@@ -272,8 +274,10 @@ export function TreatmentPage({
             </AnimatedSection>
 
             {/* Right content */}
-            <AnimatedSection delay={0.2}>
-              <SectionBadge text="BENEFITS" />
+            <AnimatedSection delay={0.2} className="text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text="BENEFITS" />
+              </div>
 
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] leading-[1.15] mt-6 mb-5 text-gray-900"
@@ -296,6 +300,7 @@ export function TreatmentPage({
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.1 * idx }}
+                      className="flex flex-col items-center lg:items-start text-center lg:text-left"
                     >
                       <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center mb-4 text-gray-600">
                         <Icon />

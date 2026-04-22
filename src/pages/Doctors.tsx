@@ -75,8 +75,10 @@ export default function Doctors() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             {/* Left text */}
-            <AnimatedSection>
-              <SectionBadge text="Team Member" />
+            <AnimatedSection className="text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text="Team Member" />
+              </div>
               <h2
                 className="text-3xl sm:text-[40px] mt-4 mb-1 text-gray-900 leading-tight"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
@@ -148,8 +150,10 @@ export default function Doctors() {
                 className="grid md:grid-cols-[1fr_260px] gap-10 items-start"
               >
                 {/* Text */}
-                <div>
-                  <SectionBadge text="Team Member" />
+                <div className="text-center md:text-left">
+                  <div className="flex justify-center md:justify-start">
+                    <SectionBadge text="Team Member" />
+                  </div>
                   <h2
                     className="text-3xl sm:text-[38px] mt-4 mb-1 text-gray-900 leading-tight"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
@@ -167,7 +171,7 @@ export default function Doctors() {
                   <div className="space-y-4">
                     {activeMember.bio.map((para, i) =>
                       para.type === 'quote' ? (
-                        <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans italic border-l-2 border-[#c4a882] pl-4">
+                        <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans italic border-l-2 border-[#c4a882] pl-4 text-left">
                           {para.content}
                         </p>
                       ) : (

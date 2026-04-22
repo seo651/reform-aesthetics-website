@@ -197,8 +197,10 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start pb-16 sm:pb-20">
 
               {/* Left column */}
-              <AnimatedSection>
-                <SectionBadge text="About Us" />
+              <AnimatedSection className="text-center lg:text-left">
+                <div className="flex justify-center lg:justify-start">
+                  <SectionBadge text="About Us" />
+                </div>
                 <h2
                   className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-gray-900"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
@@ -229,7 +231,7 @@ export default function About() {
                       transition={{ duration: 0.4, delay: 0.1 * i }}
                       className="py-7 border-b border-gray-300/50 last:border-b-0"
                     >
-                      <div className="flex items-center gap-3 mb-2.5">
+                      <div className="flex items-center justify-center lg:justify-start gap-3 mb-2.5">
                         <svg viewBox="0 0 20 20" className="w-5 h-5 flex-shrink-0" fill="none">
                           <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
                         </svg>
@@ -240,7 +242,7 @@ export default function About() {
                           {title}
                         </h3>
                       </div>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans pl-8">{desc}</p>
+                      <p className="text-gray-500 text-sm leading-relaxed font-sans text-center lg:text-left lg:pl-8">{desc}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -316,10 +318,10 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.1 * idx }}
-                className={`p-10 ${idx % 2 === 0 ? 'sm:border-r border-gray-200' : ''} ${idx < 2 ? 'border-b border-gray-200' : ''}`}
+                className={`p-10 text-center sm:text-left ${idx % 2 === 0 ? 'sm:border-r border-gray-200' : ''} ${idx < 2 ? 'border-b border-gray-200' : ''}`}
               >
                 {/* Round icon circle + title inline */}
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mb-4">
                   <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-500">
                     <Icon />
                   </div>

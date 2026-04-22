@@ -16,13 +16,13 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 sm:py-44 lg:py-52">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex items-center gap-2 mb-6"
+            className="flex items-center justify-center lg:justify-start gap-2 mb-6"
           >
             <span className="flex items-center justify-center w-5 h-5 rounded-full bg-white/25">
               <ArrowUpRight className="w-3 h-3 text-white" />
@@ -60,7 +60,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-wrap gap-3"
+            className="flex flex-wrap justify-center lg:justify-start gap-3"
           >
             <a
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
