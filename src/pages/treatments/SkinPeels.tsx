@@ -22,7 +22,7 @@ export default function SkinPeels() {
       circularImageAlt="Skin peel treatment result"
       benefitsHeading="Reveal a Brighter, Healthier-Looking Complexion"
       benefitsBody="Our tailored peel treatments are designed to resurface and refine your skin safely, delivering progressive improvement with each session."
-      benefitsImage="/images/skin-peels-benefits.png"
+      benefitsImage="/images/skin-peels-benefits-2.jpg"
       benefitsImageAlt="Skin peel treatment"
       benefits={[
         {
