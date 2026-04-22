@@ -48,15 +48,15 @@ const steps = [
   },
 ];
 
-const CIRCLE = 52;
+const C = 62;   // circle diameter px
+const GAP = 22; // gap between number col and icon/content col
 
 export function ProcessSection() {
   return (
-    /* Tiny outer gap so rounded corners show against page */
     <section className="py-5 px-3 sm:px-4">
       <div className="bg-[#EDE8E2] rounded-[2rem] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-[44%_56%] gap-10 lg:gap-16 items-start">
 
             {/* ── Left: text ── */}
             <motion.div
@@ -70,7 +70,7 @@ export function ProcessSection() {
                 <SectionBadge text="PROCESS" />
               </div>
               <h2
-                className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-5 leading-[1.15] text-gray-900"
+                className="text-[40px] sm:text-[48px] lg:text-[52px] mt-5 mb-5 leading-[1.12] text-gray-900"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Glow Up Your Skin in 3<br />Easy Steps
@@ -85,7 +85,7 @@ export function ProcessSection() {
                   href="https://pearlportal.net/Portal/rad/OnlineBooking"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
                 >
                   ARRANGE YOUR CONSULTATION
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -93,8 +93,8 @@ export function ProcessSection() {
               </div>
             </motion.div>
 
-            {/* ── Right: timeline steps ── */}
-            <div>
+            {/* ── Right: timeline ── */}
+            <div className="space-y-0">
               {steps.map((step, index) => {
                 const isLast = index === steps.length - 1;
                 return (
@@ -104,41 +104,66 @@ export function ProcessSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.15 * index }}
-                    /* items-stretch so left track matches right content height */
-                    className="flex gap-6 items-stretch"
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: `${C}px ${GAP}px 1fr`,
+                      gridTemplateRows: `${C}px auto`,
+                      marginBottom: isLast ? 0 : 8,
+                    }}
                   >
-                    {/* ── Left track: circle + line ── */}
-                    <div className="flex flex-col items-center flex-shrink-0" style={{ width: CIRCLE }}>
-                      {/* Number circle */}
-                      <div
-                        className="rounded-full border border-[#b5aea7] bg-[#EDE8E2] flex items-center justify-center flex-shrink-0"
-                        style={{ width: CIRCLE, height: CIRCLE }}
+                    {/* Row 1 Col 1 — Number circle */}
+                    <div
+                      className="rounded-full border-[1.5px] border-[#9e9890] bg-[#EDE8E2] flex items-center justify-center"
+                      style={{ width: C, height: C }}
+                    >
+                      <span
+                        className="font-sans text-gray-500 tracking-widest"
+                        style={{ fontSize: 13 }}
                       >
-                        <span className="text-[12px] font-sans text-gray-400 tracking-widest">{step.number}</span>
-                      </div>
+                        {step.number}
+                      </span>
+                    </div>
 
-                      {/* Connector — grows to fill full height of this step row */}
+                    {/* Row 1 Col 2 — empty spacer */}
+                    <div />
+
+                    {/* Row 1 Col 3 — Icon circle */}
+                    <div className="flex items-start">
+                      <div
+                        className="rounded-full bg-[#6e6a66] flex items-center justify-center flex-shrink-0"
+                        style={{ width: C, height: C }}
+                      >
+                        <step.Icon />
+                      </div>
+                    </div>
+
+                    {/* Row 2 Col 1 — Fading line (only on non-last steps) */}
+                    <div className="flex justify-center">
                       {!isLast && (
                         <div
-                          className="flex-1 rounded-full bg-[#ccc6bf]"
-                          style={{ width: 1, marginTop: 3, marginBottom: 3 }}
+                          style={{
+                            width: 1.5,
+                            height: '100%',
+                            minHeight: 110,
+                            background: 'linear-gradient(to bottom, #a8a29e 0%, transparent 100%)',
+                            marginTop: 4,
+                          }}
                         />
                       )}
                     </div>
 
-                    {/* ── Right content ── */}
-                    <div className={`flex-1 ${!isLast ? 'pb-10' : ''}`}>
-                      {/* Icon circle — vertically aligned with number circle */}
-                      <div
-                        className="rounded-full bg-[#6f6b68] flex items-center justify-center mb-4"
-                        style={{ width: CIRCLE, height: CIRCLE }}
-                      >
-                        <step.Icon />
-                      </div>
+                    {/* Row 2 Col 2 — empty spacer */}
+                    <div />
 
+                    {/* Row 2 Col 3 — Title + description */}
+                    <div style={{ paddingTop: 14, paddingBottom: isLast ? 0 : 28 }}>
                       <h3
-                        className="text-[22px] sm:text-[24px] mb-2 text-gray-900 leading-snug"
-                        style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                        className="mb-2.5 text-gray-900 leading-snug"
+                        style={{
+                          fontFamily: '"Times New Roman", Times, serif',
+                          fontWeight: 400,
+                          fontSize: 'clamp(20px, 2vw, 26px)',
+                        }}
                       >
                         {step.title}
                       </h3>
