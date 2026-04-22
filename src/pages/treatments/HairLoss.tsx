@@ -3,42 +3,42 @@ import { TreatmentPage } from '@/components/TreatmentPage';
 export default function HairLoss() {
   return (
     <TreatmentPage
-      breadcrumb="HAIR LOSS TREATMENTS"
-      heroTitle="Restore Confidence with Advanced Hair Loss Treatments"
-      heroSubtext="At Reform Aesthetics and Dental Clinic, we offer a comprehensive range of evidence-based treatments designed to slow hair loss, stimulate regrowth and restore confidence for both men and women."
+      breadcrumb="PRF HAIR TREATMENT"
+      heroTitle="Naturally Thicker, Healthier Hair with Lasting Results"
+      heroSubtext="PRF Hair Treatment is the next generation of platelet therapy — using your body's own biology to stimulate hair growth, improve scalp health and deliver more consistent, long-lasting results than traditional PRP."
       heroImage="/images/polynucleotide.jpg"
       aboutBadge="ABOUT TREATMENTS"
-      aboutHeading="Personalised Hair Restoration"
-      aboutBody="Hair loss can significantly affect confidence and wellbeing. At Reform Aesthetics and Dental Clinic, we offer advanced, medically backed solutions tailored to your specific type and stage of hair loss. Our treatments include PRP (Platelet-Rich Plasma) therapy, Exosome therapy, medical-grade topical treatments and nutritional support. Our experienced medical team will assess your scalp and hair health to create a personalised treatment plan that targets the root causes of hair loss and supports regrowth."
+      aboutHeading="PRF vs PRP — What Makes PRF Different"
+      aboutBody="Both Platelet-Rich Plasma (PRP) and Platelet-Rich Fibrin (PRF) are innovative, non-surgical treatments that use your body's own blood to stimulate hair growth and improve hair density. While they share a similar goal, there are key differences. PRF is the next-generation treatment — it uses a similar process but without any anticoagulants. It produces a fibrin matrix rich in platelets, white blood cells, and growth factors, which are released more slowly over time. This longer release enhances follicle stimulation, improves scalp health, and often delivers more consistent and long-lasting hair growth results."
       checklistItems={[
-        'Treats male and female pattern hair loss',
-        'Stimulates dormant hair follicles',
-        'Strengthens existing hair',
-        'Personalised treatment plans',
-        'Evidence-based, medically supervised',
+        'Next-generation advancement on traditional PRP',
+        'No anticoagulants — entirely natural process',
+        'Slow-release growth factors for deeper follicle stimulation',
+        'Improves scalp health and hair density',
+        'More consistent, longer-lasting results',
       ]}
       circularImage="/images/aesthetics-prp-2.jpg"
-      circularImageAlt="Hair loss treatment result"
-      benefitsHeading="Evidence-Based Solutions for Hair Restoration"
-      benefitsBody="Our multi-modality approach combines proven therapies to deliver the best possible outcomes for hair health and regrowth."
+      circularImageAlt="PRF hair treatment in progress"
+      benefitsHeading="Advanced Hair Restoration with Slow-Release Growth Factors"
+      benefitsBody="PRF's fibrin matrix delivers a sustained release of growth factors that work deeper and longer than PRP, supporting stronger follicles and more reliable regrowth over time."
       benefitsImage="/images/aesthetics-prp-1.jpg"
-      benefitsImageAlt="Hair loss treatment"
+      benefitsImageAlt="PRF hair treatment result"
       benefits={[
         {
-          title: 'Slow & Reverse Hair Thinning',
-          desc: 'Medically proven treatments to combat hair loss.',
+          title: 'Next-Generation Treatment',
+          desc: 'More advanced than PRP with no anticoagulants used.',
         },
         {
-          title: 'Stimulate New Hair Growth',
-          desc: 'Reactivates follicles for improved density.',
+          title: 'Slow-Release Growth Factors',
+          desc: 'Fibrin matrix delivers sustained follicle stimulation over time.',
         },
         {
-          title: 'Personalised Treatment Plans',
-          desc: 'Tailored to your specific hair loss pattern and needs.',
+          title: 'Improved Scalp Health',
+          desc: 'Enriched with white blood cells for a healthier scalp environment.',
         },
         {
-          title: 'Medically Supervised',
-          desc: 'Expert care throughout your hair restoration journey.',
+          title: 'Longer-Lasting Results',
+          desc: 'More consistent hair growth outcomes compared to traditional PRP.',
         },
       ]}
     />
