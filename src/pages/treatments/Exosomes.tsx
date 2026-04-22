@@ -21,7 +21,7 @@ export default function Exosomes() {
       circularImageAlt="Exosome therapy microneedling treatment"
       benefitsHeading="Transform Skin & Hair at a Cellular Level"
       benefitsBody="Exosome therapy represents the future of regenerative aesthetics, delivering profound improvements by working directly with the body's own repair systems."
-      benefitsImage="/images/exosomes-microneedling.jpg"
+      benefitsImage="/images/exosomes-benefits.png"
       benefitsImageAlt="Exosome therapy microneedling procedure"
       benefits={[
         {
