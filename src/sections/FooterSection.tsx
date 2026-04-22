@@ -128,7 +128,7 @@ export function FooterSection() {
               <img
                 src="/images/cqc-logo.png"
                 alt="Care Quality Commission"
-                className="h-14 w-auto object-contain"
+                className="w-20 h-20 object-cover rounded-xl"
               />
             </div>
 
