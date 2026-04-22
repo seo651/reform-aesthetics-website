@@ -55,9 +55,9 @@ const features = [
 const stats = [
   { number: '17+', label: 'Years of Combined Experience' },
   { number: '15+', label: 'Successful Smile Transformations' },
-  { number: '2+',  label: 'Ongoing Patient Relationships' },
-  { number: '46+', label: 'Ongoing Patient Relationships' },
-  { number: '1+',  label: 'Advanced Procedures Offered' },
+  { number: '2K+', label: 'Ongoing Patient Relationships' },
+  { number: '46+', label: 'Five-Star Reviews' },
+  { number: '30+', label: 'Advanced Procedures Offered' },
 ];
 
 /* Philosophy 2×2 grid icons */
@@ -248,7 +248,7 @@ export default function About() {
       {/* ── 3. STATS BAR ── */}
       <section className="py-14 px-4 sm:px-6 lg:px-8 bg-[#EDE8E2]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-4">
+          <div className="flex flex-wrap justify-center lg:justify-between gap-y-10 gap-x-6">
             {stats.map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -256,19 +256,17 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.08 * idx }}
-                className="relative text-center lg:text-left"
+                className="relative text-center flex-1 min-w-[130px]"
               >
-                {/* Stat number — large Times New Roman */}
                 <div
-                  className="text-4xl sm:text-5xl text-gray-900 leading-none mb-2"
+                  className="text-4xl sm:text-5xl text-gray-400 leading-none mb-2"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   {stat.number}
                 </div>
-                <p className="text-gray-500 text-xs font-sans leading-snug max-w-[130px] mx-auto lg:mx-0">
+                <p className="text-gray-500 text-xs font-sans leading-snug max-w-[130px] mx-auto">
                   {stat.label}
                 </p>
-                {/* Vertical divider between stats */}
                 {idx < stats.length - 1 && (
                   <div className="hidden lg:block absolute right-0 top-2 h-10 w-px bg-gray-400/40" />
                 )}
@@ -280,17 +278,16 @@ export default function About() {
 
       {/* ── 4. WHAT WE DO — centered text ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-3xl sm:text-4xl lg:text-[46px] mt-6 mb-6 leading-tight text-gray-900"
+              className="text-3xl sm:text-[36px] lg:text-[40px] mt-6 mb-6 leading-[1.2] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
-              Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester
-              city centre.
+              Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester city centre.
             </h2>
-            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-3xl mx-auto">
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
               We specialise in advanced medical skin treatments designed to Restore youth,
               Rejuvenate and Refresh your natural beauty in a safe and supportive environment.
             </p>
@@ -309,23 +306,23 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.1 * idx }}
-                className={`p-8 flex flex-col gap-4 ${
+                className={`p-10 flex flex-col gap-5 ${
                   idx % 2 === 0 ? 'border-r border-gray-200' : ''
                 } ${idx < 2 ? 'border-b border-gray-200' : ''}`}
               >
-                {/* Icon + title row */}
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center flex-shrink-0 text-gray-600">
-                    <Icon />
-                  </div>
+                {/* Icon circle */}
+                <div className="w-14 h-14 rounded-full bg-[#F5F2EE] border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-600">
+                  <Icon />
+                </div>
+                <div>
                   <h3
-                    className="text-base text-gray-900"
+                    className="text-lg text-gray-900 mb-2"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                   >
                     {title}
                   </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
               </motion.div>
             ))}
           </div>
