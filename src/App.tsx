@@ -40,6 +40,7 @@ import JawlineContouring from '@/pages/treatments/JawlineContouring';
 import UnderEyeFiller from '@/pages/treatments/UnderEyeFiller';
 import NeckRejuvenation from '@/pages/treatments/NeckRejuvenation';
 import FatDissolving from '@/pages/treatments/FatDissolving';
+import FillerDissolving from '@/pages/treatments/FillerDissolving';
 import GummySmile from '@/pages/treatments/GummySmile';
 import Hyperhidrosis from '@/pages/treatments/Hyperhidrosis';
 import BruxismTMJ from '@/pages/treatments/BruxismTMJ';
@@ -90,6 +91,7 @@ function App() {
           <Route path="/treatments/under-eye-filler" element={<UnderEyeFiller />} />
           <Route path="/treatments/profhilo" element={<Profhilo />} />
           <Route path="/treatments/fat-dissolving" element={<FatDissolving />} />
+          <Route path="/treatments/filler-dissolving" element={<FillerDissolving />} />
 
           {/* Advanced Aesthetic Treatments */}
           <Route path="/treatments/gummy-smile" element={<GummySmile />} />

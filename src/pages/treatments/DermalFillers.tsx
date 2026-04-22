@@ -3,43 +3,42 @@ import { TreatmentPage } from '@/components/TreatmentPage';
 export default function DermalFillers() {
   return (
     <TreatmentPage
-      breadcrumb="FILLER DISSOLVING"
-      heroTitle="Correct & Restore with Filler Dissolving Treatment"
-      heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler — restoring natural facial balance."
-      heroImage="/images/filler-dissolving-new-hero.png"
-      heroObjectPosition="center"
+      breadcrumb="DERMAL FILLERS"
+      heroTitle="Restore Volume & Enhance Your Features with Dermal Fillers"
+      heroSubtext="At Reform Aesthetics and Dental Clinic, our dermal filler treatments are carefully administered to replenish lost volume, refine facial structure and soften the visible signs of ageing — delivering natural-looking results tailored to you."
+      heroImage="/images/cheek-fillers-profile.jpg"
       aboutBadge="ABOUT TREATMENTS"
-      aboutHeading="Filler Dissolving with Safe & Precise Correction"
-      aboutBody="Filler dissolving is a non-surgical treatment designed to correct or reverse unwanted dermal fillers. Whether the concern is overfilling, uneven placement, or migration, this treatment helps restore a more natural appearance. Using hyaluronidase, a specialised enzyme that safely breaks down hyaluronic acid fillers, the product is gradually dissolved and naturally absorbed by the body. The treatment is quick, precise and minimally invasive."
+      aboutHeading="Facial Enhancement for Natural, Balanced Results"
+      aboutBody="Dermal fillers are premium injectable treatments that restore volume, smooth lines and enhance facial contours. Using hyaluronic acid-based products, we treat areas such as the lips, cheeks, jawline, chin and under-eye area to create balanced, subtle enhancement tailored to your individual features and goals. Restoring youthful contours requires both precision and an artistic eye — our experienced clinicians combine both to deliver results you'll love."
       checklistItems={[
-        'Corrects overfilled or uneven areas',
-        'Dissolves unwanted dermal fillers',
-        'Restores natural facial balance',
-        'Minimally invasive procedure',
-        'Noticeable improvement within days',
+        'Restores facial volume and smooths fine lines',
+        'Enhances lips, cheeks and jawline definition',
+        'Softens under-eye hollows for a refreshed look',
+        'Improves facial symmetry and contour',
+        'Delivers natural-looking, immediate results',
       ]}
-      circularImage="/images/filler-dissolving-new-circular.png"
-      circularImageAlt="Hyaluronidase filler dissolving treatment"
-      benefitsHeading="Restore Natural Balance & Facial Harmony"
-      benefitsBody="Filler dissolving allows patients to safely adjust or reverse previous cosmetic treatments while maintaining natural-looking results."
-      benefitsImage="/images/filler-dissolving-new-benefits.png"
-      benefitsImageAlt="Filler dissolving injection procedure"
+      circularImage="/images/cheek-fillers-jaw.jpg"
+      circularImageAlt="Dermal filler treatment result"
+      benefitsHeading="Subtle Enhancement That Complements Your Natural Features"
+      benefitsBody="At Reform Aesthetics and Dental Clinic, we focus on achieving elegant, natural results. Our dermal filler treatments are tailored to your facial structure, ensuring subtle enhancement that works with — not against — your unique features."
+      benefitsImage="/images/cheek-fillers-skin.jpg"
+      benefitsImageAlt="Dermal filler profile result"
       benefits={[
         {
-          title: 'Target Specific Areas',
-          desc: 'Precise correction of unwanted filler in any treatment area.',
+          title: 'Restore Lost Volume',
+          desc: 'Replenish areas affected by ageing for a fuller, more youthful appearance.',
         },
         {
-          title: 'Fast & Effective Treatment',
-          desc: 'Results often begin within hours to days of treatment.',
+          title: 'Refine Facial Contours',
+          desc: 'Enhance definition in the lips, cheeks, jawline and more.',
         },
         {
-          title: 'Restore Natural Appearance',
-          desc: 'Helps rebalance facial proportions for a harmonious result.',
+          title: 'Quick & Minimally Invasive',
+          desc: 'A non-surgical treatment with little downtime and immediate results.',
         },
         {
-          title: 'Safe, Medically Led Care',
-          desc: 'Performed by experienced aesthetic clinicians at our Leicester clinic.',
+          title: 'Subtle, Natural Results',
+          desc: 'Carefully placed filler enhances your features without looking overdone.',
         },
       ]}
     />

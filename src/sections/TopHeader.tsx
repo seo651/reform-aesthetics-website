@@ -44,7 +44,7 @@ const treatmentCategories = [
       { label: 'Tear Trough Filler', href: '/treatments/under-eye-filler' },
       { label: 'Non-Surgical Rhinoplasty', href: '/treatments/nose-filler' },
       { label: 'Ellansé Collagen-Stimulating Filler', href: '/treatments/collagen-stimulating' },
-      { label: 'Filler Dissolving', href: '/treatments/dermal-fillers' },
+      { label: 'Filler Dissolving', href: '/treatments/filler-dissolving' },
     ],
   },
   {
