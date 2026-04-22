@@ -53,11 +53,11 @@ const features = [
 
 /* Stats */
 const stats = [
-  { number: '17+', label: 'Years of Combined Experience' },
-  { number: '15+', label: 'Successful Smile Transformations' },
-  { number: '2K+', label: 'Ongoing Patient Relationships' },
-  { number: '46+', label: 'Five-Star Reviews' },
-  { number: '30+', label: 'Advanced Procedures Offered' },
+  { number: '80+',  label: 'Years of Combined Experience' },
+  { number: '60+',  label: 'Successful Smile Transformations' },
+  { number: '10+',  label: 'Ongoing Patient Relationships' },
+  { number: '220+', label: 'Ongoing Patient Relationships' },
+  { number: '5+',   label: 'Advanced Procedures Offered' },
 ];
 
 /* Philosophy 2×2 grid icons */
@@ -212,31 +212,31 @@ export default function About() {
               </p>
             </AnimatedSection>
 
-            {/* Right column — feature rows with gold checkbox circles */}
+            {/* Right column — feature rows */}
             <AnimatedSection delay={0.2}>
               <div className="space-y-0">
-                {features.map(({ Icon, title, desc }, i) => (
+                {features.map(({ title, desc }, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * i }}
-                    className="flex items-start gap-4 py-6 border-b border-gray-300/60 last:border-b-0"
+                    className="py-7 border-b border-gray-300/50 last:border-b-0"
                   >
-                    {/* Gold circle with line-art icon */}
-                    <div className="w-9 h-9 rounded-full border-2 border-[#c4a882] flex items-center justify-center flex-shrink-0 text-[#c4a882] mt-0.5">
-                      <Icon />
-                    </div>
-                    <div>
+                    {/* Badge icon + title inline */}
+                    <div className="flex items-center gap-3 mb-2">
+                      <svg viewBox="0 0 20 20" className="w-5 h-5 flex-shrink-0" fill="none">
+                        <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
+                      </svg>
                       <h3
-                        className="text-base text-gray-900 mb-1.5"
+                        className="text-[15px] text-gray-900"
                         style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                       >
                         {title}
                       </h3>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
                     </div>
+                    <p className="text-gray-500 text-sm leading-relaxed font-sans pl-8">{desc}</p>
                   </motion.div>
                 ))}
               </div>
@@ -276,18 +276,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 4. WHAT WE DO — centered text ── */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* ── 4. WHAT WE DO — large centred heading ── */}
+      <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-3xl sm:text-[36px] lg:text-[40px] mt-6 mb-6 leading-[1.2] text-gray-900"
+              className="text-[38px] sm:text-[52px] lg:text-[62px] mt-6 mb-6 leading-[1.1] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
               Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester city centre.
             </h2>
-            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-2xl mx-auto">
+            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-3xl mx-auto">
               We specialise in advanced medical skin treatments designed to Restore youth,
               Rejuvenate and Refresh your natural beauty in a safe and supportive environment.
             </p>
@@ -295,10 +295,10 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 5. PHILOSOPHY — 2×2 grid with icon + title + description ── */}
+      {/* ── 5. PHILOSOPHY — 2×2 grid, clean divider lines only ── */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2 gap-0 border border-gray-200 rounded-2xl overflow-hidden">
+          <div className="grid sm:grid-cols-2">
             {philosophy.map(({ Icon, title, desc }, idx) => (
               <motion.div
                 key={idx}
@@ -306,23 +306,21 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.1 * idx }}
-                className={`p-10 flex flex-col gap-5 ${
-                  idx % 2 === 0 ? 'border-r border-gray-200' : ''
-                } ${idx < 2 ? 'border-b border-gray-200' : ''}`}
+                className={`p-10 ${idx % 2 === 0 ? 'border-r border-gray-200' : ''} ${idx < 2 ? 'border-b border-gray-200' : ''}`}
               >
-                {/* Icon circle */}
-                <div className="w-14 h-14 rounded-full bg-[#F5F2EE] border border-gray-200 flex items-center justify-center flex-shrink-0 text-gray-600">
-                  <Icon />
-                </div>
-                <div>
+                {/* Icon + title inline */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-[#F5F2EE] flex items-center justify-center flex-shrink-0 text-gray-500">
+                    <Icon />
+                  </div>
                   <h3
-                    className="text-lg text-gray-900 mb-2"
+                    className="text-[17px] text-gray-900 leading-snug"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                   >
                     {title}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
                 </div>
+                <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
               </motion.div>
             ))}
           </div>
