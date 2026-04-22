@@ -81,7 +81,7 @@ export default function GalleryPage() {
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-bg.jpg"
+            src="/images/clinic-treatment-room.jpg"
             alt="Gallery"
             className="w-full h-full object-cover"
           />
