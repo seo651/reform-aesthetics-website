@@ -158,6 +158,9 @@ export function TeamSection() {
                     src={activeMember.image}
                     alt={activeMember.name}
                     className="w-full h-full object-cover object-top"
+                    loading="eager"
+                    decoding="auto"
+                    style={{ imageRendering: 'high-quality' }}
                   />
                 </div>
               </div>

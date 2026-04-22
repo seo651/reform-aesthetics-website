@@ -97,12 +97,14 @@ export default function Doctors() {
             {/* Right photo */}
             <AnimatedSection delay={0.2}>
               <div className="flex justify-center lg:justify-end">
-                <div className="rounded-2xl overflow-hidden w-full max-w-[340px] aspect-[3/4]">
+                <div className="rounded-2xl overflow-hidden w-full max-w-[400px] aspect-[3/4]">
                   <img
                     src={featured.image}
                     alt={featured.name}
                     className="w-full h-full object-cover object-top"
-                    style={{ imageRendering: 'auto' }}
+                    loading="eager"
+                    decoding="auto"
+                    style={{ imageRendering: 'high-quality' }}
                   />
                 </div>
               </div>
@@ -184,7 +186,9 @@ export default function Doctors() {
                       src={activeMember.image}
                       alt={activeMember.name}
                       className="w-full h-full object-cover object-top"
-                      style={{ imageRendering: 'auto' }}
+                      loading="eager"
+                      decoding="auto"
+                      style={{ imageRendering: 'high-quality' }}
                     />
                   </div>
                 </div>
