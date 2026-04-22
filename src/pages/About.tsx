@@ -208,14 +208,10 @@ export default function About() {
                   Looking for trusted skincare professionals in Leicester?
                 </h2>
                 <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
-                  We offer personalised, clinically proven skincare solutions.
+                  We offer personalised, clinically proven skincare solutions tailored to your unique needs.
                 </p>
                 <p className="text-[#363636] text-sm leading-relaxed font-sans">
-                  At Reform Aesthetics and Dental, we know every skin journey is unique. That's why we take time
-                  to understand your concerns and goals, creating treatment plans tailored just for
-                  you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
-                  to maintain a healthy, radiant complexion — our experienced team combines
-                  science and care to bring out the best in your skin.
+                  At Reform Aesthetics and Dental, we understand that every skin journey is different. That's why we take the time to assess your concerns and goals, creating bespoke treatment plans designed around you. Whether you're targeting acne, pigmentation, signs of ageing, or simply maintaining a healthy, radiant complexion, our expert team combines advanced science with a patient-focused approach to deliver results you can trust.
                 </p>
               </AnimatedSection>
 
