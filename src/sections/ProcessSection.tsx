@@ -72,7 +72,9 @@ export function ProcessSection() {
                   glow, our team guides you every step of the way.
                 </p>
                 <a
-                  href="#contact"
+                  href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
                 >
                   ARRANGE YOUR CONSULTATION

@@ -63,7 +63,9 @@ export function HeroSection() {
             className="flex flex-wrap gap-3"
           >
             <a
-              href="#contact"
+              href="https://pearlportal.net/Portal/rad/OnlineBooking"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-black text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-100 transition-colors font-sans"
             >
               COMPLETE YOUR FREE SKIN ASSESSMENT

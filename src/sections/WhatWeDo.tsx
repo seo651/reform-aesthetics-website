@@ -99,7 +99,9 @@ export function WhatWeDo() {
               using premium products and evidence-based techniques.
             </p>
             <a
-              href="/contact"
+              href="https://pearlportal.net/Portal/rad/OnlineBooking"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-gray-300 text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-50 transition-colors"
             >
               START YOUR SKIN TRANSFORMATION
