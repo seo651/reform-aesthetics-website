@@ -6,7 +6,7 @@ export default function VitaminInjections() {
       breadcrumb="VITAMIN INJECTIONS"
       heroTitle="Fuller Hair, Brighter Skin & Boosted Energy with Vitamin Injections"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our Biotin and B12 vitamin injections are designed to support healthy hair growth, improve skin vitality and enhance overall energy levels through rapid, effective absorption."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/vitamin-injections-hero.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Vitamin Injections – Biotin & B12 for Hair, Skin & Energy"
       aboutBody="Vitamin B12 and Biotin injections provide targeted nutritional support to help strengthen hair, improve skin quality and promote stronger nails. These essential B-vitamins play a key role in energy production and cellular health. Delivered via intramuscular injection, nutrients are absorbed quickly into the bloodstream, offering faster, more efficient results compared to oral supplements."
@@ -17,12 +17,12 @@ export default function VitaminInjections() {
         'Boosts natural energy levels',
         'Rapid absorption via injection',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
+      circularImage="/images/vitamin-injections-hero.jpg"
       circularImageAlt="Vitamin injection treatment"
       benefitsHeading="Nourish From Within for Visible, Lasting Results"
       benefitsBody="Vitamin injections work internally to support hair growth, skin renewal and overall wellbeing."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="Vitamin injections"
+      benefitsImage="/images/vitamin-injections-hero.jpg"
+      benefitsImageAlt="Vitamin injections treatment"
       benefits={[
         {
           title: 'Strengthen Hair & Reduce Thinning',
