@@ -182,7 +182,7 @@ export function TopHeader() {
                         href="https://reformdental.get-found.co.uk/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#363636] transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#efeae7] transition-colors"
                       >
                         VIEW DENTAL CLINIC
                         <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
@@ -230,7 +230,7 @@ export function TopHeader() {
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-black text-white text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#363636] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#efeae7] transition-colors whitespace-nowrap"
               >
                 VIEW DENTAL CLINIC
                 <ArrowUpRight className="w-3 h-3 flex-shrink-0" />

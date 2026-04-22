@@ -39,9 +39,7 @@ export function GallerySection() {
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 lg:max-w-lg lg:pt-6">
               <p className="text-[#363636] text-sm leading-relaxed font-sans flex-1">
-                Every face tells a story. Explore real treatment outcomes achieved at Reform
-                Aesthetics and Dental. If you're considering dermal fillers and would like to
-                discuss your goals, book a personalised consultation with our team.
+                Take a glimpse inside our clinic and the space where your treatments happen. Explore real results achieved by our team, and book a consultation to start your journey.
               </p>
               <a
                 href="/gallery"
