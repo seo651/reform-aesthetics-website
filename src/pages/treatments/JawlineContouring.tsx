@@ -6,7 +6,7 @@ export default function JawlineContouring() {
       breadcrumb="JAWLINE CONTOURING"
       heroTitle="Define & Sculpt with Expert Jawline Contouring"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our experienced clinicians use precision filler placement and advanced techniques to sculpt a sharper, more defined jawline for both men and women."
-      heroImage="/images/cheek-fillers-jaw.jpg"
+      heroImage="/images/jaw-reduction-hero.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Jawline Definition & Sculpting"
       aboutBody="Jawline contouring uses carefully placed dermal fillers and, where appropriate, anti-wrinkle injections to strengthen and define the jawline. This treatment can address jowling, loss of definition, asymmetry and the appearance of a weak or recessed jaw. By enhancing structure and balance, jawline contouring creates a sharper, more sculpted profile that complements the face as a whole."
