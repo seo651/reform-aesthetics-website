@@ -6,7 +6,7 @@ export default function LymphaticDrainage() {
       breadcrumb="LYMPHATIC DRAINAGE MASSAGE"
       heroTitle="Restore Balance & Boost Wellbeing with Lymphatic Drainage"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our gentle lymphatic drainage massage supports detoxification, reduces fluid retention and promotes overall wellness in a calm, restorative setting."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/lymphatic-drainage-body.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Support Recovery & Wellness"
       aboutBody="Lymphatic drainage massage is a gentle, non-invasive treatment designed to stimulate the lymphatic system and encourage the natural elimination of toxins. This specialised technique helps reduce swelling, improve circulation and support immune function. Each session is personalised by our skilled therapists and is particularly beneficial for lymphedema, fatigue and post-surgical recovery, including post-pregnancy, abdominal procedures or liposuction."
@@ -17,12 +17,12 @@ export default function LymphaticDrainage() {
         'Improves circulation and wellbeing',
         'Gentle, relaxing and non-invasive',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
-      circularImageAlt="Lymphatic drainage massage"
+      circularImage="/images/aesthetics-lymphatic-3.jpg"
+      circularImageAlt="Lymphatic drainage massage session"
       benefitsHeading="Enhance Recovery & Promote Natural Detoxification"
       benefitsBody="Lymphatic drainage massage works with your body's natural systems to restore balance, reduce discomfort and improve overall vitality."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="Lymphatic drainage massage"
+      benefitsImage="/images/aesthetics-lymphatic-1.jpg"
+      benefitsImageAlt="Lymphatic drainage massage treatment"
       benefits={[
         {
           title: 'Reduce Swelling & Fluid Retention',
