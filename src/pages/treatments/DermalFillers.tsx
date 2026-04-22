@@ -17,12 +17,12 @@ export default function DermalFillers() {
         'Improves facial symmetry and contour',
         'Delivers natural-looking, immediate results',
       ]}
-      circularImage="/images/dermal-fillers-face.jpg"
-      circularImageAlt="Dermal filler treatment result"
+      circularImage="/images/filler-dissolving-vial.jpg"
+      circularImageAlt="Filler dissolving treatment vial"
       benefitsHeading="Enhance Your Features with Dermal Fillers in Leicester"
       benefitsBody="At Reform Aesthetics and Dental Clinic, we focus on achieving elegant, natural results. Our dermal filler treatments are tailored to your facial structure, ensuring subtle enhancement that complements your unique features."
-      benefitsImage="/images/dermal-fillers-product.jpg"
-      benefitsImageAlt="MAILI dermal filler product"
+      benefitsImage="/images/filler-dissolving-injection.jpg"
+      benefitsImageAlt="Dermal filler injection procedure"
       benefits={[
         {
           title: 'Restore Lost Volume',

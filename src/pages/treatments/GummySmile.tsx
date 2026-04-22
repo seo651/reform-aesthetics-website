@@ -6,7 +6,7 @@ export default function GummySmile() {
       breadcrumb="GUMMY SMILE CORRECTION"
       heroTitle="Reveal a More Balanced Smile with Gummy Smile Correction"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our gummy smile treatment uses precise anti-wrinkle injections to gently reduce the appearance of excess gum when smiling, for a more confident, balanced smile."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/gummy-smile-result.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Non-Surgical Smile Enhancement"
       aboutBody="A gummy smile occurs when an excessive amount of gum is exposed when smiling. This can be caused by overactive muscles in the upper lip. At Reform Aesthetics and Dental Clinic, we treat gummy smiles using small, precise anti-wrinkle injections to gently relax the upper lip muscles, reducing how far the lip lifts when smiling. The result is a more balanced, proportionate smile with minimal discomfort and no surgery."
@@ -17,12 +17,12 @@ export default function GummySmile() {
         'Natural-looking, subtle improvement',
         'No surgery or anaesthetic required',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
-      circularImageAlt="Gummy smile correction result"
+      circularImage="/images/gummy-smile-before.jpg"
+      circularImageAlt="Gummy smile before treatment"
       benefitsHeading="Smile with Confidence"
       benefitsBody="A small adjustment to the upper lip muscles can create a significant and confidence-boosting improvement to the overall appearance of your smile."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="Gummy smile correction treatment"
+      benefitsImage="/images/gummy-smile-injection.jpg"
+      benefitsImageAlt="Gummy smile correction injection"
       benefits={[
         {
           title: 'Balance Your Smile',
