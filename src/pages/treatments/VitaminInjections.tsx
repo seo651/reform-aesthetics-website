@@ -17,12 +17,12 @@ export default function VitaminInjections() {
         'Boosts natural energy levels',
         'Rapid absorption via injection',
       ]}
-      circularImage="/images/vitamin-injections-hero.jpg"
+      circularImage="/images/vitamin-injections-treatment.jpg"
       circularImageAlt="Vitamin injection treatment"
       benefitsHeading="Nourish From Within for Visible, Lasting Results"
       benefitsBody="Vitamin injections work internally to support hair growth, skin renewal and overall wellbeing."
-      benefitsImage="/images/vitamin-injections-hero.jpg"
-      benefitsImageAlt="Vitamin injections treatment"
+      benefitsImage="/images/vitamin-injections-result.jpg"
+      benefitsImageAlt="Vitamin injections treatment results"
       benefits={[
         {
           title: 'Strengthen Hair & Reduce Thinning',

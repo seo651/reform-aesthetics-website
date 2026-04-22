@@ -17,12 +17,12 @@ export default function MedicalSkincare() {
         'Reduces visible signs of ageing',
         'Restores clarity and radiance',
       ]}
-      circularImage="/images/medical-skincare-products.jpg"
-      circularImageAlt="Heliocare medical-grade skincare products"
+      circularImage="/images/medical-skincare-obagi.jpg"
+      circularImageAlt="Obagi medical-grade skincare products"
       benefitsHeading="Clinical Skincare for Visible, Lasting Results"
       benefitsBody="Medical-grade skincare delivers higher concentrations of active ingredients, allowing for deeper correction and measurable skin transformation."
-      benefitsImage="/images/medical-skincare-spf.jpg"
-      benefitsImageAlt="Woman applying Heliocare SPF on beach"
+      benefitsImage="/images/medical-skincare-range.png"
+      benefitsImageAlt="Medical-grade skincare product range"
       benefits={[
         {
           title: 'Correct Pigmentation & Discolouration',

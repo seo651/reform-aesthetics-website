@@ -21,7 +21,7 @@ export default function VeinRemoval() {
       circularImageAlt="Vein removal treatment procedure"
       benefitsHeading="Feel Lighter & Restore Leg Confidence"
       benefitsBody="Our vein treatments focus on improving both comfort and cosmetic appearance, helping you feel confident and supported in expert medical hands."
-      benefitsImage="/images/vein-removal-hero.jpg"
+      benefitsImage="/images/vein-removal-result.jpg"
       benefitsImageAlt="Vein removal treatment result"
       benefits={[
         {

@@ -6,7 +6,7 @@ export default function Microneedling() {
       breadcrumb="MEDICAL MICRONEEDLING"
       heroTitle="Smoother, Firmer, Radiant Skin with Medical Microneedling"
       heroSubtext="At Reform Aesthetics and Dental Clinic, we offer advanced medical microneedling using the world-renowned DermaPen® device, designed to rejuvenate skin texture, boost collagen and restore a healthy, radiant glow."
-      heroImage="/images/treatments-hero.jpg"
+      heroImage="/images/microneedling-hero.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Advanced Collagen Stimulation"
       aboutBody="DermaPen® is the world's leading medical microneedling device, clinically tested and FDA approved for safe, precise skin rejuvenation. This advanced treatment creates controlled micro-channels within the skin to stimulate natural collagen and elastin production. Suitable for both face and body, microneedling improves skin tone, texture and firmness, delivering smoother, brighter and more youthful-looking results over time. Results continue to improve for up to six months following treatment, with minimal downtime."
@@ -17,12 +17,12 @@ export default function Microneedling() {
         'Treats stretch marks',
         'Suitable for all skin types',
       ]}
-      circularImage="/images/treatments-beforeafter.jpg"
-      circularImageAlt="Microneedling treatment result"
+      circularImage="/images/microneedling-treatment.jpg"
+      circularImageAlt="Medical microneedling treatment in progress"
       benefitsHeading="Stimulate Natural Renewal for Long-Lasting Results"
       benefitsBody="Medical microneedling works with your body's own healing response to deliver progressive, natural rejuvenation."
-      benefitsImage="/images/service-anti-wrinkle.jpg"
-      benefitsImageAlt="DermaPen microneedling treatment"
+      benefitsImage="/images/microneedling-hero.jpg"
+      benefitsImageAlt="Medical microneedling results"
       benefits={[
         {
           title: 'Boost Collagen Production',
