@@ -6,7 +6,7 @@ export default function Carboxytherapy() {
       breadcrumb="CARBOXYTHERAPY"
       heroTitle="Smooth & Rejuvenate with Carboxytherapy"
       heroSubtext="At Reform Aesthetics and Dental Clinic, we offer advanced non-surgical treatments designed to improve skin firmness and texture. Carboxytherapy stimulates circulation and collagen production for smoother, more youthful-looking skin."
-      heroImage="/images/carboxytherapy-hero.png"
+      heroImage="/images/carboxytherapy-hero-2.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Reduce Cellulite, Stretch Marks & Dark Circles"
