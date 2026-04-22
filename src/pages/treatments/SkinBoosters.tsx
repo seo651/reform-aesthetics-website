@@ -6,7 +6,7 @@ export default function SkinBoosters() {
       breadcrumb="SKIN BOOSTER"
       heroTitle="Hydrate, Plump & Rejuvenate with Skin Boosters"
       heroSubtext="At Reform Aesthetics and Dental Clinic, we deliver advanced injectable treatments designed to restore hydration, improve elasticity and enhance your natural glow. Every treatment is tailored to revitalise your skin from within."
-      heroImage="/images/skin-booster-1.png"
+      heroImage="/images/skin-booster-hero.png"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Skin Boosters – Profhilo & NCTF Treatments"
       aboutBody="Skin boosters are advanced injectable treatments that deeply hydrate and rejuvenate the skin. Using premium products such as Profhilo and NCTF, we improve skin firmness, texture and radiance. Profhilo works to tighten and lift sagging skin, while NCTF nourishes with hyaluronic acid, vitamins and minerals, restoring vitality and smoothness. A course of treatments is typically recommended for optimal, long-lasting results."
