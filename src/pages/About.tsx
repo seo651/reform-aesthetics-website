@@ -289,7 +289,7 @@ export default function About() {
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-[42px] sm:text-[58px] lg:text-[72px] mt-6 mb-6 leading-[1.08] text-gray-900"
+              className="text-[32px] sm:text-[42px] lg:text-[55px] mt-6 mb-6 leading-[1.08] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
               Reform Aesthetics and Dental is an independently owned medical Aesthetics Clinic in Leicester city centre.
