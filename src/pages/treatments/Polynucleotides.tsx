@@ -18,11 +18,11 @@ export default function Polynucleotides() {
         'Softens dark circles and hollowness',
         'Suitable for face and delicate areas',
       ]}
-      circularImage="/images/aesthetics-prp-1.jpg"
+      circularImage="/images/polynucleotides-circular.png"
       circularImageAlt="Polynucleotides treatment result"
       benefitsHeading="Regenerate & Strengthen Your Skin from Within"
       benefitsBody="Polynucleotides work by supporting your skin's natural repair mechanisms, making them ideal for patients seeking subtle, regenerative results rather than added volume."
-      benefitsImage="/images/aesthetics-prp-2.jpg"
+      benefitsImage="/images/polynucleotides-benefits.png"
       benefitsImageAlt="Polynucleotides treatment"
       benefits={[
         {
