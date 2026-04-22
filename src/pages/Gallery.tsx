@@ -96,15 +96,15 @@ export default function GalleryPage() {
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center gap-4 mb-8"
           >
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
             <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 text-[11px] font-sans font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
-              <span className="text-gray-500">HOME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
+              <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-gray-900 font-semibold">GALLERY</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
+              <span className="text-black font-semibold">GALLERY</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
             </span>
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
 
           <motion.h1
@@ -134,7 +134,7 @@ export default function GalleryPage() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -147,13 +147,13 @@ export default function GalleryPage() {
         <div className="max-w-7xl mx-auto">
 
           {/* ── Tab switcher card ── */}
-          <div className="border border-[#c4a882] rounded-2xl overflow-hidden grid grid-cols-2 mb-10 shadow-sm">
+          <div className="border border-[#c5b1a1] rounded-2xl overflow-hidden grid grid-cols-2 mb-10 shadow-sm">
             <button
               onClick={() => setActiveTab('aesthetics')}
               className={`flex flex-col items-center justify-center gap-2 py-6 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase transition-colors ${
                 activeTab === 'aesthetics'
-                  ? 'bg-[#1a1a1a] text-white'
-                  : 'bg-white text-gray-500 hover:bg-[#EDE8E2]'
+                  ? 'bg-[#000000] text-white'
+                  : 'bg-white text-[#363636] hover:bg-[#efeae7]'
               }`}
             >
               <GalleryIcon />
@@ -163,8 +163,8 @@ export default function GalleryPage() {
               onClick={() => setActiveTab('clinic')}
               className={`flex flex-col items-center justify-center gap-2 py-6 text-[11px] font-sans font-semibold tracking-[0.15em] uppercase transition-colors ${
                 activeTab === 'clinic'
-                  ? 'bg-[#1a1a1a] text-white'
-                  : 'bg-white text-gray-500 hover:bg-[#EDE8E2]'
+                  ? 'bg-[#000000] text-white'
+                  : 'bg-white text-[#363636] hover:bg-[#efeae7]'
               }`}
             >
               <GalleryIcon />
@@ -183,12 +183,12 @@ export default function GalleryPage() {
                 transition={{ duration: 0.3 }}
               >
                 <h2
-                  className="text-[38px] sm:text-[48px] text-gray-900 mb-4 leading-tight"
+                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Clinic Gallery
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-3xl mb-8">
+                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8">
                   Step inside Reform Aesthetics and Dental. Our clinic is designed to be a calm, welcoming space where you feel at ease from the moment you arrive. Explore our treatment rooms, reception area and consultation spaces.
                 </p>
 
@@ -222,12 +222,12 @@ export default function GalleryPage() {
                 transition={{ duration: 0.3 }}
               >
                 <h2
-                  className="text-[38px] sm:text-[48px] text-gray-900 mb-4 leading-tight"
+                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Aesthetics Gallery
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-3xl mb-8">
+                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8">
                   Discover the remarkable journeys of our patients as they achieve brighter, healthier skin. Each transformation showcases the skill and care our team provides, helping you envision the possibilities for your own treatment.
                 </p>
 
@@ -238,7 +238,7 @@ export default function GalleryPage() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.08 * idx }}
-                      className="rounded-2xl overflow-hidden group bg-[#EDE8E2]"
+                      className="rounded-2xl overflow-hidden group bg-[#efeae7]"
                     >
                       <div className="aspect-square overflow-hidden">
                         <img
@@ -247,9 +247,9 @@ export default function GalleryPage() {
                           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
-                      <div className="p-5 bg-[#EDE8E2]">
-                        <p className="text-gray-900 text-sm font-sans font-semibold mb-1">{c.service}</p>
-                        <p className="text-gray-500 text-xs font-sans leading-relaxed">{c.description}</p>
+                      <div className="p-5 bg-[#efeae7]">
+                        <p className="text-black text-sm font-sans font-semibold mb-1">{c.service}</p>
+                        <p className="text-[#363636] text-xs font-sans leading-relaxed">{c.description}</p>
                       </div>
                     </motion.div>
                   ))}

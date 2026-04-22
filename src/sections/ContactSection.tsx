@@ -40,7 +40,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-8 mx-4 sm:mx-6 lg:mx-8">
       <AnimatedSection>
-        <div className="bg-[#EDE8E2] rounded-[2.5rem] overflow-hidden">
+        <div className="bg-[#efeae7] rounded-[2.5rem] overflow-hidden">
           <div className="grid lg:grid-cols-2">
 
             {/* ── Left: Map + overlay cards ── */}
@@ -102,13 +102,13 @@ export function ContactSection() {
                   </div>
                   <div className="space-y-3 font-sans">
                     <div>
-                      <p className="text-[#c4a882] text-[10px] font-semibold tracking-widest uppercase mb-1">PHONE</p>
+                      <p className="text-[#c5b1a1] text-[10px] font-semibold tracking-widest uppercase mb-1">PHONE</p>
                       <a href="tel:01163800318" className="text-white/80 text-sm hover:underline">
                         0116 3800318
                       </a>
                     </div>
                     <div>
-                      <p className="text-[#c4a882] text-[10px] font-semibold tracking-widest uppercase mb-1">EMAIL ADDRESS</p>
+                      <p className="text-[#c5b1a1] text-[10px] font-semibold tracking-widest uppercase mb-1">EMAIL ADDRESS</p>
                       <a href="mailto:info@reformmedical.co.uk" className="text-white/80 text-sm hover:underline">
                         info@reformmedical.co.uk
                       </a>
@@ -124,7 +124,7 @@ export function ContactSection() {
                 <SectionBadge text="Contact Us" />
               </div>
               <h2
-                className="text-4xl sm:text-5xl mt-5 mb-10 text-gray-900 leading-tight"
+                className="text-4xl sm:text-5xl mt-5 mb-10 text-black leading-tight"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Get in touch with us
@@ -133,7 +133,7 @@ export function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-7">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                       First Name <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -146,7 +146,7 @@ export function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                       Last Name
                     </label>
                     <input
@@ -161,7 +161,7 @@ export function ContactSection() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                       Email <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -174,7 +174,7 @@ export function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                       Phone Number <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -189,13 +189,13 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                     I am interested in...
                   </label>
                   <select
                     value={formData.interest}
                     onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                    className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans text-gray-500 appearance-none cursor-pointer"
+                    className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans text-[#363636] appearance-none cursor-pointer"
                   >
                     <option value="">I am interested in...</option>
                     {treatmentOptions.map((option) => (
@@ -205,7 +205,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-sans font-medium text-gray-600 mb-2">
+                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
                     Message <span className="text-red-400">*</span>
                   </label>
                   <textarea
@@ -220,7 +220,7 @@ export function ContactSection() {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-[#363636] transition-colors font-sans"
                 >
                   SUBMIT MESSAGE
                   <ArrowUpRight className="w-3.5 h-3.5" />

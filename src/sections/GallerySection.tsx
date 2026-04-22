@@ -31,21 +31,21 @@ export function GallerySection() {
                 <SectionBadge text="GALLERY" />
               </div>
               <h2
-                className="text-3xl sm:text-4xl lg:text-[42px] mt-4 leading-tight text-gray-900"
+                className="text-3xl sm:text-4xl lg:text-[42px] mt-4 leading-tight text-black"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Take a Look<br />Inside Our Clinic
               </h2>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 lg:max-w-lg lg:pt-6">
-              <p className="text-gray-500 text-sm leading-relaxed font-sans flex-1">
+              <p className="text-[#363636] text-sm leading-relaxed font-sans flex-1">
                 Every face tells a story. Explore real treatment outcomes achieved at Reform
                 Aesthetics and Dental. If you're considering dermal fillers and would like to
                 discuss your goals, book a personalised consultation with our team.
               </p>
               <a
                 href="/gallery"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-800 transition-colors whitespace-nowrap flex-shrink-0 font-sans"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.1em] uppercase hover:bg-[#363636] transition-colors whitespace-nowrap flex-shrink-0 font-sans"
               >
                 SEE GALLERY
                 <ArrowUpRight className="w-3 h-3" />
@@ -86,13 +86,13 @@ export function GallerySection() {
               onClick={prevSlide}
               className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
-              <ChevronLeft className="w-4 h-4 text-gray-600" />
+              <ChevronLeft className="w-4 h-4 text-[#363636]" />
             </button>
             <button
               onClick={nextSlide}
               className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
             >
-              <ChevronRight className="w-4 h-4 text-gray-600" />
+              <ChevronRight className="w-4 h-4 text-[#363636]" />
             </button>
           </div>
         </AnimatedSection>

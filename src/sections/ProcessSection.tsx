@@ -54,7 +54,7 @@ const GAP = 22; // gap between number col and icon/content col
 export function ProcessSection() {
   return (
     <section className="py-5 px-3 sm:px-4">
-      <div className="bg-[#EDE8E2] rounded-[2rem] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
+      <div className="bg-[#efeae7] rounded-[2rem] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[44%_56%] gap-10 lg:gap-16 items-start">
 
@@ -70,12 +70,12 @@ export function ProcessSection() {
                 <SectionBadge text="PROCESS" />
               </div>
               <h2
-                className="text-[40px] sm:text-[48px] lg:text-[52px] mt-5 mb-5 leading-[1.12] text-gray-900"
+                className="text-[40px] sm:text-[48px] lg:text-[52px] mt-5 mb-5 leading-[1.12] text-black"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Glow Up Your Skin in 3<br />Easy Steps
               </h2>
-              <p className="text-gray-500 text-sm leading-relaxed mb-10 font-sans max-w-sm mx-auto lg:mx-0">
+              <p className="text-[#363636] text-sm leading-relaxed mb-10 font-sans max-w-sm mx-auto lg:mx-0">
                 Our Glow Up Process makes achieving radiant, healthy skin simple and stress-free.
                 Whether you're looking to combat ageing, clear blemishes, or restore your natural
                 glow, our team guides you every step of the way.
@@ -85,7 +85,7 @@ export function ProcessSection() {
                   href="https://pearlportal.net/Portal/rad/OnlineBooking"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-gray-800 transition-colors font-sans"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-[#363636] transition-colors font-sans"
                 >
                   ARRANGE YOUR CONSULTATION
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -113,11 +113,11 @@ export function ProcessSection() {
                   >
                     {/* Row 1 Col 1 — Number circle */}
                     <div
-                      className="rounded-full border-[1.5px] border-[#9e9890] bg-[#EDE8E2] flex items-center justify-center"
+                      className="rounded-full border-[1.5px] border-[#9e9890] bg-[#efeae7] flex items-center justify-center"
                       style={{ width: C, height: C }}
                     >
                       <span
-                        className="font-sans text-gray-500 tracking-widest"
+                        className="font-sans text-[#363636] tracking-widest"
                         style={{ fontSize: 13 }}
                       >
                         {step.number}
@@ -158,7 +158,7 @@ export function ProcessSection() {
                     {/* Row 2 Col 3 — Title + description */}
                     <div style={{ paddingTop: 14, paddingBottom: isLast ? 0 : 28 }}>
                       <h3
-                        className="mb-2.5 text-gray-900 leading-snug"
+                        className="mb-2.5 text-black leading-snug"
                         style={{
                           fontFamily: '"Times New Roman", Times, serif',
                           fontWeight: 400,
@@ -167,7 +167,7 @@ export function ProcessSection() {
                       >
                         {step.title}
                       </h3>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans">
+                      <p className="text-[#363636] text-sm leading-relaxed font-sans">
                         {step.description}
                       </p>
                     </div>

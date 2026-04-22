@@ -94,12 +94,12 @@ export default function Blog() {
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center gap-2 text-gray-500 text-xs mb-3">
+                  <div className="flex items-center gap-2 text-[#363636] text-xs mb-3">
                     <Calendar className="w-3 h-3" />
                     {post.date}
                   </div>
-                  <h3 className="font-serif text-xl mb-3 group-hover:text-gray-600 transition-colors">{post.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{post.excerpt}</p>
+                  <h3 className="font-serif text-xl mb-3 group-hover:text-[#363636] transition-colors">{post.title}</h3>
+                  <p className="text-[#363636] text-sm leading-relaxed mb-4">{post.excerpt}</p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:underline">
                     READ MORE <ArrowUpRight className="w-3 h-3" />
                   </span>

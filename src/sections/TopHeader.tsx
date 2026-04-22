@@ -158,7 +158,7 @@ export function TopHeader() {
                               className={`text-base font-sans font-medium transition-colors ${
                                 location.pathname === link.href
                                   ? 'text-black'
-                                  : 'text-gray-500 hover:text-black'
+                                  : 'text-[#363636] hover:text-black'
                               }`}
                             >
                               {link.label}
@@ -172,7 +172,7 @@ export function TopHeader() {
                         href="https://pearlportal.net/Portal/rad/OnlineBooking"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-800 transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#363636] transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
                         BOOK ONLINE
@@ -182,12 +182,12 @@ export function TopHeader() {
                         href="https://reformdental.get-found.co.uk/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-[#c4a882] text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#d4b892] transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-[#c5b1a1] text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#d4c4b6] transition-colors"
                       >
                         VISIT DENTAL CLINIC
                         <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
                       </a>
-                      <a href="tel:01163800318" className="flex items-center gap-2 text-sm font-sans text-gray-600 px-1">
+                      <a href="tel:01163800318" className="flex items-center gap-2 text-sm font-sans text-[#363636] px-1">
                         <Phone className="w-4 h-4" />
                         0116 3800318
                       </a>
@@ -230,7 +230,7 @@ export function TopHeader() {
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#c4a882] text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#d4b892] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#c5b1a1] text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#d4c4b6] transition-colors whitespace-nowrap"
               >
                 DENTAL CLINIC
                 <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
@@ -264,7 +264,7 @@ export function TopHeader() {
                     <Link
                       to={link.href}
                       className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] transition-colors ${
-                        isActive ? 'text-black' : 'text-gray-500 hover:text-black'
+                        isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                       }`}
                     >
                       {link.label}
@@ -292,8 +292,8 @@ export function TopHeader() {
                               onMouseEnter={() => setActiveCategory(idx)}
                               className={`flex items-center justify-between px-5 py-3.5 cursor-pointer transition-colors ${
                                 activeCategory === idx
-                                  ? 'bg-white text-gray-900'
-                                  : 'text-gray-600 hover:bg-white/60 hover:text-gray-900'
+                                  ? 'bg-white text-black'
+                                  : 'text-[#363636] hover:bg-white/60 hover:text-black'
                               }`}
                             >
                               <span className="text-[11px] font-sans font-semibold tracking-[0.14em] uppercase">
@@ -311,7 +311,7 @@ export function TopHeader() {
                               key={item.href + item.label}
                               to={item.href}
                               onClick={() => setDropdownOpen(false)}
-                              className="block px-4 py-3 text-[11px] font-sans font-medium tracking-[0.12em] uppercase text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-50 last:border-b-0"
+                              className="block px-4 py-3 text-[11px] font-sans font-medium tracking-[0.12em] uppercase text-[#363636] hover:text-black hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-50 last:border-b-0"
                             >
                               {item.label}
                             </Link>
@@ -327,7 +327,7 @@ export function TopHeader() {
                   <Link
                     to={link.href}
                     className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] transition-colors ${
-                      isActive ? 'text-black' : 'text-gray-500 hover:text-black'
+                      isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                     }`}
                   >
                     {link.label}

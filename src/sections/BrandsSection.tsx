@@ -14,7 +14,7 @@ const track = [...brands, ...brands];
 
 export function BrandsSection() {
   return (
-    <section className="relative bg-[#EDE8E2] rounded-t-[3rem] -mt-8 pt-16 pb-20">
+    <section className="relative bg-[#efeae7] rounded-t-[3rem] -mt-8 pt-16 pb-20">
       <div className="max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ export function BrandsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-12 text-gray-900"
+          className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-12 text-black"
           style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
         >
           Trusted Brands We<br />Partner With...
@@ -40,9 +40,9 @@ export function BrandsSection() {
       {/* Infinite scroll marquee — full width, no horizontal padding */}
       <div className="relative overflow-hidden">
         {/* Left fade */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 z-10 bg-gradient-to-r from-[#EDE8E2] to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 z-10 bg-gradient-to-r from-[#efeae7] to-transparent" />
         {/* Right fade */}
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 z-10 bg-gradient-to-l from-[#EDE8E2] to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 z-10 bg-gradient-to-l from-[#efeae7] to-transparent" />
 
         <div
           className="flex items-center gap-0 w-max"

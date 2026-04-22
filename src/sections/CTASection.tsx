@@ -43,7 +43,7 @@ export function CTASection() {
           {/* ── White form card — negative margin pulls it UP into the dark card ── */}
           <div className="relative z-20 mx-2 sm:mx-6 lg:mx-12 -mt-14">
             <div className="bg-white rounded-[1.5rem] shadow-xl px-8 sm:px-12 py-8 sm:py-9">
-              <p className="text-gray-600 text-sm mb-5 font-sans">
+              <p className="text-[#363636] text-sm mb-5 font-sans">
                 Fill out the form below, and we'll get back to you as soon as possible.
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 items-stretch">
@@ -52,21 +52,21 @@ export function CTASection() {
                   placeholder="Full Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-gray-700 placeholder:text-gray-400"
+                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-[#363636] placeholder:text-gray-400"
                 />
                 <input
                   type="email"
                   placeholder="Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-gray-700 placeholder:text-gray-400"
+                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-[#363636] placeholder:text-gray-400"
                 />
                 <input
                   type="tel"
                   placeholder="Phone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-gray-700 placeholder:text-gray-400"
+                  className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-[#363636] placeholder:text-gray-400"
                 />
                 <button
                   type="submit"

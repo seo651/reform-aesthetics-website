@@ -29,15 +29,15 @@ export default function Doctors() {
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
             className="flex items-center justify-center gap-4 mb-8"
           >
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
             <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 text-[11px] font-sans font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
-              <span className="text-gray-500">HOME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
+              <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-gray-900 font-semibold">DOCTORS</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
+              <span className="text-black font-semibold">DOCTORS</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
             </span>
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
 
           <motion.h1
@@ -61,7 +61,7 @@ export default function Doctors() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -70,7 +70,7 @@ export default function Doctors() {
       </section>
 
       {/* ── 2. FEATURED — Dr Priya, cream overlap ── */}
-      <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -80,16 +80,16 @@ export default function Doctors() {
                 <SectionBadge text="Team Member" />
               </div>
               <h2
-                className="text-3xl sm:text-[40px] mt-4 mb-1 text-gray-900 leading-tight"
+                className="text-3xl sm:text-[40px] mt-4 mb-1 text-black leading-tight"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 {featured.name}
               </h2>
-              <p className="text-sm font-sans font-semibold text-gray-800 mb-0.5">{featured.role}</p>
-              <p className="text-xs font-sans text-gray-500 mb-6">{featured.title}</p>
+              <p className="text-sm font-sans font-semibold text-[#363636] mb-0.5">{featured.role}</p>
+              <p className="text-xs font-sans text-[#363636] mb-6">{featured.title}</p>
               <div className="space-y-4">
                 {featured.bio.map((para, i) => (
-                  <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans">
+                  <p key={i} className="text-[#363636] text-sm leading-relaxed font-sans">
                     {para.content}
                   </p>
                 ))}
@@ -129,8 +129,8 @@ export default function Doctors() {
                     onClick={() => setActiveId(member.id)}
                     className={`px-4 py-2.5 rounded-full text-[13px] font-sans whitespace-nowrap transition-all text-left ${
                       activeId === member.id
-                        ? 'bg-[#EDE8E2] text-gray-900 font-semibold'
-                        : 'bg-transparent text-gray-500 hover:bg-gray-50 border border-gray-200'
+                        ? 'bg-[#efeae7] text-black font-semibold'
+                        : 'bg-transparent text-[#363636] hover:bg-gray-50 border border-gray-200'
                     }`}
                   >
                     {member.name}
@@ -155,27 +155,27 @@ export default function Doctors() {
                     <SectionBadge text="Team Member" />
                   </div>
                   <h2
-                    className="text-3xl sm:text-[38px] mt-4 mb-1 text-gray-900 leading-tight"
+                    className="text-3xl sm:text-[38px] mt-4 mb-1 text-black leading-tight"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                   >
                     {activeMember.name}
                   </h2>
-                  <p className="text-sm font-sans font-semibold text-gray-800 mb-0.5">
+                  <p className="text-sm font-sans font-semibold text-[#363636] mb-0.5">
                     {activeMember.role}
                   </p>
                   {activeMember.title && (
-                    <p className="text-xs font-sans text-gray-500 mb-5">{activeMember.title}</p>
+                    <p className="text-xs font-sans text-[#363636] mb-5">{activeMember.title}</p>
                   )}
                   {!activeMember.title && <div className="mb-5" />}
 
                   <div className="space-y-4">
                     {activeMember.bio.map((para, i) =>
                       para.type === 'quote' ? (
-                        <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans italic border-l-2 border-[#c4a882] pl-4 text-left">
+                        <p key={i} className="text-[#363636] text-sm leading-relaxed font-sans italic border-l-2 border-[#c5b1a1] pl-4 text-left">
                           {para.content}
                         </p>
                       ) : (
-                        <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans">
+                        <p key={i} className="text-[#363636] text-sm leading-relaxed font-sans">
                           {para.content}
                         </p>
                       )

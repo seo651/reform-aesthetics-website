@@ -106,7 +106,7 @@ export function ServicesSection() {
             <SectionBadge text="Services" />
           </div>
           <h2
-            className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-gray-900 mx-auto lg:mx-0"
+            className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-black mx-auto lg:mx-0"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Explore Our Services for Lasting Skin Health!
@@ -189,27 +189,27 @@ function ServiceRow({
                 <div className="flex-1 p-5 sm:p-6">
                   <div className="flex items-start justify-between mb-3">
                     <h3
-                      className="text-[17px] leading-snug text-gray-900 pr-3"
+                      className="text-[17px] leading-snug text-black pr-3"
                       style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                     >
                       {service.title}
                     </h3>
                     <button
                       onClick={onToggle}
-                      className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 hover:bg-gray-800 transition-colors"
+                      className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 hover:bg-[#363636] transition-colors"
                     >
                       <Minus className="w-3.5 h-3.5 text-white" />
                     </button>
                   </div>
-                  <p className="text-gray-500 text-[13px] leading-relaxed font-sans mb-2">
+                  <p className="text-[#363636] text-[13px] leading-relaxed font-sans mb-2">
                     {service.description}
                   </p>
-                  <p className="text-gray-500 text-[13px] leading-relaxed font-sans mb-4">
+                  <p className="text-[#363636] text-[13px] leading-relaxed font-sans mb-4">
                     {service.details}
                   </p>
                   <a
                     href={service.href}
-                    className="inline-flex items-center gap-1.5 text-[11px] font-sans font-semibold tracking-[0.1em] uppercase text-gray-900 hover:underline"
+                    className="inline-flex items-center gap-1.5 text-[11px] font-sans font-semibold tracking-[0.1em] uppercase text-black hover:underline"
                   >
                     READ MORE
                     <ArrowUpRight className="w-3.5 h-3.5" />
@@ -226,12 +226,12 @@ function ServiceRow({
           className="w-full flex items-center justify-between py-5 text-left group"
         >
           <h3
-            className="text-[17px] sm:text-[19px] text-gray-900 group-hover:text-gray-600 transition-colors"
+            className="text-[17px] sm:text-[19px] text-black group-hover:text-[#363636] transition-colors"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             {service.title}
           </h3>
-          <span className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 group-hover:bg-gray-800 transition-colors">
+          <span className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#363636] transition-colors">
             <Plus className="w-3.5 h-3.5 text-white" />
           </span>
         </button>

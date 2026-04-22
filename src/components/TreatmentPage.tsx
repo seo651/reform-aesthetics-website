@@ -111,15 +111,15 @@ export function TreatmentPage({
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center gap-4 mb-10"
           >
-            <div className="hidden sm:block h-px w-16 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-16 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
             <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 backdrop-blur-sm text-[11px] font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882]" />
-              <span className="text-gray-600">HOME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
+              <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-gray-900 font-semibold">{breadcrumb}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882]" />
+              <span className="text-black font-semibold">{breadcrumb}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
             </span>
-            <div className="hidden sm:block h-px w-16 bg-gradient-to-l from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-16 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
 
           <motion.h1
@@ -150,7 +150,7 @@ export function TreatmentPage({
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-md font-sans"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#efeae7] text-black text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-md font-sans"
             >
               BOOK YOUR CONSULTATION
               <ArrowUpRight className="w-4 h-4" />
@@ -160,7 +160,7 @@ export function TreatmentPage({
       </section>
 
       {/* ── About — cream overlap ── */}
-      <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -171,13 +171,13 @@ export function TreatmentPage({
               </div>
 
               <h2
-                className="text-3xl sm:text-4xl lg:text-[44px] leading-[1.15] mt-6 mb-6 text-gray-900"
+                className="text-3xl sm:text-4xl lg:text-[44px] leading-[1.15] mt-6 mb-6 text-black"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 {aboutHeading}
               </h2>
 
-              <p className="text-gray-500 text-[15px] leading-relaxed mb-10 font-sans">
+              <p className="text-[#363636] text-[15px] leading-relaxed mb-10 font-sans">
                 {aboutBody}
               </p>
 
@@ -192,7 +192,7 @@ export function TreatmentPage({
                     className="flex items-center justify-center lg:justify-start gap-4 py-5 border-b border-gray-300/60 last:border-b-0"
                   >
                     <CheckCircle2 className="w-5 h-5 text-[#9D8A7B] flex-shrink-0" />
-                    <span className="text-gray-800 font-sans text-[15px]">{item}</span>
+                    <span className="text-[#363636] font-sans text-[15px]">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -203,7 +203,7 @@ export function TreatmentPage({
               <div className="flex flex-col items-center lg:sticky lg:top-24">
                 {/* Circular frame */}
                 <div className="relative w-full max-w-[280px] sm:max-w-[380px] lg:max-w-[420px] aspect-square mb-8 flex-shrink-0 mx-auto">
-                  <div className="absolute inset-0 rounded-full border-[18px] border-[#c4a882]/35" />
+                  <div className="absolute inset-0 rounded-full border-[18px] border-[#c5b1a1]/35" />
                   <div className="absolute inset-[18px] rounded-full overflow-hidden bg-gray-200">
                     <img
                       src={circularImage}
@@ -218,8 +218,8 @@ export function TreatmentPage({
 
                 {/* Brand logo marquee */}
                 <div className="w-full max-w-[440px] relative overflow-hidden">
-                  <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10 bg-gradient-to-r from-[#EDE8E2] to-transparent" />
-                  <div className="pointer-events-none absolute right-0 top-0 h-full w-10 z-10 bg-gradient-to-l from-[#EDE8E2] to-transparent" />
+                  <div className="pointer-events-none absolute left-0 top-0 h-full w-10 z-10 bg-gradient-to-r from-[#efeae7] to-transparent" />
+                  <div className="pointer-events-none absolute right-0 top-0 h-full w-10 z-10 bg-gradient-to-l from-[#efeae7] to-transparent" />
                   <div
                     className="flex items-center gap-0 w-max"
                     style={{ animation: 'marquee-treatment 20s linear infinite' }}
@@ -279,13 +279,13 @@ export function TreatmentPage({
               </div>
 
               <h2
-                className="text-3xl sm:text-4xl lg:text-[42px] leading-[1.15] mt-6 mb-5 text-gray-900"
+                className="text-3xl sm:text-4xl lg:text-[42px] leading-[1.15] mt-6 mb-5 text-black"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 {benefitsHeading}
               </h2>
 
-              <p className="text-gray-500 text-sm leading-relaxed mb-8 font-sans">
+              <p className="text-[#363636] text-sm leading-relaxed mb-8 font-sans">
                 {benefitsBody}
               </p>
 
@@ -301,16 +301,16 @@ export function TreatmentPage({
                       transition={{ duration: 0.4, delay: 0.1 * idx }}
                       className="flex flex-col items-center lg:items-start text-center lg:text-left"
                     >
-                      <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center mb-4 text-gray-600">
+                      <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center mb-4 text-[#363636]">
                         <Icon />
                       </div>
                       <h3
-                        className="text-base sm:text-lg mb-2 leading-snug text-gray-900"
+                        className="text-base sm:text-lg mb-2 leading-snug text-black"
                         style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                       >
                         {title}
                       </h3>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
+                      <p className="text-[#363636] text-sm leading-relaxed font-sans">{desc}</p>
                     </motion.div>
                   );
                 })}

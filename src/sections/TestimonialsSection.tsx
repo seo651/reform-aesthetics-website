@@ -76,12 +76,12 @@ export function TestimonialsSection() {
         <AnimatedSection className="text-center mb-12">
           <SectionBadge text="Testimonials" />
           <h2
-            className="text-3xl sm:text-4xl lg:text-[46px] mt-6 mb-4 text-gray-900"
+            className="text-3xl sm:text-4xl lg:text-[46px] mt-6 mb-4 text-black"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             What Our Happy Patients Are Saying
           </h2>
-          <p className="text-gray-500 text-sm max-w-2xl mx-auto font-sans">
+          <p className="text-[#363636] text-sm max-w-2xl mx-auto font-sans">
             We are committed to providing the highest quality patient care, and are incredibly
             fortunate to have a team
           </p>
@@ -111,7 +111,7 @@ export function TestimonialsSection() {
                     {testimonial.initials.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-sans font-semibold text-sm text-gray-900">
+                    <h4 className="font-sans font-semibold text-sm text-black">
                       {testimonial.name}
                     </h4>
                     <p className="text-xs text-gray-400 font-sans">{testimonial.role}</p>
@@ -119,14 +119,14 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Review text */}
-                <p className="text-gray-500 text-sm leading-relaxed flex-1 mb-4 line-clamp-6 font-sans">
+                <p className="text-[#363636] text-sm leading-relaxed flex-1 mb-4 line-clamp-6 font-sans">
                   {testimonial.text}
                 </p>
 
                 {/* Rating */}
                 <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
                   <StarRating />
-                  <span className="text-xs font-semibold font-sans text-gray-700">5.0 RATING</span>
+                  <span className="text-xs font-semibold font-sans text-[#363636]">5.0 RATING</span>
                 </div>
               </div>
             ))}
@@ -139,13 +139,13 @@ export function TestimonialsSection() {
             onClick={prevPage}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
-            <ChevronLeft className="w-4 h-4 text-gray-600" />
+            <ChevronLeft className="w-4 h-4 text-[#363636]" />
           </button>
           <button
             onClick={nextPage}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
-            <ChevronRight className="w-4 h-4 text-gray-600" />
+            <ChevronRight className="w-4 h-4 text-[#363636]" />
           </button>
         </div>
       </div>

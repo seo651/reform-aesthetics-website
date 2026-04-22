@@ -40,7 +40,7 @@ function TwitterXIcon() {
 
 export function FooterSection() {
   return (
-    <footer className="bg-[#EDE8E2]">
+    <footer className="bg-[#efeae7]">
 
       {/* ── Top CTA Row ── */}
       <div className="px-6 sm:px-10 lg:px-16 pt-14 pb-12">
@@ -48,7 +48,7 @@ export function FooterSection() {
 
           {/* Left: Heading */}
           <h2
-            className="text-4xl sm:text-5xl lg:text-[52px] leading-[1.15] text-gray-900 lg:max-w-md"
+            className="text-4xl sm:text-5xl lg:text-[52px] leading-[1.15] text-black lg:max-w-md"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Reach out to a<br />member of our team
@@ -60,7 +60,7 @@ export function FooterSection() {
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full bg-gray-900 text-white text-[11px] font-semibold tracking-[0.14em] uppercase hover:bg-black transition-colors font-sans"
+              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.14em] uppercase hover:bg-black transition-colors font-sans"
             >
               SECURE YOUR SMILE SLOT
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -69,14 +69,14 @@ export function FooterSection() {
 
           {/* Right: Social Media */}
           <div>
-            <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gray-900 mb-3 font-sans">SOCIAL MEDIA</p>
+            <p className="text-xs font-semibold tracking-[0.15em] uppercase text-black mb-3 font-sans">SOCIAL MEDIA</p>
             <div className="w-10 h-0.5 bg-gray-800 mb-4" />
             <div className="flex items-center gap-5">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-black transition-colors font-sans"
+                className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
               >
                 <LinkedinIcon />
                 Linkedin
@@ -85,7 +85,7 @@ export function FooterSection() {
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-black transition-colors font-sans"
+                className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
               >
                 <InstagramIcon />
                 Instagram
@@ -94,7 +94,7 @@ export function FooterSection() {
                 href="https://x.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-gray-700 hover:text-black transition-colors font-sans"
+                className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
               >
                 <TwitterXIcon />
                 Twitter
@@ -123,7 +123,7 @@ export function FooterSection() {
               />
             </div>
 
-            <p className="text-gray-500 text-sm leading-relaxed font-sans mb-5">
+            <p className="text-[#363636] text-sm leading-relaxed font-sans mb-5">
               We are a high-quality medical aesthetics clinic offering advanced anti-ageing
               treatments tailored to your individual goals. Serving clients across Leicester, we
               combine clinical expertise with a personalised approach to deliver safe, natural-looking
@@ -138,22 +138,22 @@ export function FooterSection() {
                 className="h-16 w-auto object-contain"
               />
               <div>
-                <p className="text-[11px] font-semibold text-gray-700 font-sans uppercase tracking-wide leading-tight">CQC Registered</p>
-                <p className="text-[11px] text-gray-500 font-sans leading-tight">Care Quality Commission</p>
+                <p className="text-[11px] font-semibold text-[#363636] font-sans uppercase tracking-wide leading-tight">CQC Registered</p>
+                <p className="text-[11px] text-[#363636] font-sans leading-tight">Care Quality Commission</p>
               </div>
             </div>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Quick Links</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Quick Links</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     to={link.href}
-                    className="text-gray-500 text-sm font-sans hover:text-black transition-colors"
+                    className="text-[#363636] text-sm font-sans hover:text-black transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -164,7 +164,7 @@ export function FooterSection() {
 
           {/* Column 3: Location Map */}
           <div>
-            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Location</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Location</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <div className="rounded-xl overflow-hidden h-44 bg-gray-200">
               <iframe
@@ -182,18 +182,18 @@ export function FooterSection() {
 
           {/* Column 4: Contact Us */}
           <div>
-            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-gray-900">Contact Us</h4>
+            <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Contact Us</h4>
             <div className="w-10 h-0.5 bg-gray-800 mb-5" />
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-500 text-sm leading-snug font-sans">
+                <span className="text-[#363636] text-sm leading-snug font-sans">
                   18 De Montfort St, Leicester LE1 7GL, UK
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                <a href="tel:01163800318" className="text-gray-500 text-sm font-sans hover:text-black transition-colors">
+                <a href="tel:01163800318" className="text-[#363636] text-sm font-sans hover:text-black transition-colors">
                   0116 3800318
                 </a>
               </li>
@@ -201,7 +201,7 @@ export function FooterSection() {
                 <Mail className="w-4 h-4 text-gray-400 flex-shrink-0" />
                 <a
                   href="mailto:info@reformmedical.co.uk"
-                  className="text-gray-500 text-sm font-sans hover:text-black transition-colors"
+                  className="text-[#363636] text-sm font-sans hover:text-black transition-colors"
                 >
                   info@reformmedical.co.uk
                 </a>
@@ -215,14 +215,14 @@ export function FooterSection() {
       {/* ── Bottom Bar ── */}
       <div className="border-t border-gray-300">
         <div className="px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-gray-500 uppercase tracking-wider font-sans">
+          <p className="text-xs text-[#363636] uppercase tracking-wider font-sans">
             COPYRIGHT © 2026 REFORM AESTHETICS AND DENTAL DESIGNED BY{' '}
             <a href="https://get-found.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:underline">
               GET FOUND
             </a>
             .
           </p>
-          <div className="flex items-center gap-4 text-xs text-gray-500 uppercase tracking-wider font-sans">
+          <div className="flex items-center gap-4 text-xs text-[#363636] uppercase tracking-wider font-sans">
             <a href="#" className="hover:text-black transition-colors">CANCELLATION POLICY</a>
             <span className="text-gray-400">•</span>
             <a href="#" className="hover:text-black transition-colors">COMPLAINTS POLICY</a>

@@ -112,12 +112,12 @@ function AccordionRow({
         className="w-full flex items-center justify-between py-4 px-5 text-left group hover:bg-gray-50/50 transition-colors rounded-xl"
       >
         <span
-          className="text-base text-gray-900"
+          className="text-base text-black"
           style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
         >
           {category.name}
         </span>
-        <span className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0 group-hover:bg-gray-700 transition-colors">
+        <span className="w-8 h-8 rounded-full bg-black flex items-center justify-center flex-shrink-0 group-hover:bg-[#363636] transition-colors">
           {isOpen ? (
             <Minus className="w-3.5 h-3.5 text-white" />
           ) : (
@@ -143,8 +143,8 @@ function AccordionRow({
                   key={i}
                   className="flex items-center justify-between py-2.5 border-b border-gray-100 last:border-b-0"
                 >
-                  <span className="text-gray-500 text-sm font-sans">{item.name}</span>
-                  <span className="text-gray-900 text-sm font-sans font-medium">{item.price}</span>
+                  <span className="text-[#363636] text-sm font-sans">{item.name}</span>
+                  <span className="text-black text-sm font-sans font-medium">{item.price}</span>
                 </div>
               ))}
             </div>
@@ -191,15 +191,15 @@ export default function Pricing() {
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center gap-4 mb-8"
           >
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
             <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 text-[11px] font-sans font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
-              <span className="text-gray-500">HOME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
+              <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-gray-900 font-semibold">PRICING</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
+              <span className="text-black font-semibold">PRICING</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
             </span>
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
 
           {/* H1 — Times New Roman 400 */}
@@ -232,7 +232,7 @@ export default function Pricing() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
           >
             BOOK YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -241,7 +241,7 @@ export default function Pricing() {
       </section>
 
       {/* ── 2. PRICING ACCORDION — cream overlap rounded-top ── */}
-      <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-10 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-10 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-6">
 

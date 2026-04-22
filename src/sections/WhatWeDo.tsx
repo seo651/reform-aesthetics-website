@@ -86,7 +86,7 @@ export function WhatWeDo() {
               <SectionBadge text="What We Do" />
             </div>
             <h2
-              className="text-[36px] sm:text-[44px] lg:text-[52px] mt-6 leading-[1.1] text-gray-900"
+              className="text-[36px] sm:text-[44px] lg:text-[52px] mt-6 leading-[1.1] text-black"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
               An Independent Skin &amp; Aesthetics Clinic Focused on Results
@@ -95,7 +95,7 @@ export function WhatWeDo() {
 
           {/* Right */}
           <AnimatedSection delay={0.15} className="lg:pt-16 text-center lg:text-left">
-            <p className="text-gray-500 text-[15px] leading-relaxed font-sans mb-8">
+            <p className="text-[#363636] text-[15px] leading-relaxed font-sans mb-8">
               We provide specialist skin and anti-ageing treatments designed to enhance your natural
               features — not change them. Our philosophy is simple: subtle, refined improvements
               using premium products and evidence-based techniques.
@@ -136,13 +136,13 @@ export function WhatWeDo() {
               </div>
 
               <h3
-                className="text-[19px] sm:text-[21px] text-gray-900 leading-snug"
+                className="text-[19px] sm:text-[21px] text-black leading-snug"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 {title}
               </h3>
 
-              <p className="text-gray-500 text-sm leading-relaxed font-sans">
+              <p className="text-[#363636] text-sm leading-relaxed font-sans">
                 {description}
               </p>
             </motion.div>

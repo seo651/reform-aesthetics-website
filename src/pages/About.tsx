@@ -139,15 +139,15 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="flex items-center justify-center gap-4 mb-8"
           >
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
             <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 text-[11px] font-sans font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
-              <span className="text-gray-500">HOME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
+              <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-gray-900 font-semibold">ABOUT US</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c4a882] flex-shrink-0" />
+              <span className="text-black font-semibold">ABOUT US</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
             </span>
-            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c4a882]" />
+            <div className="hidden sm:block h-px w-12 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
 
           {/* H1 — Times New Roman 400 */}
@@ -180,7 +180,7 @@ export default function About() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#EDE8E2] text-gray-900 text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -190,7 +190,7 @@ export default function About() {
 
       {/* ── 2 + 3. ABOUT + STATS — single fully-rounded card ── */}
       <section className="relative z-20 -mt-8 pb-10">
-        <div className="bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] pt-16 sm:pt-20 overflow-hidden">
+        <div className="bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] pt-16 sm:pt-20 overflow-hidden">
 
           {/* About content */}
           <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
@@ -202,15 +202,15 @@ export default function About() {
                   <SectionBadge text="About Us" />
                 </div>
                 <h2
-                  className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-gray-900"
+                  className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-black"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Looking for trusted skincare professionals in Leicester?
                 </h2>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4 font-sans">
+                <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
                   We offer personalised, clinically proven skincare solutions.
                 </p>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans">
+                <p className="text-[#363636] text-sm leading-relaxed font-sans">
                   At Reform Aesthetics and Dental, we know every skin journey is unique. That's why we take time
                   to understand your concerns and goals, creating treatment plans tailored just for
                   you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
@@ -236,13 +236,13 @@ export default function About() {
                           <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
                         </svg>
                         <h3
-                          className="text-[18px] text-gray-900"
+                          className="text-[18px] text-black"
                           style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                         >
                           {title}
                         </h3>
                       </div>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans text-center lg:text-left lg:pl-8">{desc}</p>
+                      <p className="text-[#363636] text-sm leading-relaxed font-sans text-center lg:text-left lg:pl-8">{desc}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -271,7 +271,7 @@ export default function About() {
                   >
                     {stat.number}
                   </div>
-                  <p className="text-gray-500 text-xs font-sans leading-snug max-w-[120px] mx-auto">
+                  <p className="text-[#363636] text-xs font-sans leading-snug max-w-[120px] mx-auto">
                     {stat.label}
                   </p>
                   {idx < stats.length - 1 && (
@@ -291,12 +291,12 @@ export default function About() {
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-[32px] sm:text-[42px] lg:text-[55px] mt-6 mb-6 leading-[1.08] text-gray-900"
+              className="text-[32px] sm:text-[42px] lg:text-[55px] mt-6 mb-6 leading-[1.08] text-black"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
               Reform Aesthetics and Dental is an independently owned medical Aesthetics Clinic in Leicester city centre.
             </h2>
-            <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-3xl mx-auto">
+            <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mx-auto">
               We specialise in advanced medical skin treatments designed to Restore youth,
               Rejuvenate and Refresh your natural beauty in a safe and supportive environment.
             </p>
@@ -322,17 +322,17 @@ export default function About() {
               >
                 {/* Round icon circle + title inline */}
                 <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-500">
+                  <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 text-[#363636]">
                     <Icon />
                   </div>
                   <h3
-                    className="text-[18px] text-gray-900 leading-snug"
+                    className="text-[18px] text-black leading-snug"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                   >
                     {title}
                   </h3>
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed font-sans">{desc}</p>
+                <p className="text-[#363636] text-sm leading-relaxed font-sans">{desc}</p>
               </motion.div>
             ))}
           </div>

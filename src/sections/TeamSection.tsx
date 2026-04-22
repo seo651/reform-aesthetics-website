@@ -96,8 +96,8 @@ export function TeamSection() {
                   onClick={() => setActiveId(member.id)}
                   className={`px-4 py-2.5 rounded-full text-[13px] font-sans whitespace-nowrap transition-all text-left ${
                     activeId === member.id
-                      ? 'bg-[#EDE8E2] text-gray-900 font-semibold'
-                      : 'bg-transparent text-gray-500 hover:bg-gray-50 border border-gray-200'
+                      ? 'bg-[#efeae7] text-black font-semibold'
+                      : 'bg-transparent text-[#363636] hover:bg-gray-50 border border-gray-200'
                   }`}
                 >
                   {member.name}
@@ -122,27 +122,27 @@ export function TeamSection() {
                   <SectionBadge text="Team Member" />
                 </div>
                 <h2
-                  className="text-3xl sm:text-[38px] mt-4 mb-1 text-gray-900 leading-tight"
+                  className="text-3xl sm:text-[38px] mt-4 mb-1 text-black leading-tight"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   {activeMember.name}
                 </h2>
-                <p className="text-sm font-sans font-semibold text-gray-800 mb-0.5">
+                <p className="text-sm font-sans font-semibold text-[#363636] mb-0.5">
                   {activeMember.role}
                 </p>
                 {activeMember.title && (
-                  <p className="text-xs font-sans text-gray-500 mb-5">{activeMember.title}</p>
+                  <p className="text-xs font-sans text-[#363636] mb-5">{activeMember.title}</p>
                 )}
                 {!activeMember.title && <div className="mb-5" />}
 
                 <div className="space-y-4">
                   {activeMember.bio.map((para, i) =>
                     para.type === 'quote' ? (
-                      <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans italic border-l-2 border-[#c4a882] pl-4 text-left">
+                      <p key={i} className="text-[#363636] text-sm leading-relaxed font-sans italic border-l-2 border-[#c5b1a1] pl-4 text-left">
                         {para.content}
                       </p>
                     ) : (
-                      <p key={i} className="text-gray-500 text-sm leading-relaxed font-sans">
+                      <p key={i} className="text-[#363636] text-sm leading-relaxed font-sans">
                         {para.content}
                       </p>
                     )

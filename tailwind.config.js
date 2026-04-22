@@ -10,7 +10,7 @@ module.exports = {
         times: ['"Times New Roman"', 'Times', 'serif'],
       },
       colors: {
-        cream: '#EDE8E2',
+        cream: '#efeae7',
         'star-gold': '#F5A623',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
