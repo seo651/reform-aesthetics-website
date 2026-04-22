@@ -118,11 +118,11 @@ export default function Doctors() {
       {/* ── 3. OTHER TEAM MEMBERS — sidebar tabs ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[200px_1fr] gap-10">
+          <div className="flex flex-col lg:grid lg:grid-cols-[200px_1fr] gap-8 lg:gap-10">
 
-            {/* Sidebar tabs */}
+            {/* Tabs — wrap on mobile, vertical on desktop */}
             <AnimatedSection>
-              <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
+              <div className="flex flex-wrap lg:flex-col gap-2">
                 {sidebarMembers.map((member) => (
                   <button
                     key={member.id}
@@ -143,14 +143,14 @@ export default function Doctors() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeMember.id}
-                initial={{ opacity: 0, x: 16 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -16 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="grid md:grid-cols-[1fr_260px] gap-10 items-start"
+                className="flex flex-col md:grid md:grid-cols-[1fr_260px] gap-8 md:gap-10 items-start min-w-0"
               >
                 {/* Text */}
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-left min-w-0 w-full">
                   <div className="flex justify-center md:justify-start">
                     <SectionBadge text="Team Member" />
                   </div>
@@ -183,9 +183,9 @@ export default function Doctors() {
                   </div>
                 </div>
 
-                {/* Photo */}
-                <div className="flex justify-center md:justify-end">
-                  <div className="rounded-2xl overflow-hidden w-full max-w-[260px] aspect-[3/4]">
+                {/* Photo — centred on mobile, right-aligned on desktop */}
+                <div className="flex justify-center md:justify-end w-full">
+                  <div className="rounded-2xl overflow-hidden w-full max-w-[240px] sm:max-w-[260px] aspect-[3/4]">
                     <img
                       src={activeMember.image}
                       alt={activeMember.name}
