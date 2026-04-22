@@ -6,7 +6,8 @@ export default function ChinfaceFiller() {
       breadcrumb="CHIN & FACE FILLER"
       heroTitle="Define & Balance with Chin & Face Filler"
       heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our expert clinicians use premium dermal fillers to sculpt and define the chin and facial structure, delivering beautifully balanced and proportionate results."
-      heroImage="/images/cheek-fillers-profile.jpg"
+      heroImage="/images/cheek-fillers-new-3.png"
+      heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Facial Sculpting & Definition"
       aboutBody="Chin and facial filler treatments are expertly administered to enhance facial structure, improve proportion and restore a youthful contour. Using hyaluronic acid fillers, our clinicians can strengthen a weak chin, balance the midface, refine the jawline and add definition to areas affected by volume loss. Each treatment is tailored to your individual anatomy and aesthetic goals to achieve harmonious, natural-looking results."
@@ -17,11 +18,11 @@ export default function ChinfaceFiller() {
         'Refines the jawline',
         'Natural-looking immediate results',
       ]}
-      circularImage="/images/cheek-fillers-jaw.jpg"
+      circularImage="/images/cheek-fillers-new-1.jpg"
       circularImageAlt="Cheek and jaw filler result"
       benefitsHeading="Achieve Facial Harmony with Expert Filler"
       benefitsBody="Strategic placement of filler restores balance and structure, complementing your natural features for a rejuvenated appearance."
-      benefitsImage="/images/cheek-fillers-profile.jpg"
+      benefitsImage="/images/cheek-fillers-new-2.png"
       benefitsImageAlt="Cheek and facial filler profile result"
       benefits={[
         {
