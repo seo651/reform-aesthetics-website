@@ -28,7 +28,7 @@ export function GallerySection() {
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10 text-center lg:text-left">
             <div className="lg:max-w-xs">
               <div className="flex justify-center lg:justify-start">
-                <SectionBadge text="GALLERY" variant="dark" />
+                <SectionBadge text="GALLERY" />
               </div>
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] mt-4 leading-tight text-gray-900"
