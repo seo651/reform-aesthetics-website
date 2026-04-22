@@ -92,7 +92,7 @@ const treatmentCategories = [
 const navLinks = [
   { label: 'TREATMENTS', href: '/treatments', hasDropdown: true },
   { label: 'ABOUT US', href: '/about' },
-  { label: 'DOCTORS', href: '/doctors' },
+  { label: 'TEAM', href: '/doctors' },
   { label: 'PRICING', href: '/pricing' },
   { label: 'GALLERY', href: '/gallery' },
   { label: 'BLOG', href: '/blog' },
