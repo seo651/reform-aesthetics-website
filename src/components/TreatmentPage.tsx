@@ -12,39 +12,23 @@ export interface BenefitItem {
 }
 
 export interface TreatmentPageProps {
-  /** Breadcrumb label e.g. "ANTI-WRINKLE" */
   breadcrumb: string;
-  /** Hero H1 */
   heroTitle: string;
-  /** Hero subtext */
   heroSubtext: string;
-  /** Hero background image path */
   heroImage: string;
-
-  /** About section badge text */
   aboutBadge: string;
-  /** About section heading */
   aboutHeading: string;
-  /** About section body paragraph */
   aboutBody: string;
-  /** Checklist items (✓) */
   checklistItems: string[];
-  /** Circular image on right of about section */
   circularImage: string;
   circularImageAlt?: string;
-
-  /** Benefits section heading */
   benefitsHeading: string;
-  /** Benefits section intro paragraph */
   benefitsBody: string;
-  /** Benefits image (left side) */
   benefitsImage: string;
   benefitsImageAlt?: string;
-  /** 4 benefit items */
   benefits: BenefitItem[];
 }
 
-/* ── Simple SVG icons (line-art) for the benefit grid ── */
 function IconA() {
   return (
     <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
@@ -116,12 +100,11 @@ export function TreatmentPage({
       {/* ── Hero ── */}
       <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt={heroTitle} className="w-full h-full object-cover" />
+          <img src={heroImage} alt={heroTitle} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 w-full text-center">
-          {/* Breadcrumb pill + gold lines */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -180,7 +163,8 @@ export function TreatmentPage({
       <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Left */}
+
+            {/* Left — text content */}
             <AnimatedSection>
               <SectionBadge text={aboutBadge} />
 
@@ -195,7 +179,6 @@ export function TreatmentPage({
                 {aboutBody}
               </p>
 
-              {/* Checklist */}
               <div className="space-y-0">
                 {checklistItems.map((item, idx) => (
                   <motion.div
@@ -213,17 +196,18 @@ export function TreatmentPage({
               </div>
             </AnimatedSection>
 
-            {/* Right — circular image + brand logos */}
+            {/* Right — circular image + brand logos, sticky on desktop */}
             <AnimatedSection delay={0.2}>
-              <div className="flex flex-col items-center">
-                {/* Circular frame with thick tan ring */}
-                <div className="relative w-[380px] h-[380px] sm:w-[440px] sm:h-[440px] mb-8">
+              <div className="flex flex-col items-center lg:sticky lg:top-24">
+                {/* Circular frame */}
+                <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[420px] lg:h-[420px] mb-8 flex-shrink-0 mx-auto">
                   <div className="absolute inset-0 rounded-full border-[18px] border-[#c4a882]/35" />
                   <div className="absolute inset-[18px] rounded-full overflow-hidden bg-gray-200">
                     <img
                       src={circularImage}
                       alt={circularImageAlt}
                       className="w-full h-full object-cover object-center"
+                      loading="eager"
                     />
                   </div>
                 </div>
@@ -272,14 +256,17 @@ export function TreatmentPage({
       {/* ── Benefits Section ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-            {/* Left image — stretches to match right column height */}
-            <AnimatedSection className="h-full">
-              <div className="rounded-2xl overflow-hidden h-full min-h-[500px]">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+            {/* Left image — fills height of right column, no blank space */}
+            <AnimatedSection className="lg:sticky lg:top-24 self-start">
+              <div className="w-full rounded-2xl overflow-hidden">
                 <img
                   src={benefitsImage}
                   alt={benefitsImageAlt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-cover object-center"
+                  style={{ display: 'block', minHeight: '320px', maxHeight: '600px', width: '100%', objectFit: 'cover' }}
+                  loading="eager"
                 />
               </div>
             </AnimatedSection>
@@ -299,8 +286,7 @@ export function TreatmentPage({
                 {benefitsBody}
               </p>
 
-              {/* 2×2 Benefits grid */}
-              <div className="grid grid-cols-2 gap-x-6 gap-y-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
                 {benefits.map(({ title, desc }, idx) => {
                   const Icon = benefitIcons[idx % benefitIcons.length];
                   return (
@@ -326,6 +312,7 @@ export function TreatmentPage({
                 })}
               </div>
             </AnimatedSection>
+
           </div>
         </div>
       </section>
