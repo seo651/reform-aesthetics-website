@@ -6,7 +6,8 @@ export default function DermalFillers() {
       breadcrumb="FILLER DISSOLVING"
       heroTitle="Correct & Restore with Filler Dissolving Treatment"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler — restoring natural facial balance."
-      heroImage="/images/lip-filler-dissolving.jpg"
+      heroImage="/images/filler-dissolving-new-hero.png"
+      heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Filler Dissolving with Safe & Precise Correction"
       aboutBody="Filler dissolving is a non-surgical treatment designed to correct or reverse unwanted dermal fillers. Whether the concern is overfilling, uneven placement, or migration, this treatment helps restore a more natural appearance. Using hyaluronidase, a specialised enzyme that safely breaks down hyaluronic acid fillers, the product is gradually dissolved and naturally absorbed by the body. The treatment is quick, precise and minimally invasive."
@@ -17,11 +18,11 @@ export default function DermalFillers() {
         'Minimally invasive procedure',
         'Noticeable improvement within days',
       ]}
-      circularImage="/images/filler-dissolving-vial.jpg"
+      circularImage="/images/filler-dissolving-new-circular.png"
       circularImageAlt="Hyaluronidase filler dissolving treatment"
       benefitsHeading="Restore Natural Balance & Facial Harmony"
       benefitsBody="Filler dissolving allows patients to safely adjust or reverse previous cosmetic treatments while maintaining natural-looking results."
-      benefitsImage="/images/filler-dissolving-injection.jpg"
+      benefitsImage="/images/filler-dissolving-new-benefits.png"
       benefitsImageAlt="Filler dissolving injection procedure"
       benefits={[
         {
