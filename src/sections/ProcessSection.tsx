@@ -48,14 +48,16 @@ const steps = [
   },
 ];
 
+const CIRCLE = 52; // px — number circle diameter
+
 export function ProcessSection() {
   return (
-    <section className="py-8 px-4 sm:px-6 lg:px-8">
-      <div className="bg-[#EDE8E2] rounded-[2.5rem] px-6 sm:px-12 lg:px-20 py-16 sm:py-20">
+    <section className="py-6 sm:py-8 px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#EDE8E2] rounded-[2.5rem] px-8 sm:px-14 lg:px-20 py-14 sm:py-18 lg:py-20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-[45%_55%] gap-10 lg:gap-16 items-start">
 
-            {/* ── Left ── */}
+            {/* ── Left: text ── */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -90,47 +92,61 @@ export function ProcessSection() {
               </div>
             </motion.div>
 
-            {/* ── Right: Steps with gapped timeline ── */}
-            <div>
+            {/* ── Right: timeline ── */}
+            <div className="space-y-0">
               {steps.map((step, index) => (
                 <motion.div
                   key={step.number}
-                  initial={{ opacity: 0, x: 24 }}
+                  initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.15 * index }}
                 >
-                  {/* Row: left column (circle + connector) + right content */}
-                  <div className="flex gap-8 items-start">
-                    {/* Left: circle stacked above connector line */}
-                    <div className="flex flex-col items-center flex-shrink-0">
+                  {/* ── Step row ── */}
+                  <div className="flex gap-5 items-start">
+
+                    {/* Left track: number circle + connector */}
+                    <div className="flex flex-col items-center flex-shrink-0" style={{ width: CIRCLE }}>
                       {/* Number circle */}
-                      <div className="w-14 h-14 rounded-full border-2 border-[#b8b0a8] bg-[#EDE8E2] flex items-center justify-center z-10">
-                        <span className="text-[13px] font-sans text-gray-500 tracking-wider">{step.number}</span>
+                      <div
+                        className="rounded-full border border-[#b5aea7] bg-[#EDE8E2] flex items-center justify-center flex-shrink-0"
+                        style={{ width: CIRCLE, height: CIRCLE }}
+                      >
+                        <span className="text-[12px] font-sans text-gray-400 tracking-widest">{step.number}</span>
                       </div>
 
-                      {/* Connector line — only between circles, not touching them */}
+                      {/* Connector — only between steps, tiny gap from circles */}
                       {index < steps.length - 1 && (
                         <div
-                          className="w-[2px] rounded-full bg-[#c5bdb6] my-3 flex-1"
-                          style={{ minHeight: '80px' }}
+                          className="bg-[#ccc6bf]"
+                          style={{ width: 1, flexGrow: 1, minHeight: 80, marginTop: 4, marginBottom: 4 }}
                         />
                       )}
                     </div>
 
-                    {/* Right content */}
-                    <div className={index < steps.length - 1 ? 'pb-2' : ''}>
-                      {/* Icon circle */}
-                      <div className="w-[56px] h-[56px] rounded-full bg-[#7a7370] flex items-center justify-center mb-4 mt-1">
+                    {/* Right: icon on same row as number, title+desc below */}
+                    <div className="flex-1" style={{ paddingBottom: index < steps.length - 1 ? 0 : 0 }}>
+                      {/* Icon circle — top-aligned with number circle */}
+                      <div
+                        className="rounded-full bg-[#6f6b68] flex items-center justify-center mb-4"
+                        style={{ width: CIRCLE, height: CIRCLE }}
+                      >
                         <step.Icon />
                       </div>
+
+                      {/* Title */}
                       <h3
-                        className="text-[22px] sm:text-[25px] mb-2.5 text-gray-900 leading-snug"
+                        className="text-[22px] sm:text-[24px] mb-2 text-gray-900 leading-snug"
                         style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                       >
                         {step.title}
                       </h3>
-                      <p className="text-gray-500 text-sm leading-relaxed font-sans pb-6">
+
+                      {/* Description */}
+                      <p
+                        className="text-gray-500 text-sm leading-relaxed font-sans"
+                        style={{ paddingBottom: index < steps.length - 1 ? 0 : 0 }}
+                      >
                         {step.description}
                       </p>
                     </div>
