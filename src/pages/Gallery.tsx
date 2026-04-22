@@ -240,11 +240,11 @@ export default function GalleryPage() {
                       transition={{ duration: 0.4, delay: 0.08 * idx }}
                       className="rounded-2xl overflow-hidden group bg-gray-100"
                     >
-                      <div className="aspect-[4/3] overflow-hidden">
+                      <div className="aspect-square overflow-hidden">
                         <img
                           src={c.image}
                           alt={c.service}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <div className="p-5 bg-white">
