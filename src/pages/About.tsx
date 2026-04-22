@@ -186,93 +186,98 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 2. ABOUT CONTENT — cream overlap rounded-top ── */}
-      <section className="relative bg-[#EDE8E2] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      {/* ── 2 + 3. ABOUT + STATS — single fully-rounded card ── */}
+      <section className="relative z-20 -mt-8 px-4 sm:px-6 lg:px-8 pb-10">
+        <div className="bg-[#EDE8E2] rounded-[2.5rem] sm:rounded-[3rem] pt-16 sm:pt-20 overflow-hidden">
 
-            {/* Left column */}
-            <AnimatedSection>
-              <SectionBadge text="About Us" />
-              <h2
-                className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-gray-900"
-                style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-              >
-                Looking for trusted skincare professionals in Leicester?
-              </h2>
-              <p className="text-gray-500 text-sm leading-relaxed mb-4 font-sans">
-                We offer personalised, clinically proven skincare solutions.
-              </p>
-              <p className="text-gray-500 text-sm leading-relaxed font-sans">
-                At Reform Skincare, we know every skin journey is unique. That's why we take time
-                to understand your concerns and goals, creating treatment plans tailored just for
-                you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
-                to maintain a healthy, radiant complexion — our experienced team combines
-                science and care to bring out the best in your skin.
-              </p>
-            </AnimatedSection>
+          {/* About content */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start pb-16 sm:pb-20">
 
-            {/* Right column — feature rows */}
-            <AnimatedSection delay={0.2}>
-              <div className="space-y-0">
-                {features.map(({ title, desc }, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.1 * i }}
-                    className="py-7 border-b border-gray-300/50 last:border-b-0"
-                  >
-                    {/* Badge icon + title inline */}
-                    <div className="flex items-center gap-3 mb-2">
-                      <svg viewBox="0 0 20 20" className="w-5 h-5 flex-shrink-0" fill="none">
-                        <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
-                      </svg>
-                      <h3
-                        className="text-[15px] text-gray-900"
-                        style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                      >
-                        {title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-500 text-sm leading-relaxed font-sans pl-8">{desc}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. STATS BAR ── */}
-      <section className="py-14 px-4 sm:px-6 lg:px-8 bg-[#EDE8E2]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center lg:justify-between gap-y-10 gap-x-6">
-            {stats.map((stat, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.08 * idx }}
-                className="relative text-center flex-1 min-w-[130px]"
-              >
-                <div
-                  className="text-4xl sm:text-5xl text-gray-400 leading-none mb-2"
+              {/* Left column */}
+              <AnimatedSection>
+                <SectionBadge text="About Us" />
+                <h2
+                  className="text-3xl sm:text-4xl lg:text-[44px] mt-6 mb-6 leading-tight text-gray-900"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
-                  {stat.number}
-                </div>
-                <p className="text-gray-500 text-xs font-sans leading-snug max-w-[130px] mx-auto">
-                  {stat.label}
+                  Looking for trusted skincare professionals in Leicester?
+                </h2>
+                <p className="text-gray-500 text-sm leading-relaxed mb-4 font-sans">
+                  We offer personalised, clinically proven skincare solutions.
                 </p>
-                {idx < stats.length - 1 && (
-                  <div className="hidden lg:block absolute right-0 top-2 h-10 w-px bg-gray-400/40" />
-                )}
-              </motion.div>
-            ))}
+                <p className="text-gray-500 text-sm leading-relaxed font-sans">
+                  At Reform Skincare, we know every skin journey is unique. That's why we take time
+                  to understand your concerns and goals, creating treatment plans tailored just for
+                  you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
+                  to maintain a healthy, radiant complexion — our experienced team combines
+                  science and care to bring out the best in your skin.
+                </p>
+              </AnimatedSection>
+
+              {/* Right column — feature rows */}
+              <AnimatedSection delay={0.2}>
+                <div className="space-y-0">
+                  {features.map(({ title, desc }, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: 0.1 * i }}
+                      className="py-7 border-b border-gray-300/50 last:border-b-0"
+                    >
+                      <div className="flex items-center gap-3 mb-2">
+                        <svg viewBox="0 0 20 20" className="w-5 h-5 flex-shrink-0" fill="none">
+                          <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
+                        </svg>
+                        <h3
+                          className="text-[15px] text-gray-900"
+                          style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                        >
+                          {title}
+                        </h3>
+                      </div>
+                      <p className="text-gray-500 text-sm leading-relaxed font-sans pl-8">{desc}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
+
+          {/* ── Divider line ── */}
+          <div className="border-t border-gray-300/60 mx-6 sm:mx-10 lg:mx-14" />
+
+          {/* Stats bar */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-14">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10">
+              {stats.map((stat, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.08 * idx }}
+                  className="relative text-center"
+                >
+                  <div
+                    className="text-4xl sm:text-5xl text-gray-400 leading-none mb-2"
+                    style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                  >
+                    {stat.number}
+                  </div>
+                  <p className="text-gray-500 text-xs font-sans leading-snug max-w-[120px] mx-auto">
+                    {stat.label}
+                  </p>
+                  {idx < stats.length - 1 && (
+                    <div className="hidden lg:block absolute right-0 top-3 h-8 w-px bg-gray-400/50" />
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 
