@@ -100,7 +100,7 @@ export function TreatmentPage({
       {/* ── Hero ── */}
       <section className="relative min-h-[55vh] sm:min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt={heroTitle} className="w-full h-full object-cover object-center" />
+          <img src={heroImage} alt={heroTitle} className="w-full h-full object-cover object-top" />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
