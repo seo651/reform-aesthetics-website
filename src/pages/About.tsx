@@ -227,12 +227,12 @@ export default function About() {
                       transition={{ duration: 0.4, delay: 0.1 * i }}
                       className="py-7 border-b border-gray-300/50 last:border-b-0"
                     >
-                      <div className="flex items-center gap-3 mb-2">
+                      <div className="flex items-center gap-3 mb-2.5">
                         <svg viewBox="0 0 20 20" className="w-5 h-5 flex-shrink-0" fill="none">
                           <path d="M10 1.5l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.77l-4.77 2.44.91-5.32L2.27 7.12l5.34-.78L10 1.5z" fill="#c5b1a1" stroke="#c5b1a1" strokeWidth="0.5" strokeLinejoin="round"/>
                         </svg>
                         <h3
-                          className="text-[15px] text-gray-900"
+                          className="text-[18px] text-gray-900"
                           style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                         >
                           {title}
@@ -262,8 +262,8 @@ export default function About() {
                   className="relative text-center"
                 >
                   <div
-                    className="text-4xl sm:text-5xl text-gray-400 leading-none mb-2"
-                    style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                    className="text-5xl sm:text-6xl leading-none mb-2"
+                    style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400, color: '#b0a295' }}
                   >
                     {stat.number}
                   </div>
@@ -287,12 +287,12 @@ export default function About() {
           <AnimatedSection>
             <SectionBadge text="What We Do" />
             <h2
-              className="text-[38px] sm:text-[52px] lg:text-[62px] mt-6 mb-6 leading-[1.1] text-gray-900"
+              className="text-[42px] sm:text-[58px] lg:text-[72px] mt-6 mb-6 leading-[1.08] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
               Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester city centre.
             </h2>
-            <p className="text-gray-500 text-sm sm:text-base leading-relaxed font-sans max-w-3xl mx-auto">
+            <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-3xl mx-auto">
               We specialise in advanced medical skin treatments designed to Restore youth,
               Rejuvenate and Refresh your natural beauty in a safe and supportive environment.
             </p>
@@ -300,10 +300,13 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── 5. PHILOSOPHY — 2×2 grid, clean divider lines only ── */}
+      {/* ── 5. PHILOSOPHY — 2×2 grid, clean divider lines + center dot ── */}
       <section className="pb-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid sm:grid-cols-2">
+          <div className="relative grid sm:grid-cols-2">
+            {/* Center intersection dot */}
+            <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-gray-300 z-10" />
+
             {philosophy.map(({ Icon, title, desc }, idx) => (
               <motion.div
                 key={idx}
@@ -311,15 +314,15 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.1 * idx }}
-                className={`p-10 ${idx % 2 === 0 ? 'border-r border-gray-200' : ''} ${idx < 2 ? 'border-b border-gray-200' : ''}`}
+                className={`p-10 ${idx % 2 === 0 ? 'sm:border-r border-gray-200' : ''} ${idx < 2 ? 'border-b border-gray-200' : ''}`}
               >
-                {/* Icon + title inline */}
+                {/* Round icon circle + title inline */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-[#F5F2EE] flex items-center justify-center flex-shrink-0 text-gray-500">
+                  <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 text-gray-500">
                     <Icon />
                   </div>
                   <h3
-                    className="text-[17px] text-gray-900 leading-snug"
+                    className="text-[18px] text-gray-900 leading-snug"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                   >
                     {title}
