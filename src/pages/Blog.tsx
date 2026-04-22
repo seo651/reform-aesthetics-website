@@ -36,7 +36,7 @@ const posts = [
   },
   {
     title: 'Why Skin Health Matters More Than Skin Perfection',
-    excerpt: 'At Reform Aesthetics, we believe in nurturing healthy skin rather than chasing perfection. Read our philosophy on sustainable skin care.',
+    excerpt: 'At Reform Aesthetics and Dental, we believe in nurturing healthy skin rather than chasing perfection. Read our philosophy on sustainable skin care.',
     date: 'February 20, 2026',
     image: '/images/hero-bg.jpg',
   },
@@ -67,7 +67,7 @@ export default function Blog() {
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}
             className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto"
           >
-            Expert insights, skin care tips, and the latest news from Reform Aesthetics.
+            Expert insights, skin care tips, and the latest news from Reform Aesthetics and Dental.
           </motion.p>
         </div>
       </section>

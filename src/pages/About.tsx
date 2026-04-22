@@ -167,7 +167,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-white/75 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-sans leading-relaxed"
           >
-            Discover a calm, caring approach to skin health. At Reform Skincare, we provide advanced
+            Discover a calm, caring approach to skin health. At Reform Aesthetics and Dental, we provide advanced
             treatments in a soothing environment to restore your glow, renew your confidence, and
             enhance your natural beauty.
           </motion.p>
@@ -209,7 +209,7 @@ export default function About() {
                   We offer personalised, clinically proven skincare solutions.
                 </p>
                 <p className="text-gray-500 text-sm leading-relaxed font-sans">
-                  At Reform Skincare, we know every skin journey is unique. That's why we take time
+                  At Reform Aesthetics and Dental, we know every skin journey is unique. That's why we take time
                   to understand your concerns and goals, creating treatment plans tailored just for
                   you. Whether you're dealing with acne, pigmentation, signs of ageing, or simply want
                   to maintain a healthy, radiant complexion — our experienced team combines
@@ -292,7 +292,7 @@ export default function About() {
               className="text-[42px] sm:text-[58px] lg:text-[72px] mt-6 mb-6 leading-[1.08] text-gray-900"
               style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
             >
-              Reform Aesthetics is an independently owned medical Aesthetics Clinic in Leicester city centre.
+              Reform Aesthetics and Dental is an independently owned medical Aesthetics Clinic in Leicester city centre.
             </h2>
             <p className="text-gray-500 text-sm leading-relaxed font-sans max-w-3xl mx-auto">
               We specialise in advanced medical skin treatments designed to Restore youth,

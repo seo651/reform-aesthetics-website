@@ -103,7 +103,7 @@ function LogoWhite({ height = 52 }: { height?: number }) {
   return (
     <img
       src="/images/logo-white.png"
-      alt="Reform Aesthetics | Dental Clinic"
+      alt="Reform Aesthetics and Dental"
       style={{ height, width: 'auto', display: 'block' }}
       draggable={false}
     />
@@ -114,7 +114,7 @@ function LogoDark({ height = 44 }: { height?: number }) {
   return (
     <img
       src="/images/logo-white.png"
-      alt="Reform Aesthetics | Dental Clinic"
+      alt="Reform Aesthetics and Dental"
       style={{ height, width: 'auto', display: 'block', filter: 'invert(1)' }}
       draggable={false}
     />

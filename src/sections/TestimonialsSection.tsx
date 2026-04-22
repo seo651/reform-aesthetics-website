@@ -18,7 +18,7 @@ const testimonials = [
     id: 2,
     name: 'p k',
     role: 'Patient',
-    text: 'Reform Medical Aesthetic & Dental provides outstanding service from start to finish. The team is courteous, professional, and genuinely cares about patient comfort and results. The clinic environment is clean and well-organized, and the staff made the entire experience smooth and reassuring. I am very pleased with my experience and would confidently recommend this clinic to anyone seeking professional and reliable care.',
+    text: 'Reform Aesthetics and Dental provides outstanding service from start to finish. The team is courteous, professional, and genuinely cares about patient comfort and results. The clinic environment is clean and well-organized, and the staff made the entire experience smooth and reassuring. I am very pleased with my experience and would confidently recommend this clinic to anyone seeking professional and reliable care.',
     initials: 'PK',
     avatarColor: '#4A90D9',
   },

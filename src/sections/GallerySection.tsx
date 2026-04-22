@@ -7,7 +7,7 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 const galleryImages = [
   { id: 1, src: '/images/clinic-treatment-room.jpg', alt: 'Treatment room' },
   { id: 2, src: '/images/clinic-waiting-1.jpg', alt: 'Clinic waiting area' },
-  { id: 3, src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics | Dental Clinic' },
+  { id: 3, src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics and Dental' },
   { id: 4, src: '/images/clinic-skin-scanner.jpg', alt: '3D skin scanner consultation' },
   { id: 5, src: '/images/clinic-waiting-2.jpg', alt: 'Clinic lounge area' },
   { id: 6, src: '/images/gallery-5.jpg', alt: 'Reform Aesthetics clinic' },

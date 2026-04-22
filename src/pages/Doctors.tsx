@@ -19,7 +19,7 @@ export default function Doctors() {
       {/* ── 1. HERO ── */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero-doctors.jpg" alt="Reform Skin Clinic" className="w-full h-full object-cover" />
+          <img src="/images/hero-doctors.jpg" alt="Reform Aesthetics and Dental" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
 

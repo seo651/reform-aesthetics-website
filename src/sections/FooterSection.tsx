@@ -117,7 +117,7 @@ export function FooterSection() {
             <div className="mb-5">
               <img
                 src="/images/logo-white.png"
-                alt="Reform Aesthetics | Dental Clinic"
+                alt="Reform Aesthetics and Dental"
                 style={{ height: 56, width: 'auto', filter: 'invert(1)' }}
                 draggable={false}
               />
@@ -214,7 +214,7 @@ export function FooterSection() {
       <div className="border-t border-gray-300">
         <div className="px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-gray-500 uppercase tracking-wider font-sans">
-            COPYRIGHT © 2026 REFORM SKINCARE DESIGNED BY{' '}
+            COPYRIGHT © 2026 REFORM AESTHETICS AND DENTAL DESIGNED BY{' '}
             <a href="https://get-found.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:underline">
               GET FOUND
             </a>

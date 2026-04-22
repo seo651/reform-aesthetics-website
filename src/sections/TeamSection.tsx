@@ -35,7 +35,7 @@ export const teamMembers = [
     title: '',
     image: '/images/team-elizabeth.jpg',
     bio: [
-      { type: 'text', content: 'Liz is the Assistant Practice Manager at Reform Aesthetics & Dental clinic, bringing over 10 years of experience in Private Healthcare. Having worked overseas in Asia, she has extensive experience supporting high-calibre patients and delivering exceptional standards of care.' },
+      { type: 'text', content: 'Liz is the Assistant Practice Manager at Reform Aesthetics and Dental, bringing over 10 years of experience in Private Healthcare. Having worked overseas in Asia, she has extensive experience supporting high-calibre patients and delivering exceptional standards of care.' },
       { type: 'text', content: 'She oversees the day-to-day running of the clinic, manages the front-of-house team, and ensures a seamless patient journey from enquiry to aftercare.' },
       { type: 'text', content: 'Known for her professionalism and interpersonal skills, Elizabeth ensures every patient receives attentive, personalised care.' },
     ],

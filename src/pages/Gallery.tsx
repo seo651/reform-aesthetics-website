@@ -81,7 +81,7 @@ const aestheticsCases = [
 const clinicImages = [
   { src: '/images/clinic-treatment-room.jpg', alt: 'Treatment room' },
   { src: '/images/clinic-waiting-1.jpg', alt: 'Clinic waiting area' },
-  { src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics | Dental Clinic' },
+  { src: '/images/clinic-signage.jpg', alt: 'Reform Aesthetics and Dental' },
   { src: '/images/clinic-skin-scanner.jpg', alt: '3D skin scanner consultation' },
   { src: '/images/clinic-waiting-2.jpg', alt: 'Clinic lounge area' },
   { src: '/images/gallery-5.jpg', alt: 'Reform Aesthetics clinic' },
@@ -178,8 +178,8 @@ export default function GalleryPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-white/75 text-sm sm:text-base max-w-2xl mx-auto mb-8 font-sans leading-relaxed"
           >
-            Discover the incredible results our patients have achieved with Reform Aesthetics Dental
-            Clinic. Browse through real before-and-after photos showcasing the power of expert dental
+            Discover the incredible results our patients have achieved with Reform Aesthetics and Dental.
+            Browse through real before-and-after photos showcasing the power of expert dental
             care and advanced cosmetic treatments.
           </motion.p>
 
