@@ -258,16 +258,15 @@ export function TreatmentPage({
       {/* ── Benefits Section ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
 
-            {/* Left image — fills height of right column, no blank space */}
-            <AnimatedSection className="lg:sticky lg:top-24 self-start">
-              <div className="w-full rounded-2xl overflow-hidden">
+            {/* Left image — stretches to match right column height */}
+            <AnimatedSection className="flex flex-col">
+              <div className="w-full flex-1 rounded-2xl overflow-hidden" style={{ minHeight: '380px' }}>
                 <img
                   src={benefitsImage}
                   alt={benefitsImageAlt}
-                  className="w-full h-auto object-cover object-center"
-                  style={{ display: 'block', minHeight: '320px', maxHeight: '600px', width: '100%', objectFit: 'cover' }}
+                  className="w-full h-full object-cover object-top"
                   loading="eager"
                 />
               </div>
