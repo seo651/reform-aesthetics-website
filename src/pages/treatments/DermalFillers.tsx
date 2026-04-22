@@ -3,42 +3,42 @@ import { TreatmentPage } from '@/components/TreatmentPage';
 export default function DermalFillers() {
   return (
     <TreatmentPage
-      breadcrumb="DERMAL FILLERS"
-      heroTitle="Dermal Fillers"
-      heroSubtext="A refined injectable treatment designed to restore lost volume, soften lines, and enhance facial definition, helping you achieve a smoother, fresher appearance with natural-looking results."
+      breadcrumb="FILLER DISSOLVING"
+      heroTitle="Correct & Restore with Filler Dissolving Treatment"
+      heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler — restoring natural facial balance."
       heroImage="/images/lip-filler-dissolving.jpg"
       aboutBadge="ABOUT TREATMENTS"
-      aboutHeading="Facial Enhancement for Natural Volume"
-      aboutBody="Restoring youthful contours requires precision and an artistic approach. Our dermal filler treatments are carefully administered to replenish volume, refine facial structure, and soften the visible signs of ageing. Using premium-quality fillers, we treat areas such as the lips, cheeks, jawline, and under-eye area to create balanced, subtle enhancement tailored to your features."
+      aboutHeading="Filler Dissolving with Safe & Precise Correction"
+      aboutBody="Filler dissolving is a non-surgical treatment designed to correct or reverse unwanted dermal fillers. Whether the concern is overfilling, uneven placement, or migration, this treatment helps restore a more natural appearance. Using hyaluronidase, a specialised enzyme that safely breaks down hyaluronic acid fillers, the product is gradually dissolved and naturally absorbed by the body. The treatment is quick, precise and minimally invasive."
       checklistItems={[
-        'Restores facial volume and smooths fine lines',
-        'Enhances lips, cheeks, and jawline definition',
-        'Softens under-eye hollows for a refreshed look',
-        'Improves facial symmetry and contour',
-        'Delivers natural-looking, immediate results',
+        'Corrects overfilled or uneven areas',
+        'Dissolves unwanted dermal fillers',
+        'Restores natural facial balance',
+        'Minimally invasive procedure',
+        'Noticeable improvement within days',
       ]}
       circularImage="/images/filler-dissolving-vial.jpg"
-      circularImageAlt="Filler dissolving treatment vial"
-      benefitsHeading="Enhance Your Features with Dermal Fillers in Leicester"
-      benefitsBody="At Reform Aesthetics and Dental Clinic, we focus on achieving elegant, natural results. Our dermal filler treatments are tailored to your facial structure, ensuring subtle enhancement that complements your unique features."
+      circularImageAlt="Hyaluronidase filler dissolving treatment"
+      benefitsHeading="Restore Natural Balance & Facial Harmony"
+      benefitsBody="Filler dissolving allows patients to safely adjust or reverse previous cosmetic treatments while maintaining natural-looking results."
       benefitsImage="/images/filler-dissolving-injection.jpg"
-      benefitsImageAlt="Dermal filler injection procedure"
+      benefitsImageAlt="Filler dissolving injection procedure"
       benefits={[
         {
-          title: 'Restore Lost Volume',
-          desc: 'Replenish areas affected by ageing, creating a fuller and more youthful appearance.',
+          title: 'Target Specific Areas',
+          desc: 'Precise correction of unwanted filler in any treatment area.',
         },
         {
-          title: 'Refine Facial Contours',
-          desc: 'Enhance definition in key areas such as the lips, cheeks, and jawline.',
+          title: 'Fast & Effective Treatment',
+          desc: 'Results often begin within hours to days of treatment.',
         },
         {
-          title: 'Quick & Minimally Invasive',
-          desc: 'A non-surgical treatment with little downtime and immediate visible improvement.',
+          title: 'Restore Natural Appearance',
+          desc: 'Helps rebalance facial proportions for a harmonious result.',
         },
         {
-          title: 'Subtle, Natural Results',
-          desc: 'Carefully placed filler enhances your features without looking overdone.',
+          title: 'Safe, Medically Led Care',
+          desc: 'Performed by experienced aesthetic clinicians at our Leicester clinic.',
         },
       ]}
     />
