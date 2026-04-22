@@ -25,9 +25,11 @@ export function GallerySection() {
       <div className="max-w-7xl mx-auto">
         {/* Header row: badge+h2 left | description + button right */}
         <AnimatedSection>
-          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10">
+          <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10 text-center lg:text-left">
             <div className="lg:max-w-xs">
-              <SectionBadge text="GALLERY" variant="dark" />
+              <div className="flex justify-center lg:justify-start">
+                <SectionBadge text="GALLERY" variant="dark" />
+              </div>
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] mt-4 leading-tight text-gray-900"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
@@ -35,7 +37,7 @@ export function GallerySection() {
                 Take a Look<br />Inside Our Clinic
               </h2>
             </div>
-            <div className="flex items-start gap-6 lg:max-w-lg lg:pt-6">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 lg:max-w-lg lg:pt-6">
               <p className="text-gray-500 text-sm leading-relaxed font-sans flex-1">
                 Every face tells a story. Explore real treatment outcomes achieved at Reform
                 Aesthetics and Dental. If you're considering dermal fillers and would like to
@@ -57,10 +59,10 @@ export function GallerySection() {
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -60 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.35 }}
               className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6"
             >
               {[0, 1, 2].map((offset) => {

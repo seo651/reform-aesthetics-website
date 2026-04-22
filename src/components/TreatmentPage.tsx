@@ -202,7 +202,7 @@ export function TreatmentPage({
             <AnimatedSection delay={0.2}>
               <div className="flex flex-col items-center lg:sticky lg:top-24">
                 {/* Circular frame */}
-                <div className="relative w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] lg:w-[420px] lg:h-[420px] mb-8 flex-shrink-0 mx-auto">
+                <div className="relative w-full max-w-[280px] sm:max-w-[380px] lg:max-w-[420px] aspect-square mb-8 flex-shrink-0 mx-auto">
                   <div className="absolute inset-0 rounded-full border-[18px] border-[#c4a882]/35" />
                   <div className="absolute inset-[18px] rounded-full overflow-hidden bg-gray-200">
                     <img
