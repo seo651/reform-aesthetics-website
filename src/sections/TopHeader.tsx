@@ -134,7 +134,7 @@ export function TopHeader() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex items-center justify-between h-[72px]">
 
-            {/* Left */}
+            {/* Left — MENU only on mobile, MENU + BOOK ONLINE on desktop */}
             <div className="flex items-center gap-3">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
@@ -169,6 +169,16 @@ export function TopHeader() {
                     </nav>
                     <div className="p-6 border-t space-y-3">
                       <a
+                        href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-800 transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        BOOK ONLINE
+                        <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
+                      </a>
+                      <a
                         href="https://reformdental.get-found.co.uk/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -186,42 +196,51 @@ export function TopHeader() {
                 </SheetContent>
               </Sheet>
 
+              {/* BOOK ONLINE — hidden on mobile (shown in right group instead), visible on md+ */}
               <a
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors whitespace-nowrap"
+                className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 BOOK ONLINE
               </a>
             </div>
 
-            {/* Centre: Logo */}
+            {/* Centre: Logo — absolutely centred so it never shifts */}
             <Link
               to="/"
-              className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center select-none"
+              className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center select-none pointer-events-auto"
             >
               <LogoWhite height={54} />
             </Link>
 
             {/* Right */}
             <div className="flex items-center gap-2">
+              {/* BOOK ONLINE on mobile only — right side so logo stays centred */}
+              <a
+                href="https://pearlportal.net/Portal/rad/OnlineBooking"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors whitespace-nowrap"
+              >
+                BOOK
+              </a>
               <a
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#c4a882] text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#d4b892] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#c4a882] text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#d4b892] transition-colors whitespace-nowrap"
               >
-                <span className="hidden sm:inline">DENTAL CLINIC</span>
-                <span className="sm:hidden">DENTAL</span>
+                DENTAL CLINIC
                 <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
               </a>
               <a
                 href="tel:01163800318"
-                className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-white/10 transition-colors whitespace-nowrap"
+                className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-white/10 transition-colors whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5" />
-                <span className="hidden lg:inline">0116 3800318</span>
+                0116 3800318
               </a>
             </div>
           </div>
