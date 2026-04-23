@@ -135,9 +135,9 @@ export function TopHeader() {
         href="https://reformdental.get-found.co.uk/"
         target="_blank"
         rel="noopener noreferrer"
-        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[11px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
+        className="flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[11px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
       >
-        <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 text-[#a8a8a8]" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
+        <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 text-[#3a3a3a]" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
           <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
           <g transform="translate(368.4976,454.0469)"><path d="M 0,0 C -12.032,5.141 -25.134,8.201 -38.85,8.718 -60.88,9.547 -81.54,3.934 -99.113,-6.39 c -25.08,-13.715 -50.16,-13.715 -75.24,0 -17.574,10.324 -38.233,15.937 -60.264,15.108 -17.716,-0.667 -34.406,-5.578 -49.093,-13.735" /></g>
           <g transform="translate(436.3242,354.1738)"><path d="M 0,0 C -0.484,21.684 -7.297,41.94 -18.653,58.951" /></g>
