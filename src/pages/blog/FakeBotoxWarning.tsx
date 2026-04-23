@@ -5,7 +5,7 @@ export default function FakeBotoxWarning() {
     <BlogPost
       title="Fake Botox Warning. Why Choosing a Medically‑Led Clinic Matters"
       date="April 23, 2026"
-      heroImage="/images/service-anti-wrinkle.jpg"
+      heroImage="/images/blog-fake-botox-hero.jpg"
       heroImageAlt="Choosing your injector wisely"
     >
       <p>

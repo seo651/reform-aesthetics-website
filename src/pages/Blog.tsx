@@ -9,7 +9,7 @@ const posts = [
     title: 'Fake Botox Warning. Why Choosing A Medically-Led Clinic Matters',
     excerpt: 'With reports of counterfeit botulinum toxin products causing serious harm, we explore why choosing a regulated, medically-led clinic is essential for your safety.',
     date: 'April 23, 2026',
-    image: '/images/service-anti-wrinkle.jpg',
+    image: '/images/blog-fake-botox-hero.jpg',
     href: '/blog/fake-botox-warning',
   },
   {
