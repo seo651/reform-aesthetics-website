@@ -22,7 +22,7 @@ export default function PRPHair() {
       circularImageAlt="PRP hair treatment in progress"
       benefitsHeading="Fuller, Healthier Hair Through Your Body's Own Healing Power"
       benefitsBody="PRP therapy supports your body's natural regenerative processes to restore hair density and scalp health without the need for surgery or synthetic chemicals."
-      benefitsImage="/images/prf-benefits.jpg"
+      benefitsImage="/images/prp-hair-benefits.jpg"
       benefitsImageAlt="PRP hair treatment result"
       benefits={[
         {
