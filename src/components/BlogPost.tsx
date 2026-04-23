@@ -18,7 +18,7 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
       {/* Hero Banner */}
       <section className="relative min-h-[44vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/blog-hero-bg.png" alt="Reform Aesthetics clinic" className="w-full h-full object-cover object-center" />
+          <img src={heroImage} alt={heroImageAlt ?? title} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-black/55" />
         </div>
         <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">

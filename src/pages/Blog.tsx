@@ -48,7 +48,7 @@ export default function Blog() {
       {/* Hero */}
       <section className="relative min-h-[45vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/gallery-3.jpg" alt="Blog" className="w-full h-full object-cover" />
+          <img src="/images/blog-hero-bg.png" alt="Blog" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full text-center">
