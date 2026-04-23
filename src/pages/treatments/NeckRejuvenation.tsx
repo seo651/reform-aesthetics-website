@@ -3,42 +3,43 @@ import { TreatmentPage } from '@/components/TreatmentPage';
 export default function NeckRejuvenation() {
   return (
     <TreatmentPage
-      breadcrumb="NECK REJUVENATION"
-      heroTitle="Restore Smoothness & Definition with Neck Rejuvenation"
-      heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our neck rejuvenation treatments address horizontal lines, laxity and loss of definition to restore a smoother, more youthful-looking neck and décolleté."
+      breadcrumb="HAND REJUVENATION"
+      heroTitle="Restore Youthful, Hydrated Hands"
+      heroSubtext="At Reform Aesthetics and Dental Clinic, our hand rejuvenation treatments restore volume, smooth fine lines and improve skin hydration, helping your hands appear refreshed and naturally youthful."
       heroImage="/images/hand-rejuvenation-2.jpg"
+      heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
-      aboutHeading="Non-Surgical Neck Treatment"
-      aboutBody="The neck is often one of the first areas to show visible signs of ageing, yet it's frequently overlooked in aesthetic treatments. At Reform Aesthetics and Dental Clinic, we offer a range of non-surgical neck rejuvenation options, including anti-wrinkle injections to soften neck bands (Nefertiti lift), skin boosters for deep hydration, and Profhilo for tightening and laxity. Each treatment plan is carefully tailored to address your specific concerns."
+      aboutHeading="Hand Rejuvenation; Restore Volume & Skin Quality"
+      aboutBody="Over time, hands can lose volume and elasticity, making veins, tendons and wrinkles more visible. Hand rejuvenation treatments using dermal fillers or skin boosters help restore lost volume while improving skin hydration and texture. Dermal fillers replenish volume and soften the appearance of veins and tendons, while skin boosters deeply hydrate and enhance skin quality. Together, these treatments provide a natural, refreshed appearance with minimal downtime."
       checklistItems={[
-        'Softens horizontal neck lines',
-        'Reduces vertical neck bands',
-        'Improves skin laxity and firmness',
-        'Hydrates and revitalises the neck skin',
-        'Non-surgical with minimal downtime',
+        'Restores lost volume in the hands',
+        'Reduces visible veins and tendons',
+        'Smooths fine lines and wrinkles',
+        'Improves skin hydration and elasticity',
+        'Minimally invasive with little downtime',
       ]}
       circularImage="/images/hand-rejuvenation-3.jpg"
-      circularImageAlt="Neck rejuvenation treatment"
-      benefitsHeading="Rejuvenate & Restore the Neck"
-      benefitsBody="Our tailored neck treatments address multiple concerns simultaneously, ensuring comprehensive improvement with personalised care."
+      circularImageAlt="Hand rejuvenation treatment"
+      benefitsHeading="Rejuvenate Your Hands for a Youthful Appearance"
+      benefitsBody="Hand rejuvenation helps restore balance between your facial treatments and the appearance of your hands."
       benefitsImage="/images/hand-rejuvenation-4.jpg"
-      benefitsImageAlt="Neck and hand rejuvenation results"
+      benefitsImageAlt="Hand rejuvenation results"
       benefits={[
         {
-          title: 'Soften Neck Lines & Bands',
-          desc: 'Reduces visible horizontal and vertical creases.',
+          title: 'Restore Volume & Softness',
+          desc: 'Replenishes fullness lost through ageing.',
         },
         {
-          title: 'Improve Skin Laxity',
-          desc: 'Tightens and lifts for a more defined neck.',
+          title: 'Improve Skin Hydration',
+          desc: 'Boosts elasticity and overall skin quality.',
         },
         {
-          title: 'Hydrate & Revitalise',
-          desc: 'Restores smoothness and a healthy skin texture.',
+          title: 'Smooth Wrinkles & Lines',
+          desc: 'Softens creases and visible ageing signs.',
         },
         {
-          title: 'Non-Surgical Treatment',
-          desc: 'A convenient approach with minimal recovery.',
+          title: 'Quick, Non-Surgical Treatment',
+          desc: 'A minimally invasive procedure with minimal recovery time.',
         },
       ]}
     />
