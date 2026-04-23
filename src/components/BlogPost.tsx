@@ -39,7 +39,7 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-serif text-[32px] sm:text-[42px] lg:text-[60px] text-white leading-tight"
+            className="font-serif text-[28px] sm:text-[36px] lg:text-[50px] text-white leading-tight"
           >
             {title}
           </motion.h1>
