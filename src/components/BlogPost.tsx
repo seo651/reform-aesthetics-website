@@ -49,10 +49,10 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
       {/* Content + Sidebar */}
       <section className="py-14 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[1fr_320px] gap-10 xl:gap-16 items-start">
+          <div className="grid lg:grid-cols-[1fr_320px] gap-10 xl:gap-16" style={{ alignItems: 'start' }}>
 
             {/* Left: image + article content */}
-            <AnimatedSection>
+            <AnimatedSection className="self-start min-w-0">
               {/* Featured image */}
               <div className="rounded-2xl overflow-hidden mb-8" style={{ aspectRatio: heroAspectRatio }}>
                 <img
@@ -94,7 +94,7 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
             </AnimatedSection>
 
             {/* Right: sticky sidebar */}
-            <div className="lg:sticky lg:top-28">
+            <div className="lg:sticky lg:top-28 self-start">
               <AnimatedSection>
                 <div className="bg-[#2d2d2d] rounded-2xl p-8 text-white">
                   <h3 className="font-serif text-4xl leading-tight mb-5">
