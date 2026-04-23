@@ -163,7 +163,7 @@ export function TreatmentPage({
       {/* ── About — cream overlap ── */}
       <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
             {/* Left — text content */}
             <AnimatedSection className="text-center lg:text-left">
@@ -259,11 +259,11 @@ export function TreatmentPage({
       {/* ── Benefits Section ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 lg:items-stretch">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 lg:items-stretch">
 
             {/* Left image — fills full column height on desktop */}
             <AnimatedSection className="flex flex-col lg:h-full">
-              <div className="relative rounded-2xl overflow-hidden flex-1" style={{ minHeight: '420px' }}>
+              <div className="relative rounded-2xl overflow-hidden flex-1" style={{ minHeight: 'clamp(280px, 40vw, 420px)' }}>
                 <img
                   src={benefitsImage}
                   alt={benefitsImageAlt}

@@ -158,7 +158,7 @@ export function TopHeader() {
                     MENU
                   </button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[300px] bg-white p-0">
+                <SheetContent side="left" className="w-[min(300px,85vw)] bg-white p-0">
                   <div className="flex flex-col h-full">
                     <div className="p-6 border-b">
                       <LogoDark height={40} />
@@ -295,7 +295,7 @@ export function TopHeader() {
                     {dropdownOpen && (
                       <div
                         className="absolute top-full left-0 z-50 flex shadow-xl border border-gray-200 rounded-b-xl overflow-hidden"
-                        style={{ minWidth: 660 }}
+                        style={{ minWidth: 'min(660px, 92vw)' }}
                         onMouseEnter={openDropdown}
                         onMouseLeave={closeDropdown}
                       >

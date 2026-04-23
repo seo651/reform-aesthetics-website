@@ -43,12 +43,12 @@ export function FooterSection() {
     <footer className="bg-[#efeae7]">
 
       {/* ── Top CTA Row ── */}
-      <div className="px-6 sm:px-10 lg:px-16 pt-14 pb-12">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+      <div className="px-4 sm:px-8 lg:px-16 pt-12 pb-10">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 lg:gap-8">
 
           {/* Left: Heading */}
           <h2
-            className="text-4xl sm:text-5xl lg:text-[52px] leading-[1.15] text-black lg:max-w-md"
+            className="text-2xl sm:text-4xl lg:text-[52px] leading-[1.15] text-black lg:max-w-md"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Reach out to a<br />member of our team
@@ -109,8 +109,8 @@ export function FooterSection() {
       <div className="border-t border-gray-300 mx-6 sm:mx-10 lg:mx-16" />
 
       {/* ── Main Footer Grid ── */}
-      <div className="px-6 sm:px-10 lg:px-16 py-12">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+      <div className="px-4 sm:px-8 lg:px-16 py-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
 
           {/* Column 1: Logo + Description + CQC */}
           <div>
@@ -214,7 +214,7 @@ export function FooterSection() {
 
       {/* ── Bottom Bar ── */}
       <div className="border-t border-gray-300">
-        <div className="px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <div className="px-4 sm:px-8 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-[#363636] uppercase tracking-wider font-sans">
             COPYRIGHT © 2026 REFORM AESTHETICS AND DENTAL DESIGNED BY{' '}
             <a href="https://get-found.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:underline">

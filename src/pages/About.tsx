@@ -131,7 +131,7 @@ export default function About() {
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
-        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center">
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28 text-center">
           {/* Breadcrumb pill — gold dots + gradient lines */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -193,8 +193,8 @@ export default function About() {
         <div className="bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] pt-16 sm:pt-20 overflow-hidden">
 
           {/* About content */}
-          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start pb-16 sm:pb-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-20 items-start pb-12 sm:pb-20">
 
               {/* Left column — sticky so it stays in view while right scrolls */}
               <AnimatedSection className="text-center lg:text-left lg:sticky lg:top-28">
@@ -250,8 +250,8 @@ export default function About() {
           <div className="border-t border-gray-300/60 mx-6 sm:mx-10 lg:mx-14" />
 
           {/* Stats bar */}
-          <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-14">
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-14 py-10 sm:py-14">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-6 sm:gap-y-8 lg:gap-y-10">
               {stats.map((stat, idx) => (
                 <motion.div
                   key={idx}
@@ -262,7 +262,7 @@ export default function About() {
                   className="relative text-center"
                 >
                   <div
-                    className="text-5xl sm:text-6xl leading-none mb-2"
+                    className="text-4xl sm:text-5xl lg:text-6xl leading-none mb-2"
                     style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400, color: '#b0a295' }}
                   >
                     {stat.number}

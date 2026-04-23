@@ -47,9 +47,9 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
       </section>
 
       {/* Content + Sidebar */}
-      <section className="py-14 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-10 sm:py-14 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-10 xl:gap-16">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-16">
 
             {/* Left: image + article content */}
             <AnimatedSection className="min-w-0 flex-1">
@@ -97,8 +97,8 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
             <div className="lg:w-[320px] lg:flex-shrink-0">
               <div className="lg:sticky lg:top-28" style={{ height: 'fit-content' }}>
               <AnimatedSection>
-                <div className="bg-[#2d2d2d] rounded-2xl p-8 text-white">
-                  <h3 className="font-serif text-4xl leading-tight mb-5">
+                <div className="bg-[#2d2d2d] rounded-2xl p-6 sm:p-8 text-white">
+                  <h3 className="font-serif text-3xl sm:text-4xl leading-tight mb-4 sm:mb-5">
                     Want to talk?
                   </h3>
                   <p className="text-white/75 text-base leading-relaxed mb-8">

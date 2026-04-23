@@ -86,7 +86,7 @@ export default function Blog() {
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl mt-6">Skin Health Insights</h2>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {posts.map((post, idx) => {
               const CardWrapper = ({ children }: { children: React.ReactNode }) =>
                 post.href ? (
@@ -107,12 +107,12 @@ export default function Blog() {
                     <div className="aspect-[16/10] overflow-hidden">
                       <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
-                    <div className="p-6">
+                    <div className="p-4 sm:p-6">
                       <div className="flex items-center gap-2 text-[#363636] text-xs mb-3">
                         <Calendar className="w-3 h-3" />
                         {post.date}
                       </div>
-                      <h3 className="font-serif text-xl mb-3 group-hover:text-[#363636] transition-colors">{post.title}</h3>
+                      <h3 className="font-serif text-lg sm:text-xl mb-3 group-hover:text-[#363636] transition-colors">{post.title}</h3>
                       <p className="text-[#363636] text-sm leading-relaxed mb-4">{post.excerpt}</p>
                       <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:underline">
                         READ MORE <ArrowUpRight className="w-3 h-3" />

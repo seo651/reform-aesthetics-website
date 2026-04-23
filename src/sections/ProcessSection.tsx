@@ -54,7 +54,7 @@ const GAP = 22; // gap between number col and icon/content col
 export function ProcessSection() {
   return (
     <section className="py-0">
-      <div className="bg-[#efeae7] px-8 sm:px-14 lg:px-20 py-14 sm:py-16 lg:py-20">
+      <div className="bg-[#efeae7] px-4 sm:px-10 lg:px-20 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[44%_56%] gap-10 lg:gap-16 items-start">
 
@@ -70,7 +70,7 @@ export function ProcessSection() {
                 <SectionBadge text="PROCESS" />
               </div>
               <h2
-                className="text-[40px] sm:text-[48px] lg:text-[52px] mt-5 mb-5 leading-[1.12] text-black"
+                className="text-[30px] sm:text-[42px] lg:text-[52px] mt-5 mb-5 leading-[1.12] text-black"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Glow Up Your Skin in 3<br />Easy Steps
