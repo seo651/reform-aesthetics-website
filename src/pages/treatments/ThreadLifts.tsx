@@ -18,12 +18,12 @@ export default function ThreadLifts() {
         'Minimally invasive with immediate results',
         'Personalised treatment for a natural look',
       ]}
-      circularImage="/images/liquid-facelift-circular.jpg"
-      circularImageAlt="Liquid facelift before and after jawline result"
+      circularImage="/images/liquid-facelift-benefits.jpg"
+      circularImageAlt="Liquid facelift consultation and treatment"
       benefitsHeading="Rejuvenate Your Appearance Without Going Under the Knife"
       benefitsBody="A Liquid Facelift is ideal for those seeking visible rejuvenation without the risks or downtime of surgery. Every treatment is personalised to your facial structure for results that look naturally refreshed."
-      benefitsImage="/images/liquid-facelift-benefits.jpg"
-      benefitsImageAlt="Liquid facelift consultation and treatment"
+      benefitsImage="/images/liquid-facelift-circular.jpg"
+      benefitsImageAlt="Liquid facelift before and after jawline result"
       benefits={[
         {
           title: 'Restore Facial Volume',
