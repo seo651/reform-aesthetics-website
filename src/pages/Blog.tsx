@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Calendar } from 'lucide-react';
+import { Link } from 'react-router';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
@@ -9,30 +10,35 @@ const posts = [
     excerpt: 'With reports of counterfeit botulinum toxin products causing serious harm, we explore why choosing a regulated, medically-led clinic is essential for your safety.',
     date: 'April 23, 2026',
     image: '/images/service-anti-wrinkle.jpg',
+    href: '/blog/fake-botox-warning',
   },
   {
     title: 'Aesthetic Medicine In 2026: The Rise Of Regenerative Beauty And The New Era Of Intentional Aesthetics',
     excerpt: 'The world of aesthetic medicine is shifting. Explore how regenerative treatments and a more intentional approach to beauty are redefining the industry in 2026.',
     date: 'April 23, 2026',
     image: '/images/polynucleotides-hero.png',
+    href: '/blog/aesthetic-medicine-2026',
   },
   {
     title: 'PRP For Hair Restoration: Why Leading Hair-Transplant Surgeons Recommend It As An Essential Adjunct To Surgery',
     excerpt: 'PRP therapy is increasingly recommended alongside hair transplant surgery. Find out why leading surgeons consider it an essential part of long-term hair restoration.',
     date: 'April 23, 2026',
     image: '/images/prp-hair-hero.jpg',
+    href: '/blog/prp-hair-restoration',
   },
   {
     title: 'Are You A Teeth Grinder?',
     excerpt: 'Bruxism affects more people than you might think. Discover the signs of teeth grinding, its impact on your health, and how aesthetic treatments can help relieve symptoms.',
     date: 'April 23, 2026',
-    image: '/images/gummy-smile-hero-2.png',
+    image: '/images/bruxism-jaw-profile.jpg',
+    href: '/blog/are-you-a-teeth-grinder',
   },
   {
     title: 'What Treatments Are Available In Clinic For Hair Thinning And Hair Loss?',
     excerpt: 'Hair thinning and loss can affect confidence at any age. Discover the range of clinically proven treatments available at Reform Aesthetics and Dental to support hair regrowth.',
     date: 'April 23, 2026',
     image: '/images/prf-hero.png',
+    href: '/blog/hair-thinning-treatments',
   },
   {
     title: 'What Are Polynucleotides and How Can They Help Your Skin?',
@@ -117,31 +123,41 @@ export default function Blog() {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, idx) => (
-              <motion.article
-                key={idx}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * idx }}
-                className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all"
-              >
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-[#363636] text-xs mb-3">
-                    <Calendar className="w-3 h-3" />
-                    {post.date}
-                  </div>
-                  <h3 className="font-serif text-xl mb-3 group-hover:text-[#363636] transition-colors">{post.title}</h3>
-                  <p className="text-[#363636] text-sm leading-relaxed mb-4">{post.excerpt}</p>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:underline">
-                    READ MORE <ArrowUpRight className="w-3 h-3" />
-                  </span>
-                </div>
-              </motion.article>
-            ))}
+            {posts.map((post, idx) => {
+              const CardWrapper = ({ children }: { children: React.ReactNode }) =>
+                post.href ? (
+                  <Link to={post.href} className="block">{children}</Link>
+                ) : (
+                  <div>{children}</div>
+                );
+              return (
+                <motion.article
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 * idx }}
+                  className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <CardWrapper>
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-2 text-[#363636] text-xs mb-3">
+                        <Calendar className="w-3 h-3" />
+                        {post.date}
+                      </div>
+                      <h3 className="font-serif text-xl mb-3 group-hover:text-[#363636] transition-colors">{post.title}</h3>
+                      <p className="text-[#363636] text-sm leading-relaxed mb-4">{post.excerpt}</p>
+                      <span className="inline-flex items-center gap-1 text-sm font-medium group-hover:underline">
+                        READ MORE <ArrowUpRight className="w-3 h-3" />
+                      </span>
+                    </div>
+                  </CardWrapper>
+                </motion.article>
+              );
+            })}
           </div>
         </div>
       </section>

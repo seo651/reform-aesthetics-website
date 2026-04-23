@@ -11,6 +11,13 @@ import GalleryPage from '@/pages/Gallery';
 import Blog from '@/pages/Blog';
 import Contact from '@/pages/Contact';
 
+// Blog posts
+import FakeBotoxWarning from '@/pages/blog/FakeBotoxWarning';
+import AestheticMedicine2026 from '@/pages/blog/AestheticMedicine2026';
+import PRPHairRestoration from '@/pages/blog/PRPHairRestoration';
+import TeethGrinder from '@/pages/blog/TeethGrinder';
+import HairThinningTreatments from '@/pages/blog/HairThinningTreatments';
+
 // Treatment pages
 import AntiWrinkle from '@/pages/treatments/AntiWrinkle';
 import DermalFillers from '@/pages/treatments/DermalFillers';
@@ -65,6 +72,11 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/fake-botox-warning" element={<FakeBotoxWarning />} />
+          <Route path="/blog/aesthetic-medicine-2026" element={<AestheticMedicine2026 />} />
+          <Route path="/blog/prp-hair-restoration" element={<PRPHairRestoration />} />
+          <Route path="/blog/are-you-a-teeth-grinder" element={<TeethGrinder />} />
+          <Route path="/blog/hair-thinning-treatments" element={<HairThinningTreatments />} />
           <Route path="/contact" element={<Contact />} />
 
           {/* Skin */}
