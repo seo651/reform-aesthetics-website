@@ -135,10 +135,18 @@ export function TopHeader() {
         href="https://reformdental.get-found.co.uk/"
         target="_blank"
         rel="noopener noreferrer"
-        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#c5b1a1] text-black text-[11px] font-sans font-semibold tracking-[0.1em] uppercase py-2.5 px-4 hover:bg-[#d4c4b6] active:bg-[#b8a494] transition-colors"
+        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[11px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
       >
-        <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 opacity-70 flex-shrink-0">
-          <path d="M12 2C9.5 2 7.5 3.5 6.5 5.5C5.8 4.6 4.9 4 3.8 4C2.3 4 1 5.3 1 7c0 2.2 1.2 4.1 2.5 5.8C4.8 14.5 6 16.5 6.5 19c.2 1.1 1.2 1.8 2.1 1.5.6-.2 1-.8 1.1-1.5L10.5 15c.1-.5.3-.9.8-1 .1 0 .2-.1.7 0 .5.1.7.5.8 1l.8 4c.1.7.5 1.3 1.1 1.5.9.3 1.9-.4 2.1-1.5.5-2.5 1.7-4.5 3-6.2C21.2 11.1 23 9.2 23 7c0-1.7-1.3-3-2.8-3-1.1 0-2 .6-2.7 1.5C16.5 3.5 14.5 2 12 2z"/>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0 text-[#a8a8a8]" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
+          {/* Face outline */}
+          <ellipse cx="12" cy="13" rx="6.5" ry="7.5" />
+          {/* Eyes */}
+          <circle cx="9.5" cy="11" r="0.7" fill="currentColor" stroke="none" />
+          <circle cx="14.5" cy="11" r="0.7" fill="currentColor" stroke="none" />
+          {/* Smile */}
+          <path d="M9.5 14.5c.8 1 2 1.5 2.5 1.5s1.7-.5 2.5-1.5" />
+          {/* Sparkle */}
+          <path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z" fill="currentColor" stroke="none" />
         </svg>
         Visit Our Dental Site
         <ArrowUpRight className="w-3 h-3 opacity-70 flex-shrink-0" />
