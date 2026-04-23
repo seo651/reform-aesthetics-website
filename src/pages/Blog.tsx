@@ -37,7 +37,7 @@ const posts = [
     title: 'What Treatments Are Available In Clinic For Hair Thinning And Hair Loss?',
     excerpt: 'Hair thinning and loss can affect confidence at any age. Discover the range of clinically proven treatments available at Reform Aesthetics and Dental to support hair regrowth.',
     date: 'April 23, 2026',
-    image: '/images/prf-hero.png',
+    image: '/images/blog-hair-thinning.jpg',
     href: '/blog/hair-thinning-treatments',
   },
   {

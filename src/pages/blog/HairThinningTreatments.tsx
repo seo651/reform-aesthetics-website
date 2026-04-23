@@ -5,7 +5,7 @@ export default function HairThinningTreatments() {
     <BlogPost
       title="What Treatments Are Available in Clinic for Hair Thinning and Hair Loss?"
       date="April 23, 2026"
-      heroImage="/images/prf-hero.png"
+      heroImage="/images/blog-hair-thinning.jpg"
       heroImageAlt="Hair thinning and hair loss treatments"
     >
       <h2>PRP (Platelet-Rich Plasma)</h2>
