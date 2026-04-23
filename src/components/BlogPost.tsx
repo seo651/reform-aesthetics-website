@@ -8,14 +8,15 @@ interface BlogPostProps {
   date: string;
   heroImage: string;
   heroImageAlt?: string;
+  heroAspectRatio?: string;
   children: React.ReactNode;
 }
 
-export function BlogPost({ title, date, heroImage, heroImageAlt, children }: BlogPostProps) {
+export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio = '5/4', children }: BlogPostProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex items-end overflow-hidden" style={{ aspectRatio: '5/4', maxHeight: '70vh' }}>
+      <section className="relative flex items-end overflow-hidden" style={{ aspectRatio: heroAspectRatio, maxHeight: '90vh' }}>
         <div className="absolute inset-0">
           <img src={heroImage} alt={heroImageAlt ?? title} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />

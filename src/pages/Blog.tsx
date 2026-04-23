@@ -30,7 +30,7 @@ const posts = [
     title: 'Are You A Teeth Grinder?',
     excerpt: 'Bruxism affects more people than you might think. Discover the signs of teeth grinding, its impact on your health, and how aesthetic treatments can help relieve symptoms.',
     date: 'April 23, 2026',
-    image: '/images/bruxism-jaw-profile.jpg',
+    image: '/images/blog-teeth-grinder.png',
     href: '/blog/are-you-a-teeth-grinder',
   },
   {

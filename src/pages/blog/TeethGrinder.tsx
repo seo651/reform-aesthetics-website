@@ -5,7 +5,8 @@ export default function TeethGrinder() {
     <BlogPost
       title="Are You a Teeth Grinder?"
       date="April 23, 2026"
-      heroImage="/images/bruxism-jaw-profile.jpg"
+      heroImage="/images/blog-teeth-grinder.png"
+      heroAspectRatio="4/5"
       heroImageAlt="Jaw grinding bruxism"
     >
       <p>
