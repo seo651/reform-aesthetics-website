@@ -22,8 +22,8 @@ export default function DermalFillers() {
       circularImageAlt="Dermal filler treatment result"
       benefitsHeading="Subtle Enhancement That Complements Your Natural Features"
       benefitsBody="At Reform Aesthetics and Dental Clinic, we focus on achieving elegant, natural results. Our dermal filler treatments are tailored to your facial structure, ensuring subtle enhancement that works with — not against — your unique features."
-      benefitsImage="/images/filler-dissolving-new-benefits.png"
-      benefitsImageAlt="Dermal filler profile result"
+      benefitsImage="/images/dermal-fillers-benefits.png"
+      benefitsImageAlt="Dermal filler syringes"
       benefits={[
         {
           title: 'Restore Lost Volume',
