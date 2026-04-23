@@ -3,12 +3,14 @@ import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
-// Only show open days
 const openingHours = [
-  { day: 'Tuesday',  hours: '08:30 AM – 05:30 PM' },
-  { day: 'Friday',   hours: '08:30 AM – 05:30 PM' },
-  { day: 'Saturday', hours: '10:00 AM – 02:00 PM' },
-  { day: 'Sunday',   hours: '10:00 AM – 02:00 PM' },
+  { day: 'Monday',    hours: 'Closed' },
+  { day: 'Tuesday',   hours: '8:30 am – 5:30 pm' },
+  { day: 'Wednesday', hours: 'Closed' },
+  { day: 'Thursday',  hours: 'Closed' },
+  { day: 'Friday',    hours: '8:30 am – 5:00 pm' },
+  { day: 'Saturday',  hours: '10:00 am – 3:00 pm' },
+  { day: 'Sunday',    hours: '10:00 am – 3:00 pm' },
 ];
 
 const treatmentOptions = [
@@ -76,11 +78,12 @@ export function ContactSection() {
                       Opening Hours
                     </span>
                   </div>
-                  <div className="space-y-1.5">
+                  <div className="space-y-1">
                     {openingHours.map((item) => (
-                      <p key={item.day} className="text-white/75 text-[12px] font-sans">
-                        {item.day}: {item.hours}
-                      </p>
+                      <div key={item.day} className="flex justify-between items-center gap-4 text-[11.5px] font-sans">
+                        <span className={item.hours === 'Closed' ? 'text-white/40' : 'text-white/80'}>{item.day}</span>
+                        <span className={item.hours === 'Closed' ? 'text-white/30' : 'text-[#c5b1a1]'}>{item.hours}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
