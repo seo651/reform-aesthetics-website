@@ -59,7 +59,7 @@ const treatmentCategories = [
   {
     label: 'Hair Loss Treatments',
     items: [
-      { label: 'PRP Hair Rejuvenation', href: '/treatments/prp' },
+      { label: 'PRP Hair Rejuvenation', href: '/treatments/prp-hair' },
       { label: 'PRF Hair Rejuvenation', href: '/treatments/hair-loss' },
     ],
   },

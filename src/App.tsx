@@ -31,6 +31,7 @@ import SkinAnalysis from '@/pages/treatments/SkinAnalysis';
 import MedicalSkincare from '@/pages/treatments/MedicalSkincare';
 import Microneedling from '@/pages/treatments/Microneedling';
 import PRP from '@/pages/treatments/PRP';
+import PRPHair from '@/pages/treatments/PRPHair';
 import HairLoss from '@/pages/treatments/HairLoss';
 import Exosomes from '@/pages/treatments/Exosomes';
 import LipFillers from '@/pages/treatments/LipFillers';
@@ -104,6 +105,7 @@ function App() {
           {/* Hair Loss */}
           <Route path="/treatments/hair-loss" element={<HairLoss />} />
           <Route path="/treatments/prp" element={<PRP />} />
+          <Route path="/treatments/prp-hair" element={<PRPHair />} />
           <Route path="/treatments/exosomes" element={<Exosomes />} />
           <Route path="/treatments/vitamin-injections" element={<VitaminInjections />} />
 
