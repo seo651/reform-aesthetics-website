@@ -18,7 +18,7 @@ export default function PRPHair() {
         'Suitable for both men and women',
         'Course of 3 sessions recommended for best results',
       ]}
-      circularImage="/images/prf-circular.jpg"
+      circularImage="/images/prp-hair-circular.jpg"
       circularImageAlt="PRP hair treatment in progress"
       benefitsHeading="Fuller, Healthier Hair Through Your Body's Own Healing Power"
       benefitsBody="PRP therapy supports your body's natural regenerative processes to restore hair density and scalp health without the need for surgery or synthetic chemicals."
