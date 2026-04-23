@@ -40,42 +40,6 @@ const posts = [
     image: '/images/blog-hair-thinning.jpg',
     href: '/blog/hair-thinning-treatments',
   },
-  {
-    title: 'What Are Polynucleotides and How Can They Help Your Skin?',
-    excerpt: 'Polynucleotides are one of the most exciting innovations in aesthetic medicine. Learn how this regenerative treatment can improve skin quality from within.',
-    date: 'April 15, 2026',
-    image: '/images/exosomes-benefits.png',
-  },
-  {
-    title: 'The Benefits of Regular Skin Peels for Glowing Skin',
-    excerpt: 'Chemical peels are a powerful way to resurface and renew your complexion. Discover why regular treatments can transform your skin health.',
-    date: 'April 8, 2026',
-    image: '/images/skin-peels-hero.png',
-  },
-  {
-    title: 'Anti-Wrinkle Injections: Everything You Need to Know',
-    excerpt: 'Considering anti-wrinkle treatments? Here is everything you need to know about the procedure, results, and what to expect at your appointment.',
-    date: 'March 28, 2026',
-    image: '/images/cta-bg.jpg',
-  },
-  {
-    title: 'How to Maintain Results After Your Aesthetic Treatment',
-    excerpt: 'Getting great results is just the beginning. Learn our top aftercare tips to help you maintain your glow for as long as possible.',
-    date: 'March 15, 2026',
-    image: '/images/gallery-1.jpg',
-  },
-  {
-    title: 'Understanding Dermal Fillers: Restoring Volume Naturally',
-    excerpt: 'Dermal fillers can subtly restore lost volume and enhance facial contours. Find out how our practitioners achieve natural-looking results.',
-    date: 'March 5, 2026',
-    image: '/images/dermal-fillers-hero.png',
-  },
-  {
-    title: 'Why Skin Health Matters More Than Skin Perfection',
-    excerpt: 'At Reform Aesthetics and Dental, we believe in nurturing healthy skin rather than chasing perfection. Read our philosophy on sustainable skin care.',
-    date: 'February 20, 2026',
-    image: '/images/gallery-2.jpg',
-  },
 ];
 
 export default function Blog() {
