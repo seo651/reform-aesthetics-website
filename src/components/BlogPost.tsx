@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, Calendar } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router';
 import { AnimatedSection } from '@/components/AnimatedSection';
 
@@ -12,27 +12,37 @@ interface BlogPostProps {
   children: React.ReactNode;
 }
 
-export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio = '5/4', children }: BlogPostProps) {
+export function BlogPost({ title, date, heroImage, heroImageAlt, children }: BlogPostProps) {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex items-end overflow-hidden" style={{ aspectRatio: heroAspectRatio, maxHeight: '90vh' }}>
+      <section className="relative min-h-[44vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt={heroImageAlt ?? title} className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+          <div className="absolute inset-0 bg-black/55" />
         </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-xs font-medium tracking-wider text-white/90 uppercase mb-6">
-              <span>HOME</span><span className="text-white/40">/</span><span><Link to="/blog" className="hover:underline">BLOG</Link></span>
+
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          {/* Breadcrumb with decorative lines */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+            className="flex items-center justify-center gap-4 mb-8"
+          >
+            <span className="hidden sm:block flex-1 max-w-[80px] h-px bg-[#c5b1a1]/60" />
+            <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/25 text-[11px] font-semibold tracking-[0.14em] text-white/90 uppercase font-sans">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
+              <Link to="/" className="hover:text-white transition-colors">HOME</Link>
+              <span className="text-white/40">/</span>
+              <Link to="/blog" className="hover:text-white transition-colors">BLOG</Link>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
             </span>
+            <span className="hidden sm:block flex-1 max-w-[80px] h-px bg-[#c5b1a1]/60" />
           </motion.div>
-          <motion.div className="flex items-center gap-2 text-white/60 text-xs mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-            <Calendar className="w-3 h-3" />{date}
-          </motion.div>
+
+          {/* Title */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.25 }}
-            className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-tight"
+            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight"
           >
             {title}
           </motion.h1>
