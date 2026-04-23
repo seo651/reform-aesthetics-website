@@ -5,7 +5,7 @@ export default function AestheticMedicine2026() {
     <BlogPost
       title="Aesthetic Medicine in 2026: The Rise of Regenerative Beauty and the New Era of Intentional Aesthetics"
       date="April 23, 2026"
-      heroImage="/images/polynucleotides-hero.png"
+      heroImage="/images/blog-aesthetic-medicine-2026.jpg"
       heroImageAlt="Aesthetic medicine 2026"
     >
       <p>

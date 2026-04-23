@@ -16,7 +16,7 @@ const posts = [
     title: 'Aesthetic Medicine In 2026: The Rise Of Regenerative Beauty And The New Era Of Intentional Aesthetics',
     excerpt: 'The world of aesthetic medicine is shifting. Explore how regenerative treatments and a more intentional approach to beauty are redefining the industry in 2026.',
     date: 'April 23, 2026',
-    image: '/images/polynucleotides-hero.png',
+    image: '/images/blog-aesthetic-medicine-2026.jpg',
     href: '/blog/aesthetic-medicine-2026',
   },
   {
