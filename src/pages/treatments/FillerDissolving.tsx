@@ -6,7 +6,7 @@ export default function FillerDissolving() {
       breadcrumb="FILLER DISSOLVING"
       heroTitle="Correct & Restore with Filler Dissolving Treatment"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler — restoring natural facial balance."
-      heroImage="/images/cheek-fillers-profile.jpg"
+      heroImage="/images/filler-dissolving-1.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Filler Dissolving with Safe & Precise Correction"
@@ -18,11 +18,11 @@ export default function FillerDissolving() {
         'Minimally invasive procedure',
         'Noticeable improvement within days',
       ]}
-      circularImage="/images/cheek-fillers-jaw.jpg"
+      circularImage="/images/filler-dissolving-2.jpg"
       circularImageAlt="Hyaluronidase filler dissolving treatment"
       benefitsHeading="Restore Natural Balance & Facial Harmony"
       benefitsBody="Filler dissolving allows patients to safely adjust or reverse previous cosmetic treatments while maintaining natural-looking results."
-      benefitsImage="/images/cheek-fillers-skin.jpg"
+      benefitsImage="/images/filler-dissolving-3.jpg"
       benefitsImageAlt="Filler dissolving injection procedure"
       benefits={[
         {
