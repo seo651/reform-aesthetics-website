@@ -137,16 +137,15 @@ export function TopHeader() {
         rel="noopener noreferrer"
         className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[11px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
       >
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0 text-[#a8a8a8]" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
-          {/* Face outline */}
-          <ellipse cx="12" cy="13" rx="6.5" ry="7.5" />
-          {/* Eyes */}
-          <circle cx="9.5" cy="11" r="0.7" fill="currentColor" stroke="none" />
-          <circle cx="14.5" cy="11" r="0.7" fill="currentColor" stroke="none" />
-          {/* Smile */}
-          <path d="M9.5 14.5c.8 1 2 1.5 2.5 1.5s1.7-.5 2.5-1.5" />
-          {/* Sparkle */}
-          <path d="M19 3l.5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5z" fill="currentColor" stroke="none" />
+        <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 text-[#a8a8a8]" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round">
+          <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
+          <g transform="translate(368.4976,454.0469)"><path d="M 0,0 C -12.032,5.141 -25.134,8.201 -38.85,8.718 -60.88,9.547 -81.54,3.934 -99.113,-6.39 c -25.08,-13.715 -50.16,-13.715 -75.24,0 -17.574,10.324 -38.233,15.937 -60.264,15.108 -17.716,-0.667 -34.406,-5.578 -49.093,-13.735" /></g>
+          <g transform="translate(436.3242,354.1738)"><path d="M 0,0 C -0.484,21.684 -7.297,41.94 -18.653,58.951" /></g>
+          <g transform="translate(94.8945,128.3672)"><path d="m 0,0 c 11.098,-29.495 20.205,-57.36 23.936,-81.744 3.766,-24.61 11.061,-39.123 30.26,-39.123 12.932,0 23.981,15.596 32.266,40.319 6.4,19.098 16.559,56.764 22.089,75.682 9.642,32.984 46.995,32.983 56.637,0 5.53,-18.918 15.689,-56.584 22.089,-75.682 8.285,-24.723 19.334,-40.319 32.266,-40.319 19.199,0 26.495,14.513 30.261,39.123 12.343,80.663 83.503,199.416 91.021,289.274" /></g>
+          <g transform="translate(139.3838,421.4053)"><path d="M 0,0 C -39.368,0 -71.223,-31.796 -71.223,-71.091" /></g>
+          <g transform="translate(386.4653,504.5)"><path d="M 0,0 19.477,-54.691 55.089,-74.133 19.477,-93.573 0,-148.265 l -19.477,54.692 -35.612,19.44 35.612,19.442 z" /></g>
+          <g transform="translate(475.959,328.2959)"><path d="M 0,0 -13.16,-36.951 -26.319,0 -50.379,13.135 -26.319,26.27 -13.16,63.222 0,26.27 24.061,13.135" /></g>
+          <g transform="translate(73.4019,240.3838)"><path d="M 0,0 21.716,-60.979 61.421,-82.653 21.716,-104.329 0,-165.308 l -21.716,60.979 -39.705,21.676 39.705,21.674 z" /></g>
         </svg>
         Visit Our Dental Site
         <ArrowUpRight className="w-3 h-3 opacity-70 flex-shrink-0" />
