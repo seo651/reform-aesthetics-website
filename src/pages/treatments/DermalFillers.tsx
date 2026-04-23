@@ -6,7 +6,7 @@ export default function DermalFillers() {
       breadcrumb="DERMAL FILLERS"
       heroTitle="Restore Volume & Enhance Your Features with Dermal Fillers"
       heroSubtext="At Reform Aesthetics and Dental Clinic, our dermal filler treatments are carefully administered to replenish lost volume, refine facial structure and soften the visible signs of ageing — delivering natural-looking results tailored to you."
-      heroImage="/images/filler-dissolving-new-hero.png"
+      heroImage="/images/dermal-fillers-hero.png"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Facial Enhancement for Natural, Balanced Results"
