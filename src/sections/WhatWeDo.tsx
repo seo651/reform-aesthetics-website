@@ -134,7 +134,7 @@ export function WhatWeDo() {
               } ${index === 1 ? 'md:px-12' : ''}`}
             >
               {/* Filled medium-grey circle with white icon */}
-              <div className="w-[64px] h-[64px] rounded-full bg-[#808080] flex items-center justify-center flex-shrink-0">
+              <div className="w-[64px] h-[64px] rounded-full bg-[#c8c8c8] flex items-center justify-center flex-shrink-0">
                 <Icon />
               </div>
 
