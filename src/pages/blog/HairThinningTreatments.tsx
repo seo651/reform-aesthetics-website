@@ -19,6 +19,13 @@ export default function HairThinningTreatments() {
         The plasma and platelet cells can also be introduced into the scalp using a microneedling technique — this combination offers a two-step rejuvenation. The microneedling encourages collagen production and absorption, while PRP delivers concentrated growth factors directly to the follicles. Collectively, PRP and microneedling can offer more noticeable improvements than PRP alone. Best results are seen after 3 sessions of PRP.
       </p>
 
+      <img
+        src="/images/blog-hair-thinning-2.png"
+        alt="Hair thinning treatment in clinic"
+        className="w-full rounded-xl object-cover my-6"
+        style={{ aspectRatio: '5/4' }}
+      />
+
       <h2>Exosomes</h2>
       <p>
         Exosomes can also be injected into the scalp using a microneedling device as another option for managing hair loss. Exosomes are tiny, naturally occurring vesicles released by cells — known as the messenger packages cells use to communicate with one another. These packages carry important biological signals such as proteins, lipids, and growth-factor-like molecules that help regulate how cells behave. In aesthetics, exosomes are being explored for their potential to support skin quality, improve texture, and enhance overall skin vitality by encouraging healthier cellular activity. We recommend a minimum of 5 sessions for best results.
