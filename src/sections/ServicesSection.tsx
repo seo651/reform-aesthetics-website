@@ -11,7 +11,7 @@ const services = [
     image: '/images/anti-wrinkle.jpg',
     description: "Our anti-wrinkle treatments offer a safe, non-surgical solution to reduce forehead lines, crow's feet, and frown lines. By gently relaxing targeted muscles, we soften expression lines while maintaining natural facial movement.",
     details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results — never frozen or overdone — with minimal downtime.',
-    href: '/treatments',
+    href: '/treatments/anti-wrinkle',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const services = [
     image: '/images/dermal-fillers.jpg',
     description: 'Dermal fillers restore lost volume, smooth deeper lines, and refine facial structure. We treat areas including lips, cheeks, jawline, and under-eyes using premium, clinically approved fillers.',
     details: 'Results are immediate, natural-looking, and minimally invasive — ideal for restoring youthful balance without surgery.',
-    href: '/treatments',
+    href: '/treatments/dermal-fillers',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const services = [
     image: '/images/collagen-stimulating.jpg',
     description: "Ellansé is an advanced injectable that restores facial volume while stimulating your body's natural collagen production. Over time, skin becomes firmer, smoother, and more elastic.",
     details: 'Ideal for patients seeking long-lasting rejuvenation with gradual, natural enhancement and minimal downtime.',
-    href: '/treatments',
+    href: '/treatments/collagen-stimulating',
   },
   {
     id: 4,
@@ -35,15 +35,15 @@ const services = [
     image: '/images/polynucleotide.jpg',
     description: 'Polynucleotides are advanced regenerative injectables designed to remodel and rejuvenate the skin. They improve elasticity, hydration, and texture while reducing fine lines, dark circles, and skin laxity.',
     details: 'Using premium brands such as Plinest and Newest, we treat the face, under-eyes, neck, décolleté, and hands to stimulate collagen production and support cellular renewal.',
-    href: '/treatments',
+    href: '/treatments/polynucleotides',
   },
   {
     id: 5,
-    title: 'Skin-Peels',
+    title: 'Skin Peels',
     image: '/images/skin-peels.jpg',
     description: 'Using the advanced Mesoestetic range, our medical-grade skin peels remove dead skin cells, stimulate cell turnover, and improve tone and texture.',
     details: 'Effective for acne, pigmentation, rosacea, and dull skin, peels are comfortable with minimal downtime. A course of treatments is typically recommended for optimal results.',
-    href: '/treatments',
+    href: '/treatments/skin-peels',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const services = [
     image: '/images/carboxytherapy.jpg',
     description: 'Carboxytherapy uses sterile CO₂ injections to stimulate circulation and collagen production. This improves firmness, smooths skin, and reduces the appearance of cellulite, stretch marks, and dark under-eye circles.',
     details: 'A safe, minimally invasive treatment with minimal side effects. Multiple sessions are recommended for best results.',
-    href: '/treatments',
+    href: '/treatments/carboxytherapy',
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const services = [
     image: '/images/skin-boosters.jpg',
     description: 'Skin boosters deeply hydrate and revitalise from within. Profhilo improves skin laxity and firmness, while NCTF nourishes with hyaluronic acid, vitamins, and antioxidants.',
     details: 'Ideal for dull skin, early ageing, and loss of elasticity — delivering radiant, refreshed skin with no downtime.',
-    href: '/treatments',
+    href: '/treatments/skin-boosters',
   },
   {
     id: 8,
@@ -67,7 +67,7 @@ const services = [
     image: '/images/signature-facials.jpg',
     description: 'Our 75-minute Live Probiotic Facial delivers intensive skin restoration using live lactobacillus probiotics and advanced hydration techniques.',
     details: 'Designed to rebalance the skin microbiome, improve barrier function, and restore natural radiance using Esse Organic skincare.',
-    href: '/treatments',
+    href: '/treatments/signature-facials',
   },
   {
     id: 9,
@@ -75,7 +75,7 @@ const services = [
     image: '/images/weight-loss-injections.jpg',
     description: 'Our medically supervised weight-loss injections support appetite control and metabolic balance. When combined with healthy lifestyle changes, they help reduce calorie intake and support sustainable weight management.',
     details: 'Each treatment plan is personalised to ensure safe, effective, long-term results.',
-    href: '/treatments',
+    href: '/treatments/weight-loss',
   },
   {
     id: 10,
@@ -83,7 +83,7 @@ const services = [
     image: '/images/vitamin-injections.jpg',
     description: 'Vitamin B12 and Biotin injections support energy levels, improve hair strength, and enhance skin health. Intramuscular delivery ensures faster absorption compared to oral supplements.',
     details: 'Ideal for individuals experiencing fatigue, hair thinning, or nutrient deficiency.',
-    href: '/treatments',
+    href: '/treatments/vitamin-injections',
   },
 ];
 
@@ -99,17 +99,17 @@ export function ServicesSection() {
   const rightServices = services.filter((_, i) => i % 2 !== 0);
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="treatments" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection className="text-center lg:text-left">
           <div className="flex justify-center lg:justify-start">
-            <SectionBadge text="Services" />
+            <SectionBadge text="Treatments" />
           </div>
           <h2
             className="text-3xl sm:text-4xl lg:text-[48px] mt-6 mb-12 max-w-lg leading-tight text-black mx-auto lg:mx-0"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
-            Explore Our Services for Lasting Skin Health!
+            Explore Our Treatments for Lasting Skin Health!
           </h2>
         </AnimatedSection>
 
