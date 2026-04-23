@@ -3,43 +3,43 @@ import { TreatmentPage } from '@/components/TreatmentPage';
 export default function ThreadLifts() {
   return (
     <TreatmentPage
-      breadcrumb="LIQUID FACE LIFT"
-      heroTitle="Instant Lift, Natural Results Using Dermal Fillers"
-      heroSubtext="Achieve a lifted, youthful and refreshed appearance without surgery with a Non-Surgical Face Lift — also known as a 'Liquid Facelift' — using expertly placed dermal fillers."
-      heroImage="/images/liquid-facelift-hero.jpg"
+      breadcrumb="PDO THREAD LIFT"
+      heroTitle="Instant, Non-Surgical Lift with PDO Thread Lift Treatment"
+      heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, our PDO thread lift offers a subtle yet effective solution to lift and tighten sagging skin, restoring definition and a refreshed appearance without surgery."
+      heroImage="/images/thread-lifts-hero.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
-      aboutHeading="A Non-Surgical Facelift Tailored to You"
-      aboutBody="A Liquid Facelift uses carefully placed dermal fillers to restore volume, smooth wrinkles, and enhance facial contours, targeting areas such as the cheeks, jawline, temples, and under-eyes. By strategically replenishing lost facial volume, dermal fillers provide a natural lift, improving symmetry and definition while maintaining your unique look. The procedure is minimally invasive, requires little to no downtime, and delivers immediate results that can be fine-tuned for subtle, natural enhancement. Perfect for those seeking facial rejuvenation without surgery, a filler-based face lift helps you regain confidence with safe, effective, and tailored treatment."
+      aboutHeading="PDO Non-Surgical Skin Tightening"
+      aboutBody="A thread lift is a minimally invasive treatment that uses PDO (polydioxanone) threads to lift and support areas affected by skin laxity. Common treatment areas include the mid-face, jawline, neck and eye area. The threads are carefully placed beneath the skin to create an immediate lifting effect, while also stimulating collagen production over the following 6–8 weeks for longer-lasting firmness and structure."
       checklistItems={[
-        'Restores facial volume and lifts sagging areas',
-        'Smooths fine lines and wrinkles',
-        'Enhances facial contours naturally',
-        'Minimally invasive with immediate results',
-        'Personalised treatment for a natural look',
+        'Instant lifting and tightening effect',
+        'Stimulates natural collagen production',
+        'Defines jawline and mid-face',
+        'Improves skin firmness and elasticity',
+        'Minimally invasive procedure',
       ]}
-      circularImage="/images/liquid-facelift-benefits.jpg"
-      circularImageAlt="Liquid facelift consultation and treatment"
-      benefitsHeading="Rejuvenate Your Appearance Without Going Under the Knife"
-      benefitsBody="A Liquid Facelift is ideal for those seeking visible rejuvenation without the risks or downtime of surgery. Every treatment is personalised to your facial structure for results that look naturally refreshed."
-      benefitsImage="/images/liquid-facelift-circular.jpg"
-      benefitsImageAlt="Liquid facelift before and after jawline result"
+      circularImage="/images/thread-lifts-treatment.jpg"
+      circularImageAlt="PDO thread lift treatment procedure"
+      benefitsHeading="Restore Definition & Achieve a Youthful Lift"
+      benefitsBody="Thread lifts are ideal for patients seeking visible rejuvenation without the downtime or risks associated with surgery."
+      benefitsImage="/images/thread-lifts-result.jpg"
+      benefitsImageAlt="PDO thread lift results"
       benefits={[
         {
-          title: 'Restore Facial Volume',
-          desc: 'Lifts sagging areas and replenishes volume lost through ageing.',
+          title: 'Immediate Lift & Contour',
+          desc: 'Provides subtle yet noticeable facial definition.',
         },
         {
-          title: 'Smooth Lines & Wrinkles',
-          desc: 'Softens fine lines for a smoother, more youthful complexion.',
+          title: 'Long-Term Collagen Support',
+          desc: 'Encourages firmer, tighter skin over time.',
         },
         {
-          title: 'Enhance Contours Naturally',
-          desc: 'Defines cheeks, jawline and temples with precision placement.',
+          title: 'Target Key Areas',
+          desc: 'Effective for jawline, cheeks, neck and eyes.',
         },
         {
-          title: 'No Surgery or Downtime',
-          desc: 'Immediate, natural-looking results with minimal recovery needed.',
+          title: 'Minimal Downtime',
+          desc: 'A convenient treatment with relatively quick recovery.',
         },
       ]}
     />

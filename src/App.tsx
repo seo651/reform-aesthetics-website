@@ -26,6 +26,7 @@ import LymphaticDrainage from '@/pages/treatments/LymphaticDrainage';
 import WeightLoss from '@/pages/treatments/WeightLoss';
 import VitaminInjections from '@/pages/treatments/VitaminInjections';
 import ThreadLifts from '@/pages/treatments/ThreadLifts';
+import LiquidFacelift from '@/pages/treatments/LiquidFacelift';
 import SkinAnalysis from '@/pages/treatments/SkinAnalysis';
 import MedicalSkincare from '@/pages/treatments/MedicalSkincare';
 import Microneedling from '@/pages/treatments/Microneedling';
@@ -80,6 +81,7 @@ function App() {
           <Route path="/treatments/skin-boosters" element={<SkinBoosters />} />
           <Route path="/treatments/polynucleotides" element={<Polynucleotides />} />
           <Route path="/treatments/thread-lifts" element={<ThreadLifts />} />
+          <Route path="/treatments/liquid-facelift" element={<LiquidFacelift />} />
           <Route path="/treatments/collagen-stimulating" element={<CollagenStimulating />} />
           <Route path="/treatments/neck-rejuvenation" element={<NeckRejuvenation />} />
 

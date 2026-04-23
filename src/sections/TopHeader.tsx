@@ -51,7 +51,7 @@ const treatmentCategories = [
     label: 'Advanced Aesthetic Treatments',
     items: [
       { label: 'PDO Thread Lift', href: '/treatments/thread-lifts' },
-      { label: 'Liquid Face Lift', href: '/treatments/thread-lifts' },
+      { label: 'Liquid Face Lift', href: '/treatments/liquid-facelift' },
       { label: 'PRP (Vampire Facial)', href: '/treatments/prp' },
       { label: 'Hand Rejuvenation', href: '/treatments/neck-rejuvenation' },
     ],
