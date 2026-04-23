@@ -23,14 +23,17 @@ function IconPatientCare() {
 function IconClinicRoof() {
   return (
     <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-7 h-7">
-      {/* Tooth shape */}
-      <path
-        d="M13 12c-3.5 0-6 2.5-6 6 0 2 1 4.2 1.8 6.5L11.5 35c.4 1.8 1.3 3.5 3 3.5s2.5-1.8 3-3.5l1.5-6c.4-1.5.9-2.5 2-2.5s1.6.9 2 2.5l1.5 6c.5 1.8 1.3 3.5 3 3.5s2.6-1.8 3-3.5l2.7-10.5c.8-2.3 1.8-4.5 1.8-6.5 0-3.5-2.5-6-6-6-2 0-3.8.9-5 2.2C23.8 12.9 22 12 20 12c-1.2 0-2.4.3-4 1z"
-        fill="white"
-      />
-      {/* Plus symbol bottom right */}
-      <circle cx="38" cy="38" r="6" stroke="white" strokeWidth="1.5" />
-      <path d="M38 35v6M35 38h6" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      {/* Face outline */}
+      <ellipse cx="24" cy="25" rx="13" ry="15" stroke="white" strokeWidth="2.2" />
+      {/* Eyes */}
+      <circle cx="19" cy="22" r="1.5" fill="white" />
+      <circle cx="29" cy="22" r="1.5" fill="white" />
+      {/* Smile */}
+      <path d="M19 29c1.2 2 3 3 5 3s3.8-1 5-3" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      {/* Sparkle top-right — skin glow */}
+      <path d="M38 8l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" fill="white" opacity="0.9" />
+      {/* Small sparkle dot */}
+      <circle cx="34" cy="6" r="1" fill="white" opacity="0.7" />
     </svg>
   );
 }
