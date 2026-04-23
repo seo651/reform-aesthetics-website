@@ -6,7 +6,7 @@ export default function PRPHair() {
       breadcrumb="PRP HAIR REJUVENATION"
       heroTitle="Restoring Fuller, Healthier Hair — Naturally"
       heroSubtext="Platelet-Rich Plasma (PRP) therapy is widely recognised as one of the most effective and dependable non-surgical treatments for hair growth in both men and women — completely natural, with no harsh synthetic chemicals."
-      heroImage="/images/prf-hero.png"
+      heroImage="/images/prp-hair-hero.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="PRP for Hair — How It Works"
