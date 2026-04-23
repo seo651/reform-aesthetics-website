@@ -5,7 +5,7 @@ export default function PRPHairRestoration() {
     <BlogPost
       title="PRP for Hair Restoration: Why Leading Hair-Transplant Surgeons Recommend It as an Essential Adjunct to Surgery"
       date="April 23, 2026"
-      heroImage="/images/prp-hair-hero.jpg"
+      heroImage="/images/blog-prp-hair-restoration.jpg"
       heroImageAlt="PRP hair restoration treatment"
     >
       <p>

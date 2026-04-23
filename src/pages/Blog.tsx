@@ -23,7 +23,7 @@ const posts = [
     title: 'PRP For Hair Restoration: Why Leading Hair-Transplant Surgeons Recommend It As An Essential Adjunct To Surgery',
     excerpt: 'PRP therapy is increasingly recommended alongside hair transplant surgery. Find out why leading surgeons consider it an essential part of long-term hair restoration.',
     date: 'April 23, 2026',
-    image: '/images/prp-hair-hero.jpg',
+    image: '/images/blog-prp-hair-restoration.jpg',
     href: '/blog/prp-hair-restoration',
   },
   {
