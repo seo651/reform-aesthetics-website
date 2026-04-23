@@ -63,14 +63,24 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
               </div>
 
               {/* Article body */}
-              <div className="prose prose-lg max-w-none text-[#363636]
-                prose-headings:font-serif prose-headings:text-black
-                prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-                prose-h3:text-xl
-                prose-p:leading-relaxed prose-p:mb-5
-                prose-li:leading-relaxed
-                prose-strong:text-black">
-                {children}
+              <div
+                className="text-[#363636] text-[16px] leading-[1.85]"
+                style={{
+                  // paragraph spacing
+                  '--p-gap': '1.4em',
+                } as React.CSSProperties}
+              >
+                <style>{`
+                  .blog-body p { margin-bottom: 1.4em; }
+                  .blog-body h2 { font-family: 'Times New Roman', Times, serif; font-size: 1.5rem; font-weight: 600; color: #000; margin-top: 2.4em; margin-bottom: 0.75em; line-height: 1.3; }
+                  .blog-body h3 { font-family: 'Times New Roman', Times, serif; font-size: 1.2rem; font-weight: 600; color: #000; margin-top: 2em; margin-bottom: 0.6em; }
+                  .blog-body ul { list-style: disc; padding-left: 1.5em; margin-bottom: 1.4em; }
+                  .blog-body ol { list-style: decimal; padding-left: 1.5em; margin-bottom: 1.4em; }
+                  .blog-body li { margin-bottom: 0.5em; line-height: 1.75; }
+                  .blog-body strong { color: #000; font-weight: 600; }
+                  .blog-body img { border-radius: 0.75rem; margin-top: 1.6em; margin-bottom: 1.6em; }
+                `}</style>
+                <div className="blog-body">{children}</div>
               </div>
 
               <div className="mt-12 pt-8 border-t border-gray-100">
