@@ -91,13 +91,19 @@ export default function Blog() {
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
             className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-4"
           >
-            Our Blog
+            Welcome to the Reform Aesthetics Blog
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.35 }}
+            className="text-white/90 text-lg sm:text-xl max-w-3xl mx-auto mb-5 font-serif italic"
           >
-            Expert insights, skin care tips, and the latest news from Reform Aesthetics and Dental.
+            Your trusted guide to the ever-evolving world of facial aesthetics.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-white/70 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed"
+          >
+            Our articles go far beyond explaining treatments. We break down how different aesthetic approaches work, share expert insights on maintaining healthy, radiant skin, and keep you updated on the latest innovations shaping the industry. Whether you're exploring a specific treatment or simply want to understand how to achieve a naturally refreshed look, our blog empowers you with clear, reliable knowledge to make confident, informed decisions.
           </motion.p>
         </div>
       </section>
