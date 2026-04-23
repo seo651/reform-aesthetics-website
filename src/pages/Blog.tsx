@@ -5,16 +5,46 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 
 const posts = [
   {
+    title: 'Fake Botox Warning. Why Choosing A Medically-Led Clinic Matters',
+    excerpt: 'With reports of counterfeit botulinum toxin products causing serious harm, we explore why choosing a regulated, medically-led clinic is essential for your safety.',
+    date: 'April 23, 2026',
+    image: '/images/service-anti-wrinkle.jpg',
+  },
+  {
+    title: 'Aesthetic Medicine In 2026: The Rise Of Regenerative Beauty And The New Era Of Intentional Aesthetics',
+    excerpt: 'The world of aesthetic medicine is shifting. Explore how regenerative treatments and a more intentional approach to beauty are redefining the industry in 2026.',
+    date: 'April 23, 2026',
+    image: '/images/polynucleotides-hero.png',
+  },
+  {
+    title: 'PRP For Hair Restoration: Why Leading Hair-Transplant Surgeons Recommend It As An Essential Adjunct To Surgery',
+    excerpt: 'PRP therapy is increasingly recommended alongside hair transplant surgery. Find out why leading surgeons consider it an essential part of long-term hair restoration.',
+    date: 'April 23, 2026',
+    image: '/images/prp-hair-hero.jpg',
+  },
+  {
+    title: 'Are You A Teeth Grinder?',
+    excerpt: 'Bruxism affects more people than you might think. Discover the signs of teeth grinding, its impact on your health, and how aesthetic treatments can help relieve symptoms.',
+    date: 'April 23, 2026',
+    image: '/images/gummy-smile-hero-2.png',
+  },
+  {
+    title: 'What Treatments Are Available In Clinic For Hair Thinning And Hair Loss?',
+    excerpt: 'Hair thinning and loss can affect confidence at any age. Discover the range of clinically proven treatments available at Reform Aesthetics and Dental to support hair regrowth.',
+    date: 'April 23, 2026',
+    image: '/images/prf-hero.png',
+  },
+  {
     title: 'What Are Polynucleotides and How Can They Help Your Skin?',
     excerpt: 'Polynucleotides are one of the most exciting innovations in aesthetic medicine. Learn how this regenerative treatment can improve skin quality from within.',
     date: 'April 15, 2026',
-    image: '/images/service-anti-wrinkle.jpg',
+    image: '/images/exosomes-benefits.png',
   },
   {
     title: 'The Benefits of Regular Skin Peels for Glowing Skin',
     excerpt: 'Chemical peels are a powerful way to resurface and renew your complexion. Discover why regular treatments can transform your skin health.',
     date: 'April 8, 2026',
-    image: '/images/gallery-3.jpg',
+    image: '/images/skin-peels-hero.png',
   },
   {
     title: 'Anti-Wrinkle Injections: Everything You Need to Know',
@@ -32,13 +62,13 @@ const posts = [
     title: 'Understanding Dermal Fillers: Restoring Volume Naturally',
     excerpt: 'Dermal fillers can subtly restore lost volume and enhance facial contours. Find out how our practitioners achieve natural-looking results.',
     date: 'March 5, 2026',
-    image: '/images/gallery-2.jpg',
+    image: '/images/dermal-fillers-hero.png',
   },
   {
     title: 'Why Skin Health Matters More Than Skin Perfection',
     excerpt: 'At Reform Aesthetics and Dental, we believe in nurturing healthy skin rather than chasing perfection. Read our philosophy on sustainable skin care.',
     date: 'February 20, 2026',
-    image: '/images/hero-bg.jpg',
+    image: '/images/gallery-2.jpg',
   },
 ];
 
