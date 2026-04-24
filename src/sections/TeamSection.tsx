@@ -114,7 +114,7 @@ export function TeamSection() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="flex flex-col md:grid md:grid-cols-[1fr_260px] gap-8 md:gap-10 items-start min-w-0"
+              className="flex flex-col md:grid md:grid-cols-[1fr_340px] lg:grid-cols-[1fr_400px] gap-8 md:gap-10 items-start min-w-0"
             >
               {/* Text */}
               <div className="text-center md:text-left min-w-0 w-full">
@@ -152,7 +152,7 @@ export function TeamSection() {
 
               {/* Photo — centred on mobile, right-aligned on desktop */}
               <div className="flex justify-center md:justify-end w-full">
-                <div className="rounded-2xl overflow-hidden w-full max-w-[260px] sm:max-w-[300px] aspect-square">
+                <div className="rounded-2xl overflow-hidden w-full aspect-square">
                   <img
                     src={activeMember.image}
                     alt={activeMember.name}
