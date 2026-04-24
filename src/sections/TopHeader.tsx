@@ -177,7 +177,7 @@ export function TopHeader() {
                             <Link
                               to={link.href}
                               onClick={() => setIsOpen(false)}
-                              className={`text-[12px] uppercase font-sans font-semibold tracking-[0.1em] transition-colors ${
+                              className={`text-[12px] font-sans font-semibold tracking-[0.1em] transition-colors ${
                                 location.pathname === link.href
                                   ? 'text-black'
                                   : 'text-[#363636] hover:text-black'
