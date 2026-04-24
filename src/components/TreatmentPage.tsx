@@ -182,7 +182,7 @@ export function TreatmentPage({
                 {aboutBody}
               </p>
 
-              <div className="space-y-0">
+              <div className="space-y-0 max-w-sm mx-auto lg:mx-0">
                 {checklistItems.map((item, idx) => (
                   <motion.div
                     key={idx}
@@ -190,7 +190,7 @@ export function TreatmentPage({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * idx }}
-                    className="flex items-center justify-center lg:justify-start gap-3 py-4 border-b border-gray-300/60 last:border-b-0"
+                    className="flex items-center gap-3 py-4 border-b border-gray-300/60 last:border-b-0"
                   >
                     <CheckCircle2 className="w-5 h-5 text-[#9D8A7B] flex-shrink-0" />
                     <span className="text-[#363636] font-sans text-[14px] sm:text-[15px]">{item}</span>
