@@ -210,8 +210,14 @@ export default function About() {
                 <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
                   We offer personalised, clinically proven skincare solutions tailored to your unique needs.
                 </p>
+                <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
+                  At Reform Aesthetics and Dental, we understand that every skin journey is different. That is why we take the time to carry out a thorough consultation, carefully assessing your concerns, lifestyle and long term goals before recommending any treatment. Our approach is never one size fits all. Instead, we create bespoke treatment plans designed specifically around you.
+                </p>
+                <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
+                  Whether you are looking to treat acne, reduce pigmentation, soften signs of ageing or simply maintain a healthy, radiant complexion, our expert team is here to guide you. We combine advanced clinical techniques with high quality products and a patient focused approach to ensure every treatment is both safe and effective.
+                </p>
                 <p className="text-[#363636] text-sm leading-relaxed font-sans">
-                  At Reform Aesthetics and Dental, we understand that every skin journey is different. That's why we take the time to assess your concerns and goals, creating bespoke treatment plans designed around you. Whether you're targeting acne, pigmentation, signs of ageing, or simply maintaining a healthy, radiant complexion, our expert team combines advanced science with a patient-focused approach to deliver results you can trust.
+                  Our goal is not just to improve your skin in the short term, but to help you build lasting confidence through results that look natural, balanced and truly tailored to you.
                 </p>
               </AnimatedSection>
 
