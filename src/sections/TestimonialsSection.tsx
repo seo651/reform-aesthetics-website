@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
@@ -97,21 +97,43 @@ const testimonials = [
 ];
 
 export function TestimonialsSection() {
-  const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(testimonials.length / itemsPerPage);
+  const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(1);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const total = testimonials.length;
 
-  const currentTestimonials = testimonials.slice(
-    currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage
-  );
+  const goNext = () => {
+    setDirection(1);
+    setCurrent((prev) => (prev + 1) % total);
+  };
+  const goPrev = () => {
+    setDirection(-1);
+    setCurrent((prev) => (prev - 1 + total) % total);
+  };
 
-  const nextPage = () => setCurrentPage((prev) => (prev + 1) % totalPages);
-  const prevPage = () => setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  useEffect(() => {
+    if (paused) return;
+    intervalRef.current = setInterval(goNext, 4000);
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+  }, [paused, current]);
+
+  const variants = {
+    enter: (dir: number) => ({ x: dir > 0 ? 80 : -80, opacity: 0 }),
+    center: { x: 0, opacity: 1 },
+    exit: (dir: number) => ({ x: dir > 0 ? -80 : 80, opacity: 0 }),
+  };
+
+  const t = testimonials[current];
 
   return (
-    <section id="testimonial" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="testimonial"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="max-w-4xl mx-auto">
         {/* Header */}
         <AnimatedSection className="text-center mb-12">
           <SectionBadge text="Testimonials" />
@@ -127,62 +149,58 @@ export function TestimonialsSection() {
           </p>
         </AnimatedSection>
 
-        {/* Cards */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentPage}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="grid md:grid-cols-3 gap-6"
-          >
-            {currentTestimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="bg-[#F8F6F3] rounded-2xl p-6 flex flex-col"
-              >
-                {/* Author */}
-                <div className="flex items-center gap-3 mb-4">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold font-sans"
-                    style={{ backgroundColor: testimonial.avatarColor }}
-                  >
-                    {testimonial.initials.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-sans font-semibold text-sm text-black">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-xs text-gray-400 font-sans">{testimonial.role}</p>
-                  </div>
+        {/* Single card carousel */}
+        <div className="relative overflow-hidden">
+          <AnimatePresence mode="wait" custom={direction}>
+            <motion.div
+              key={current}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+              className="bg-[#F8F6F3] rounded-2xl p-8 sm:p-10 flex flex-col"
+            >
+              {/* Author */}
+              <div className="flex items-center gap-3 mb-5">
+                <div
+                  className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-semibold font-sans flex-shrink-0"
+                  style={{ backgroundColor: t.avatarColor }}
+                >
+                  {t.initials.charAt(0)}
                 </div>
-
-                {/* Review text */}
-                <p className="text-[#363636] text-sm leading-relaxed flex-1 mb-4 line-clamp-6 font-sans">
-                  {testimonial.text}
-                </p>
-
-                {/* Rating */}
-                <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
-                  <StarRating />
-                  <span className="text-xs font-semibold font-sans text-[#363636]">5.0 RATING</span>
+                <div>
+                  <h4 className="font-sans font-semibold text-sm text-black">{t.name}</h4>
+                  <p className="text-xs text-gray-400 font-sans">{t.role}</p>
                 </div>
               </div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+
+              {/* Review text */}
+              <p className="text-[#363636] text-sm leading-relaxed flex-1 mb-6 font-sans">
+                {t.text}
+              </p>
+
+              {/* Rating */}
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+                <StarRating />
+                <span className="text-xs font-semibold font-sans text-[#363636]">5.0 RATING</span>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
         {/* Navigation */}
-        <div className="flex justify-center gap-3 mt-8">
+        <div className="flex items-center justify-center gap-4 mt-8">
           <button
-            onClick={prevPage}
+            onClick={() => { goPrev(); setPaused(true); }}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
             <ChevronLeft className="w-4 h-4 text-[#363636]" />
           </button>
+          <span className="text-xs font-sans text-gray-400 tracking-wider">{current + 1} / {total}</span>
           <button
-            onClick={nextPage}
+            onClick={() => { goNext(); setPaused(true); }}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
           >
             <ChevronRight className="w-4 h-4 text-[#363636]" />
