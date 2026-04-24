@@ -295,7 +295,7 @@ export function TopHeader() {
                   >
                     <Link
                       to={link.href}
-                      className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] transition-colors ${
+                      className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
                         isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                       }`}
                     >
@@ -358,7 +358,7 @@ export function TopHeader() {
                 <li key={link.label} className="relative group">
                   <Link
                     to={link.href}
-                    className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] transition-colors ${
+                    className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
                       isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                     }`}
                   >
