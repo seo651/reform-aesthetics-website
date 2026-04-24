@@ -48,14 +48,14 @@ export function FooterSection() {
 
           {/* Left: Heading */}
           <h2
-            className="text-2xl sm:text-4xl lg:text-[52px] leading-[1.15] text-black lg:max-w-md"
+            className="text-2xl sm:text-4xl lg:text-[52px] leading-[1.15] text-black lg:max-w-md text-center lg:text-left"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             Reach out to a<br />member of our team
           </h2>
 
           {/* Centre: CTA Button */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-center lg:justify-start">
             <a
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
               target="_blank"
@@ -68,10 +68,10 @@ export function FooterSection() {
           </div>
 
           {/* Right: Social Media */}
-          <div>
+          <div className="text-center lg:text-left">
             <p className="text-xs font-semibold tracking-[0.15em] uppercase text-black mb-3 font-sans">SOCIAL MEDIA</p>
-            <div className="w-10 h-0.5 bg-gray-800 mb-4" />
-            <div className="flex items-center gap-5">
+            <div className="w-10 h-0.5 bg-gray-800 mb-4 mx-auto lg:mx-0" />
+            <div className="flex items-center justify-center lg:justify-start gap-5">
               <a
                 href="https://www.instagram.com/reform_medical/"
                 target="_blank"
@@ -104,8 +104,8 @@ export function FooterSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
 
           {/* Column 1: Logo + Description + CQC */}
-          <div>
-            <div className="mb-5">
+          <div className="text-center lg:text-left">
+            <div className="mb-5 flex justify-center lg:justify-start">
               <img
                 src="/images/logo-white.png"
                 alt="Reform Aesthetics and Dental"
@@ -122,7 +122,7 @@ export function FooterSection() {
             </p>
 
             {/* CQC Badge */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center lg:justify-start gap-3">
               <img
                 src="/images/cqc-logo.png"
                 alt="Care Quality Commission"
@@ -136,9 +136,9 @@ export function FooterSection() {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Quick Links</h4>
-            <div className="w-10 h-0.5 bg-gray-800 mb-5" />
+            <div className="w-10 h-0.5 bg-gray-800 mb-5 mx-auto lg:mx-0" />
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -154,9 +154,9 @@ export function FooterSection() {
           </div>
 
           {/* Column 3: Location Map */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Location</h4>
-            <div className="w-10 h-0.5 bg-gray-800 mb-5" />
+            <div className="w-10 h-0.5 bg-gray-800 mb-5 mx-auto lg:mx-0" />
             <div className="rounded-xl overflow-hidden h-44 bg-gray-200">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.6!2d-1.1305!3d52.6293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879e1e1e1e1e1e1%3A0x0!2zNTLCsDM3JzQ1LjUiTiAxwrAwNyc1MC4wIlc!5e0!3m2!1sen!2suk!4v1"
@@ -172,23 +172,23 @@ export function FooterSection() {
           </div>
 
           {/* Column 4: Contact Us */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="font-sans font-medium text-sm tracking-wide mb-3 text-black">Contact Us</h4>
-            <div className="w-10 h-0.5 bg-gray-800 mb-5" />
+            <div className="w-10 h-0.5 bg-gray-800 mb-5 mx-auto lg:mx-0" />
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className="flex items-start justify-center lg:justify-start gap-3">
                 <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" />
                 <span className="text-[#363636] text-sm leading-snug font-sans">
                   18 De Montfort St, Leicester LE1 7GL, UK
                 </span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center justify-center lg:justify-start gap-3">
                 <Phone className="w-4 h-4 text-gray-400 flex-shrink-0" />
                 <a href="tel:01163800318" className="text-[#363636] text-sm font-sans hover:text-black transition-colors">
                   0116 3800318
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center justify-center lg:justify-start gap-3">
                 <Mail className="w-4 h-4 text-gray-400 flex-shrink-0" />
                 <a
                   href="mailto:info@reformmedical.co.uk"
@@ -205,7 +205,7 @@ export function FooterSection() {
 
       {/* ── Bottom Bar ── */}
       <div className="border-t border-gray-300">
-        <div className="px-4 sm:px-8 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+        <div className="px-4 sm:px-8 lg:px-16 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-center sm:text-left">
           <p className="text-xs text-[#363636] uppercase tracking-wider font-sans">
             COPYRIGHT © 2026 REFORM AESTHETICS AND DENTAL DESIGNED BY{' '}
             <a href="https://get-found.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:underline">
