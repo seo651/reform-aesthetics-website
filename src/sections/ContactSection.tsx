@@ -91,20 +91,16 @@ export function ContactSection() {
             <div className="rounded-2xl border border-gray-200 overflow-hidden mt-2">
               <div className="p-6 bg-white">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                    <span className="text-blue-600 text-sm font-semibold">pk</span>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-semibold font-sans" style={{ backgroundColor: '#b07d6e' }}>
+                    D
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-black font-sans">p k</p>
+                    <p className="text-sm font-semibold text-black font-sans">Dharita Pancholi</p>
                     <p className="text-xs text-[#888] font-sans">Patient</p>
                   </div>
                 </div>
                 <p className="text-[13px] text-[#363636] font-sans leading-relaxed">
-                  Reform Medical Aesthetic & Dental provides outstanding service from start to finish.
-                  The team is courteous, professional, and genuinely cares about patient comfort and
-                  results. The clinic environment is clean and well-organized, and the staff made the
-                  entire experience smooth and reassuring. I am very pleased with my experience and
-                  would confidently recommend this clinic to anyone seeking professional and reliable care.
+                  DR Priya was amazing. I went in to see her with a heavy bite and also couldn't get rid of the headaches that come along with grinding. She made me feel at ease as I have never considered doing botox before — it was scary — however she did a fab job and most definitely recommend her to all. Thankyou for your guidance and services you are fab.. Dee x
                 </p>
               </div>
               <div className="bg-black px-6 py-4 flex items-center justify-between">
