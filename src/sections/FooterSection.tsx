@@ -62,7 +62,7 @@ export function FooterSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-7 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.14em] uppercase hover:bg-black transition-colors font-sans"
             >
-              SECURE YOUR SMILE SLOT
+              BEGIN YOUR TRANSFORMATION
               <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -126,7 +126,7 @@ export function FooterSection() {
               <img
                 src="/images/cqc-logo.png"
                 alt="Care Quality Commission"
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain rounded-xl overflow-hidden"
               />
               <div>
                 <p className="text-[11px] font-semibold text-[#363636] font-sans uppercase tracking-wide leading-tight">CQC Registered</p>
