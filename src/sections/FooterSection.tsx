@@ -73,16 +73,7 @@ export function FooterSection() {
             <div className="w-10 h-0.5 bg-gray-800 mb-4" />
             <div className="flex items-center gap-5">
               <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
-              >
-                <LinkedinIcon />
-                Linkedin
-              </a>
-              <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/reform_medical/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
@@ -91,7 +82,7 @@ export function FooterSection() {
                 Instagram
               </a>
               <a
-                href="https://x.com/"
+                href="https://x.com/Reformedical"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-[#363636] hover:text-black transition-colors font-sans"
