@@ -105,11 +105,11 @@ function AccordionRow({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-b border-gray-200 last:border-b-0">
+    <div className="mb-3 last:mb-0 rounded-xl overflow-hidden border border-gray-100">
       {/* Header row */}
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between py-4 px-5 text-left group hover:bg-gray-50/50 transition-colors rounded-xl"
+        className="w-full flex items-center justify-between py-4 px-5 text-left group bg-[#efeae7] hover:bg-[#e8e2dc] transition-colors rounded-xl"
       >
         <span
           className="text-base text-black"
@@ -241,7 +241,7 @@ export default function Pricing() {
       </section>
 
       {/* ── 2. PRICING ACCORDION — white overlap rounded ── */}
-      <section className="relative bg-white rounded-[2.5rem] sm:rounded-[3rem] -mt-8 z-20 pt-10 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-white rounded-[2.5rem] sm:rounded-[3rem] -mt-8 z-20 pt-10 pb-20 px-6 sm:px-10 lg:px-16 mx-4 sm:mx-6 lg:mx-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-4 lg:gap-6">
 
@@ -250,7 +250,7 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden"
+              className="bg-white rounded-2xl"
             >
               {leftCategories.map((cat) => (
                 <AccordionRow
@@ -267,7 +267,7 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="bg-white rounded-2xl overflow-hidden"
+              className="bg-white rounded-2xl"
             >
               {rightCategories.map((cat) => (
                 <AccordionRow
