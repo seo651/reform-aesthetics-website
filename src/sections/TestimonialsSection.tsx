@@ -12,7 +12,7 @@ const testimonials = [
     role: 'Patient',
     text: "DR Priya was amazing. I went in to see her with a heavy bite and also couldn't get rid of the headaches that come along with grinding. When I researched that masseter botox helps with grinding first person I thought of was DR Priya as shes a dentist who also does aesthetics work and she made me feel at ease as I have never considered or thought of doing botox so it was scary however she did a fab job and most definitely recommend her to all. Thankyou for your guidance and services you are fab.. Dee x",
     initials: 'DP',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const testimonials = [
     role: 'Patient',
     text: "I had my first microneedling session with Dr. Priya and her lovely team, and honestly, they made me feel so comfortable from start to finish. Dr. Priya explained everything so well and made sure I was at ease the whole time. The clinic is spotless and has such a calm, welcoming vibe.\n\nIt's only been two days since my appointment, and my skin is already glowing — my acne scars are visibly fading too! I'm so happy with the results and can't wait to go back for my next session. Highly recommend Dr. Priya and her amazing team! 💕",
     initials: 'R',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const testimonials = [
     role: 'Patient',
     text: 'Reform Medical Aesthetic & Dental provides outstanding service from start to finish. The team is courteous, professional, and genuinely cares about patient comfort and results. The clinic environment is clean and well-organized, and the staff made the entire experience smooth and reassuring. I am very pleased with my experience and would confidently recommend this clinic to anyone seeking professional and reliable care.',
     initials: 'PK',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const testimonials = [
     role: 'Patient',
     text: "Thank you Dr Priya Patel! I have recently had dermal fillers to several areas and I am really pleased with the results… The brand used was Malia. I wanted to look natural and fresh faced and not over the top.. and Dr Priya achieved this beautifully. My face feels firmer, my lips slightly fuller and the lines on my top Lip have definitely improved and are less deep. The clinic itself is lovely and spacious and the decor all modern and trendy with easy parking at the rear. I would highly recommend Dr Priya who put me at my ease and did a lovely job!",
     initials: 'DM',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const testimonials = [
     role: 'Patient',
     text: "I've been having my Botox with Dr. Priya Patel for many years now! She always takes the time to listen to my concerns, explains the procedure in detail, and makes sure I felt comfortable at every stage of my treatment. My results are subtle, natural, and refreshing and I still look like myself minus the lines! Priya's years of experience and knowledge and eye for detail are truly amazing! I couldn't recommend Dr. Patel and reform dental more highly. If you're considering Botox, this is the place to go for safe, professional, and beautiful natural results!",
     initials: 'SS',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const testimonials = [
     role: 'Patient',
     text: "This place really stored the confidence I lost many years ago. I travelled all the way from London and it was worth it! My skin feels brand new after getting honest feedback and given treatment that actually works! I'll be coming back and even though I live in London I will gladly move all my dental appointments here in addition.\n\nThank you Priya for giving me my shine again I'm grateful I went through with it!",
     initials: 'KY',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const testimonials = [
     role: 'Patient',
     text: "I went to Reform Aesthetics and Dental for mesopeel and microneedling because I had dull skin, hyperpigmentation, and some acne scars. The team was super nice and made me feel really comfortable throughout the treatments. The clinic itself is spotless, modern, and very well-maintained. After a few sessions, I can honestly say my skin looks so much brighter, smoother, and healthier! The dark spots have lightened and my overall complexion feels fresh and glowing. Definitely recommend them if you want to improve your skin — I'm so happy with my results!",
     initials: 'HB',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 8,
@@ -68,7 +68,7 @@ const testimonials = [
     role: 'Patient',
     text: "Just wanted to share how brilliant my recent visit to Reform Clinic was. Had a skin peel and my skin feels so much smoother and softer now. Today, I had a micro-needling session and honestly, I can't stop looking at my fresh, smooth skin. Huge thanks to Dr Priya, you truly are a star!",
     initials: 'PK',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 9,
@@ -76,7 +76,7 @@ const testimonials = [
     role: 'Patient',
     text: "I've had the most amazing experience at Reform Aesthetics and Dental. The team is incredibly professional, knowledgeable, and genuinely caring. From consultation to treatment, everything was explained clearly, and I felt completely at ease. My skin has never looked better — glowing, smooth, and rejuvenated! The space is spotless and beautifully designed. Highly recommend for anyone looking for top-tier aesthetic care! Dr Priya always goes beyond to help me with after care advice. Thank you",
     initials: 'ER',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 10,
@@ -84,7 +84,7 @@ const testimonials = [
     role: 'Patient',
     text: "Amazing results from skin booster. Currently Glowing! Thanks to Dr Priya she was gentle, professional and only did what she felt would suit my facial compositions compared to my old clinic who would over fill and charge. Thank you for supplementing my natural beauty and wanting a natural look!",
     initials: 'PA',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
   {
     id: 11,
@@ -92,7 +92,7 @@ const testimonials = [
     role: 'Patient',
     text: "I recently had Botox and fillers done by Priya @ Reform Aesthetics and I couldn't be happier with the results! She is incredibly skilled, highly experienced in all aspects of skin treatments, and made me feel completely at ease throughout the process. Priya took the time to understand exactly what I wanted, and the results are natural yet effective—just what I was hoping for. Her professionalism and attention to detail are second to none. I highly recommend her to anyone looking for top-quality aesthetic treatments. She truly is amazing!",
     initials: 'GS',
-    avatarColor: '#b07d6e',
+    avatarColor: '#8c8c8c',
   },
 ];
 

@@ -91,7 +91,7 @@ export function ContactSection() {
             <div className="rounded-2xl border border-gray-200 overflow-hidden mt-2">
               <div className="p-6 bg-white">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-semibold font-sans" style={{ backgroundColor: '#b07d6e' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white text-sm font-semibold font-sans" style={{ backgroundColor: '#8c8c8c' }}>
                     D
                   </div>
                   <div>
