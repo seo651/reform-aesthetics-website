@@ -96,21 +96,40 @@ const testimonials = [
   },
 ];
 
+function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] }) {
+  return (
+    <div className="bg-[#F8F6F3] rounded-2xl p-6 flex flex-col h-full">
+      <div className="flex items-center gap-3 mb-4">
+        <div
+          className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-semibold font-sans flex-shrink-0"
+          style={{ backgroundColor: testimonial.avatarColor }}
+        >
+          {testimonial.initials.charAt(0)}
+        </div>
+        <div>
+          <h4 className="font-sans font-semibold text-sm text-black">{testimonial.name}</h4>
+          <p className="text-xs text-gray-400 font-sans">{testimonial.role}</p>
+        </div>
+      </div>
+      <p className="text-[#363636] text-sm leading-relaxed flex-1 mb-4 line-clamp-6 font-sans">
+        {testimonial.text}
+      </p>
+      <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+        <StarRating />
+        <span className="text-xs font-semibold font-sans text-[#363636]">5.0 RATING</span>
+      </div>
+    </div>
+  );
+}
+
 export function TestimonialsSection() {
   const [current, setCurrent] = useState(0);
-  const [direction, setDirection] = useState(1);
   const [paused, setPaused] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const total = testimonials.length;
 
-  const goNext = () => {
-    setDirection(1);
-    setCurrent((prev) => (prev + 1) % total);
-  };
-  const goPrev = () => {
-    setDirection(-1);
-    setCurrent((prev) => (prev - 1 + total) % total);
-  };
+  const goNext = () => setCurrent((prev) => (prev + 1) % total);
+  const goPrev = () => setCurrent((prev) => (prev - 1 + total) % total);
 
   useEffect(() => {
     if (paused) return;
@@ -118,13 +137,8 @@ export function TestimonialsSection() {
     return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
   }, [paused, current]);
 
-  const variants = {
-    enter: (dir: number) => ({ x: dir > 0 ? 80 : -80, opacity: 0 }),
-    center: { x: 0, opacity: 1 },
-    exit: (dir: number) => ({ x: dir > 0 ? -80 : 80, opacity: 0 }),
-  };
-
-  const t = testimonials[current];
+  // Always show 3 cards, wrapping around
+  const visible = [0, 1, 2].map((offset) => testimonials[(current + offset) % total]);
 
   return (
     <section
@@ -133,7 +147,7 @@ export function TestimonialsSection() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <AnimatedSection className="text-center mb-12">
           <SectionBadge text="Testimonials" />
@@ -149,46 +163,21 @@ export function TestimonialsSection() {
           </p>
         </AnimatedSection>
 
-        {/* Single card carousel */}
-        <div className="relative overflow-hidden">
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.div
-              key={current}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ duration: 0.4, ease: 'easeInOut' }}
-              className="bg-[#F8F6F3] rounded-2xl p-8 sm:p-10 flex flex-col"
-            >
-              {/* Author */}
-              <div className="flex items-center gap-3 mb-5">
-                <div
-                  className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-semibold font-sans flex-shrink-0"
-                  style={{ backgroundColor: t.avatarColor }}
-                >
-                  {t.initials.charAt(0)}
-                </div>
-                <div>
-                  <h4 className="font-sans font-semibold text-sm text-black">{t.name}</h4>
-                  <p className="text-xs text-gray-400 font-sans">{t.role}</p>
-                </div>
-              </div>
-
-              {/* Review text */}
-              <p className="text-[#363636] text-sm leading-relaxed flex-1 mb-6 font-sans">
-                {t.text}
-              </p>
-
-              {/* Rating */}
-              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
-                <StarRating />
-                <span className="text-xs font-semibold font-sans text-[#363636]">5.0 RATING</span>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+        {/* 3-column carousel — always full */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -40 }}
+            transition={{ duration: 0.4, ease: 'easeInOut' }}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            {visible.map((t, i) => (
+              <TestimonialCard key={`${current}-${i}`} testimonial={t} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
         {/* Navigation */}
         <div className="flex items-center justify-center gap-4 mt-8">
@@ -198,7 +187,15 @@ export function TestimonialsSection() {
           >
             <ChevronLeft className="w-4 h-4 text-[#363636]" />
           </button>
-          <span className="text-xs font-sans text-gray-400 tracking-wider">{current + 1} / {total}</span>
+          <div className="flex gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => { setCurrent(i); setPaused(true); }}
+                className={`w-1.5 h-1.5 rounded-full transition-colors ${i === current ? 'bg-[#363636]' : 'bg-gray-300'}`}
+              />
+            ))}
+          </div>
           <button
             onClick={() => { goNext(); setPaused(true); }}
             className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition-colors"
