@@ -79,7 +79,7 @@ export default function Blog() {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="relative bg-white rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <SectionBadge text="Latest Posts" />
