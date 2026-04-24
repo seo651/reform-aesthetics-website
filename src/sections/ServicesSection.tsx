@@ -10,7 +10,7 @@ const services = [
     title: 'Anti-Wrinkle Injections in Leicester',
     image: '/images/anti-wrinkle.jpg',
     description: "Our anti-wrinkle treatments offer a safe, non-surgical solution to reduce forehead lines, crow's feet, and frown lines. By gently relaxing targeted muscles, we soften expression lines while maintaining natural facial movement.",
-    details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results — never frozen or overdone, with minimal downtime.',
+    details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results: never frozen or overdone, with minimal downtime.',
     href: '/treatments/anti-wrinkle',
   },
   {

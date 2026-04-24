@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
@@ -16,9 +16,17 @@ const galleryImages = [
 
 export function GallerySection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+
+  useEffect(() => {
+    if (paused) return;
+    intervalRef.current = setInterval(nextSlide, 3000);
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+  }, [paused, currentIndex]);
 
   return (
     <section id="gallery" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -62,6 +70,8 @@ export function GallerySection() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.35 }}
               className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6"
+              onMouseEnter={() => setPaused(true)}
+              onMouseLeave={() => setPaused(false)}
             >
               {[0, 1, 2].map((offset) => {
                 const imgIndex = (currentIndex + offset) % galleryImages.length;
