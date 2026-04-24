@@ -151,8 +151,8 @@ export function TopHeader() {
         <ArrowUpRight className="w-3 h-3 opacity-70 flex-shrink-0" />
       </a>
 
-      {/* ── Top bar ── */}
-      <header className="w-full bg-[#efeae7] text-[#1a1a1a]">
+      {/* ── Black top bar ── */}
+      <header className="w-full bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex items-center justify-between h-[72px]">
 
@@ -160,12 +160,12 @@ export function TopHeader() {
             <div className="flex items-center gap-3">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
-                  <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#1a1a1a]/30 text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-black/10 transition-colors">
+                  <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-white/10 transition-colors">
                     <Menu className="w-3.5 h-3.5" />
                     Menu
                   </button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-[min(300px,85vw)] bg-[#efeae7] p-0">
+                <SheetContent side="left" className="w-[min(300px,85vw)] bg-white p-0">
                   <div className="flex flex-col h-full">
                     <div className="p-6 border-b">
                       <LogoDark height={40} />
@@ -223,7 +223,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:block px-5 py-2 rounded-full bg-[#c5b1a1] text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#b09d8d] transition-colors whitespace-nowrap"
+                className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book Online
               </a>
@@ -234,7 +234,7 @@ export function TopHeader() {
               to="/"
               className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center select-none pointer-events-auto"
             >
-              <LogoDark height={54} />
+              <LogoWhite height={54} />
             </Link>
 
             {/* Right */}
@@ -244,7 +244,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden px-4 py-2 rounded-full bg-[#c5b1a1] text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#b09d8d] transition-colors whitespace-nowrap"
+                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book
               </a>
@@ -252,7 +252,7 @@ export function TopHeader() {
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full border border-[#1a1a1a]/30 text-[#1a1a1a] text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-black/10 transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-[#efeae7] transition-colors whitespace-nowrap"
               >
                 <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
                   <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
@@ -269,7 +269,7 @@ export function TopHeader() {
               </a>
               <a
                 href="tel:01163800318"
-                className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full border border-[#1a1a1a]/30 text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-black/10 transition-colors whitespace-nowrap"
+                className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-white/10 transition-colors whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5" />
                 0116 3800318
