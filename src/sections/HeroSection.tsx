@@ -4,12 +4,15 @@ import { ArrowUpRight } from 'lucide-react';
 export function HeroSection() {
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="/images/hero-bg.jpg"
-          alt="Reform Clinic exterior"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
+          src="/images/videos/Reform Medical Web (1).mp4"
         />
         <div className="absolute inset-0 bg-black/55" />
       </div>
