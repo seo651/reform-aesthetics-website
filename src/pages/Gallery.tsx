@@ -64,6 +64,12 @@ const aestheticsCases = [
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
     image: '/images/aesthetics-lip-filler.jpg',
   },
+  {
+    id: 10,
+    service: 'Skin Peels',
+    description: 'Before and after chemical skin peel treatment, revealing a smoother, brighter and more even complexion with reduced pigmentation and refined skin texture.',
+    image: '/images/aesthetics-skin-peel.jpg',
+  },
 ];
 
 /* ── Gallery icon SVG ── */
