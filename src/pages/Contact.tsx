@@ -74,7 +74,7 @@ export default function Contact() {
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/40 text-white text-[11px] font-sans font-semibold tracking-[0.12em] uppercase hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[11px] font-sans font-semibold tracking-[0.12em] uppercase hover:bg-[#e4ddd6] transition-colors"
             >
               BOOK YOUR CONSULTATION
               <ArrowUpRight className="w-3.5 h-3.5" />
