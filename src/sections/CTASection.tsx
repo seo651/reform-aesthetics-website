@@ -56,7 +56,7 @@ export function CTASection() {
                 />
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Enter Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="flex-1 px-5 py-4 rounded-xl bg-white border border-gray-200 text-sm focus:outline-none focus:border-gray-400 font-sans text-[#363636] placeholder:text-gray-400"

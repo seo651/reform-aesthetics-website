@@ -184,7 +184,7 @@ export function ContactSectionMap() {
                     </label>
                     <input
                       type="email"
-                      placeholder="Email"
+                      placeholder="Enter Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-0 py-3 bg-transparent border-b border-gray-400 text-sm focus:outline-none focus:border-gray-800 transition-colors font-sans placeholder:text-gray-400"
