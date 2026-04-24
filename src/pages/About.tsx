@@ -216,9 +216,6 @@ export default function About() {
                 <p className="text-[#363636] text-sm leading-relaxed mb-4 font-sans">
                   Whether you are looking to treat acne, reduce pigmentation, soften signs of ageing or simply maintain a healthy, radiant complexion, our expert team is here to guide you. We combine advanced clinical techniques with high quality products and a patient focused approach to ensure every treatment is both safe and effective.
                 </p>
-                <p className="text-[#363636] text-sm leading-relaxed font-sans">
-                  Our goal is not just to improve your skin in the short term, but to help you build lasting confidence through results that look natural, balanced and truly tailored to you.
-                </p>
               </AnimatedSection>
 
               {/* Right column — feature rows */}
