@@ -110,15 +110,15 @@ export function TreatmentPage({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex items-center justify-center gap-4 mb-10"
+            className="flex items-center justify-center gap-3 mb-10 flex-wrap"
           >
             <div className="hidden sm:block h-px w-16 bg-gradient-to-r from-transparent to-[#c5b1a1]" />
-            <span className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/95 backdrop-blur-sm text-[11px] font-medium tracking-[0.12em] uppercase shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 backdrop-blur-sm text-[10px] sm:text-[11px] font-medium tracking-[0.1em] uppercase shadow-sm max-w-[90vw] flex-wrap justify-center">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
               <span className="text-[#363636]">HOME</span>
               <span className="text-gray-300">/</span>
-              <span className="text-black font-semibold">{breadcrumb}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1]" />
+              <span className="text-black font-semibold text-center">{breadcrumb}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c5b1a1] flex-shrink-0" />
             </span>
             <div className="hidden sm:block h-px w-16 bg-gradient-to-l from-transparent to-[#c5b1a1]" />
           </motion.div>
@@ -127,7 +127,7 @@ export function TreatmentPage({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-[58px] text-white leading-[1.15] mb-6"
+            className="text-[28px] sm:text-5xl lg:text-[58px] text-white leading-[1.15] mb-6"
             style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
           >
             {heroTitle}
@@ -137,7 +137,7 @@ export function TreatmentPage({
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/75 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10 font-sans"
+            className="text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-10 font-sans"
           >
             {heroSubtext}
           </motion.p>
@@ -163,7 +163,7 @@ export function TreatmentPage({
       {/* ── About — cream overlap ── */}
       <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
             {/* Left — text content */}
             <AnimatedSection className="text-center lg:text-left">
@@ -190,10 +190,10 @@ export function TreatmentPage({
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * idx }}
-                    className="flex items-center justify-center lg:justify-start gap-4 py-5 border-b border-gray-300/60 last:border-b-0"
+                    className="flex items-center justify-center lg:justify-start gap-3 py-4 border-b border-gray-300/60 last:border-b-0 text-center lg:text-left"
                   >
                     <CheckCircle2 className="w-5 h-5 text-[#9D8A7B] flex-shrink-0" />
-                    <span className="text-[#363636] font-sans text-[15px]">{item}</span>
+                    <span className="text-[#363636] font-sans text-[14px] sm:text-[15px]">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -259,7 +259,7 @@ export function TreatmentPage({
       {/* ── Benefits Section ── */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 lg:items-stretch">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-16 lg:items-stretch">
 
             {/* Left image — fills full column height on desktop */}
             <AnimatedSection className="flex flex-col lg:h-full">
@@ -290,7 +290,7 @@ export function TreatmentPage({
                 {benefitsBody}
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
                 {benefits.map(({ title, desc }, idx) => {
                   const Icon = benefitIcons[idx % benefitIcons.length];
                   return (
@@ -300,9 +300,9 @@ export function TreatmentPage({
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.1 * idx }}
-                      className="flex flex-col items-center lg:items-start text-center lg:text-left"
+                      className="flex flex-col items-center lg:items-start text-center lg:text-left px-2 lg:px-0"
                     >
-                      <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center mb-4 text-[#363636]">
+                      <div className="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center mb-3 text-[#363636]">
                         <Icon />
                       </div>
                       <h3
