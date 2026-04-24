@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen flex items-center overflow-hidden">
+    <section className="relative w-full min-h-[auto] sm:min-h-screen flex items-center overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
@@ -18,7 +18,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 sm:py-44 lg:py-52">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-44 lg:py-52">
         <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
           {/* Badge */}
           <motion.div
