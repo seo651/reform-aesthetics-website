@@ -59,12 +59,6 @@ const aestheticsCases = [
     image: '/images/aesthetics-skin-boosters.webp',
   },
   {
-    id: 8,
-    service: 'Skin Peels',
-    description: 'Before and after chemical skin peel treatment, revealing a smoother, brighter and more even complexion with reduced pigmentation and refined skin texture.',
-    image: '/images/aesthetics-skin-peel.jpg',
-  },
-  {
     id: 9,
     service: 'Lip Fillers',
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
