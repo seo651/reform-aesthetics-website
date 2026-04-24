@@ -166,7 +166,7 @@ export function TreatmentPage({
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
             {/* Left — text content */}
-            <AnimatedSection className="text-center lg:text-left">
+            <AnimatedSection className="text-center lg:text-left w-full min-w-0">
               <div className="flex justify-center lg:justify-start">
                 <SectionBadge text={aboutBadge} />
               </div>
@@ -186,11 +186,11 @@ export function TreatmentPage({
                 {checklistItems.map((item, idx) => (
                   <motion.div
                     key={idx}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.1 * idx }}
-                    className="flex items-center justify-center lg:justify-start gap-3 py-4 border-b border-gray-300/60 last:border-b-0 text-center lg:text-left"
+                    className="flex items-center justify-center lg:justify-start gap-3 py-4 border-b border-gray-300/60 last:border-b-0"
                   >
                     <CheckCircle2 className="w-5 h-5 text-[#9D8A7B] flex-shrink-0" />
                     <span className="text-[#363636] font-sans text-[14px] sm:text-[15px]">{item}</span>
@@ -200,7 +200,7 @@ export function TreatmentPage({
             </AnimatedSection>
 
             {/* Right — circular image + brand logos, sticky on desktop */}
-            <AnimatedSection delay={0.2}>
+            <AnimatedSection delay={0.2} className="w-full min-w-0">
               <div className="flex flex-col items-center lg:sticky lg:top-24">
                 {/* Circular frame */}
                 <div className="relative w-full max-w-[280px] sm:max-w-[380px] lg:max-w-[420px] aspect-square mb-8 flex-shrink-0 mx-auto">
