@@ -166,7 +166,7 @@ export function ContactSectionMap() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">Last Name</label>
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">Last Name <span className="text-red-400">*</span></label>
                     <input
                       type="text"
                       placeholder="Enter Last Name"
@@ -207,7 +207,7 @@ export function ContactSectionMap() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">I am interested in...</label>
+                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">I am interested in... <span className="text-red-400">*</span></label>
                   <select
                     value={formData.interest}
                     onChange={(e) => setFormData({ ...formData, interest: e.target.value })}

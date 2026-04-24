@@ -231,7 +231,7 @@ export function ContactSection() {
 
                 <div>
                   <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
-                    I am interested in...
+                    I am interested in... <span className="text-red-400">*</span>
                   </label>
                   <select
                     value={formData.interest}
