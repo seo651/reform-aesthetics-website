@@ -33,7 +33,7 @@ export default function ComplaintsPolicy() {
       {/* Content */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="prose prose-gray max-w-none font-sans text-[#363636]" style={{ lineHeight: '1.8' }}>
+          <div className="prose prose-gray max-w-none font-sans text-[#363636] text-center sm:text-left" style={{ lineHeight: '1.8' }}>
 
             <p className="text-[15px] leading-relaxed mb-8">
               At Reform Aesthetics and Dental, we are committed to providing the highest standard of care. We take all feedback seriously and aim to resolve any concerns promptly, fairly, and with respect for every patient.
@@ -99,7 +99,7 @@ export default function ComplaintsPolicy() {
               <li><strong>Email:</strong> <a href="mailto:info@reformmedical.co.uk" className="text-[#c5b1a1] hover:underline">info@reformmedical.co.uk</a></li>
             </ul>
 
-            <div className="pt-6 border-t border-gray-200">
+            <div className="pt-6 border-t border-gray-200 flex justify-center sm:justify-start">
               <a
                 href="/contact"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-black text-white text-[11px] font-sans font-semibold tracking-[0.12em] uppercase hover:bg-[#363636] transition-colors"
