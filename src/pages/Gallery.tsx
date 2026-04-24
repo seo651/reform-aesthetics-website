@@ -183,12 +183,12 @@ export default function GalleryPage() {
                 transition={{ duration: 0.3 }}
               >
                 <h2
-                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight"
+                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight text-center sm:text-left"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Clinic Gallery
                 </h2>
-                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8">
+                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8 text-center sm:text-left">
                   Step inside Reform Aesthetics and Dental. Our clinic is designed to be a calm, welcoming space where you feel at ease from the moment you arrive. Explore our treatment rooms, reception area and consultation spaces.
                 </p>
 
@@ -222,12 +222,12 @@ export default function GalleryPage() {
                 transition={{ duration: 0.3 }}
               >
                 <h2
-                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight"
+                  className="text-[38px] sm:text-[48px] text-black mb-4 leading-tight text-center sm:text-left"
                   style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
                 >
                   Aesthetics Gallery
                 </h2>
-                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8">
+                <p className="text-[#363636] text-sm leading-relaxed font-sans max-w-3xl mb-8 text-center sm:text-left">
                   Discover the remarkable journeys of our patients as they achieve brighter, healthier skin. Each transformation showcases the skill and care our team provides, helping you envision the possibilities for your own treatment.
                 </p>
 

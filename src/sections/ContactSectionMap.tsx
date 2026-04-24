@@ -207,7 +207,7 @@ export function ContactSectionMap() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">I am interested in... <span className="text-red-400">*</span></label>
+                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">I am interested in... <span className="text-red-400">*</span></label>
                   <select
                     value={formData.interest}
                     onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
@@ -221,7 +221,7 @@ export function ContactSectionMap() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
+                  <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">
                     Message <span className="text-red-400">*</span>
                   </label>
                   <textarea

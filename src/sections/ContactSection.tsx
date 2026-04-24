@@ -95,8 +95,8 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
           {/* ── Left: Heading + description + review ── */}
-          <AnimatedSection className="flex flex-col gap-6">
-            <div>
+          <AnimatedSection className="flex flex-col gap-6 text-center lg:text-left">
+            <div className="flex justify-center lg:justify-start">
               <SectionBadge text="Contact Us" />
             </div>
             <h2
@@ -165,7 +165,7 @@ export function ContactSection() {
           <AnimatedSection delay={0.15}>
             <div className="bg-[#efeae7] rounded-2xl p-7 sm:p-10">
               <h3
-                className="text-3xl sm:text-4xl text-black mb-8 leading-tight"
+                className="text-3xl sm:text-4xl text-black mb-8 leading-tight text-center sm:text-left"
                 style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
               >
                 Let's Start the<br />Conversation
