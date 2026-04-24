@@ -139,8 +139,8 @@ export function ContactSectionMap() {
             </div>
 
             {/* Right: Form */}
-            <div className="p-8 sm:p-12 text-center lg:text-left">
-              <div className="flex justify-center lg:justify-start">
+            <div className="p-8 sm:p-12 text-left">
+              <div className="flex justify-start">
                 <SectionBadge text="Contact Us" />
               </div>
               <h2
