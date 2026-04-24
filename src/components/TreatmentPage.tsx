@@ -178,7 +178,7 @@ export function TreatmentPage({
                 {aboutHeading}
               </h2>
 
-              <p className="text-[#363636] text-[15px] leading-relaxed mb-10 font-sans">
+              <p className="text-[#363636] text-[15px] leading-relaxed mb-10 font-sans text-center lg:text-left">
                 {aboutBody}
               </p>
 
