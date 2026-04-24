@@ -214,9 +214,9 @@ export function FooterSection() {
             .
           </p>
           <div className="flex items-center gap-4 text-xs text-[#363636] uppercase tracking-wider font-sans">
-            <a href="#" className="hover:text-black transition-colors">CANCELLATION POLICY</a>
+            <a href="/cancellation-policy" className="hover:text-black transition-colors">CANCELLATION POLICY</a>
             <span className="text-gray-400">•</span>
-            <a href="#" className="hover:text-black transition-colors">COMPLAINTS POLICY</a>
+            <a href="/complaints-policy" className="hover:text-black transition-colors">COMPLAINTS POLICY</a>
           </div>
         </div>
       </div>

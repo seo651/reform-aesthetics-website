@@ -11,6 +11,10 @@ import GalleryPage from '@/pages/Gallery';
 import Blog from '@/pages/Blog';
 import Contact from '@/pages/Contact';
 
+// Policy pages
+import CancellationPolicy from '@/pages/CancellationPolicy';
+import ComplaintsPolicy from '@/pages/ComplaintsPolicy';
+
 // Blog posts
 import FakeBotoxWarning from '@/pages/blog/FakeBotoxWarning';
 import AestheticMedicine2026 from '@/pages/blog/AestheticMedicine2026';
@@ -78,6 +82,8 @@ function App() {
           <Route path="/blog/are-you-a-teeth-grinder" element={<TeethGrinder />} />
           <Route path="/blog/hair-thinning-treatments" element={<HairThinningTreatments />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cancellation-policy" element={<CancellationPolicy />} />
+          <Route path="/complaints-policy" element={<ComplaintsPolicy />} />
 
           {/* Skin */}
           <Route path="/treatments/3d-skin-analysis" element={<SkinAnalysis />} />
