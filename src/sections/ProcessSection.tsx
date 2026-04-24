@@ -54,7 +54,7 @@ const GAP = 22; // gap between number col and icon/content col
 export function ProcessSection() {
   return (
     <section className="py-0">
-      <div className="bg-[#efeae7] px-4 sm:px-10 lg:px-20 py-12 sm:py-16 lg:py-20">
+      <div className="bg-[#efeae7] rounded-[2.5rem] px-4 sm:px-10 lg:px-20 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[44%_56%] gap-10 lg:gap-16 items-start">
 
