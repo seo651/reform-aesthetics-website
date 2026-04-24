@@ -33,7 +33,7 @@ export default function CancellationPolicy() {
       {/* Content */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="prose prose-gray max-w-none font-sans text-[#363636] text-center sm:text-left" style={{ lineHeight: '1.8' }}>
+          <div className="prose prose-gray max-w-none font-sans text-[#363636] text-center sm:text-left [&_ul]:text-left [&_ul]:inline-block [&_ul]:w-full" style={{ lineHeight: '1.8' }}>
 
             <p className="text-[15px] leading-relaxed mb-8">
               We understand that plans can change. This policy explains what we ask of our patients when cancelling or rescheduling appointments, and why this matters for the smooth running of our clinic.
