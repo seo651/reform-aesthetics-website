@@ -80,13 +80,13 @@ const treatmentCategories = [
 ];
 
 const navLinks = [
-  { label: 'TREATMENTS', href: '/treatments', hasDropdown: true },
-  { label: 'ABOUT US', href: '/about' },
-  { label: 'TEAM', href: '/doctors' },
-  { label: 'PRICING', href: '/pricing' },
-  { label: 'GALLERY', href: '/gallery' },
-  { label: 'BLOG', href: '/blog' },
-  { label: 'CONTACT US', href: '/contact' },
+  { label: 'Treatments', href: '/treatments', hasDropdown: true },
+  { label: 'About Us', href: '/about' },
+  { label: 'Team', href: '/doctors' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact Us', href: '/contact' },
 ];
 
 function LogoWhite({ height = 52 }: { height?: number }) {
@@ -162,7 +162,7 @@ export function TopHeader() {
                 <SheetTrigger asChild>
                   <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-white/10 transition-colors">
                     <Menu className="w-3.5 h-3.5" />
-                    MENU
+                    Menu
                   </button>
                 </SheetTrigger>
                 <SheetContent side="left" className="w-[min(300px,85vw)] bg-white p-0">
@@ -197,7 +197,7 @@ export function TopHeader() {
                         className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#363636] transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        BOOK ONLINE
+                        Book Online
                         <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
                       </a>
                       <a
@@ -206,7 +206,7 @@ export function TopHeader() {
                         rel="noopener noreferrer"
                         className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#efeae7] transition-colors"
                       >
-                        VIEW DENTAL CLINIC
+                        View Dental Clinic
                         <ArrowUpRight className="w-4 h-4 flex-shrink-0" />
                       </a>
                       <a href="tel:01163800318" className="flex items-center gap-2 text-sm font-sans text-[#363636] px-1">
@@ -225,7 +225,7 @@ export function TopHeader() {
                 rel="noopener noreferrer"
                 className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
-                BOOK ONLINE
+                Book Online
               </a>
             </div>
 
@@ -246,7 +246,7 @@ export function TopHeader() {
                 rel="noopener noreferrer"
                 className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
-                BOOK
+                Book
               </a>
               <a
                 href="https://reformdental.get-found.co.uk/"
@@ -264,7 +264,7 @@ export function TopHeader() {
                   <g transform="translate(475.959,328.2959)"><path d="M 0,0 -13.16,-36.951 -26.319,0 -50.379,13.135 -26.319,26.27 -13.16,63.222 0,26.27 24.061,13.135" /></g>
                   <g transform="translate(73.4019,240.3838)"><path d="M 0,0 21.716,-60.979 61.421,-82.653 21.716,-104.329 0,-165.308 l -21.716,60.979 -39.705,21.676 39.705,21.674 z" /></g>
                 </svg>
-                VIEW DENTAL CLINIC
+                View Dental Clinic
                 <ArrowUpRight className="w-3 h-3 flex-shrink-0" />
               </a>
               <a
