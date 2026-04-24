@@ -14,14 +14,47 @@ const openingHours = [
 ];
 
 const treatmentOptions = [
-  'Anti-Wrinkle Treatments',
+  // Injectables & Fillers
+  'Anti-Wrinkle Injections',
   'Dermal Fillers',
+  'Lip Fillers',
+  'Cheek & Face Fillers',
+  'Jawline Contouring',
+  'Tear Trough / Under-Eye Filler',
+  'Non-Surgical Rhinoplasty',
+  'Liquid Face Lift',
+  'Collagen-Stimulating Injections',
+  'Filler Dissolving',
+  // Skin Treatments
   'Skin Boosters',
-  'Signature Facials',
-  'Skin Peels',
+  'Profhilo',
   'Polynucleotides',
-  'PRP Treatment',
-  'Microneedling',
+  'Skin Peels',
+  'Medical Microneedling',
+  'Carboxytherapy',
+  'Medical-Grade Skincare',
+  '3D Skin Analysis',
+  // Facials
+  'Signature Facials',
+  'Signature Pregnancy Glow Facial',
+  // Hair & Scalp
+  'PRP Hair Rejuvenation',
+  'PRF Hair Rejuvenation',
+  'Hair Loss Treatments',
+  'Exosomes Hair Treatment',
+  // Face & Body
+  'PRP Vampire Facial',
+  'PDO Thread Lifts',
+  'Fat Dissolving',
+  'Lymphatic Drainage Massage',
+  'Hand Rejuvenation',
+  // Specialist
+  'Vitamin Injections (B12 & Biotin)',
+  'Weight Loss Injections',
+  'Hyperhidrosis (Excessive Sweating)',
+  'Bruxism / TMJ (Teeth Grinding)',
+  'Gummy Smile Correction',
+  'Vein Removal',
 ];
 
 export function ContactSection() {

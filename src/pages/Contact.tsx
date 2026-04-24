@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ContactSection } from '@/sections/ContactSection';
-import { ProcessSection } from '@/sections/ProcessSection';
 
 export default function Contact() {
   return (
@@ -33,7 +32,6 @@ export default function Contact() {
       </section>
 
       <ContactSection />
-      <ProcessSection />
     </>
   );
 }
