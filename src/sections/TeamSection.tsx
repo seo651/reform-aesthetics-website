@@ -152,11 +152,11 @@ export function TeamSection() {
 
               {/* Photo — centred on mobile, right-aligned on desktop */}
               <div className="flex justify-center md:justify-end w-full">
-                <div className="rounded-2xl overflow-hidden w-full max-w-[260px] sm:max-w-[300px] aspect-[3/4]">
+                <div className="rounded-2xl overflow-hidden w-full max-w-[260px] sm:max-w-[300px] aspect-[2/3]">
                   <img
                     src={activeMember.image}
                     alt={activeMember.name}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-top"
                     loading="eager"
                     decoding="auto"
                     style={{ imageRendering: 'high-quality' }}
