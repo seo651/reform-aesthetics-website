@@ -135,7 +135,7 @@ export function TopHeader() {
         href="https://reformdental.get-found.co.uk/"
         target="_blank"
         rel="noopener noreferrer"
-        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#e4ddd6] text-[#3a3a3a] text-[12px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#dbd3cb] active:bg-[#d3c9bf] transition-colors"
+        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#e4ddd6] text-[#3a3a3a] text-[12px] font-sans font-semibold tracking-[0.1em] uppercase py-2.5 px-4 hover:bg-[#dbd3cb] active:bg-[#d3c9bf] transition-colors"
       >
         <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 text-[#3a3a3a]" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
           <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
