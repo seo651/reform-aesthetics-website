@@ -70,7 +70,7 @@ export default function Doctors() {
       </section>
 
       {/* ── 2. FEATURED — Dr Priya, cream overlap ── */}
-      <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#efeae7] rounded-t-[2.5rem] sm:rounded-t-[3rem] rounded-b-[2.5rem] sm:rounded-b-[3rem] -mt-8 z-20 pt-16 sm:pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1fr_400px] gap-12 lg:gap-16 items-start">
 
