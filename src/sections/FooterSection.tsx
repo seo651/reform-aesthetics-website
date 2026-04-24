@@ -40,7 +40,7 @@ function TwitterXIcon() {
 
 export function FooterSection() {
   return (
-    <footer className="bg-[#efeae7] rounded-t-[2.5rem]">
+    <footer className="bg-[#efeae7] rounded-t-[2.5rem] border border-b-0 border-gray-300/70">
 
       {/* ── Top CTA Row ── */}
       <div className="px-4 sm:px-8 lg:px-16 pt-12 pb-10">
