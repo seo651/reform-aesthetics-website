@@ -194,7 +194,7 @@ export function TopHeader() {
                         href="https://pearlportal.net/Portal/rad/OnlineBooking"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#363636] transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-[#c5b1a1] text-white text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#b09d8d] transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
                         Book Online
@@ -223,7 +223,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:block px-5 py-2 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#363636] transition-colors whitespace-nowrap"
+                className="hidden md:block px-5 py-2 rounded-full bg-[#c5b1a1] text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#b09d8d] transition-colors whitespace-nowrap"
               >
                 Book Online
               </a>
@@ -244,7 +244,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden px-4 py-2 rounded-full bg-black text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#363636] transition-colors whitespace-nowrap"
+                className="md:hidden px-4 py-2 rounded-full bg-[#c5b1a1] text-white text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#b09d8d] transition-colors whitespace-nowrap"
               >
                 Book
               </a>
