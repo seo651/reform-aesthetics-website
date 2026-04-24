@@ -135,7 +135,7 @@ export function TopHeader() {
         href="https://reformdental.get-found.co.uk/"
         target="_blank"
         rel="noopener noreferrer"
-        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[11px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
+        className="sm:hidden flex items-center justify-center gap-2 w-full bg-[#ece6e0] text-[#3a3a3a] text-[12px] font-sans font-semibold tracking-[0.1em] py-2.5 px-4 hover:bg-[#e4ddd6] active:bg-[#dbd3cb] transition-colors"
       >
         <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0 text-[#3a3a3a]" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
           <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
@@ -160,7 +160,7 @@ export function TopHeader() {
             <div className="flex items-center gap-3">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
-                  <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[11px] font-sans font-semibold tracking-[0.08em] hover:bg-white/10 transition-colors">
+                  <button className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-white/10 transition-colors">
                     <Menu className="w-3.5 h-3.5" />
                     Menu
                   </button>
@@ -223,7 +223,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
+                className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book Online
               </a>
@@ -244,7 +244,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
+                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book
               </a>
@@ -252,7 +252,7 @@ export function TopHeader() {
                 href="https://reformdental.get-found.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#efeae7] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-[#efeae7] transition-colors whitespace-nowrap"
               >
                 <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
                   <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>
@@ -269,7 +269,7 @@ export function TopHeader() {
               </a>
               <a
                 href="tel:01163800318"
-                className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-white/10 transition-colors whitespace-nowrap"
+                className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full border border-white/30 text-[12px] font-sans font-semibold tracking-[0.06em] hover:bg-white/10 transition-colors whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5" />
                 0116 3800318
@@ -295,7 +295,7 @@ export function TopHeader() {
                   >
                     <Link
                       to={link.href}
-                      className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
+                      className={`flex items-center gap-1 text-[12px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
                         isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                       }`}
                     >
@@ -328,7 +328,7 @@ export function TopHeader() {
                                   : 'text-[#363636] hover:bg-white/60 hover:text-black'
                               }`}
                             >
-                              <span className="text-[11px] font-sans font-semibold tracking-[0.14em] uppercase">
+                              <span className="text-[12px] font-sans font-semibold tracking-[0.14em] uppercase">
                                 {cat.label}
                               </span>
                               <ChevronRight className="w-3.5 h-3.5 opacity-50 flex-shrink-0" />
@@ -343,7 +343,7 @@ export function TopHeader() {
                               key={item.href + item.label}
                               to={item.href}
                               onClick={() => setDropdownOpen(false)}
-                              className="block px-4 py-3 text-[11px] font-sans font-medium tracking-[0.12em] uppercase text-[#363636] hover:text-black hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-50 last:border-b-0"
+                              className="block px-4 py-3 text-[12px] font-sans font-medium tracking-[0.12em] uppercase text-[#363636] hover:text-black hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-50 last:border-b-0"
                             >
                               {item.label}
                             </Link>
@@ -358,7 +358,7 @@ export function TopHeader() {
                 <li key={link.label} className="relative group">
                   <Link
                     to={link.href}
-                    className={`flex items-center gap-1 text-[11px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
+                    className={`flex items-center gap-1 text-[12px] font-sans font-semibold tracking-[0.12em] uppercase transition-colors ${
                       isActive ? 'text-black' : 'text-[#363636] hover:text-black'
                     }`}
                   >
