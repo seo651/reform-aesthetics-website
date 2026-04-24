@@ -139,8 +139,8 @@ export function ContactSectionMap() {
             </div>
 
             {/* Right: Form */}
-            <div className="p-8 sm:p-12 text-left">
-              <div className="flex justify-start">
+            <div className="p-8 sm:p-12 text-center sm:text-left">
+              <div className="flex justify-center sm:justify-start">
                 <SectionBadge text="Contact Us" />
               </div>
               <h2
@@ -153,7 +153,7 @@ export function ContactSectionMap() {
               <form onSubmit={handleSubmit} className="space-y-7">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">
                       First Name <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -166,7 +166,7 @@ export function ContactSectionMap() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">Last Name <span className="text-red-400">*</span></label>
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">Last Name <span className="text-red-400">*</span></label>
                     <input
                       type="text"
                       placeholder="Enter Last Name"
@@ -179,7 +179,7 @@ export function ContactSectionMap() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">
                       Email <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -192,7 +192,7 @@ export function ContactSectionMap() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2">
+                    <label className="block text-xs font-sans font-medium text-[#363636] mb-2 text-center sm:text-left">
                       Phone Number <span className="text-red-400">*</span>
                     </label>
                     <input
@@ -236,7 +236,7 @@ export function ContactSectionMap() {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-[#363636] transition-colors font-sans"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-black text-white text-[11px] font-semibold tracking-[0.12em] uppercase hover:bg-[#363636] transition-colors font-sans mx-auto sm:mx-0 block sm:inline-flex"
                 >
                   SUBMIT MESSAGE
                   <ArrowUpRight className="w-3.5 h-3.5" />
