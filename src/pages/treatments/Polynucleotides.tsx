@@ -10,7 +10,7 @@ export default function Polynucleotides() {
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Advanced Regenerative Skin Therapy"
-      aboutBody="Polynucleotides are innovative injectable treatments that remodel and rejuvenate the skin at a cellular level. By stimulating collagen production and encouraging tissue repair, they improve texture, elasticity and overall skin quality. At Reform Aesthetics and Dental Clinic, we use trusted brands such as Plinest and Newest to treat areas including the face, under-eyes, neck, décolleté and hands — delivering natural, long-lasting rejuvenation."
+      aboutBody="Polynucleotides are innovative injectable treatments that remodel and rejuvenate the skin at a cellular level. By stimulating collagen production and encouraging tissue repair, they improve texture, elasticity and overall skin quality. At Reform Aesthetics and Dental Clinic, we use trusted brands such as Plinest and Newest to treat areas including the face, under-eyes, neck, décolleté and hands, delivering natural, long-lasting rejuvenation."
       checklistItems={[
         'Stimulates collagen and cellular repair',
         'Improves elasticity and skin texture',

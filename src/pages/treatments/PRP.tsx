@@ -10,7 +10,7 @@ export default function PRP() {
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Revitalise Your Skin with Advanced PRP Vampire Facial Treatment"
-      aboutBody="At Reform Aesthetics and Dental Clinic, we offer advanced Vampire Facial (Platelet-Rich Plasma — PRP) therapy, a cutting-edge cosmetic treatment designed to rejuvenate the skin using your body's natural healing abilities. This treatment combines microneedling with platelet-rich plasma derived from your own blood, which is rich in growth factors that help repair tissue, boost collagen production, and improve overall skin quality. The result is firmer, brighter, smoother skin with improved texture and reduced signs of ageing."
+      aboutBody="At Reform Aesthetics and Dental Clinic, we offer advanced Vampire Facial (Platelet-Rich Plasma (PRP)) therapy, a cutting-edge cosmetic treatment designed to rejuvenate the skin using your body's natural healing abilities. This treatment combines microneedling with platelet-rich plasma derived from your own blood, which is rich in growth factors that help repair tissue, boost collagen production, and improve overall skin quality. The result is firmer, brighter, smoother skin with improved texture and reduced signs of ageing."
       checklistItems={[
         'Stimulates natural collagen and elastin production',
         'Reduces fine lines, wrinkles, and enlarged pores',
@@ -39,7 +39,7 @@ export default function PRP() {
         },
         {
           title: 'Safe, Minimally Invasive Procedure',
-          desc: 'Because the treatment uses your own plasma, the risk of allergic reaction is minimal — making it a safe and natural option.',
+          desc: 'Because the treatment uses your own plasma, the risk of allergic reaction is minimal, making it a safe and natural option.',
         },
       ]}
     />

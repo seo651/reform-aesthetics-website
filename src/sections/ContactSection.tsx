@@ -109,7 +109,7 @@ export function ContactSection() {
               Reform Aesthetics is a privately run, medical-led aesthetics clinic in Leicester, led
               by Dr Priya Sonia Patel. We specialise in subtle, confidence-boosting treatments
               tailored to your individual goals. Our approach is consultative, honest, and
-              results-focused—no pressure, no overpromising. Every treatment plan begins
+              results-focused, with no pressure, no overpromising. Every treatment plan begins
               with a thorough consultation to ensure safety, suitability, and natural-looking
               outcomes.
             </p>

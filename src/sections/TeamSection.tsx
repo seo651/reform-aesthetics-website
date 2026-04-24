@@ -8,7 +8,7 @@ export const teamMembers = [
     id: 1,
     name: 'Dr Priya Sonia Patel',
     role: 'Principal Dentist & Aesthetic Doctor',
-    title: 'Founder & Clinical Director — Reform Aesthetics and Dental',
+    title: 'Founder & Clinical Director at Reform Aesthetics and Dental',
     image: '/images/team-dr-priya.jpg',
     bio: [
       { type: 'text', content: 'Dr Priya Sonia Patel is an experienced Dental Surgeon and Aesthetic practitioner with a career spanning over 18 years. She began her professional journey in the UK before working in Singapore for several years, where she practised private dentistry and aesthetics. In 2021 she returned to the UK when she later established Reform Aesthetics and Dental in 2024.' },
@@ -152,11 +152,11 @@ export function TeamSection() {
 
               {/* Photo — centred on mobile, right-aligned on desktop */}
               <div className="flex justify-center md:justify-end w-full">
-                <div className="rounded-2xl overflow-hidden w-full max-w-[240px] sm:max-w-[260px] aspect-[3/4]">
+                <div className="rounded-2xl overflow-hidden w-full max-w-[260px] sm:max-w-[300px] aspect-[3/4]">
                   <img
                     src={activeMember.image}
                     alt={activeMember.name}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                     loading="eager"
                     decoding="auto"
                     style={{ imageRendering: 'high-quality' }}

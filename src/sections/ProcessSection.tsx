@@ -44,7 +44,7 @@ const steps = [
     number: '03',
     Icon: IconSparkle,
     title: 'Maintain Your Glow',
-    description: 'Enjoy ongoing support with aftercare advice, product recommendations, and follow-ups — helping you keep your skin healthy and radiant.',
+    description: 'Enjoy ongoing support with aftercare advice, product recommendations, and follow-ups, helping you keep your skin healthy and radiant.',
   },
 ];
 

@@ -5,7 +5,7 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 import { TeamSection } from '@/sections/TeamSection';
 import { CTASection } from '@/sections/CTASection';
 import { TestimonialsSection } from '@/sections/TestimonialsSection';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 
 /* ── Line-art SVG icons matching PDF illustrated style ── */
 function IconTailored() {
@@ -37,7 +37,7 @@ const features = [
   {
     Icon: IconTailored,
     title: 'Tailored, Full-Spectrum Skincare Solutions',
-    desc: 'From acne and pigmentation to fine lines and anti-ageing treatments, we provide a complete range of skin solutions under one roof — designed for every age and skin type.',
+    desc: 'From acne and pigmentation to fine lines and anti-ageing treatments, we provide a complete range of skin solutions under one roof, designed for every age and skin type.',
   },
   {
     Icon: IconSpa,
@@ -103,7 +103,7 @@ const philosophy = [
   {
     Icon: IconTransparent,
     title: 'Transparent Communication',
-    desc: 'We take the time to listen to your concerns, explain every option clearly, and design treatment plans around your individual needs. No jargon, no confusion — just honest guidance.',
+    desc: 'We take the time to listen to your concerns, explain every option clearly, and design treatment plans around your individual needs. No jargon, no confusion. Just honest guidance.',
   },
   {
     Icon: IconExpertLed,

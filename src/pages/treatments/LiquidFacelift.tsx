@@ -5,7 +5,7 @@ export default function LiquidFacelift() {
     <TreatmentPage
       breadcrumb="LIQUID FACE LIFT"
       heroTitle="Instant Lift, Natural Results Using Dermal Fillers"
-      heroSubtext="Achieve a lifted, youthful and refreshed appearance without surgery with a Non-Surgical Face Lift — also known as a 'Liquid Facelift' — using expertly placed dermal fillers."
+      heroSubtext="Achieve a lifted, youthful and refreshed appearance without surgery with a Non-Surgical Face Lift (also known as a 'Liquid Facelift'), using expertly placed dermal fillers."
       heroImage="/images/liquid-facelift-hero.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"

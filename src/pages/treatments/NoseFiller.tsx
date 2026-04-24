@@ -5,7 +5,7 @@ export default function NoseFiller() {
     <TreatmentPage
       breadcrumb="NON-SURGICAL NOSE JOB"
       heroTitle="Reshape & Refine with Non-Surgical Rhinoplasty"
-      heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, we offer precise non-surgical nose reshaping using dermal filler to improve symmetry, smooth bumps and enhance nasal profile — with no surgery or downtime."
+      heroSubtext="At Reform Aesthetics and Dental Clinic in Leicester, we offer precise non-surgical nose reshaping using dermal filler to improve symmetry, smooth bumps and enhance nasal profile, with no surgery or downtime."
       heroImage="/images/rhinoplasty-1.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"

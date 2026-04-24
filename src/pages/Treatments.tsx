@@ -5,7 +5,7 @@ import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { CTASection } from '@/sections/CTASection';
 import { GallerySection } from '@/sections/GallerySection';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 
 const treatmentGroups = [
   {
@@ -156,7 +156,7 @@ export default function Treatments() {
                 Explore Our Full Range
               </h2>
               <p className="text-[#363636] text-[15px] leading-relaxed mt-4 max-w-xl mx-auto font-sans">
-                Our comprehensive menu of treatments covers skin, face, fillers, hair and wellness —
+                Our comprehensive menu of treatments covers skin, face, fillers, hair and wellness.
                 all delivered by experienced medical professionals.
               </p>
             </div>

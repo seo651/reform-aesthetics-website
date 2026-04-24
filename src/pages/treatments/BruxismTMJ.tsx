@@ -20,7 +20,7 @@ export default function BruxismTMJ() {
       circularImage="/images/bruxism-jaw-profile.jpg"
       circularImageAlt="Jaw profile after bruxism treatment"
       benefitsHeading="Relieve Pain & Protect Your Smile"
-      benefitsBody="Bruxism treatment offers dual benefits — relieving discomfort and protecting dental health while optionally refining the jaw contour."
+      benefitsBody="Bruxism treatment offers dual benefits: relieving discomfort and protecting dental health while optionally refining the jaw contour."
       benefitsImage="/images/bruxism-profile-bw.jpg"
       benefitsImageAlt="Slimmed jaw profile after bruxism treatment"
       benefits={[

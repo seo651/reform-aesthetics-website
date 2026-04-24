@@ -5,7 +5,7 @@ export default function FillerDissolving() {
     <TreatmentPage
       breadcrumb="FILLER DISSOLVING"
       heroTitle="Correct & Restore with Filler Dissolving Treatment"
-      heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler — restoring natural facial balance."
+      heroSubtext="At Reform Aesthetics and Dental Clinic, our filler dissolving treatment offers a safe and effective way to correct overfilled, uneven or unwanted dermal filler, restoring natural facial balance."
       heroImage="/images/filler-dissolving-1.jpg"
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 
 /* ── Clinic gallery images (no duplicates) ── */
 const clinicImages = [
@@ -55,7 +55,7 @@ const aestheticsCases = [
   {
     id: 7,
     service: 'Skin Boosters',
-    description: 'Before and after skin booster treatment — deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
+    description: 'Before and after skin booster treatment, deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
     image: '/images/aesthetics-skin-boosters.webp',
   },
 ];

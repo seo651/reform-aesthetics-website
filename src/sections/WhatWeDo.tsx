@@ -100,7 +100,7 @@ export function WhatWeDo() {
           <AnimatedSection delay={0.15} className="lg:pt-16 text-center lg:text-left">
             <p className="text-[#363636] text-[15px] leading-relaxed font-sans mb-8">
               We provide specialist skin and anti-ageing treatments designed to enhance your natural
-              features — not change them. Our philosophy is simple: subtle, refined improvements
+              features, not change them. Our philosophy is simple: subtle, refined improvements
               using premium products and evidence-based techniques.
             </p>
             <div className="flex justify-center lg:justify-start">

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 import { teamMembers } from '@/sections/TeamSection';
 
 // Featured = Dr Priya (id 1), rest in sidebar tabs
@@ -103,7 +103,7 @@ export default function Doctors() {
                   <img
                     src={featured.image}
                     alt={featured.name}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                     loading="eager"
                     decoding="auto"
                     style={{ imageRendering: 'high-quality' }}

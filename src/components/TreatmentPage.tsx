@@ -4,7 +4,7 @@ import { SectionBadge } from '@/components/SectionBadge';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import { CTASection } from '@/sections/CTASection';
 import { GallerySection } from '@/sections/GallerySection';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 
 export interface BenefitItem {
   title: string;

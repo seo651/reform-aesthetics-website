@@ -34,7 +34,7 @@ export function CTASection() {
               </h2>
               <p className="text-white/70 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-sans">
                 Our experienced clinicians provide expertly delivered skin booster treatments designed
-                to deeply hydrate, improve elasticity and restore luminous, healthy-looking skin — all
+                to deeply hydrate, improve elasticity and restore luminous, healthy-looking skin, for all
                 tailored specifically to you.
               </p>
             </div>

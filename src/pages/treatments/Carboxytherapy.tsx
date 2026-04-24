@@ -10,7 +10,7 @@ export default function Carboxytherapy() {
       heroObjectPosition="center"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Reduce Cellulite, Stretch Marks & Dark Circles"
-      aboutBody="Carboxytherapy is a minimally invasive treatment that uses sterile carbon dioxide (CO₂) injections to improve blood flow and stimulate natural collagen production. This process enhances skin elasticity and promotes smoother, firmer-looking skin. The treatment is ideal for reducing cellulite, stretch marks, dark under-eye circles and stubborn areas such as underchin fat — delivering visible improvement with minimal downtime. A course of treatments is typically recommended for optimal results."
+      aboutBody="Carboxytherapy is a minimally invasive treatment that uses sterile carbon dioxide (CO₂) injections to improve blood flow and stimulate natural collagen production. This process enhances skin elasticity and promotes smoother, firmer-looking skin. The treatment is ideal for reducing cellulite, stretch marks, dark under-eye circles and stubborn areas such as underchin fat, delivering visible improvement with minimal downtime. A course of treatments is typically recommended for optimal results."
       checklistItems={[
         'Stimulates collagen and circulation',
         'Reduces cellulite and stretch marks',

@@ -10,7 +10,7 @@ const services = [
     title: 'Anti-Wrinkle Injections in Leicester',
     image: '/images/anti-wrinkle.jpg',
     description: "Our anti-wrinkle treatments offer a safe, non-surgical solution to reduce forehead lines, crow's feet, and frown lines. By gently relaxing targeted muscles, we soften expression lines while maintaining natural facial movement.",
-    details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results — never frozen or overdone — with minimal downtime.',
+    details: 'Delivered by experienced medical injectors, treatments are tailored to achieve subtle, refreshed results — never frozen or overdone, with minimal downtime.',
     href: '/treatments/anti-wrinkle',
   },
   {
@@ -18,7 +18,7 @@ const services = [
     title: 'Dermal Fillers',
     image: '/images/dermal-fillers.jpg',
     description: 'Dermal fillers restore lost volume, smooth deeper lines, and refine facial structure. We treat areas including lips, cheeks, jawline, and under-eyes using premium, clinically approved fillers.',
-    details: 'Results are immediate, natural-looking, and minimally invasive — ideal for restoring youthful balance without surgery.',
+    details: 'Results are immediate, natural-looking, and minimally invasive, ideal for restoring youthful balance without surgery.',
     href: '/treatments/dermal-fillers',
   },
   {
@@ -58,7 +58,7 @@ const services = [
     title: 'Skin Boosters',
     image: '/images/skin-boosters.jpg',
     description: 'Skin boosters deeply hydrate and revitalise from within. Profhilo improves skin laxity and firmness, while NCTF nourishes with hyaluronic acid, vitamins, and antioxidants.',
-    details: 'Ideal for dull skin, early ageing, and loss of elasticity — delivering radiant, refreshed skin with no downtime.',
+    details: 'Ideal for dull skin, early ageing, and loss of elasticity, delivering radiant, refreshed skin with no downtime.',
     href: '/treatments/skin-boosters',
   },
   {

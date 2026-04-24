@@ -7,7 +7,7 @@ import { CTASection } from '@/sections/CTASection';
 import { GallerySection } from '@/sections/GallerySection';
 import { ProcessSection } from '@/sections/ProcessSection';
 import { TestimonialsSection } from '@/sections/TestimonialsSection';
-import { ContactSection } from '@/sections/ContactSection';
+import { ContactSectionMap as ContactSection } from '@/sections/ContactSectionMap';
 
 export default function Home() {
   return (

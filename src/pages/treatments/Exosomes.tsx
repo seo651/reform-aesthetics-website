@@ -9,7 +9,7 @@ export default function Exosomes() {
       heroImage="/images/exosomes-cells.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Advanced Regenerative Medicine"
-      aboutBody="Exosomes are nano-sized extracellular vesicles that carry growth factors, proteins and genetic information between cells. In aesthetic medicine, exosome therapy has emerged as one of the most exciting regenerative treatments available — promoting cellular repair, stimulating collagen and supporting hair follicle health. At Reform Aesthetics and Dental Clinic, we use clinically validated exosome preparations to target visible signs of ageing, hair thinning and compromised skin quality."
+      aboutBody="Exosomes are nano-sized extracellular vesicles that carry growth factors, proteins and genetic information between cells. In aesthetic medicine, exosome therapy has emerged as one of the most exciting regenerative treatments available, promoting cellular repair, stimulating collagen and supporting hair follicle health. At Reform Aesthetics and Dental Clinic, we use clinically validated exosome preparations to target visible signs of ageing, hair thinning and compromised skin quality."
       checklistItems={[
         'Stimulates collagen and cellular repair',
         'Promotes hair follicle regeneration',

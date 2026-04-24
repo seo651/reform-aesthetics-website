@@ -5,7 +5,7 @@ export default function Profhilo() {
     <TreatmentPage
       breadcrumb="PROFHILO"
       heroTitle="Lift, Tighten & Hydrate with Profhilo"
-      heroSubtext="At Reform Aesthetics and Dental Clinic, we offer Profhilo — a revolutionary bio-remodelling treatment that deeply hydrates and tightens the skin for a naturally refreshed, youthful glow."
+      heroSubtext="At Reform Aesthetics and Dental Clinic, we offer Profhilo, a revolutionary bio-remodelling treatment that deeply hydrates and tightens the skin for a naturally refreshed, youthful glow."
       heroImage="/images/skin-boosters.jpg"
       aboutBadge="ABOUT TREATMENTS"
       aboutHeading="Bio-Remodelling for Skin Laxity"
