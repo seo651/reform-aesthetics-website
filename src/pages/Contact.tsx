@@ -112,23 +112,27 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: 0.1 * i }}
-                className="bg-[#efeae7] rounded-2xl p-7 flex flex-col items-center text-center gap-4"
+                className="relative pt-10 flex flex-col items-center"
               >
-                <div className="w-12 h-12 rounded-full bg-[#c5b1a1]/40 flex items-center justify-center text-[#7a6a60]">
+                {/* Floating icon above card */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-[#6e6a66] flex items-center justify-center text-white z-10 shadow-sm">
                   {icon}
                 </div>
-                <h3
-                  className="text-[18px] text-black"
-                  style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
-                >
-                  {title}
-                </h3>
-                <div className="space-y-1">
-                  {lines.map((line, j) => (
-                    <p key={j} className="text-[#363636] text-[13px] font-sans leading-relaxed">
-                      {line}
-                    </p>
-                  ))}
+                {/* Card */}
+                <div className="w-full bg-[#efeae7] rounded-2xl pt-10 pb-7 px-6 flex flex-col items-center text-center gap-3">
+                  <h3
+                    className="text-[18px] text-black"
+                    style={{ fontFamily: '"Times New Roman", Times, serif', fontWeight: 400 }}
+                  >
+                    {title}
+                  </h3>
+                  <div className="space-y-1">
+                    {lines.map((line, j) => (
+                      <p key={j} className="text-[#363636] text-[13px] font-sans leading-relaxed">
+                        {line}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}
