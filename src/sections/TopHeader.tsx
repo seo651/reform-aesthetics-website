@@ -244,7 +244,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
+                className="md:hidden px-4 py-2 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#e4ddd6] transition-colors whitespace-nowrap"
               >
                 Book
               </a>
