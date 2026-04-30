@@ -41,18 +41,6 @@ const aestheticsCases = [
     image: '/images/aesthetics-lymphatic-3.jpg',
   },
   {
-    id: 5,
-    service: 'PRP Treatment',
-    description: 'Platelet-Rich Plasma therapy harnessing your body\'s own regenerative power to stimulate collagen, improve skin texture and restore a youthful glow.',
-    image: '/images/aesthetics-prp-1.jpg',
-  },
-  {
-    id: 7,
-    service: 'Skin Boosters',
-    description: 'Before and after skin booster treatment, deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
-    image: '/images/aesthetics-skin-boosters.webp',
-  },
-  {
     id: 9,
     service: 'Lip Fillers',
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
