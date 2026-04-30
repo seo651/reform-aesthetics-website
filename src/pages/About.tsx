@@ -53,8 +53,11 @@ const features = [
 
 /* Stats */
 const stats = [
-  { number: '12+', label: 'Years of Experience' },
-  { number: '5★',  label: 'Google Rating' },
+  { number: '12+',    label: 'Years of Experience' },
+  { number: '5★',     label: 'Google Rating' },
+  { number: '1,000+', label: 'Happy Patients' },
+  { number: '500+',   label: 'Treatments Completed' },
+  { number: '100%',   label: 'Personalised Care' },
 ];
 
 /* Philosophy 2×2 grid icons */
@@ -177,7 +180,7 @@ export default function About() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-100 transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />

@@ -188,7 +188,7 @@ export function TopHeader() {
                         href="https://pearlportal.net/Portal/rad/OnlineBooking"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-[#e4ddd6] transition-colors"
+                        className="flex items-center justify-between w-full px-4 py-3 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] hover:bg-gray-100 transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
                         Book Online
@@ -217,7 +217,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:block px-5 py-2 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#e4ddd6] transition-colors whitespace-nowrap"
+                className="hidden md:block px-5 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book Online
               </a>
@@ -238,7 +238,7 @@ export function TopHeader() {
                 href="https://pearlportal.net/Portal/rad/OnlineBooking"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:hidden px-4 py-2 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#e4ddd6] transition-colors whitespace-nowrap"
+                className="md:hidden px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 Book
               </a>
@@ -246,7 +246,7 @@ export function TopHeader() {
                 href="https://3000-977f322e-6f96-4a30-9490-3830ee1ae8c0.orchids.cloud/?_cb=1777552826283"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-[#e4ddd6] transition-colors whitespace-nowrap"
+                className="hidden sm:flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.08em] uppercase hover:bg-gray-100 transition-colors whitespace-nowrap"
               >
                 <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 flex-shrink-0" stroke="currentColor" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round" style={{ transform: 'scaleY(-1)' }}>
                   <g transform="translate(51.9517,421.4062)"><path d="m 0,0 c -14.986,-18.532 -24.182,-41.91 -24.747,-67.232 -0.948,-42.432 15.863,-93.121 35.477,-143.886" /></g>

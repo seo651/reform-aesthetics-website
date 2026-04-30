@@ -134,7 +134,7 @@ export default function GalleryPage() {
             href="https://pearlportal.net/Portal/rad/OnlineBooking"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#efeae7] text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-black text-[12px] font-sans font-semibold tracking-[0.1em] uppercase hover:bg-gray-100 transition-colors shadow-sm"
           >
             ARRANGE YOUR CONSULTATION
             <ArrowUpRight className="w-3.5 h-3.5" />

@@ -151,7 +151,7 @@ export function TreatmentPage({
               href="https://pearlportal.net/Portal/rad/OnlineBooking"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#efeae7] text-black text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-white transition-colors shadow-md font-sans"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white text-black text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-gray-100 transition-colors shadow-md font-sans"
             >
               BOOK YOUR CONSULTATION
               <ArrowUpRight className="w-4 h-4" />
