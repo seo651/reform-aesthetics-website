@@ -12,7 +12,7 @@ export function HeroSection() {
           loop
           playsInline
           className="w-full h-full object-cover"
-          src="/images/videos/Reform Medical Web (1).mp4"
+          src="/images/videos/aesthetic.mp4"
         />
         <div className="absolute inset-0 bg-black/55" />
       </div>
