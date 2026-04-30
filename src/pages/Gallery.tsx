@@ -47,12 +47,6 @@ const aestheticsCases = [
     image: '/images/aesthetics-prp-1.jpg',
   },
   {
-    id: 6,
-    service: 'PRP Treatment',
-    description: 'PRP rejuvenation delivering natural, gradual improvements in skin quality, tone and radiance with minimal downtime.',
-    image: '/images/aesthetics-prp-2.jpg',
-  },
-  {
     id: 7,
     service: 'Skin Boosters',
     description: 'Before and after skin booster treatment, deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
