@@ -9,7 +9,7 @@ export const teamMembers = [
     name: 'Dr Priya Sonia Patel',
     role: 'Principal Dentist & Aesthetic Doctor',
     title: 'Founder & Clinical Director at Reform Aesthetics and Dental',
-    image: '/images/team-dr-priya.jpg',
+    image: '/images/team-dr-priya.svg',
     bio: [
       { type: 'text', content: 'Dr Priya Sonia Patel is an experienced Dental Surgeon and Aesthetic practitioner with a career spanning over 18 years. She began her professional journey in the UK before working in Singapore for several years, where she practised private dentistry and aesthetics. In 2021 she returned to the UK when she later established Reform Aesthetics and Dental in 2024.' },
       { type: 'text', content: 'Combining clinical precision with a refined aesthetic fluency, Dr Priya is dedicated to delivering natural, harmonious results through evidence-based techniques. Her expertise extends beyond practice and her passion in Aesthetics has lead to her also working as a trainer for a renowned international training Academy - Derma Medical, where she educates and mentors other medical professionals in Aesthetic procedures.' },
@@ -21,7 +21,7 @@ export const teamMembers = [
     name: 'Dr Muataz A. Osman',
     role: 'Dental Surgeon',
     title: 'Periodontal Gum Specialist & Implantologist',
-    image: '/images/team-dr-muataz.jpg',
+    image: '/images/team-dr-muataz.svg',
     bio: [
       { type: 'text', content: 'Dr Muataz Osman is a highly skilled dentist with special interest in periodontics and implant dentistry dedicated to providing expert care in gum disease treatment, implant dentistry, and oral surgery.' },
       { type: 'text', content: 'He holds a Post Graduate Certificate in both Implant Dentistry and Restorative Dentistry awarded by the Royal College of Surgeons. He also completed an advanced PG Certificate in Full Mouth Oral Implant Rehabilitation through ICE Hospital in collaboration with the University of Salford.' },
@@ -33,7 +33,7 @@ export const teamMembers = [
     name: 'Elizabeth',
     role: 'Assistant Practice Manager',
     title: '',
-    image: '/images/team-elizabeth.jpg',
+    image: '/images/team-elizabeth.svg',
     bio: [
       { type: 'text', content: 'Liz is the Assistant Practice Manager at Reform Aesthetics and Dental, bringing over 10 years of experience in Private Healthcare. Having worked overseas in Asia, she has extensive experience supporting high-calibre patients and delivering exceptional standards of care.' },
       { type: 'text', content: 'She oversees the day-to-day running of the clinic, manages the front-of-house team, and ensures a seamless patient journey from enquiry to aftercare.' },
@@ -45,7 +45,7 @@ export const teamMembers = [
     name: 'Rae McNeill',
     role: 'Dental Nurse and Skin Health Practitioner',
     title: 'GDC Number: 213755',
-    image: '/images/team-rae.jpg',
+    image: '/images/team-rae.svg',
     bio: [
       { type: 'text', content: 'Rae has extensive experience in dentistry since 2011. She has furthered her qualifications in aesthetic treatments including Chemical Peels and Microneedling.' },
       { type: 'text', content: 'Her approachable nature and attention to detail make her a trusted professional in both dental care and skin aesthetics.' },
@@ -57,7 +57,7 @@ export const teamMembers = [
     name: 'Hannah Burton',
     role: 'Qualified Nurse Practitioner',
     title: '',
-    image: '/images/team-hannah.jpg',
+    image: '/images/team-hannah.svg',
     bio: [
       { type: 'text', content: 'Hannah specialises in lymphatic drainage and Brazilian wood massage. These treatments support detoxification, reduce swelling, improve circulation, and enhance overall wellbeing.' },
       { type: 'text', content: 'She also offers IV vitamin drips and PRP treatments as part of a holistic approach to health, recovery, and longevity.' },
@@ -69,7 +69,7 @@ export const teamMembers = [
     name: 'Shyam Nansi',
     role: 'Certified Nutritionist',
     title: 'MPharm, MRPharmS',
-    image: '/images/team-shyam.jpg',
+    image: '/images/team-shyam.svg',
     bio: [
       { type: 'text', content: 'Shyam is an in-house certified nutritionist specialising in health, wellbeing, and weight loss management. He provides personalised nutrition plans tailored to individual lifestyles.' },
       { type: 'text', content: 'He also supports women through menopausal changes, offering guidance for both physiological and physical challenges.' },
