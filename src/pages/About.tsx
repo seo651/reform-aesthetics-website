@@ -53,11 +53,8 @@ const features = [
 
 /* Stats */
 const stats = [
-  { number: '80+',  label: 'Years of Combined Experience' },
-  { number: '60+',  label: 'Successful Smile Transformations' },
-  { number: '10+',  label: 'Ongoing Patient Relationships' },
-  { number: '220+', label: 'Ongoing Patient Relationships' },
-  { number: '5+',   label: 'Advanced Procedures Offered' },
+  { number: '12+', label: 'Years of Experience' },
+  { number: '5★',  label: 'Google Rating' },
 ];
 
 /* Philosophy 2×2 grid icons */
