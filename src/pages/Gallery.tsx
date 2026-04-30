@@ -41,6 +41,12 @@ const aestheticsCases = [
     image: '/images/aesthetics-lymphatic-3.jpg',
   },
   {
+    id: 11,
+    service: 'Skin Boosters',
+    description: 'Before and after skin booster treatment, deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
+    image: '/images/aesthetics-skin-boosters.webp',
+  },
+  {
     id: 9,
     service: 'Lip Fillers',
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
