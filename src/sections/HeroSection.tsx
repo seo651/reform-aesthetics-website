@@ -31,7 +31,7 @@ export function HeroSection() {
               <ArrowUpRight className="w-3 h-3 text-white" />
             </span>
             <span className="text-xs font-medium tracking-[0.12em] text-white/85 uppercase font-sans">
-              Your Trusted Dental Clinic in Leicester
+              Your Trusted Aesthetics Clinic in Leicester
             </span>
           </motion.div>
 
