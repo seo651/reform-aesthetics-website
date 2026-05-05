@@ -54,7 +54,7 @@ export function BlogPost({ title, date, heroImage, heroImageAlt, heroAspectRatio
             {/* Left: image + article content */}
             <AnimatedSection className="min-w-0 flex-1">
               {/* Featured image */}
-              <div className="rounded-2xl overflow-hidden mb-8 max-h-[420px]" style={{ aspectRatio: heroAspectRatio }}>
+              <div className="rounded-2xl overflow-hidden mb-8" style={{ aspectRatio: '16/10' }}>
                 <img
                   src={heroImage}
                   alt={heroImageAlt ?? title}

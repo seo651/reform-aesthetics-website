@@ -33,7 +33,7 @@ export const teamMembers = [
     name: 'Elizabeth',
     role: 'Assistant Practice Manager',
     title: '',
-    image: '/images/team-elizabeth.svg',
+    image: '/images/team-rae.svg',
     bio: [
       { type: 'text', content: 'Liz is the Assistant Practice Manager at Reform Aesthetics and Dental, bringing over 10 years of experience in Private Healthcare. Having worked overseas in Asia, she has extensive experience supporting high-calibre patients and delivering exceptional standards of care.' },
       { type: 'text', content: 'She oversees the day-to-day running of the clinic, manages the front-of-house team, and ensures a seamless patient journey from enquiry to aftercare.' },
@@ -45,7 +45,7 @@ export const teamMembers = [
     name: 'Rae McNeill',
     role: 'Dental Nurse and Skin Health Practitioner',
     title: 'GDC Number: 213755',
-    image: '/images/team-rae.svg',
+    image: '/images/team-elizabeth.svg',
     bio: [
       { type: 'text', content: 'Rae has extensive experience in dentistry since 2011. She has furthered her qualifications in aesthetic treatments including Chemical Peels and Microneedling.' },
       { type: 'text', content: 'Her approachable nature and attention to detail make her a trusted professional in both dental care and skin aesthetics.' },
