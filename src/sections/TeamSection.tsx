@@ -9,7 +9,7 @@ export const teamMembers = [
     name: 'Dr Priya Sonia Patel',
     role: 'Principal Dentist & Aesthetic Doctor',
     title: 'Founder & Clinical Director at Reform Aesthetics and Dental',
-    image: '/images/team-dr-priya.svg',
+    image: '/images/team-dr-priya.jpg',
     bio: [
       { type: 'text', content: 'Dr Priya Sonia Patel is an experienced Dental Surgeon and Aesthetic practitioner with a career spanning over 18 years. She began her professional journey in the UK before working in Singapore for several years, where she practised private dentistry and aesthetics. In 2021 she returned to the UK when she later established Reform Aesthetics and Dental in 2024.' },
       { type: 'text', content: 'Combining clinical precision with a refined aesthetic fluency, Dr Priya is dedicated to delivering natural, harmonious results through evidence-based techniques. Her expertise extends beyond practice and her passion in Aesthetics has lead to her also working as a trainer for a renowned international training Academy - Derma Medical, where she educates and mentors other medical professionals in Aesthetic procedures.' },
