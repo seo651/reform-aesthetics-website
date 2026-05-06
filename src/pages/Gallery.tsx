@@ -21,78 +21,55 @@ const aestheticsCases = [
     service: 'Anti-Wrinkle Treatments',
     description: 'Smooth, natural-looking results achieved with anti-wrinkle injections. Treatment targeting forehead lines and crow\'s feet for a refreshed, youthful appearance.',
     image: '/images/aesthetics-anti-wrinkle.jpg',
-    aspectRatio: '1/1',
   },
   {
     id: 5,
     service: 'PRP Hair Rejuvenation',
     description: 'Remarkable before and after results from PRP hair rejuvenation treatment — stimulating natural hair regrowth and significantly improving hair density.',
-    image: '/images/aesthetics-prp-hair-1.jpg',
-    aspectRatio: '1/1',
+    image: '/images/aesthetics-prp-hair.png',
   },
   {
-    id: 6,
-    service: 'PRP Hair Rejuvenation',
-    description: 'PRP hair treatment before and after — visible improvement in hair thickness and coverage for a patient with crown thinning.',
-    image: '/images/aesthetics-prp-hair-before.jpg',
-    aspectRatio: '3/4',
-  },
-  {
-    id: 7,
-    service: 'PRP Hair Rejuvenation',
-    description: 'After PRP hair rejuvenation — healthy, fuller hair growth achieved following a course of platelet-rich plasma treatments.',
-    image: '/images/aesthetics-prp-hair-after.jpg',
-    aspectRatio: '3/4',
+    id: 8,
+    service: 'PRF Hair Rejuvenation',
+    description: 'Before and after PRF hair rejuvenation — platelet-rich fibrin treatment delivering visible improvements in hair density and scalp coverage.',
+    image: '/images/aesthetics-prf-hair.png',
   },
   {
     id: 2,
     service: 'Lymphatic Drainage Massage',
     description: 'Gentle lymphatic drainage massage supporting detoxification, reducing fluid retention and promoting a sculpted, revitalised appearance.',
     image: '/images/aesthetics-lymphatic-1.jpg',
-    aspectRatio: '1/1',
   },
   {
     id: 3,
     service: 'Lymphatic Drainage Massage',
     description: 'Our therapeutic lymphatic massage treatments help reduce puffiness, improve circulation and restore a healthy, radiant glow.',
     image: '/images/aesthetics-lymphatic-2.jpg',
-    aspectRatio: '1/1',
   },
   {
     id: 4,
     service: 'Lymphatic Drainage Massage',
     description: 'Professional lymphatic drainage massage delivering visible improvements in skin tone, contouring and overall wellness.',
     image: '/images/aesthetics-lymphatic-3.jpg',
-    aspectRatio: '1/1',
   },
   {
     id: 11,
     service: 'Skin Boosters',
-    description: 'Before and after skin booster treatment, deeply hydrating injectable treatments that restore elasticity and deliver a luminous, healthy-looking complexion.',
-    image: '/images/aesthetics-skin-boosters.webp',
-    aspectRatio: '1/1',
-    objectPosition: 'center 20%',
-  },
-  {
-    id: 12,
-    service: 'Skin Boosters',
-    description: 'Before, during and after NCTF skin booster treatment — visible improvement in skin texture, hydration and radiance over the course of treatment.',
-    image: '/images/aesthetics-skin-boosters-2.jpg',
-    aspectRatio: '16/9',
+    description: 'Before and after skin booster treatment — deeply hydrating injectables that restore elasticity and deliver a luminous, healthy-looking complexion.',
+    image: '/images/aesthetics-skin-boosters-3.png',
   },
   {
     id: 9,
     service: 'Lip Fillers',
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
     image: '/images/aesthetics-lip-filler.jpg',
-    aspectRatio: '2/3',
+    objectFit: 'contain',
   },
   {
     id: 10,
     service: 'Skin Peels',
     description: 'Before and after chemical skin peel treatment, revealing a smoother, brighter and more even complexion with reduced pigmentation and refined skin texture.',
     image: '/images/aesthetics-skin-peel.jpg',
-    aspectRatio: '1/1',
   },
 ];
 
@@ -276,12 +253,11 @@ export default function GalleryPage() {
                       transition={{ duration: 0.4, delay: 0.08 * idx }}
                       className="rounded-2xl overflow-hidden group bg-[#efeae7]"
                     >
-                      <div className="overflow-hidden" style={{ aspectRatio: c.aspectRatio ?? '1/1' }}>
+                      <div className="overflow-hidden aspect-square">
                         <img
                           src={c.image}
                           alt={c.service}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          style={{ objectPosition: c.objectPosition ?? 'center' }}
+                          className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${c.objectFit === 'contain' ? 'object-contain bg-white' : 'object-cover'}`}
                         />
                       </div>
                       <div className="p-5 bg-[#efeae7]">
