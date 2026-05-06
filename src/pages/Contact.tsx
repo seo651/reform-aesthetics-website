@@ -20,12 +20,12 @@ const contactCards = [
     title: 'Opening Hours',
     lines: [
       'Monday: Closed',
-      'Tuesday: 8:30 am – 5:30 pm',
+      'Tuesday: 8:30 am – 6:00 pm',
       'Wednesday: Closed',
       'Thursday: Closed',
-      'Friday: 8:30 am – 5:00 pm',
+      'Friday: 8:30 am – 5:30 pm',
       'Saturday: 10:00 am – 3:00 pm',
-      'Sunday: 10:00 am – 3:00 pm',
+      'Sunday: By appointment only',
     ],
   },
   {

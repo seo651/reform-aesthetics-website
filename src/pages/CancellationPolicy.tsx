@@ -79,12 +79,12 @@ export default function CancellationPolicy() {
             <div className="bg-[#efeae7] rounded-2xl p-6 mb-8 text-sm font-sans space-y-2">
               {[
                 { day: 'Monday', hours: 'Closed' },
-                { day: 'Tuesday', hours: '8:30 am – 5:30 pm' },
+                { day: 'Tuesday', hours: '8:30 am – 6:00 pm' },
                 { day: 'Wednesday', hours: 'Closed' },
                 { day: 'Thursday', hours: 'Closed' },
-                { day: 'Friday', hours: '8:30 am – 5:00 pm' },
+                { day: 'Friday', hours: '8:30 am – 5:30 pm' },
                 { day: 'Saturday', hours: '10:00 am – 3:00 pm' },
-                { day: 'Sunday', hours: '10:00 am – 3:00 pm' },
+                { day: 'Sunday', hours: 'By appointment only' },
               ].map(({ day, hours }) => (
                 <div key={day} className="flex justify-between items-center gap-4">
                   <span className={hours === 'Closed' ? 'text-gray-400' : 'text-[#363636]'}>{day}</span>

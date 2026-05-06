@@ -5,12 +5,12 @@ import { AnimatedSection } from '@/components/AnimatedSection';
 
 const openingHours = [
   { day: 'Monday',    hours: 'Closed' },
-  { day: 'Tuesday',   hours: '8:30 am – 5:30 pm' },
+  { day: 'Tuesday',   hours: '8:30 am – 6:00 pm' },
   { day: 'Wednesday', hours: 'Closed' },
   { day: 'Thursday',  hours: 'Closed' },
-  { day: 'Friday',    hours: '8:30 am – 5:00 pm' },
+  { day: 'Friday',    hours: '8:30 am – 5:30 pm' },
   { day: 'Saturday',  hours: '10:00 am – 3:00 pm' },
-  { day: 'Sunday',    hours: '10:00 am – 3:00 pm' },
+  { day: 'Sunday',    hours: 'By appointment only' },
 ];
 
 const treatmentOptions = [
