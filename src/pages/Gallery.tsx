@@ -62,8 +62,7 @@ const aestheticsCases = [
     id: 9,
     service: 'Lip Fillers',
     description: 'Before and after lip filler treatment, delivering natural-looking volume, improved shape and enhanced definition for beautifully balanced lips.',
-    image: '/images/aesthetics-lip-filler.jpg',
-    objectFit: 'contain',
+    image: '/images/aesthetics-lip-filler-v2.png',
   },
   {
     id: 10,
